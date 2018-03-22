@@ -1,0 +1,1506 @@
+<!DOCTYPE html><html class="theme-next gemini use-motion" lang="zh-Hans"><head>
+  <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<script src="//cdn.bootcss.com/pace/1.0.2/pace.min.js"></script>
+<link href="//cdn.bootcss.com/pace/1.0.2/themes/pink/pace-theme-flash.css" rel="stylesheet">
+<style>
+	.pace .pace-progress {
+	    background: #FFFFFF; /*进度条颜色*/
+	    height: 3px;
+	}
+	.pace .pace-progress-inner {
+	    box-shadow: 0 0 10px rgba(0, 0, 0, 0.75), 0 0 5px    rgba(0, 0, 0, 0.72); /*阴影颜色*/
+	}
+	.pace .pace-activity {
+	    border-top-color: rgba(0, 0, 0, 0.75);    /*上边框颜色*/
+	    border-left-color: rgba(0, 0, 0, 0.75);    /*左边框颜色*/
+}
+</style>
+<meta name="theme-color" content="#222">
+
+
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform">
+<meta http-equiv="Cache-Control" content="no-siteapp">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css">
+
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css">
+
+<link href="/css/main.css?v=5.1.4" rel="stylesheet" type="text/css">
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=5.1.4">
+
+
+  <link rel="mask-icon" href="/images/logo.svg?v=5.1.4" color="#222">
+
+
+
+
+
+  <meta name="keywords" content="&#x6570;&#x636E;&#x5E93;&#x7CFB;&#x7EDF;,">
+
+
+
+
+
+
+
+
+
+
+<meta name="description" content="&amp;#x6570;&amp;#x636E;&amp;#x5E93;&amp;#x7CFB;&amp;#x7EDF;&amp;#x6982;&amp;#x8BBA;1.1 &amp;#x6570;&amp;#x636E;&amp;#x5E93;&amp;#x7CFB;&amp;#x7EDF;&amp;#x6982;&amp;#x8FF0; &amp;#x6570;&amp;#x636E;&amp;#xFF1A;&amp;#x63CF;&amp;#x8FF0;&amp;#x4E8B;&amp;#x7269;&amp;#x7684;&amp;#x7B26;&amp;#x53F7;&amp;#x">
+<meta name="keywords" content="&#x6570;&#x636E;&#x5E93;&#x7CFB;&#x7EDF;">
+<meta property="og:type" content="article">
+<meta property="og:title" content="&#x6570;&#x636E;&#x5E93;&#x7CFB;&#x7EDF;&#x77E5;&#x8BC6;&#x70B9;&#x6574;&#x7406;">
+<meta property="og:url" content="http://yoursite.com/2018/03/22/&#x6570;&#x636E;&#x5E93;&#x7CFB;&#x7EDF;&#x77E5;&#x8BC6;&#x70B9;&#x6574;&#x7406;/index.html">
+<meta property="og:site_name" content="Kings Cooober&apos;s Blog">
+<meta property="og:description" content="&amp;#x6570;&amp;#x636E;&amp;#x5E93;&amp;#x7CFB;&amp;#x7EDF;&amp;#x6982;&amp;#x8BBA;1.1 &amp;#x6570;&amp;#x636E;&amp;#x5E93;&amp;#x7CFB;&amp;#x7EDF;&amp;#x6982;&amp;#x8FF0; &amp;#x6570;&amp;#x636E;&amp;#xFF1A;&amp;#x63CF;&amp;#x8FF0;&amp;#x4E8B;&amp;#x7269;&amp;#x7684;&amp;#x7B26;&amp;#x53F7;&amp;#x">
+<meta property="og:locale" content="zh-Hans">
+<meta property="og:updated_time" content="2018-03-22T13:18:24.602Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="&#x6570;&#x636E;&#x5E93;&#x7CFB;&#x7EDF;&#x77E5;&#x8BC6;&#x70B9;&#x6574;&#x7406;">
+<meta name="twitter:description" content="&amp;#x6570;&amp;#x636E;&amp;#x5E93;&amp;#x7CFB;&amp;#x7EDF;&amp;#x6982;&amp;#x8BBA;1.1 &amp;#x6570;&amp;#x636E;&amp;#x5E93;&amp;#x7CFB;&amp;#x7EDF;&amp;#x6982;&amp;#x8FF0; &amp;#x6570;&amp;#x636E;&amp;#xFF1A;&amp;#x63CF;&amp;#x8FF0;&amp;#x4E8B;&amp;#x7269;&amp;#x7684;&amp;#x7B26;&amp;#x53F7;&amp;#x">
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Gemini',
+    version: '5.1.4',
+    sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
+    fancybox: true,
+    tabs: true,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    duoshuo: {
+      userId: '0',
+      author: '博主'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+
+  <link rel="canonical" href="http://yoursite.com/2018/03/22/&#x6570;&#x636E;&#x5E93;&#x7CFB;&#x7EDF;&#x77E5;&#x8BC6;&#x70B9;&#x6574;&#x7406;/">
+
+
+
+
+
+  <title>&#x6570;&#x636E;&#x5E93;&#x7CFB;&#x7EDF;&#x77E5;&#x8BC6;&#x70B9;&#x6574;&#x7406; | Kings Cooober&apos;s Blog</title>
+  
+
+
+
+
+
+
+
+
+</head>
+
+<body itemscope="" itemtype="http://schema.org/WebPage" lang="zh-Hans">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left page-post-detail">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope="" itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/" class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">Kings Cooober&apos;s Blog</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <p class="site-subtitle"></p>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br>
+            
+            &#x9996;&#x9875;
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-about">
+          <a href="/about" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-user"></i> <br>
+            
+            &#x5173;&#x4E8E;
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br>
+            
+            &#x6807;&#x7B7E;
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-categories">
+          <a href="/categories" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-th"></i> <br>
+            
+            &#x5206;&#x7C7B;
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br>
+            
+            &#x5F52;&#x6863;
+          </a>
+        </li>
+      
+
+      
+        <li class="menu-item menu-item-search">
+          
+            <a href="javascript:;" class="popup-trigger">
+          
+            
+              <i class="menu-item-icon fa fa-search fa-fw"></i> <br>
+            
+            &#x641C;&#x7D22;
+          </a>
+        </li>
+      
+    </ul>
+  
+
+  
+    <div class="site-search">
+      
+  
+  <div class="algolia-popup popup search-popup">
+    <div class="algolia-search">
+      <div class="algolia-search-input-icon">
+        <i class="fa fa-search"></i>
+      </div>
+      <div class="algolia-search-input" id="algolia-search-input"></div>
+    </div>
+
+    <div class="algolia-results">
+      <div id="algolia-stats"></div>
+      <div id="algolia-hits"></div>
+      <div id="algolia-pagination" class="algolia-pagination"></div>
+    </div>
+
+    <span class="popup-btn-close">
+      <i class="fa fa-times-circle"></i>
+    </span>
+  </div>
+
+
+
+
+    </div>
+  
+</nav>
+
+
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/03/22/&#x6570;&#x636E;&#x5E93;&#x7CFB;&#x7EDF;&#x77E5;&#x8BC6;&#x70B9;&#x6574;&#x7406;/">
+
+    <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Kings Cooober">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Kings Cooober&apos;s Blog">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">&#x6570;&#x636E;&#x5E93;&#x7CFB;&#x7EDF;&#x77E5;&#x8BC6;&#x70B9;&#x6574;&#x7406;</h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+
+            
+
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-check-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">&#x66F4;&#x65B0;&#x4E8E;:</span>
+              
+              <time title="&#x66F4;&#x65B0;&#x4E8E;" itemprop="dateModified" datetime="2018-03-22T21:18:24+08:00">
+                2018-03-22
+              </time>
+            
+          </span>
+
+          
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">&#x5206;&#x7C7B;&#x4E8E;</span>
+              
+              
+                <span itemprop="about" itemscope="" itemtype="http://schema.org/Thing">
+                  <a href="/categories/&#x8BFB;&#x4E66;&#x7B14;&#x8BB0;/" itemprop="url" rel="index">
+                    <span itemprop="name">&#x8BFB;&#x4E66;&#x7B14;&#x8BB0;</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+             <span id="/2018/03/22/&#x6570;&#x636E;&#x5E93;&#x7CFB;&#x7EDF;&#x77E5;&#x8BC6;&#x70B9;&#x6574;&#x7406;/" class="leancloud_visitors" data-flag-title="&#x6570;&#x636E;&#x5E93;&#x7CFB;&#x7EDF;&#x77E5;&#x8BC6;&#x70B9;&#x6574;&#x7406;">
+               <span class="post-meta-divider">|</span>
+               <span class="post-meta-item-icon">
+                 <i class="fa fa-eye"></i>
+               </span>
+               
+                 <span class="post-meta-item-text">&#x9605;&#x8BFB;&#x6B21;&#x6570;:</span>
+               
+                 <span class="leancloud-visitors-count"></span>
+             </span>
+          
+
+          
+            <span class="post-meta-divider">|</span>
+            <span class="page-pv">&#x672C;&#x6587;&#x603B;&#x9605;&#x8BFB;&#x91CF; <i class="fa fa-file-o"></i>
+            <span class="busuanzi-value" id="busuanzi_value_page_pv"></span>&#x6B21;
+            </span>
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <h2 id="&#x6570;&#x636E;&#x5E93;&#x7CFB;&#x7EDF;&#x6982;&#x8BBA;"><a href="#&#x6570;&#x636E;&#x5E93;&#x7CFB;&#x7EDF;&#x6982;&#x8BBA;" class="headerlink" title="&#x6570;&#x636E;&#x5E93;&#x7CFB;&#x7EDF;&#x6982;&#x8BBA;"></a>&#x6570;&#x636E;&#x5E93;&#x7CFB;&#x7EDF;&#x6982;&#x8BBA;</h2><h3 id="1-1-&#x6570;&#x636E;&#x5E93;&#x7CFB;&#x7EDF;&#x6982;&#x8FF0;"><a href="#1-1-&#x6570;&#x636E;&#x5E93;&#x7CFB;&#x7EDF;&#x6982;&#x8FF0;" class="headerlink" title="1.1 &#x6570;&#x636E;&#x5E93;&#x7CFB;&#x7EDF;&#x6982;&#x8FF0;"></a>1.1 &#x6570;&#x636E;&#x5E93;&#x7CFB;&#x7EDF;&#x6982;&#x8FF0;</h3><ul>
+<li>&#x6570;&#x636E;&#xFF1A;&#x63CF;&#x8FF0;&#x4E8B;&#x7269;&#x7684;&#x7B26;&#x53F7;&#x8BB0;&#x5F55;&#x79F0;&#x4E3A;&#x6570;&#x636E;&#x3002;</li>
+<li>&#x6570;&#x636E;&#x5E93;&#xFF1A;&#x5B58;&#x653E;&#x6570;&#x636E;&#x7684;&#x4ED3;&#x5E93;&#x3002;&#x6570;&#x636E;&#x5E93;&#x662F;&#x957F;&#x671F;&#x50A8;&#x5B58;&#x5728;&#x8BA1;&#x7B97;&#x673A;&#x5185;&#xFF0C;&#x6709;&#x7EC4;&#x7EC7;&#x7684;&#xFF0C;&#x53EF;&#x5171;&#x4EAB;&#x7684;&#x5927;&#x91CF;&#x6570;&#x636E;&#x7684;&#x96C6;&#x5408;&#x3002;</li>
+<li>&#x6570;&#x636E;&#x5E93;&#x7BA1;&#x7406;&#x7CFB;&#x7EDF;&#xFF1A;&#x662F;&#x4F4D;&#x4E8E;&#x7528;&#x6237;&#x4E0E;&#x64CD;&#x4F5C;&#x7CFB;&#x7EDF;&#x4E4B;&#x95F4;&#x7684;&#x7684;&#x4E00;&#x5C42;&#x6570;&#x636E;&#x7BA1;&#x7406;&#x8F6F;&#x4EF6;&#x3002;&#x4E3B;&#x8981;&#x529F;&#x80FD;&#x6709;&#xFF1A;&#x6570;&#x636E;&#x5B9A;&#x4E49;&#x529F;&#x80FD;&#xFF1B;&#x6570;&#x636E;&#x7EC4;&#x7EC7;&#xFF0C;&#x5B58;&#x50A8;&#x548C;&#x7BA1;&#x7406;&#xFF1B;&#x6570;&#x636E;&#x64CD;&#x7EB5;&#x529F;&#x80FD;&#xFF1B;&#x6570;&#x636E;&#x5E93;&#x7684;&#x4E8B;&#x52A1;&#x7BA1;&#x7406;&#x548C;&#x8FD0;&#x884C;&#x7BA1;&#x7406;&#xFF1B;&#x6570;&#x636E;&#x5E93;&#x7684;&#x5EFA;&#x7ACB;&#x548C;&#x7EF4;&#x62A4;&#x529F;&#x80FD;&#xFF1B;&#x5176;&#x4ED6;&#x529F;&#x80FD;&#x3002;</li>
+<li>&#x6570;&#x636E;&#x5E93;&#x7CFB;&#x7EDF;&#xFF1A;&#x662F;&#x7531;&#x6570;&#x636E;&#x5E93;&#x3001;&#x6570;&#x636E;&#x5E93;&#x7BA1;&#x7406;&#x7CFB;&#x7EDF;&#xFF08;&#x53CA;&#x5176;&#x5E94;&#x7528;&#x5F00;&#x53D1;&#x5DE5;&#x5177;&#xFF09;&#x3001;&#x5E94;&#x7528;&#x7A0B;&#x5E8F;&#x548C;&#x6570;&#x636E;&#x5E93;&#x7BA1;&#x7406;&#x5458;&#xFF08;DataBase Administrator&#xFF09;&#x7EC4;&#x6210;&#x7684;&#x5B58;&#x50A8;&#x3001;&#x7BA1;&#x7406;&#x3001;&#x5904;&#x7406;&#x548C;&#x7EF4;&#x62A4;&#x6570;&#x636E;&#x7684;&#x7CFB;&#x7EDF;&#x3002;</li>
+<li><p>&#x6570;&#x636E;&#x5E93;&#x7BA1;&#x7406;&#x6280;&#x672F;&#x7ECF;&#x5386;&#x4E86;&#x4E09;&#x4E2A;&#x9636;&#x6BB5;&#xFF1A;&#x4EBA;&#x5DE5;&#x7BA1;&#x7406;&#x3001;&#x6587;&#x4EF6;&#x7CFB;&#x7EDF;&#x3001;&#x6570;&#x636E;&#x5E93;&#x7CFB;&#x7EDF;&#x3002;</p>
+</li>
+<li><p>&#x4EBA;&#x5DE5;&#x7BA1;&#x7406;&#x9636;&#x6BB5;</p>
+<ol>
+<li>&#x6570;&#x636E;&#x4E0D;&#x4FDD;&#x5B58;</li>
+<li>&#x5E94;&#x7528;&#x7A0B;&#x5E8F;&#x7BA1;&#x7406;&#x6570;&#x636E;</li>
+<li>&#x6570;&#x636E;&#x4E0D;&#x5171;&#x4EAB;</li>
+<li>&#x6570;&#x636E;&#x4E0D;&#x5177;&#x6709;&#x72EC;&#x7ACB;&#x6027;</li>
+</ol>
+</li>
+<li><p>&#x6587;&#x4EF6;&#x7CFB;&#x7EDF;&#x9636;&#x6BB5;</p>
+<ol>
+<li>&#x6570;&#x636E;&#x53EF;&#x4EE5;&#x957F;&#x671F;&#x4FDD;&#x5B58;</li>
+<li>&#x7531;&#x6587;&#x4EF6;&#x7CFB;&#x7EDF;&#x7BA1;&#x7406;&#x6570;&#x636E;</li>
+<li>&#x6570;&#x636E;&#x5171;&#x4EAB;&#x6027;&#x5DEE;&#xFF0C;&#x5197;&#x4F59;&#x5EA6;&#x5927;</li>
+<li>&#x6570;&#x636E;&#x72EC;&#x7ACB;&#x6027;&#x5DEE;</li>
+</ol>
+</li>
+<li><p>&#x6570;&#x636E;&#x5E93;&#x7CFB;&#x7EDF;&#x9636;&#x6BB5;</p>
+<ol>
+<li>&#x6570;&#x636E;&#x7ED3;&#x6784;&#x5316;&#x3002;&#x6570;&#x636E;&#x5E93;&#x7CFB;&#x7EDF;&#x5B9E;&#x73B0;&#x6574;&#x4F53;&#x6570;&#x636E;&#x7684;&#x7ED3;&#x6784;&#x5316;&#xFF0C;&#x8FD9;&#x662F;&#x6570;&#x636E;&#x5E93;&#x7684;&#x4E3B;&#x8981;&#x7279;&#x5F81;&#x4E4B;&#x4E00;&#xFF0C;&#x4E5F;&#x662F;&#x6570;&#x636E;&#x5E93;&#x7CFB;&#x7EDF;&#x4E0E;&#x6587;&#x4EF6;&#x7CFB;&#x7EDF;&#x7684;&#x672C;&#x8D28;&#x533A;&#x522B;</li>
+<li>&#x6570;&#x636E;&#x7684;&#x5171;&#x4EAB;&#x6027;&#x9AD8;&#x3001;&#x5197;&#x4F59;&#x5EA6;&#x4F4E;&#x4E14;&#x6291;&#x90C1;&#x6269;&#x5145;&#x3002;&#x6570;&#x636E;&#x5171;&#x4EAB;&#x53EF;&#x4EE5;&#x5927;&#x5927;&#x51CF;&#x5C11;&#x6570;&#x636E;&#x5197;&#x4F59;&#xFF0C;&#x8282;&#x7EA6;&#x5B58;&#x50A8;&#x7A7A;&#x95F4;&#xFF0C;&#x6570;&#x636E;&#x5171;&#x4EAB;&#x8FD8;&#x80FD;&#x907F;&#x514D;&#x6570;&#x636E;&#x4E4B;&#x95F4;&#x7684;&#x4E0D;&#x76F8;&#x5BB9;&#x6027;&#x4E0E;&#x4E0D;&#x4E00;&#x81F4;&#x6027;</li>
+<li>&#x6570;&#x636E;&#x72EC;&#x7ACB;&#x6027;&#x9AD8;&#x3002;&#x6570;&#x636E;&#x72EC;&#x7ACB;&#x6027;&#x5305;&#x62EC;&#x7269;&#x7406;&#x72EC;&#x7ACB;&#x6027;&#x3001;&#x903B;&#x8F91;&#x72EC;&#x7ACB;&#x6027;&#x3002;&#x7269;&#x7406;&#x72EC;&#x7ACB;&#x6027;&#x662F;&#x6307;&#x7528;&#x6237;&#x7684;&#x5E94;&#x7528;&#x7A0B;&#x5E8F;&#x4E0E;&#x6570;&#x636E;&#x5E93;&#x4E2D;&#x7684;&#x7269;&#x7406;&#x5B58;&#x50A8;&#x662F;&#x76F8;&#x4E92;&#x72EC;&#x7ACB;&#x7684;&#x3002;&#x903B;&#x8F91;&#x72EC;&#x7ACB;&#x6027;&#x662F;&#x6307;&#x7528;&#x6237;&#x7684;&#x5E94;&#x7528;&#x7A0B;&#x5E8F;&#x4E0E;&#x6570;&#x636E;&#x5E93;&#x7684;&#x903B;&#x8F91;&#x7ED3;&#x6784;&#x662F;&#x76F8;&#x4E92;&#x72EC;&#x7ACB;&#x7684;&#x3002;</li>
+<li>&#x6570;&#x636E;&#x7531;&#x6570;&#x636E;&#x5E93;&#x7BA1;&#x7406;&#x7CFB;&#x7EDF;&#x7EDF;&#x4E00;&#x7BA1;&#x7406;&#x548C;&#x63A7;&#x5236;&#x3002;&#x6570;&#x636E;&#x5E93;&#x7BA1;&#x7406;&#x7CFB;&#x7EDF;&#x8FD8;&#x5FC5;&#x987B;&#x63D0;&#x4F9B;&#x4EE5;&#x4E0B;&#x51E0;&#x4E2A;&#x65B9;&#x9762;&#x7684;&#x6570;&#x636E;&#x63A7;&#x5236;&#x529F;&#x80FD;&#xFF1A;<ol>
+<li>&#x6570;&#x636E;&#x7684;&#x5B89;&#x5168;&#x6027;&#x4FDD;&#x62A4;&#xFF1A;&#x662F;&#x6307;&#x4FDD;&#x62A4;&#x6570;&#x636E;&#x4EE5;&#x9632;&#x6B62;&#x4E0D;&#x5408;&#x6CD5;&#x4F7F;&#x7528;&#x9020;&#x6210;&#x7684;&#x6570;&#x636E;&#x6CC4;&#x5BC6;&#x548C;&#x7834;&#x574F;&#x3002;</li>
+<li>&#x6570;&#x636E;&#x7684;&#x5B8C;&#x6574;&#x6027;&#x68C0;&#x67E5;&#xFF1A;&#x662F;&#x6307;&#x6570;&#x636E;&#x7684;&#x6B63;&#x786E;&#x6027;&#x3011;&#x6709;&#x6548;&#x6027;&#x548C;&#x76F8;&#x5BB9;&#x6027;&#x3002;</li>
+<li>&#x5E76;&#x53D1;&#x63A7;&#x5236;</li>
+<li>&#x6570;&#x636E;&#x5E93;&#x6062;&#x590D;</li>
+</ol>
+</li>
+</ol>
+</li>
+</ul>
+<h3 id="1-2-&#x6570;&#x636E;&#x6A21;&#x578B;"><a href="#1-2-&#x6570;&#x636E;&#x6A21;&#x578B;" class="headerlink" title="1.2 &#x6570;&#x636E;&#x6A21;&#x578B;"></a>1.2 &#x6570;&#x636E;&#x6A21;&#x578B;</h3><ul>
+<li>&#x6570;&#x636E;&#x6A21;&#x578B;&#x662F;&#x5BF9;&#x73B0;&#x5B9E;&#x4E16;&#x754C;&#x6570;&#x636E;&#x7279;&#x5F81;&#x7684;&#x62BD;&#x8C61;&#xFF0C;&#x4E5F;&#x5C31;&#x662F;&#x8BF4;&#x6570;&#x636E;&#x6A21;&#x578B;&#x662F;&#x7528;&#x6765;&#x63CF;&#x8FF0;&#x6570;&#x636E;&#x3001;&#x7EC4;&#x7EC7;&#x6570;&#x636E;&#x548C;&#x5BF9;&#x6570;&#x636E;&#x8FDB;&#x884C;&#x64CD;&#x4F5C;&#x7684;&#xFF1B;&#x6570;&#x636E;&#x6A21;&#x578B;&#x662F;&#x6570;&#x636E;&#x5E93;&#x7CFB;&#x7EDF;&#x7684;&#x6838;&#x5FC3;&#x548C;&#x57FA;&#x7840;&#x3002;</li>
+<li>&#x6570;&#x636E;&#x6A21;&#x578B;&#x5E94;&#x6EE1;&#x8DB3;&#x4E09;&#x65B9;&#x9762;&#x7684;&#x8981;&#x6C42;&#xFF1A;&#x4E00;&#x662F;&#x6BD4;&#x8F83;&#x771F;&#x5B9E;&#x7684;&#x6A21;&#x62DF;&#x73B0;&#x5B9E;&#x4E16;&#x754C;&#xFF0C;&#x4E8C;&#x662F;&#x5BB9;&#x6613;&#x4E3A;&#x4EBA;&#x6240;&#x7406;&#x89E3;&#xFF0C;&#x4E09;&#x662F;&#x4FBF;&#x4E8E;&#x5728;&#x8BA1;&#x7B97;&#x673A;&#x4E0A;&#x5B9E;&#x73B0;&#x3002;</li>
+<li><p>&#x6839;&#x636E;&#x6A21;&#x578B;&#x5E94;&#x7528;&#x7684;&#x4E0D;&#x540C;&#x76EE;&#x7684;&#xFF0C;&#x53EF;&#x4EE5;&#x5C06;&#x8FD9;&#x4E9B;&#x6A21;&#x578B;&#x5206;&#x4E3A;&#x4E24;&#x5927;&#x7C7B;&#xFF1A;&#x7B2C;&#x4E00;&#x7C7B;&#x662F;&#x6982;&#x5FF5;&#x6A21;&#x578B;&#xFF0C;&#x7B2C;&#x4E8C;&#x7C7B;&#x662F;&#x903B;&#x8F91;&#x6A21;&#x578B;&#x548C;&#x7269;&#x7406;&#x6A21;&#x578B;&#x3002;</p>
+<ol>
+<li>&#x7B2C;&#x4E00;&#x7C7B;&#x6982;&#x5FF5;&#x6A21;&#x578B;&#xFF0C;&#x4E5F;&#x79F0;&#x4FE1;&#x606F;&#x6A21;&#x578B;&#xFF0C;&#x5B83;&#x662F;&#x6309;&#x7528;&#x6237;&#x7684;&#x89C2;&#x70B9;&#x6765;&#x5BF9;&#x6570;&#x636E;&#x548C;&#x4FE1;&#x606F;&#x5EFA;&#x6A21;&#xFF0C;&#x4E3B;&#x8981;&#x7528;&#x4E8E;&#x6570;&#x636E;&#x5E93;&#x8BBE;&#x8BA1;&#x3002;</li>
+<li>&#x7B2C;&#x4E8C;&#x7C7B;&#x7684;&#x903B;&#x8F91;&#x6A21;&#x578B;&#x4E3B;&#x8981;&#x5305;&#x62EC;&#x5C42;&#x6B21;&#x6A21;&#x578B;&#x3001;&#x7F51;&#x72B6;&#x6A21;&#x578B;&#x3001;&#x5173;&#x7CFB;&#x6A21;&#x578B;&#x3001;&#x9762;&#x5411;&#x5BF9;&#x8C61;&#x6570;&#x636E;&#x6A21;&#x578B;&#x548C;&#x5BF9;&#x8C61;&#x5173;&#x7CFB;&#x6570;&#x636E;&#x6A21;&#x578B;&#x3001;&#x534A;&#x7ED3;&#x6784;&#x5316;&#x6570;&#x636E;&#x6A21;&#x578B;&#x7B49;&#x3002;&#x5B83;&#x662F;&#x6309;&#x8BA1;&#x7B97;&#x673A;&#x7CFB;&#x7EDF;&#x7684;&#x89C2;&#x70B9;&#x5BF9;&#x6570;&#x636E;&#x5EFA;&#x6A21;&#xFF0C;&#x4E3B;&#x8981;&#x7528;&#x4E8E;&#x6570;&#x636E;&#x5E93;&#x7BA1;&#x7406;&#x7CFB;&#x7EDF;&#x7684;&#x5B9E;&#x73B0;&#x3002;</li>
+<li>&#x7B2C;&#x4E8C;&#x7C7B;&#x4E2D;&#x7684;&#x7269;&#x7406;&#x6A21;&#x578B;&#x662F;&#x5BF9;&#x6570;&#x636E;&#x6700;&#x5E95;&#x5C42;&#x7684;&#x62BD;&#x8C61;&#xFF0C;&#x5B83;&#x63CF;&#x8FF0;&#x6570;&#x636E;&#x5728;&#x7CFB;&#x7EDF;&#x5185;&#x90E8;&#x7684;&#x8868;&#x793A;&#x65B9;&#x5F0F;&#x548C;&#x5B58;&#x53D6;&#x65B9;&#x6CD5;&#xFF0C;&#x662F;&#x9762;&#x5411;&#x8BA1;&#x7B97;&#x673A;&#x7CFB;&#x7EDF;&#x7684;&#x3002;</li>
+</ol>
+</li>
+<li><p>&#x5B9E;&#x4F53;&#xFF1A;&#x5BA2;&#x89C2;&#x5B58;&#x5728;&#x5E76;&#x53EF;&#x76F8;&#x4E92;&#x533A;&#x522B;&#x7684;&#x4E8B;&#x7269;&#x79F0;&#x4E3A;&#x5B9E;&#x4F53;</p>
+</li>
+<li>&#x5C5E;&#x6027;&#xFF1A;&#x5B9E;&#x4F53;&#x5177;&#x6709;&#x7684;&#x67D0;&#x4E00;&#x7279;&#x5F81;&#x79F0;&#x4E3A;&#x5C5E;&#x6027;</li>
+<li>&#x7801;&#xFF1A;&#x552F;&#x4E00;&#x6807;&#x8BC6;&#x5B9E;&#x4F53;&#x7684;&#x5C5E;&#x6027;&#x96C6;&#x79F0;&#x4E3A;&#x7801;</li>
+<li>&#x5B9E;&#x4F53;&#x578B;&#xFF1A;&#x5177;&#x6709;&#x76F8;&#x540C;&#x5C5E;&#x6027;&#x7684;&#x5B9E;&#x4F53;&#x5FC5;&#x7136;&#x5177;&#x6709;&#x5171;&#x540C;&#x7684;&#x7279;&#x5F81;&#x548C;&#x6027;&#x8D28;&#xFF0C;&#x7528;&#x5B9E;&#x4F53;&#x540D;&#x53CA;&#x5176;&#x5C5E;&#x6027;&#x540D;&#x96C6;&#x5408;&#x6765;&#x62BD;&#x8C61;&#x548C;&#x523B;&#x753B;&#x540C;&#x7C7B;&#x5B9E;&#x4F53;&#xFF0C;&#x79F0;&#x4E3A;&#x5B9E;&#x4F53;&#x578B;&#x3002;</li>
+<li>&#x5B9E;&#x4F53;&#x96C6;&#xFF1A;&#x540C;&#x4E00;&#x7C7B;&#x578B;&#x5B9E;&#x4F53;&#x7684;&#x96C6;&#x5408;&#x79F0;&#x4E3A;&#x5B9E;&#x4F53;&#x96C6;&#x3002;</li>
+<li><p>&#x8054;&#x7CFB;&#xFF1A;&#x5B9E;&#x4F53;&#x5185;&#x90E8;&#x4EE5;&#x53CA;&#x5B9E;&#x4F53;&#x4E4B;&#x95F4;&#x662F;&#x6709;&#x8054;&#x7CFB;&#x7684;&#x3002;&#x5B9E;&#x4F53;&#x5185;&#x90E8;&#x7684;&#x8054;&#x7CFB;&#x901A;&#x5E38;&#x662F;&#x6307;&#x7EC4;&#x6210;&#x5B9E;&#x4F53;&#x7684;&#x4E2A;&#x5C5E;&#x6027;&#x4E4B;&#x95F4;&#x7684;&#x8054;&#x7CFB;&#xFF0C;&#x5B9E;&#x4F53;&#x4E4B;&#x95F4;&#x7684;&#x8054;&#x7CFB;&#x901A;&#x5E38;&#x662F;&#x6307;&#x4E0D;&#x540C;&#x5B9E;&#x4F53;&#x96C6;&#x4E4B;&#x95F4;&#x7684;&#x8054;&#x7CFB;&#x3002;</p>
+<ul>
+<li>&#x5B9E;&#x4F53;&#x4E4B;&#x95F4;&#x7684;&#x8054;&#x7CFB;&#x6709;&#x4E00;&#x5BF9;&#x4E00;&#x3001;&#x4E00;&#x5BF9;&#x591A;&#x548C;&#x591A;&#x5BF9;&#x591A;&#x7B49;&#x591A;&#x79CD;&#x8054;&#x7CFB;&#x3002;</li>
+</ul>
+</li>
+<li><p>&#x6982;&#x5FF5;&#x6A21;&#x578B;&#x7684;&#x4E00;&#x79CD;&#x8868;&#x793A;&#x65B9;&#x6CD5;&#xFF1A;&#x5B9E;&#x4F53;-&#x8054;&#x7CFB;&#x65B9;&#x6CD5;&#xFF08;Entity-Relationship approach&#xFF09;&#x3002;&#x8BE5;&#x65B9;&#x6CD5;&#x7528; E - R &#x56FE;&#xFF08;E - R diagram&#xFF09;&#x6765;&#x63CF;&#x8FF0;&#x73B0;&#x5B9E;&#x4E16;&#x754C;&#x7684;&#x6982;&#x5FF5;&#x6A21;&#x578B;&#xFF0C;E - R &#x65B9;&#x6CD5;&#x4E5F;&#x79F0;&#x4E3A; E - R &#x6A21;&#x578B;&#x3002;</p>
+</li>
+<li><p>&#x6570;&#x636E;&#x6A21;&#x578B;&#x901A;&#x5E38;&#x7531;&#x6570;&#x636E;&#x7ED3;&#x6784;&#x3001;&#x6570;&#x636E;&#x64CD;&#x4F5C;&#x548C;&#x6570;&#x636E;&#x7684;&#x5B8C;&#x6574;&#x6027;&#x7EA6;&#x675F;&#x6761;&#x4EF6;&#x4E09;&#x90E8;&#x5206;&#x7EC4;&#x6210;&#x3002;</p>
+<ol>
+<li>&#x6570;&#x636E;&#x7ED3;&#x6784;&#xFF1A;&#x6570;&#x636E;&#x7ED3;&#x6784;&#x63CF;&#x8FF0;&#x6570;&#x636E;&#x5E93;&#x7EC4;&#x6210;&#x5BF9;&#x8C61;&#x4EE5;&#x53CA;&#x5BF9;&#x8C61;&#x4E4B;&#x95F4;&#x7684;&#x8054;&#x7CFB;&#x3002;</li>
+<li>&#x6570;&#x636E;&#x64CD;&#x4F5C;&#xFF1A;&#x6570;&#x636E;&#x64CD;&#x4F5C;&#x662F;&#x6307;&#x6570;&#x636E;&#x5E93;&#x4E2D;&#x5404;&#x79CD;&#x5BF9;&#x8C61;&#xFF08;&#x578B;&#xFF09;&#x7684;&#x5B9E;&#x4F8B;&#xFF08;&#x503C;&#xFF09;&#x5141;&#x8BB8;&#x6267;&#x884C;&#x7684;&#x64CD;&#x4F5C;&#x7684;&#x96C6;&#x5408;&#xFF0C;&#x5305;&#x62EC;&#x64CD;&#x4F5C;&#x53CA;&#x6709;&#x5173;&#x7684;&#x64CD;&#x4F5C;&#x89C4;&#x5219;&#x3002;&#x6570;&#x636E;&#x5E93;&#x4E3B;&#x8981;&#x6709;&#x67E5;&#x8BE2;&#x548C;&#x66F4;&#x65B0;&#xFF08;&#x5305;&#x62EC;&#x63D2;&#x5165;&#x3001;&#x5220;&#x9664;&#x548C;&#x4FEE;&#x6539;&#xFF09;&#x4E24;&#x5927;&#x7C7B;&#x64CD;&#x4F5C;&#x3002;</li>
+<li>&#x6570;&#x636E;&#x7684;&#x5B8C;&#x6574;&#x6027;&#x7EA6;&#x675F;&#x6761;&#x4EF6;&#xFF1A;&#x6570;&#x636E;&#x7684;&#x5B8C;&#x6574;&#x6027;&#x7EA6;&#x675F;&#x6761;&#x4EF6;&#x662F;&#x4E00;&#x7EC4;&#x5B8C;&#x6574;&#x6027;&#x89C4;&#x5219;&#x3002;&#x5B8C;&#x6574;&#x6027;&#x89C4;&#x5219;&#x662F;&#x7ED9;&#x5B9A;&#x7684;&#x6570;&#x636E;&#x6A21;&#x578B;&#x4E2D;&#x6570;&#x636E;&#x53CA;&#x5176;&#x8054;&#x7CFB;&#x6240;&#x5177;&#x6709;&#x7684;&#x5236;&#x7EA6;&#x548C;&#x4F9D;&#x5B58;&#x89C4;&#x5219;&#xFF0C;&#x7528;&#x4EE5;&#x9650;&#x5B9A;&#x7B26;&#x5408;&#x6570;&#x636E;&#x6A21;&#x578B;&#x7684;&#x6570;&#x636E;&#x5E93;&#x72B6;&#x6001;&#x4EE5;&#x53CA;&#x72B6;&#x6001;&#x7684;&#x53D8;&#x5316;&#xFF0C;&#x4EE5;&#x4FDD;&#x8BC1;&#x6570;&#x636E;&#x7684;&#x6B63;&#x786E;&#xFF0C;&#x6709;&#x6548;&#x548C;&#x76F8;&#x5BB9;&#x3002;</li>
+</ol>
+</li>
+<li><p>&#x6570;&#x636E;&#x5E93;&#x9886;&#x57DF;&#x4E2D;&#x4E3B;&#x8981;&#x7684;&#x903B;&#x8F91;&#x6570;&#x636E;&#x6A21;&#x578B;&#x6709;&#xFF1A;</p>
+<ol>
+<li>&#x5C42;&#x6B21;&#x6A21;&#x578B;</li>
+<li>&#x7F51;&#x72B6;&#x6A21;&#x578B;</li>
+<li>&#x5173;&#x7CFB;&#x6A21;&#x578B;</li>
+<li>&#x9762;&#x5411;&#x5BF9;&#x8C61;&#x6570;&#x636E;&#x6A21;&#x578B;</li>
+<li>&#x5BF9;&#x8C61;&#x5173;&#x7CFB;&#x6570;&#x636E;&#x6A21;&#x578B;</li>
+<li>&#x534A;&#x7ED3;&#x6784;&#x5316;&#x6570;&#x636E;&#x6A21;&#x578B;</li>
+</ol>
+<ul>
+<li>&#x5176;&#x4E2D;&#x5C42;&#x6B21;&#x6A21;&#x578B;&#x548C;&#x7F51;&#x72B6;&#x6A21;&#x578B;&#x7EDF;&#x79F0;&#x4E3A;&#x683C;&#x5F0F;&#x5316;&#x6A21;&#x578B;</li>
+</ul>
+</li>
+<li><p>&#x5C42;&#x6B21;&#x6A21;&#x578B;&#x7684;&#x6570;&#x636E;&#x7ED3;&#x6784;&#xFF1A;</p>
+<ol>
+<li>&#x6709;&#x4E14;&#x53EA;&#x6709;&#x4E00;&#x4E2A;&#x8282;&#x70B9;&#x6CA1;&#x6709;&#x53CC;&#x4EB2;&#x7ED3;&#x70B9;&#xFF0C;&#x8FD9;&#x4E2A;&#x7ED3;&#x70B9;&#x79F0;&#x4E3A;&#x6839;&#x8282;&#x70B9;</li>
+<li>&#x6839;&#x4EE5;&#x5916;&#x7684;&#x5176;&#x4ED6;&#x7ED3;&#x70B9;&#x6709;&#x4E14;&#x53EA;&#x6709;&#x4E00;&#x4E2A;&#x53CC;&#x4EB2;&#x7ED3;&#x70B9;</li>
+</ol>
+<ul>
+<li>&#x5C42;&#x6B21;&#x6A21;&#x578B;&#x50CF;&#x4E00;&#x68F5;&#x5012;&#x7ACB;&#x7684;&#x6811;&#xFF0C;&#x8282;&#x70B9;&#x7684;&#x53CC;&#x4EB2;&#x662F;&#x552F;&#x4E00;&#x7684;</li>
+</ul>
+</li>
+<li><p>&#x7F51;&#x72B6;&#x6A21;&#x578B;&#x7684;&#x6570;&#x636E;&#x7ED3;&#x6784;&#xFF1A;</p>
+<ol>
+<li>&#x5141;&#x8BB8;&#x4E00;&#x4E2A;&#x4EE5;&#x4E0A;&#x7684;&#x7ED3;&#x70B9;&#x65E0;&#x53CC;&#x4EB2;</li>
+<li>&#x4E00;&#x4E2A;&#x7ED3;&#x70B9;&#x53EF;&#x4EE5;&#x6709;&#x591A;&#x4E8E;&#x4E00;&#x4E2A;&#x7684;&#x53CC;&#x4EB2;</li>
+</ol>
+</li>
+<li><p>&#x5173;&#x7CFB;&#x6A21;&#x578B;&#x6570;&#x636E;&#x7ED3;&#x6784;&#xFF1A;</p>
+<ol>
+<li>&#x5173;&#x7CFB;&#xFF08;relation&#xFF09;&#xFF1A;&#x4E00;&#x4E2A;&#x5173;&#x7CFB;&#x5BF9;&#x5E94;&#x4E00;&#x5F20;&#x8868;&#x3002;</li>
+<li>&#x5143;&#x7EC4;&#xFF08;tuple&#xFF09;&#xFF1A;&#x8868;&#x4E2D;&#x7684;&#x4E00;&#x884C;&#x5373;&#x4E3A;&#x4E00;&#x4E2A;&#x5143;&#x7956;&#x3002;</li>
+<li>&#x5C5E;&#x6027;&#xFF08;attribute&#xFF09;&#xFF1A;&#x8868;&#x4E2D;&#x7684;&#x4E00;&#x5217;&#x5373;&#x4E3A;&#x4E00;&#x4E2A;&#x5C5E;&#x6027;</li>
+<li>&#x7801;&#xFF08;key&#xFF09;&#xFF1A;&#x4E5F;&#x79F0;&#x7801;&#x952E;&#x3002;&#x8868;&#x4E2D;&#x7684;&#x67D0;&#x4E2A;&#x5C5E;&#x6027;&#x7EC4;&#xFF0C;&#x5B83;&#x53EF;&#x4EE5;&#x552F;&#x4E00;&#x786E;&#x5B9A;&#x4E00;&#x4E2A;&#x5143;&#x7956;&#x3002;</li>
+<li>&#x57DF;&#xFF08;domain&#xFF09;&#xFF1A;&#x57DF;&#x662F;&#x4E00;&#x7EC4;&#x5177;&#x6709;&#x76F8;&#x540C;&#x6570;&#x636E;&#x7C7B;&#x578B;&#x7684;&#x503C;&#x7684;&#x96C6;&#x5408;&#x3002;&#x5C5E;&#x6027;&#x7684;&#x53D6;&#x503C;&#x8303;&#x56F4;&#x6765;&#x81EA;&#x67D0;&#x4E2A;&#x57DF;&#x3002;</li>
+<li>&#x5206;&#x91CF;&#xFF1A;&#x5143;&#x7EC4;&#x4E2D;&#x7684;&#x4E00;&#x4E2A;&#x5C5E;&#x6027;&#x503C;&#x3002;</li>
+</ol>
+<ul>
+<li>&#x5173;&#x7CFB;&#x6A21;&#x5F0F;&#x4E00;&#x822C;&#x8868;&#x793A;&#x4E3A;&#xFF1A;&#x5173;&#x7CFB;&#x540D;&#xFF08;&#x5C5E;&#x6027;1&#xFF0C;&#x5C5E;&#x6027;2&#xFF0C;&#x2026;&#xFF0C;&#x5C5E;&#x6027;n&#xFF09;</li>
+<li>&#x5173;&#x7CFB;&#x6A21;&#x578B;&#x8981;&#x6C42;&#x5173;&#x7CFB;&#x5FC5;&#x987B;&#x662F;&#x89C4;&#x8303;&#x5316;&#x7684;&#xFF0C;&#x5173;&#x7CFB;&#x7684;&#x6BCF;&#x4E00;&#x4E2A;&#x5206;&#x91CF;&#x5FC5;&#x987B;&#x662F;&#x4E00;&#x4E2A;&#x4E0D;&#x53EF;&#x5206;&#x7684;&#x6570;&#x636E;&#x9879;&#x3002;</li>
+</ul>
+</li>
+</ul>
+<h3 id="1-3-&#x6570;&#x636E;&#x5E93;&#x7CFB;&#x7EDF;&#x7684;&#x7ED3;&#x6784;"><a href="#1-3-&#x6570;&#x636E;&#x5E93;&#x7CFB;&#x7EDF;&#x7684;&#x7ED3;&#x6784;" class="headerlink" title="1.3 &#x6570;&#x636E;&#x5E93;&#x7CFB;&#x7EDF;&#x7684;&#x7ED3;&#x6784;"></a>1.3 &#x6570;&#x636E;&#x5E93;&#x7CFB;&#x7EDF;&#x7684;&#x7ED3;&#x6784;</h3><ul>
+<li><p>&#x6570;&#x636E;&#x5E93;&#x7CFB;&#x7EDF;&#x7684;&#x4E09;&#x7EA7;&#x6A21;&#x5F0F;&#x7ED3;&#x6784;&#x662F;&#x6307;&#x6570;&#x636E;&#x5E93;&#x7CFB;&#x7EDF;&#x662F;&#x7531;&#x5916;&#x6A21;&#x5F0F;&#x3001;&#x6A21;&#x5F0F;&#x548C;&#x5185;&#x6A21;&#x5F0F;&#x4E09;&#x673A;&#x6784;&#x6210;&#x3002;</p>
+<ol>
+<li>&#x5916;&#x6A21;&#x5F0F;&#xFF1A;&#x5916;&#x6A21;&#x5F0F;&#x4E5F;&#x79F0;&#x5B50;&#x6A21;&#x5F0F;&#x6216;&#x7528;&#x6237;&#x6A21;&#x5F0F;&#xFF0C;&#x5B83;&#x662F;&#x6570;&#x636E;&#x5E93;&#x7528;&#x6237;&#x80FD;&#x591F;&#x770B;&#x89C1;&#x548C;&#x4F7F;&#x7528;&#x7684;&#x5C40;&#x90E8;&#x6570;&#x636E;&#x7684;&#x903B;&#x8F91;&#x7ED3;&#x6784;&#x548C;&#x7279;&#x5F81;&#x7684;&#x63CF;&#x8FF0;&#xFF0C;&#x662F;&#x6570;&#x636E;&#x5E93;&#x7528;&#x6237;&#x7684;&#x6570;&#x636E;&#x89C6;&#x56FE;&#xFF0C;&#x662F;&#x4E0E;&#x67D0;&#x4E00;&#x5E94;&#x7528;&#x6709;&#x5173;&#x7684;&#x6570;&#x636E;&#x7684;&#x903B;&#x8F91;&#x8868;&#x793A;&#x3002;&#x5916;&#x6A21;&#x5F0F;&#x901A;&#x5E38;&#x662F;&#x6A21;&#x5F0F;&#x7684;&#x5B50;&#x96C6;&#xFF0C;&#x4E00;&#x4E2A;&#x6570;&#x636E;&#x5E93;&#x53EF;&#x4EE5;&#x6709;&#x591A;&#x4E2A;&#x5916;&#x6A21;&#x5F0F;&#x3002;&#x6570;&#x636E;&#x5E93;&#x7BA1;&#x7406;&#x7CFB;&#x7EDF;&#x63D0;&#x4F9B;&#x5916;&#x6A21;&#x5F0F;&#x6570;&#x636E;&#x5B9A;&#x4E49;&#x8BED;&#x8A00;&#xFF08;&#x5916;&#x6A21;&#x5F0F;DDL&#xFF09;&#x6765;&#x4E25;&#x683C;&#x5730;&#x5B9A;&#x4E49;&#x5916;&#x6A21;&#x5F0F;&#x3002;</li>
+<li>&#x6A21;&#x5F0F;&#xFF1A;&#x6A21;&#x5F0F;&#x4E5F;&#x79F0;&#x903B;&#x8F91;&#x6A21;&#x5F0F;&#xFF0C;&#x662F;&#x6570;&#x636E;&#x5E93;&#x4E2D;&#x5168;&#x4F53;&#x6570;&#x636E;&#x7684;&#x903B;&#x8F91;&#x7ED3;&#x6784;&#x548C;&#x7279;&#x5F81;&#x7684;&#x63CF;&#x8FF0;&#xFF0C;&#x662F;&#x6240;&#x6709;&#x7528;&#x6237;&#x7684;&#x516C;&#x5171;&#x6570;&#x636E;&#x89C6;&#x56FE;&#x3002;&#x6A21;&#x5F0F;&#x5B9E;&#x9645;&#x4E0A;&#x662F;&#x6570;&#x636E;&#x5E93;&#x6570;&#x636E;&#x5728;&#x903B;&#x8F91;&#x7EA7;&#x4E0A;&#x7684;&#x89C6;&#x56FE;&#xFF0C;&#x4E00;&#x4E2A;&#x6570;&#x636E;&#x5E93;&#x53EA;&#x6709;&#x4E00;&#x4E2A;&#x6A21;&#x5F0F;&#x3002;&#x6570;&#x636E;&#x5E93;&#x7BA1;&#x7406;&#x7CFB;&#x7EDF;&#x63D0;&#x4F9B;&#x6A21;&#x5F0F;&#x6570;&#x636E;&#x5B9A;&#x4E49;&#x8BED;&#x8A00;&#xFF08;&#x6A21;&#x5F0F;DDL&#xFF09;&#x6765;&#x4E25;&#x683C;&#x5B9A;&#x4E49;&#x6A21;&#x5F0F;&#x3002;</li>
+<li>&#x5185;&#x6A21;&#x5F0F;&#xFF1A;&#x5185;&#x6A21;&#x5F0F;&#x4E5F;&#x79F0;&#x5B58;&#x50A8;&#x6A21;&#x5F0F;&#xFF0C;&#x4E00;&#x4E2A;&#x6570;&#x636E;&#x5E93;&#x53EA;&#x6709;&#x4E00;&#x4E2A;&#x5185;&#x6A21;&#x5F0F;&#xFF0C;&#x5B83;&#x662F;&#x6570;&#x636E;&#x7269;&#x7406;&#x7ED3;&#x6784;&#x4E0E;&#x5B58;&#x50A8;&#x65B9;&#x5F0F;&#x7684;&#x63CF;&#x8FF0;&#xFF0C;&#x662F;&#x6570;&#x636E;&#x5728;&#x6570;&#x636E;&#x5E93;&#x5185;&#x90E8;&#x7684;&#x7EC4;&#x7EC7;&#x65B9;&#x5F0F;&#x3002;</li>
+</ol>
+</li>
+<li><p>&#x6570;&#x636E;&#x5E93;&#x7CFB;&#x7EDF;&#x7684;&#x4E09;&#x7EA7;&#x6A21;&#x5F0F;&#x662F;&#x6570;&#x636E;&#x7684;&#x4E09;&#x4E2A;&#x62BD;&#x8C61;&#x7EA7;&#x522B;&#xFF0C;&#x4ED6;&#x628A;&#x6570;&#x636E;&#x7684;&#x5177;&#x4F53;&#x7EC4;&#x7EC7;&#x7559;&#x7ED9;&#x6570;&#x636E;&#x5E93;&#x7BA1;&#x7406;&#x7CFB;&#x7EDF;&#x7BA1;&#x7406;&#xFF0C;&#x4F7F;&#x7528;&#x6237;&#x80FD;&#x903B;&#x8F91;&#x5730;&#x3001;&#x62BD;&#x8C61;&#x5730;&#x5904;&#x7406;&#x6570;&#x636E;&#xFF0C;&#x800C;&#x4E0D;&#x5173;&#x5FC3;&#x6570;&#x636E;&#x5728;&#x8BA1;&#x7B97;&#x673A;&#x4E2D;&#x7684;&#x5177;&#x4F53;&#x8868;&#x73B0;&#x65B9;&#x5F0F;&#x4E0E;&#x5B58;&#x50A8;&#x65B9;&#x5F0F;&#x3002;&#x4E3A;&#x4E86;&#x80FD;&#x591F;&#x5728;&#x7CFB;&#x7EDF;&#x5185;&#x90E8;&#x5B9E;&#x73B0;&#x8FD9;&#x4E09;&#x4E2A;&#x62BD;&#x8C61;&#x5C42;&#x6B21;&#x7684;&#x8054;&#x7CFB;&#x548C;&#x8F6C;&#x6362;&#xFF0C;&#x6570;&#x636E;&#x5E93;&#x7BA1;&#x7406;&#x7CFB;&#x7EDF;&#x5728;&#x8FD9;&#x4E09;&#x7EA7;&#x6A21;&#x5F0F;&#x4E4B;&#x95F4;&#x63D0;&#x4F9B;&#x4E86;&#x4E24;&#x5C42;&#x6620;&#x50CF;&#xFF1A;&#x5916;&#x6A21;&#x5F0F; / &#x6A21;&#x5F0F;&#x6620;&#x50CF;&#x548C;&#x6A21;&#x5F0F;/&#x5185;&#x6A21;&#x5F0F;&#x6620;&#x50CF;&#x3002;</p>
+</li>
+<li>&#x4E24;&#x5C42;&#x6620;&#x50CF;&#x4FDD;&#x8BC1;&#x4E86;&#x6570;&#x636E;&#x5E93;&#x7CFB;&#x7EDF;&#x4E2D;&#x7684;&#x6570;&#x636E;&#x80FD;&#x591F;&#x5177;&#x6709;&#x8F83;&#x9AD8;&#x7684;&#x903B;&#x8F91;&#x72EC;&#x7ACB;&#x6027;&#x548C;&#x7269;&#x7406;&#x72EC;&#x7ACB;&#x6027;</li>
+<li>&#x5916;&#x6A21;&#x5F0F; / &#x6A21;&#x5F0F;&#x6620;&#x50CF;&#xFF1A;&#x5F53;&#x6A21;&#x5F0F;&#x6539;&#x53D8;&#x65F6;&#xFF0C;&#x6709;&#x6570;&#x636E;&#x5E93;&#x7BA1;&#x7406;&#x5458;&#x5BF9;&#x5404;&#x4E2A;&#x5916;&#x6A21;&#x5F0F;/&#x6A21;&#x5F0F;&#x6620;&#x50CF;&#x505A;&#x76F8;&#x5E94;&#x7684;&#x6539;&#x53D8;&#xFF0C;&#x53EF;&#x4EE5;&#x662F;&#x5916;&#x6A21;&#x5F0F;&#x4FDD;&#x6301;&#x4E0D;&#x53D8;&#x3002;&#x5E94;&#x7528;&#x7A0B;&#x5E8F;&#x662F;&#x4F9D;&#x636E;&#x6570;&#x636E;&#x7684;&#x5916;&#x6A21;&#x5F0F;&#x7F16;&#x5199;&#x7684;&#xFF0C;&#x4ECE;&#x800C;&#x5E94;&#x7528;&#x7A0B;&#x5E8F;&#x4E0D;&#x5FC5;&#x4FEE;&#x6539;&#xFF0C;&#x4FDD;&#x8BC1;&#x4E86;&#x6570;&#x636E;&#x4E0E;&#x7A0B;&#x5E8F;&#x7684;&#x903B;&#x8F91;&#x72EC;&#x7ACB;&#x6027;&#xFF0C;&#x7B80;&#x79F0;&#x6570;&#x636E;&#x7684;&#x903B;&#x8F91;&#x72EC;&#x7ACB;&#x6027;&#x3002;</li>
+<li>&#x6A21;&#x5F0F; / &#x5185;&#x6A21;&#x5F0F;&#x6620;&#x50CF;&#xFF1A;&#x5F53;&#x6570;&#x636E;&#x5E93;&#x7684;&#x5B58;&#x50A8;&#x7ED3;&#x6784;&#x6539;&#x53D8;&#x65F6;&#xFF0C;&#x7531;&#x6570;&#x636E;&#x5E93;&#x7BA1;&#x7406;&#x5458;&#x5BF9;&#x6A21;&#x5F0F;/&#x5185;&#x6A21;&#x5F0F;&#x6620;&#x50CF;&#x4F5C;&#x76F8;&#x5E94;&#x6539;&#x53D8;&#xFF0C;&#x53EF;&#x4EE5;&#x4F7F;&#x6A21;&#x5F0F;&#x4FDD;&#x6301;&#x4E0D;&#x53D8;&#xFF0C;&#x4ECE;&#x800C;&#x5E94;&#x7528;&#x7A0B;&#x5E8F;&#x4E5F;&#x4E0D;&#x6BD4;&#x6539;&#x53D8;&#x3002;&#x4FDD;&#x8BC1;&#x4E86;&#x6570;&#x636E;&#x4E0E;&#x7A0B;&#x5E8F;&#x7684;&#x7269;&#x7406;&#x72EC;&#x7ACB;&#x6027;&#xFF0C;&#x7B80;&#x79F0;&#x6570;&#x636E;&#x7684;&#x7269;&#x7406;&#x72EC;&#x7ACB;&#x6027;&#x3002;</li>
+</ul>
+<h3 id="1-4-&#x6570;&#x636E;&#x5E93;&#x7CFB;&#x7EDF;&#x7684;&#x7EC4;&#x6210;"><a href="#1-4-&#x6570;&#x636E;&#x5E93;&#x7CFB;&#x7EDF;&#x7684;&#x7EC4;&#x6210;" class="headerlink" title="1.4 &#x6570;&#x636E;&#x5E93;&#x7CFB;&#x7EDF;&#x7684;&#x7EC4;&#x6210;"></a>1.4 &#x6570;&#x636E;&#x5E93;&#x7CFB;&#x7EDF;&#x7684;&#x7EC4;&#x6210;</h3><ol>
+<li>&#x786C;&#x4EF6;&#x5E73;&#x53F0;&#x7EA7;&#x6570;&#x636E;&#x5E93;</li>
+<li>&#x8F6F;&#x4EF6;</li>
+<li>&#x4EBA;&#x5458;&#xFF1A;<ol>
+<li>&#x6570;&#x636E;&#x5E93;&#x7BA1;&#x7406;&#x5458;&#xFF1A;&#x8D1F;&#x8D23;&#x5168;&#x9762;&#x7BA1;&#x7406;&#x548C;&#x63A7;&#x5236;&#x6570;&#x636E;&#x5E93;&#x7CFB;&#x7EDF;<ol>
+<li>&#x51B3;&#x5B9A;&#x6570;&#x636E;&#x5E93;&#x4E2D;&#x7684;&#x4FE1;&#x606F;&#x5185;&#x5BB9;&#x548C;&#x7ED3;&#x6784;</li>
+<li>&#x51B3;&#x5B9A;&#x6570;&#x636E;&#x5E93;&#x7684;&#x5B58;&#x50A8;&#x7ED3;&#x6784;&#x548C;&#x5B58;&#x53D6;&#x7B56;&#x7565;</li>
+<li>&#x5B9A;&#x4E49;&#x6570;&#x636E;&#x7684;&#x5B89;&#x5168;&#x6027;&#x8981;&#x6C42;&#x548C;&#x5B8C;&#x6574;&#x6027;&#x7EA6;&#x675F;&#x6761;&#x4EF6;</li>
+<li>&#x76D1;&#x63A7;&#x6570;&#x636E;&#x5E93;&#x7684;&#x4F7F;&#x7528;&#x548C;&#x8FD0;&#x884C;</li>
+<li>&#x6570;&#x636E;&#x5E93;&#x7684;&#x6539;&#x8FDB;&#x548C;&#x91CD;&#x7EC4;&#x3001;&#x91CD;&#x6784;</li>
+</ol>
+</li>
+<li>&#x7CFB;&#x7EDF;&#x5206;&#x6790;&#x5458;&#xFF1A;&#x8D1F;&#x8D23;&#x5E94;&#x7528;&#x7CFB;&#x7EDF;&#x7684;&#x9700;&#x6C42;&#x5206;&#x6790;&#x548C;&#x89C4;&#x8303;&#x8BF4;&#x660E;&#xFF0C;&#x8981;&#x548C;&#x7528;&#x6237;&#x53CA;&#x6570;&#x636E;&#x5E93;&#x7BA1;&#x7406;&#x5458;&#x76F8;&#x7ED3;&#x5408;&#xFF0C;&#x786E;&#x5B9A;&#x7CFB;&#x7EDF;&#x7684;&#x786C;&#x4EF6;&#x8F6F;&#x4EF6;&#x914D;&#x7F6E;&#xFF0C;&#x5E76;&#x53C2;&#x4E0E;&#x6570;&#x636E;&#x5E93;&#x7CFB;&#x7EDF;&#x7684;&#x6982;&#x8981;&#x8BBE;&#x8BA1;</li>
+<li>&#x6570;&#x636E;&#x5E93;&#x8BBE;&#x8BA1;&#x4EBA;&#x5458;&#xFF1A;&#x8D1F;&#x8D23;&#x6570;&#x636E;&#x5E93;&#x4E2D;&#x6570;&#x636E;&#x7684;&#x786E;&#x5B9A;&#x53CA;&#x6570;&#x636E;&#x5E93;&#x5404;&#x7EA7;&#x6A21;&#x5F0F;&#x7684;&#x8BBE;&#x8BA1;&#x3002;</li>
+<li>&#x5E94;&#x7528;&#x7A0B;&#x5E8F;&#x5458;&#xFF1A;&#x5E94;&#x7528;&#x7A0B;&#x5E8F;&#x5458;&#x8D1F;&#x8D23;&#x8BBE;&#x8BA1;&#x548C;&#x7F16;&#x5199;&#x5E94;&#x7528;&#x7CFB;&#x7EDF;&#x7684;&#x7A0B;&#x5E8F;&#x6A21;&#x5757;&#xFF0C;&#x5E76;&#x8FDB;&#x884C;&#x8C03;&#x8BD5;&#x548C;&#x5B89;&#x88C5;</li>
+<li>&#x7528;&#x6237;&#xFF1A;&#x8FD9;&#x91CC;&#x7684;&#x7528;&#x6237;&#x6307;&#x6700;&#x7EC8;&#x7528;&#x6237;&#x3002;&#x6700;&#x7EC8;&#x7528;&#x6237;&#x901A;&#x8FC7;&#x5E94;&#x7528;&#x7CFB;&#x7EDF;&#x7684;&#x7528;&#x6237;&#x63A5;&#x53E3;&#x4F7F;&#x7528;&#x6570;&#x636E;&#x5E93;&#x3002;&#x5E38;&#x7528;&#x7684;&#x63A5;&#x53E3;&#x6709;&#x6D4F;&#x89C8;&#x5668;&#x3001;&#x83DC;&#x5355;&#x9A71;&#x52A8;&#x3001;&#x8868;&#x683C;&#x64CD;&#x4F5C;&#x3001;&#x56FE;&#x5F62;&#x663E;&#x793A;&#x7B49;&#x3002;</li>
+</ol>
+</li>
+</ol>
+<h3 id="2-1-&#x5173;&#x7CFB;&#x6570;&#x636E;&#x7ED3;&#x6784;&#x53CA;&#x5F62;&#x5F0F;&#x5B9A;&#x4E49;"><a href="#2-1-&#x5173;&#x7CFB;&#x6570;&#x636E;&#x7ED3;&#x6784;&#x53CA;&#x5F62;&#x5F0F;&#x5B9A;&#x4E49;" class="headerlink" title="2.1 &#x5173;&#x7CFB;&#x6570;&#x636E;&#x7ED3;&#x6784;&#x53CA;&#x5F62;&#x5F0F;&#x5B9A;&#x4E49;"></a>2.1 &#x5173;&#x7CFB;&#x6570;&#x636E;&#x7ED3;&#x6784;&#x53CA;&#x5F62;&#x5F0F;&#x5B9A;&#x4E49;</h3><ul>
+<li>&#x57DF;&#xFF1A;&#x57DF;&#x662F;&#x4E00;&#x7EC4;&#x5177;&#x6709;&#x76F8;&#x540C;&#x6570;&#x636E;&#x7C7B;&#x578B;&#x7684;&#x503C;&#x7684;&#x96C6;&#x5408;</li>
+<li>&#x7B1B;&#x5361;&#x5C14;&#x79EF;&#xFF1A;&#x7B1B;&#x5361;&#x5C14;&#x79EF;&#x662F;&#x57DF;&#x4E0A;&#x7684;&#x4E00;&#x79CD;&#x96C6;&#x5408;&#x8FD0;&#x7B97;</li>
+<li>&#x4E00;&#x4E2A;&#x57DF;&#x5141;&#x8BB8;&#x7684;&#x4E0D;&#x540C;&#x53D6;&#x503C;&#x4E2A;&#x6570;&#x79F0;&#x4E3A;&#x8FD9;&#x4E2A;&#x57DF;&#x7684;&#x57FA;&#x6570;</li>
+<li>&#x82E5;&#x5173;&#x7CFB;&#x4E2D;&#x7684;&#x67D0;&#x4E00;&#x5C5E;&#x6027;&#x7EC4;&#x7684;&#x503C;&#x80FD;&#x552F;&#x4E00;&#x6807;&#x8BC6;&#x4E00;&#x4E2A;&#x5143;&#x7956;&#xFF0C;&#x800C;&#x5176;&#x5B50;&#x96C6;&#x4E0D;&#x80FD;&#xFF0C;&#x5219;&#x79F0;&#x8BE5;&#x5C5E;&#x6027;&#x7EC4;&#x4E3A;&#x5019;&#x9009;&#x7801;&#xFF0C;&#x82E5;&#x4E00;&#x4E2A;&#x5173;&#x7CFB;&#x6709;&#x591A;&#x4E2A;&#x5019;&#x9009;&#x7801;&#xFF0C;&#x5219;&#x9009;&#x5B9A;&#x5176;&#x4E2D;&#x4E00;&#x4E2A;&#x4E3A;&#x4E3B;&#x7801;</li>
+<li>&#x5173;&#x7CFB;&#x6709;&#x4E09;&#x79CD;&#x7C7B;&#x578B;&#xFF1A;&#x57FA;&#x672C;&#x5173;&#x7CFB;&#xFF08;&#x901A;&#x5E38;&#x53C8;&#x79F0;&#x4E3A;&#x57FA;&#x672C;&#x8868;&#x6216;&#x57FA;&#x8868;&#xFF09;&#x3001;&#x67E5;&#x8BE2;&#x8868;&#x548C;&#x89C6;&#x56FE;&#x8868;&#x3002;</li>
+<li>&#x5173;&#x7CFB;&#x6570;&#x636E;&#x5E93;&#x4E2D;&#xFF0C;&#x5173;&#x7CFB;&#x6A21;&#x5F0F;&#x662F;&#x578B;&#xFF0C;&#x5173;&#x7CFB;&#x662F;&#x503C;&#xFF0C;&#x5173;&#x7CFB;&#x6A21;&#x5F0F;&#x662F;&#x5BF9;&#x5173;&#x7CFB;&#x7684;&#x63CF;&#x8FF0;&#x3002;</li>
+</ul>
+<h3 id="2-2-&#x5173;&#x7CFB;&#x64CD;&#x4F5C;"><a href="#2-2-&#x5173;&#x7CFB;&#x64CD;&#x4F5C;" class="headerlink" title="2.2 &#x5173;&#x7CFB;&#x64CD;&#x4F5C;"></a>2.2 &#x5173;&#x7CFB;&#x64CD;&#x4F5C;</h3><ul>
+<li>&#x5173;&#x7CFB;&#x6A21;&#x5F0F;&#x4E2D;&#x5E38;&#x7528;&#x7684;&#x5173;&#x7CFB;&#x64CD;&#x4F5C;&#x5305;&#x62EC;&#x67E5;&#x8BE2;&#xFF08;query&#xFF09;&#x64CD;&#x4F5C;&#x548C;&#x63D2;&#x5165;&#xFF08;insert&#xFF09;&#x3001;&#x5220;&#x9664;&#xFF08;delete&#xFF09;&#x3001;&#x4FEE;&#x6539;&#xFF08;update&#xFF09;&#x64CD;&#x4F5C;&#x4E24;&#x5927;&#x90E8;&#x5206;</li>
+<li>&#x67E5;&#x8BE2;&#x64CD;&#x4F5C;&#x53C8;&#x53EF;&#x4EE5;&#x5206;&#x4E3A;&#x9009;&#x62E9;&#xFF08;select&#xFF09;&#x3001;&#x6295;&#x5F71;&#xFF08;project&#xFF09;&#x3001;&#x8FDE;&#x63A5;&#xFF08;join&#xFF09;&#x3001;&#x9664;&#xFF08;divide&#xFF09;&#x3001;&#x5E76;&#xFF08;union&#xFF09;&#x3001;&#x5DEE;&#xFF08;except&#xFF09;&#x3001;&#x4EA4;&#xFF08;intersection&#xFF09;&#x3001;&#x7B1B;&#x5361;&#x5C14;&#x79EF;&#x7B49;&#x3002;&#x5176;&#x4E2D;&#x9009;&#x62E9;&#x3001;&#x6295;&#x5F71;&#x3001;&#x5E76;&#x3001;&#x5DEE;&#x3001;&#x7B1B;&#x5361;&#x5C14;&#x79EF;&#x662F; 5 &#x79CD;&#x57FA;&#x672C;&#x64CD;&#x4F5C;&#x3002;</li>
+<li>&#x5173;&#x7CFB;&#x6570;&#x636E;&#x8BED;&#x8A00;&#x5206;&#x4E3A;&#xFF1A;<ol>
+<li>&#x5173;&#x7CFB;&#x4EE3;&#x6570;&#x8BED;&#x8A00;</li>
+<li>&#x5173;&#x7CFB;&#x6F14;&#x7B97;&#x8BED;&#x8A00;<ol>
+<li>&#x5143;&#x7EC4;&#x5173;&#x7CFB;&#x6F14;&#x7B97;&#x8BED;&#x8A00;</li>
+<li>&#x57DF;&#x5173;&#x7CFB;&#x6F14;&#x7B97;&#x8BED;&#x8A00;</li>
+</ol>
+</li>
+<li>&#x5177;&#x6709;&#x5173;&#x7CFB;&#x4EE3;&#x6570;&#x548C;&#x5173;&#x7CFB;&#x6F14;&#x7B97;&#x53CC;&#x91CD;&#x7279;&#x70B9;&#x7684;&#x8BED;&#x8A00;-&#x7ED3;&#x6784;&#x5316;&#x67E5;&#x8BE2;&#x8BED;&#x8A00;</li>
+</ol>
+</li>
+</ul>
+<h3 id="2-3-&#x5173;&#x7CFB;&#x7684;&#x5B8C;&#x6574;&#x6027;"><a href="#2-3-&#x5173;&#x7CFB;&#x7684;&#x5B8C;&#x6574;&#x6027;" class="headerlink" title="2.3 &#x5173;&#x7CFB;&#x7684;&#x5B8C;&#x6574;&#x6027;"></a>2.3 &#x5173;&#x7CFB;&#x7684;&#x5B8C;&#x6574;&#x6027;</h3><ul>
+<li>&#x5173;&#x7CFB;&#x6A21;&#x578B;&#x4E2D;&#x6709;&#x4E09;&#x7C7B;&#x5B8C;&#x6574;&#x6027;&#x7EA6;&#x675F;&#xFF1A;&#x5B9E;&#x4F53;&#x5B8C;&#x6574;&#x6027;&#x3001;&#x53C2;&#x7167;&#x5B8C;&#x6574;&#x6027;&#x548C;&#x7528;&#x6237;&#x81EA;&#x5B9A;&#x4E49;&#x5B8C;&#x6574;&#x6027;&#x3002;&#x5176;&#x4E2D;&#x5B9E;&#x4F53;&#x5B8C;&#x6574;&#x6027;&#x548C;&#x53C2;&#x7167;&#x5B8C;&#x6574;&#x6027;&#x662F;&#x5173;&#x7CFB;&#x6A21;&#x578B;&#x5FC5;&#x987B;&#x6EE1;&#x8DB3;&#x7684;&#x5B8C;&#x6574;&#x6027;&#x7EA6;&#x675F;&#x6761;&#x4EF6;&#xFF0C;&#x88AB;&#x79F0;&#x4F5C;&#x662F;&#x5173;&#x7CFB;&#x7684;&#x4E24;&#x4E2A;&#x4E0D;&#x53D8;&#x6027;&#x3002;</li>
+<li>&#x5B9E;&#x4F53;&#x5B8C;&#x6574;&#x6027;&#x89C4;&#x5219;&#xFF1A;&#x82E5;&#x5C5E;&#x6027;&#xFF08;&#x6307;&#x4E00;&#x4E2A;&#x6216;&#x4E00;&#x7EC4;&#x5C5E;&#x6027;&#xFF09;A &#x662F;&#x57FA;&#x672C;&#x5173;&#x7CFB; R &#x7684;&#x4E3B;&#x5C5E;&#x6027;&#xFF0C;&#x5219; A &#x4E0D;&#x80FD;&#x53D6;&#x7A7A;&#x503C;&#xFF08;nullvalue&#xFF09;&#x3002;&#x6240;&#x8C13;&#x7A7A;&#x503C;&#x5C31;&#x662F;&#x201C;&#x4E0D;&#x77E5;&#x9053;&#x201D;&#x6216;&#x201C;&#x4E0D;&#x5B58;&#x5728;&#x201D;&#x6216;&#x201C;&#x65E0;&#x610F;&#x4E49;&#x201D;&#x7684;&#x503C;&#x3002;</li>
+<li><p>&#x53C2;&#x7167;&#x5B8C;&#x6574;&#x6027;&#x89C4;&#x5219;&#xFF1A;&#x82E5;&#x5C5E;&#x6027;&#xFF08;&#x6216;&#x5C5E;&#x6027;&#x7EC4;&#xFF09;F &#x662F;&#x57FA;&#x672C;&#x5173;&#x7CFB; R &#x7684;&#x5916;&#x7801;&#xFF0C;&#x5B83;&#x4E0E;&#x57FA;&#x672C;&#x5173;&#x7CFB; S &#x7684;&#x4E3B;&#x7801; K &#x76F8;&#x5BF9;&#x5E94;&#xFF08;&#x57FA;&#x672C;&#x5173;&#x7CFB; R &#x548C; S &#x4E0D;&#x4E00;&#x5B9A;&#x662F;&#x4E0D;&#x540C;&#x7684;&#x5173;&#x7CFB;&#xFF09;&#xFF0C;&#x5219;&#x5BF9;&#x4E8E; R &#x4E2D;&#x6BCF;&#x4E2A;&#x5143;&#x7EC4;&#x5728; F &#x4E0A;&#x7684;&#x503C;&#x5FC5;&#x987B;&#xFF1A;</p>
+<ol>
+<li>&#x6216;&#x8005;&#x53D6;&#x7A7A;&#x503C;&#xFF08;F &#x7684;&#x6BCF;&#x4E2A;&#x5C5E;&#x6027;&#x503C;&#x5747;&#x4E3A;&#x7A7A;&#x503C;&#xFF09;</li>
+<li>&#x6216;&#x8005;&#x7B49;&#x4E8E; S &#x4E2D;&#x67D0;&#x4E2A;&#x5143;&#x7EC4;&#x7684;&#x4E3B;&#x7801;&#x503C;</li>
+</ol>
+</li>
+<li><p>&#x7528;&#x6237;&#x81EA;&#x5B9A;&#x4E49;&#x5B8C;&#x6574;&#x6027;&#x5C31;&#x662F;&#x9488;&#x5BF9;&#x67D0;&#x4E00;&#x5177;&#x4F53;&#x5173;&#x7CFB;&#x6570;&#x636E;&#x5E93;&#x7684;&#x7EA6;&#x675F;&#x6761;&#x4EF6;&#xFF0C;&#x5B83;&#x53CD;&#x5E94;&#x67D0;&#x4E00;&#x5177;&#x4F53;&#x5E94;&#x7528;&#x6240;&#x6D89;&#x53CA;&#x7684;&#x6570;&#x636E;&#x5FC5;&#x987B;&#x6EE1;&#x8DB3;&#x7684;&#x8BED;&#x4E49;&#x8981;&#x6C42;&#x3002;</p>
+</li>
+</ul>
+<h3 id="2-4-&#x5173;&#x7CFB;&#x4EE3;&#x6570;"><a href="#2-4-&#x5173;&#x7CFB;&#x4EE3;&#x6570;" class="headerlink" title="2.4 &#x5173;&#x7CFB;&#x4EE3;&#x6570;"></a>2.4 &#x5173;&#x7CFB;&#x4EE3;&#x6570;</h3><ul>
+<li>&#x4F20;&#x7EDF;&#x7684;&#x96C6;&#x5408;&#x8FD0;&#x7B97;&#x662F;&#x4E8C;&#x76EE;&#x8FD0;&#x7B97;&#xFF0C;&#x5305;&#x62EC;&#x5E76;&#x3001;&#x5DEE;&#x3001;&#x4EA4;&#x3001;&#x7B1B;&#x5361;&#x5C14;&#x79EF; 4 &#x79CD;&#x8FD0;&#x7B97;&#x3002;</li>
+<li>&#x4E13;&#x95E8;&#x7684;&#x5173;&#x7CFB;&#x8FD0;&#x5305;&#x62EC;&#x9009;&#x62E9;&#x3001;&#x6295;&#x5F71;&#x3001;&#x8FDE;&#x63A5;&#x3001;&#x9664;&#x7B49;&#x8FD0;&#x7B97;&#x3002;</li>
+</ul>
+<h3 id="3-1-SQL-&#x6982;&#x8FF0;"><a href="#3-1-SQL-&#x6982;&#x8FF0;" class="headerlink" title="3.1 SQL &#x6982;&#x8FF0;"></a>3.1 SQL &#x6982;&#x8FF0;</h3><ul>
+<li><p>SQL &#x96C6;&#x6570;&#x636E;&#x67E5;&#x8BE2;&#x3001;&#x6570;&#x636E;&#x64CD;&#x7EB5;&#x3001;&#x6570;&#x636E;&#x5B9A;&#x4E49;&#x548C;&#x6570;&#x636E;&#x63A7;&#x5236;&#x529F;&#x80FD;&#x4E8E;&#x4E00;&#x4F53;&#xFF0C;&#x5176;&#x4E3B;&#x8981;&#x7279;&#x70B9;&#x5305;&#x62EC;&#xFF1A;</p>
+<ol>
+<li>&#x7EFC;&#x5408;&#x7EDF;&#x4E00;</li>
+<li>&#x9AD8;&#x5EA6;&#x975E;&#x8FC7;&#x7A0B;&#x5316;</li>
+<li>&#x9762;&#x5411;&#x96C6;&#x5408;&#x7684;&#x64CD;&#x4F5C;&#x65B9;&#x5F0F;</li>
+<li>&#x4EE5;&#x540C;&#x4E00;&#x79CD;&#x8BED;&#x6CD5;&#x7ED3;&#x6784;&#x63D0;&#x4F9B;&#x591A;&#x79CD;&#x4F7F;&#x7528;&#x65B9;&#x5F0F;</li>
+<li>&#x8BED;&#x8A00;&#x7B80;&#x6D01;&#xFF0C;&#x6613;&#x5B66;&#x6613;&#x7528;</li>
+</ol>
+</li>
+<li><p>&#x652F;&#x6301; SQL &#x7684;&#x5173;&#x7CFB;&#x6570;&#x636E;&#x5E93;&#x7BA1;&#x7406;&#x7CFB;&#x7EDF;&#x540C;&#x6837;&#x652F;&#x6301;&#x5173;&#x7CFB;&#x6570;&#x636E;&#x5E93;&#x4E09;&#x7EA7;&#x6A21;&#x5F0F;&#x7ED3;&#x6784;&#x3002;&#x5176;&#x4E2D;&#x5916;&#x6A21;&#x5F0F;&#x5305;&#x62EC;&#x82E5;&#x5E72;&#x89C6;&#x56FE;&#x548C;&#x90E8;&#x5206;&#x57FA;&#x672C;&#x8868;&#xFF0C;&#x6570;&#x636E;&#x5E93;&#x6A21;&#x5F0F;&#x5305;&#x62EC;&#x82E5;&#x5E72;&#x57FA;&#x672C;&#x8868;&#xFF0C;&#x5185;&#x6A21;&#x5F0F;&#x5305;&#x62EC;&#x82E5;&#x5E72;&#x5B58;&#x50A8;&#x6587;&#x4EF6;&#x3002;</p>
+</li>
+</ul>
+<h3 id="3-2-&#x5B66;&#x751F;-&#x8BFE;&#x7A0B;&#x6570;&#x636E;&#x5E93;"><a href="#3-2-&#x5B66;&#x751F;-&#x8BFE;&#x7A0B;&#x6570;&#x636E;&#x5E93;" class="headerlink" title="3.2 &#x5B66;&#x751F;-&#x8BFE;&#x7A0B;&#x6570;&#x636E;&#x5E93;"></a>3.2 &#x5B66;&#x751F;-&#x8BFE;&#x7A0B;&#x6570;&#x636E;&#x5E93;</h3><ul>
+<li>&#x5B66;&#x751F;&#x8868;&#xFF1A;Student&#xFF08;Sno&#xFF0C;Sname&#xFF0C;Ssex&#xFF0C;Sage&#xFF0C;Sdept&#xFF09;</li>
+<li>&#x8BFE;&#x7A0B;&#x8868;&#xFF1A;Course&#xFF08;Cno&#xFF0C;Cname&#xFF0C;Cpno&#xFF0C;Ccredit&#xFF09;</li>
+<li>&#x5B66;&#x751F;&#x9009;&#x8BFE;&#x8868;&#xFF1A;SC&#xFF08;Sno&#xFF0C;Cno&#xFF0C;Grade&#xFF09;</li>
+</ul>
+<h3 id="3-3-&#x6570;&#x636E;&#x5B9A;&#x4E49;"><a href="#3-3-&#x6570;&#x636E;&#x5B9A;&#x4E49;" class="headerlink" title="3.3 &#x6570;&#x636E;&#x5B9A;&#x4E49;"></a>3.3 &#x6570;&#x636E;&#x5B9A;&#x4E49;</h3><table>
+<thead>
+<tr>
+<th>-</th>
+<th>&#x521B;&#x5EFA;</th>
+<th>&#x5220;&#x9664;</th>
+<th>&#x4FEE;&#x6539;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>&#x6A21;&#x5F0F;</td>
+<td>CREATE SCHEMA</td>
+<td>DROP SCHEMA</td>
+<td></td>
+</tr>
+<tr>
+<td>&#x8868;</td>
+<td>CREATE TABLE</td>
+<td>DROP TABLE</td>
+<td>ALTER TABLE</td>
+</tr>
+<tr>
+<td>&#x89C6;&#x56FE;</td>
+<td>CREATE VIEW</td>
+<td>DROP VIEW</td>
+<td></td>
+</tr>
+<tr>
+<td>&#x7D22;&#x5F15;</td>
+<td>CREATE INDEX</td>
+<td>DROP INDEX</td>
+<td>ALTER INDEX</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>&#x4E00;&#x4E2A;&#x5173;&#x7CFB;&#x6570;&#x636E;&#x5E93;&#x7BA1;&#x7406;&#x7CFB;&#x7EDF;&#x7684;&#x5B9E;&#x4F8B;&#x4E2D;&#x53EF;&#x4EE5;&#x5EFA;&#x7ACB;&#x591A;&#x4E2A;&#x6570;&#x636E;&#x5E93;&#xFF0C;&#x4E00;&#x4E2A;&#x6570;&#x636E;&#x5E93;&#x4E2D;&#x53EF;&#x4EE5;&#x5EFA;&#x7ACB;&#x591A;&#x4E2A;&#x6A21;&#x5F0F;&#xFF0C;&#x4E00;&#x4E2A;&#x6A21;&#x5F0F;&#x4E0B;&#x901A;&#x5E38;&#x5305;&#x62EC;&#x591A;&#x4E2A;&#x8868;&#x3001;&#x89C6;&#x56FE;&#x548C;&#x7D22;&#x5F15;&#x7B49;&#x6570;&#x636E;&#x5E93;&#x5BF9;&#x8C61;&#x3002;</li>
+<li><p>&#x5B9A;&#x4E49;&#x6A21;&#x5F0F;&#xFF1A;<br>  <code>CREATE SCHEMA &lt;&#x6A21;&#x5F0F;&#x540D;&gt; AUTHORIZATION &lt;&#x7528;&#x6237;&#x540D;&gt;</code></p>
+</li>
+<li><p>&#x5220;&#x9664;&#x6A21;&#x5F0F;&#xFF1A;<br>  <code>DROP SCHEMA &lt;&#x6A21;&#x5F0F;&#x540D;&gt;&lt;CASCADE | RESTRICT&gt;</code></p>
+</li>
+<li><p>&#x5B9A;&#x4E49;&#x57FA;&#x672C;&#x8868;&#xFF1A;<br>  <code>CREATE TABLE &lt;&#x8868;&#x540D;&gt; &#xFF08;&lt;&#x5217;&#x540D;&gt;&lt;&#x6570;&#x636E;&#x7C7B;&#x578B;&gt; [&#x5217;&#x7EA7;&#x5B8C;&#x6574;&#x6027;&#x7EA6;&#x675F;&#x6761;&#x4EF6;] ...&#xFF09;</code></p>
+</li>
+<li><p>&#x5EFA;&#x7ACB;&#x4E00;&#x4E2A; &#x201C;&#x5B66;&#x751F;&#x201D; &#x8868; Student</p>
+  <figure class="highlight sql"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">CREATE</span> <span class="keyword">TABLE</span> Student (</span><br><span class="line">trueSno <span class="built_in">CHAR</span>(<span class="number">9</span>) PRIMARY <span class="keyword">KEY</span>,</span><br><span class="line">trueSname <span class="built_in">CHAR</span>(<span class="number">20</span>) <span class="keyword">UNIQUE</span>,</span><br><span class="line">trueSsex <span class="built_in">CHAR</span>(<span class="number">2</span>),</span><br><span class="line">trueSage <span class="built_in">SMALLINT</span>,</span><br><span class="line">trueSdept <span class="built_in">CHAR</span>(<span class="number">20</span>)</span><br><span class="line">);</span><br></pre></td></tr></tbody></table></figure>
+</li>
+<li><p>&#x6570;&#x636E;&#x7C7B;&#x578B;</p>
+</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">&#x6570;&#x636E;&#x7C7B;&#x578B;</th>
+<th style="text-align:center">&#x542B;&#x4E49;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">CHAR(n),character(n)</td>
+<td style="text-align:center">&#x957F;&#x5EA6;&#x4E3A; n &#x7684;&#x5B9A;&#x957F;&#x5B57;&#x7B26;&#x4E32;</td>
+</tr>
+<tr>
+<td style="text-align:center">varchar(n),charactervarying(n)</td>
+<td style="text-align:center">&#x6700;&#x5927;&#x957F;&#x5EA6;&#x4E3A; n &#x7684;&#x53D8;&#x957F;&#x5B57;&#x7B26;&#x4E32;</td>
+</tr>
+<tr>
+<td style="text-align:center">CLOB</td>
+<td style="text-align:center">&#x5B57;&#x7B26;&#x4E32;&#x5927;&#x5BF9;&#x8C61;</td>
+</tr>
+<tr>
+<td style="text-align:center">BLOB</td>
+<td style="text-align:center">&#x4E8C;&#x8FDB;&#x5236;&#x5927;&#x5BF9;&#x8C61;</td>
+</tr>
+<tr>
+<td style="text-align:center">INT, INTEGER</td>
+<td style="text-align:center">&#x957F;&#x6574;&#x6570;</td>
+</tr>
+<tr>
+<td style="text-align:center">smallint</td>
+<td style="text-align:center">&#x77ED;&#x6574;&#x6570;</td>
+</tr>
+<tr>
+<td style="text-align:center">bigint</td>
+<td style="text-align:center">&#x5927;&#x6574;&#x6570;</td>
+</tr>
+<tr>
+<td style="text-align:center">real</td>
+<td style="text-align:center">&#x5355;&#x7CBE;&#x5EA6;&#x6D6E;&#x70B9;&#x6570;</td>
+</tr>
+<tr>
+<td style="text-align:center">double persision</td>
+<td style="text-align:center">&#x53CC;&#x7CBE;&#x5EA6;&#x6D6E;&#x70B9;&#x6570;</td>
+</tr>
+<tr>
+<td style="text-align:center">float(n)</td>
+<td style="text-align:center">&#x53EF;&#x9009;&#x7CBE;&#x5EA6;&#x7684;&#x6D6E;&#x70B9;&#x6570;</td>
+</tr>
+<tr>
+<td style="text-align:center">boolean</td>
+<td style="text-align:center">&#x903B;&#x8F91;&#x5E03;&#x5C14;&#x91CF;</td>
+</tr>
+<tr>
+<td style="text-align:center">date</td>
+<td style="text-align:center">&#x65F6;&#x95F4;&#xFF0C;&#x5E74;&#x6708;&#x65E5;</td>
+</tr>
+<tr>
+<td style="text-align:center">time</td>
+<td style="text-align:center">&#x65F6;&#x95F4;&#xFF0C;&#x65F6;&#x5206;&#x79D2;</td>
+</tr>
+<tr>
+<td style="text-align:center">timestamp</td>
+<td style="text-align:center">&#x65F6;&#x95F4;&#x6233;&#x7C7B;&#x578B;</td>
+</tr>
+<tr>
+<td style="text-align:center">interval</td>
+<td style="text-align:center">&#x65F6;&#x95F4;&#x95F4;&#x9694;&#x7C7B;&#x578B;</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li><p>&#x6A21;&#x5F0F;&#x4E0E;&#x8868;<br>  <code>CREATE TABLE &#x201C;S-T&#x201D;.Student(...)</code>  /<em> Student &#x6240;&#x5C5E;&#x7684;&#x6A21;&#x5F0F;&#x662F; S-T </em>/</p>
+</li>
+<li><p>&#x4FEE;&#x6539;&#x57FA;&#x672C;&#x8868;</p>
+  <figure class="highlight sql"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">ALTER</span> <span class="keyword">TABLE</span> &lt;&#x8868;&#x540D;&gt;</span><br><span class="line">[<span class="keyword">ADD</span> [<span class="keyword">COLUMN</span>] &lt;&#x65B0;&#x5217;&#x540D;&gt;&lt;&#x6570;&#x636E;&#x7ED3;&#x6784;&gt; [&#x5B8C;&#x6574;&#x6027;&#x7EA6;&#x675F;]]</span><br><span class="line">[<span class="keyword">DROP</span> [<span class="keyword">COLUMN</span>] &lt;&#x5217;&#x540D;&gt; [<span class="keyword">CASCADE</span> | RESTRICT]]</span><br><span class="line">[<span class="keyword">ALTER</span> <span class="keyword">COLUMN</span> &lt;&#x5217;&#x540D;&gt;&lt;&#x6570;&#x636E;&#x7ED3;&#x6784;&gt;]&#xFF1B;</span><br></pre></td></tr></tbody></table></figure>
+</li>
+<li><p>&#x5411; Student &#x8868;&#x589E;&#x52A0;&#x201C;&#x5165;&#x5B66;&#x65F6;&#x95F4;&#x201D;&#x5217;&#xFF0C;&#x5176;&#x6570;&#x636E;&#x7C7B;&#x578B;&#x4E3A;&#x65E5;&#x671F;<br>  <code>ALTER TABLE Student ADD S_entrance DATE&#xFF1B;</code></p>
+</li>
+<li><p>&#x5C06;&#x5E74;&#x9F84;&#x7684;&#x6570;&#x636E;&#x7C7B;&#x578B;&#x7531;&#x5B57;&#x7B26;&#x578B;&#x6539;&#x4E3A;&#x6574;&#x6570;<br>  <code>ALTER TABLE Student ALTER COLUMN Sage INT&#xFF1B;</code></p>
+</li>
+<li><p>&#x589E;&#x52A0;&#x8BFE;&#x7A0B;&#x540D;&#x79F0;&#x5FC5;&#x987B;&#x53D6;&#x552F;&#x4E00;&#x503C;&#x7684;&#x7EA6;&#x675F;&#x6761;&#x4EF6;<br>  <code>ALTER TABLE Course ADD UNIQUE(Cname)&#xFF1B;</code></p>
+</li>
+<li><p>&#x5220;&#x9664;&#x57FA;&#x672C;&#x8868;</p>
+  <figure class="highlight sql"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">DROP</span> <span class="keyword">TABLE</span> &lt;&#x8868;&#x540D;&gt; [RESTRICT | <span class="keyword">CASCADE</span>];</span><br></pre></td></tr></tbody></table></figure>
+</li>
+<li><p>&#x5220;&#x9664; Student &#x8868;<br>  <code>DROP TABLE Student CASCADE;</code></p>
+</li>
+<li><p>&#x5EFA;&#x7ACB;&#x7D22;&#x5F15;</p>
+<figure class="highlight n1ql"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">CREATE</span> [<span class="keyword">UNIQUE</span>] [<span class="keyword">CLUSTER</span>] <span class="keyword">INDEX</span> &lt;&#x7D22;&#x5F15;&#x540D;&gt; <span class="keyword">ON</span> &lt;&#x8868;&#x540D;&gt;(&lt;&#x5217;&#x540D;&gt; ...);</span><br></pre></td></tr></tbody></table></figure>
+</li>
+<li><p>&#x4FEE;&#x6539;&#x7D22;&#x5F15;<br>  <code>ALTER INDEX &lt;&#x65E7;&#x7D22;&#x5F15;&#x540D;&gt; RENAME TO &lt;&#x65B0;&#x7D22;&#x5F15;&#x540D;&gt;;</code></p>
+</li>
+<li><p>&#x5220;&#x9664;&#x7D22;&#x5F15;<br>  <code>DROP INDEX &lt;&#x7D22;&#x5F15;&#x540D;&gt;</code></p>
+</li>
+<li><p>&#x6570;&#x636E;&#x67E5;&#x8BE2;</p>
+  <figure class="highlight n1ql"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> [<span class="keyword">ALL</span> | <span class="keyword">DISTINCT</span>] &lt;&#x76EE;&#x6807;&#x8868;&#x8FBE;&#x5F0F;&gt; [,&lt;&#x76EE;&#x6807;&#x8868;&#x8FBE;&#x5F0F;&#x5217;&#x8868;&gt;] ...</span><br><span class="line"><span class="keyword">FROM</span> &lt;&#x8868;&#x540D;&#x6216;&#x89C6;&#x56FE;&#x540D;&gt; [,&lt;&#x8868;&#x540D;&#x6216;&#x89C6;&#x56FE;&#x540D;&gt; ...] | (&lt;<span class="keyword">SELECT</span> &#x8BED;&#x53E5;&gt;) [<span class="keyword">AS</span>] &lt;&#x522B;&#x540D;&gt;</span><br><span class="line">[<span class="keyword">WHERE</span> &lt;&#x6761;&#x4EF6;&#x8868;&#x8FBE;&#x5F0F;&gt;]</span><br><span class="line">[<span class="keyword">GROUP</span> <span class="keyword">BY</span> &lt;&#x5217;&#x540D; <span class="number">1</span>&gt; [<span class="keyword">HAVING</span> &lt;&#x6761;&#x4EF6;&#x8868;&#x8FBE;&#x5F0F;&gt;]]</span><br><span class="line">[<span class="keyword">ORDER</span> <span class="keyword">BY</span> &lt;&#x5217;&#x540D; <span class="number">2</span>&gt; [<span class="keyword">ASC</span> | <span class="keyword">DESC</span>]];</span><br></pre></td></tr></tbody></table></figure>
+</li>
+</ul>
+<ul>
+<li><p>&#x67E5;&#x8BE2;&#x5168;&#x4F53;&#x5B66;&#x751F;&#x7684;&#x5B66;&#x53F7;&#x548C;&#x59D3;&#x540D;</p>
+  <figure class="highlight n1ql"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> Sno, Sname</span><br><span class="line"><span class="keyword">FROM</span> Student;</span><br></pre></td></tr></tbody></table></figure>
+</li>
+<li><p>&#x67E5;&#x8BE2;&#x5168;&#x4F53;&#x5B66;&#x751F;&#x7684;&#x59D3;&#x540D;&#x3001;&#x5B66;&#x53F7;&#x3001;&#x6240;&#x5728;&#x7CFB;&#x3002;</p>
+<figure class="highlight n1ql"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> Sname, Sno, Sdept</span><br><span class="line"><span class="keyword">FROM</span> Student;</span><br></pre></td></tr></tbody></table></figure>
+</li>
+<li><p>&#x67E5;&#x8BE2;&#x5168;&#x90E8;&#x5217;</p>
+<figure class="highlight n1ql"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> *</span><br><span class="line"><span class="keyword">FROM</span> Student;</span><br></pre></td></tr></tbody></table></figure>
+</li>
+<li><p>&#x67E5;&#x8BE2;&#x5168;&#x4F53;&#x5B66;&#x751F;&#x7684;&#x59D3;&#x540D;&#x53CA;&#x5176;&#x51FA;&#x751F;&#x5E74;&#x4EFD;</p>
+<figure class="highlight n1ql"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> Sname, <span class="number">2017</span>-Sage</span><br><span class="line"><span class="keyword">FROM</span> Student;</span><br></pre></td></tr></tbody></table></figure>
+</li>
+<li><p>&#x67E5;&#x8BE2;&#x5168;&#x4F53;&#x5B66;&#x751F;&#x7684;&#x59D3;&#x540D;&#x3001;&#x51FA;&#x751F;&#x5E74;&#x4EFD;&#x548C;&#x6240;&#x5728;&#x7CFB;&#xFF0C;&#x8981;&#x6C42;&#x7528;&#x5C0F;&#x5199;&#x5B57;&#x6BCD;&#x8868;&#x793A;&#x7CFB;&#x540D;</p>
+<figure class="highlight sql"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> Sname, <span class="string">&apos;Year of Brith:&apos;</span>, <span class="number">2017</span>-Sage, <span class="keyword">LOWER</span>(Sdept)</span><br><span class="line"><span class="keyword">FROM</span> Student;</span><br></pre></td></tr></tbody></table></figure>
+</li>
+<li><p>&#x67E5;&#x8BE2;&#x9009;&#x4FEE;&#x4E86;&#x8BFE;&#x7A0B;&#x7684;&#x5B66;&#x751F;&#x5B66;&#x53F7;&#xFF08;&#x53BB;&#x6389;&#x91CD;&#x590D;&#x884C;&#xFF09;</p>
+<figure class="highlight n1ql"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> <span class="keyword">DISTINCT</span> Sno</span><br><span class="line"><span class="keyword">FROM</span> SC&#xFF1B;</span><br></pre></td></tr></tbody></table></figure>
+</li>
+<li><p>&#x67E5;&#x8BE2;&#x6240;&#x6709;&#x5E74;&#x9F84;&#x5728; 20 &#x5C81;&#x4EE5;&#x4E0B;&#x7684;&#x5B66;&#x751F;&#x59D3;&#x540D;&#x53CA;&#x5176;&#x5E74;&#x9F84;</p>
+  <figure class="highlight n1ql"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> Sname&#xFF0C;Sage</span><br><span class="line"><span class="keyword">FROM</span> Student</span><br><span class="line"><span class="keyword">WHERE</span> Sage &lt; <span class="number">20</span>;</span><br></pre></td></tr></tbody></table></figure>
+</li>
+</ul>
+<ul>
+<li><p>&#x67E5;&#x8BE2;&#x8003;&#x8BD5;&#x6210;&#x7EE9;&#x4E0D;&#x53CA;&#x683C;&#x7684;&#x5B66;&#x751F;&#x7684;&#x5B66;&#x53F7;</p>
+  <figure class="highlight n1ql"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> <span class="keyword">DISTINCT</span> Sno</span><br><span class="line"><span class="keyword">FROM</span> SC</span><br><span class="line"><span class="keyword">WHERE</span> Grade &lt; <span class="number">60</span>;</span><br></pre></td></tr></tbody></table></figure>
+</li>
+<li><p>&#x67E5;&#x8BE2;&#x5E74;&#x9F84;&#x5728; 20 &#xFF5E; 23 &#x5C81;&#x4E4B;&#x95F4;&#x7684;&#x5B66;&#x751F;&#x7684;&#x59D3;&#x540D;&#x3001;&#x7CFB;&#x522B;&#x548C;&#x5E74;&#x9F84;</p>
+<figure class="highlight n1ql"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> Sname&#xFF0C;Sdept&#xFF0C;Sage</span><br><span class="line"><span class="keyword">FROM</span> Student</span><br><span class="line"><span class="keyword">WHERE</span> Sage <span class="keyword">BETWEEN</span> <span class="number">20</span> <span class="keyword">AND</span> <span class="number">23</span>&#xFF1B;</span><br></pre></td></tr></tbody></table></figure>
+</li>
+<li><p>&#x67E5;&#x8BE2;&#x5E74;&#x9F84;&#x4E0D;&#x5728; 20 &#xFF5E; 23 &#x4E4B;&#x95F4;&#x7684;&#x5B66;&#x751F;&#x7684;&#x59D3;&#x540D;&#x3001;&#x7CFB;&#x522B;&#x548C;&#x5E74;&#x9F84;</p>
+<figure class="highlight n1ql"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> Sname&#xFF0C;Sdept&#xFF0C;Sage</span><br><span class="line"><span class="keyword">FROM</span> Student</span><br><span class="line"><span class="keyword">WHERE</span> Sage <span class="keyword">NOT</span> <span class="keyword">BETWEEN</span> <span class="number">20</span> <span class="keyword">AND</span> <span class="number">23</span> &#xFF1B;</span><br></pre></td></tr></tbody></table></figure>
+</li>
+<li><p>&#x67E5;&#x8BE2;&#x65E2;&#x4E0D;&#x662F;&#x8BA1;&#x7B97;&#x673A;&#x7CFB;&#x3001;&#x6570;&#x5B66;&#x7CFB;&#x3001;&#x4E5F;&#x4E0D;&#x662F;&#x4FE1;&#x606F;&#x7CFB;&#x7684;&#x5B66;&#x751F;&#x7684;&#x59D3;&#x540D;&#x548C;&#x6027;&#x522B;</p>
+  <figure class="highlight sql"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> Sname&#xFF0C;Ssex</span><br><span class="line"><span class="keyword">FROM</span> Student</span><br><span class="line"><span class="keyword">WHERE</span> Sdept <span class="keyword">NOT</span> <span class="keyword">IN</span> (<span class="string">&apos;CS&apos;</span>, <span class="string">&apos;MA&apos;</span>, <span class="string">&apos;IS&apos;</span>);</span><br></pre></td></tr></tbody></table></figure>
+</li>
+</ul>
+<ul>
+<li>&#x901A;&#x914D;&#x7B26; % &#x4EE3;&#x8868;&#x4EFB;&#x610F;&#x957F;&#x5EA6;&#x7684;&#x5B57;&#x7B26;&#x4E32;</li>
+<li><p>&#x901A;&#x914D;&#x7B26; _ &#x4EE3;&#x8868;&#x4EFB;&#x610F;&#x5355;&#x4E2A;&#x5B57;&#x7B26;</p>
+</li>
+<li><p>&#x67E5;&#x8BE2;&#x5B66;&#x53F7;&#x4E3A; 201215121 &#x7684;&#x5B66;&#x751F;&#x7684;&#x8BE6;&#x7EC6;&#x60C5;&#x51B5;</p>
+  <figure class="highlight oxygene"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> * </span><br><span class="line"><span class="keyword">FROM</span> Student</span><br><span class="line"><span class="keyword">WHERE</span> Sno LIKE <span class="string">&apos;201215121&apos;</span>;  &#x7B49;&#x4EF7;&#x4E8E; <span class="keyword">WHERE</span> Sno = <span class="string">&apos;201215121&apos;</span>;</span><br></pre></td></tr></tbody></table></figure>
+</li>
+<li><p>&#x67E5;&#x8BE2;&#x6240;&#x6709;&#x59D3;&#x5218;&#x7684;&#x5B66;&#x751F;&#x7684;&#x59D3;&#x540D;&#x3001;&#x5B66;&#x53F7;&#x548C;&#x6027;&#x522B;</p>
+  <figure class="highlight n1ql"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> Sname&#xFF0C;Sno&#xFF0C;Ssex</span><br><span class="line"><span class="keyword">FROM</span> Student</span><br><span class="line"><span class="keyword">WHERE</span> Sname <span class="keyword">LIKE</span> &#x2018;&#x5218;%&#x2019;&#xFF1B;</span><br></pre></td></tr></tbody></table></figure>
+</li>
+<li><p>&#x67E5;&#x8BE2;&#x6240;&#x6709;&#x4E0D;&#x662F;&#x59D3;&#x5218;&#x7684;&#x5B66;&#x751F;&#x7684;&#x59D3;&#x540D;&#x3001;&#x5B66;&#x53F7;&#x548C;&#x6027;&#x522B;</p>
+  <figure class="highlight n1ql"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> Sname&#xFF0C; Sno&#xFF0C;Ssex</span><br><span class="line"><span class="keyword">FROM</span> Student</span><br><span class="line"><span class="keyword">WHERE</span> Sname <span class="keyword">NOT</span> <span class="keyword">LIKE</span> &#x2018;&#x5218;%&#x2018;&#xFF1B;</span><br></pre></td></tr></tbody></table></figure>
+</li>
+<li><p>&#x67E5;&#x8BE2;&#x6240;&#x6709;&#x6709;&#x6210;&#x7EE9;&#x7684;&#x5B66;&#x751F;&#x7684;&#x5B66;&#x53F7;&#x548C;&#x8BFE;&#x7A0B;&#x53F7;</p>
+<figure class="highlight n1ql"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> Sno&#xFF0C;Cno</span><br><span class="line"><span class="keyword">FROM</span> SC</span><br><span class="line"><span class="keyword">WHERE</span> Grade <span class="keyword">IS</span> <span class="keyword">NOT</span> <span class="literal">NULL</span>&#xFF1B;</span><br></pre></td></tr></tbody></table></figure>
+</li>
+<li><p>&#x67E5;&#x8BE2;&#x9009;&#x4FEE;&#x4E86;3&#x53F7;&#x8BFE;&#x7A0B;&#x7684;&#x5B66;&#x751F;&#x7684;&#x5B66;&#x53F7;&#x548C;&#x6210;&#x7EE9;&#xFF0C;&#x67E5;&#x8BE2;&#x7ED3;&#x679C;&#x6309;&#x5206;&#x6570;&#x7684;&#x964D;&#x5E8F;&#x6392;&#x5217;</p>
+</li>
+</ul>
+<figure class="highlight sql"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> Sno&#xFF0C;Grade</span><br><span class="line"><span class="keyword">FROM</span> SC</span><br><span class="line"><span class="keyword">WHERE</span> Cno = &#x2019;<span class="number">3</span>&#x2018;</span><br><span class="line"><span class="keyword">ORDER</span> <span class="keyword">BY</span> Grade <span class="keyword">DESC</span>(<span class="keyword">default</span> <span class="keyword">ASC</span>);</span><br></pre></td></tr></tbody></table></figure>
+<ul>
+<li>&#x67E5;&#x8BE2;&#x5168;&#x4F53;&#x5B66;&#x751F;&#x60C5;&#x51B5;&#xFF0C;&#x67E5;&#x8BE2;&#x7ED3;&#x679C;&#x6309;&#x6240;&#x5728;&#x7CFB;&#x7684;&#x7CFB;&#x53F7;&#x5347;&#x5E8F;&#x6392;&#x5E8F;&#xFF0C;&#x540C;&#x4E00;&#x7CFB;&#x4E2D;&#x7684;&#x5B66;&#x751F;&#x6309;&#x5E74;&#x9F84;&#x964D;&#x5E8F;&#x6392;&#x5E8F;&#x3002;</li>
+</ul>
+<figure class="highlight n1ql"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> * </span><br><span class="line"><span class="keyword">FROM</span> Student</span><br><span class="line"><span class="keyword">ORDER</span> <span class="keyword">BY</span> Sdept, Sage, <span class="keyword">DESC</span>;</span><br></pre></td></tr></tbody></table></figure>
+<ul>
+<li>&#x805A;&#x96C6;&#x51FD;&#x6570;</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>&#x51FD;&#x6570;&#x540D;</th>
+<th>&#x529F;&#x80FD;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>COUNT([DISTINCT</td>
+<td>ALL] &lt;&#x5217;&#x540D;&gt;)</td>
+<td>&#x7EDF;&#x8BA1;&#x4E00;&#x5217;&#x4E2D;&#x503C;&#x7684;&#x4E2A;&#x6570;</td>
+</tr>
+<tr>
+<td>COUNT(*)</td>
+<td>&#x7EDF;&#x8BA1;&#x5143;&#x7956;&#x4E2A;&#x6570;</td>
+</tr>
+<tr>
+<td>SUM([DISTINCT</td>
+<td>ALL]] &lt;&#x5217;&#x540D;&gt;)</td>
+<td>&#x8BA1;&#x7B97;&#x4E00;&#x5217;&#x503C;&#x7684;&#x603B;&#x548C;</td>
+</tr>
+<tr>
+<td>AVG([DISTINCT</td>
+<td>ALL]] &lt;&#x5217;&#x540D;&gt;)</td>
+<td>&#x8BA1;&#x7B97;&#x4E00;&#x5217;&#x503C;&#x7684;&#x5E73;&#x5747;&#x503C;</td>
+</tr>
+<tr>
+<td>MAX([DISTINCT</td>
+<td>ALL]] &lt;&#x5217;&#x540D;&gt;)</td>
+<td>&#x6C42;&#x4E00;&#x5217;&#x503C;&#x4E2D;&#x7684;&#x6700;&#x5927;&#x503C;</td>
+</tr>
+<tr>
+<td>MIN([DISTINCT</td>
+<td>ALL]] &lt;&#x5217;&#x540D;&gt;)</td>
+<td>&#x6C42;&#x4E00;&#x5217;&#x503C;&#x4E2D;&#x7684;&#x6700;&#x5C0F;&#x503C;</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>&#x67E5;&#x8BE2;&#x5B66;&#x751F;&#x603B;&#x6570;</li>
+</ul>
+<figure class="highlight n1ql"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> <span class="built_in">COUNT</span>(*)</span><br><span class="line"><span class="keyword">FROM</span> Student;</span><br></pre></td></tr></tbody></table></figure>
+<ul>
+<li>&#x67E5;&#x8BE2;&#x9009;&#x4FEE;&#x4E86;&#x8BFE;&#x7A0B;&#x7684;&#x5B66;&#x751F;&#x4EBA;&#x6570;</li>
+</ul>
+<figure class="highlight n1ql"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> <span class="built_in">COUNT</span>(<span class="keyword">DISTINCT</span> Sno)</span><br><span class="line"><span class="keyword">FROM</span> SC;</span><br></pre></td></tr></tbody></table></figure>
+<ul>
+<li>&#x8BA1;&#x7B97;&#x9009;&#x4FEE;&#x4E86;&#x4E00;&#x53F7;&#x8BFE;&#x7A0B;&#x7684;&#x5B66;&#x751F;&#x5E73;&#x5747;&#x6210;&#x7EE9;</li>
+</ul>
+<figure class="highlight sql"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> <span class="keyword">AVG</span>(Grade)</span><br><span class="line"><span class="keyword">From</span> SC</span><br><span class="line"><span class="keyword">WHERE</span> Cno=<span class="string">&apos;1&apos;</span>;</span><br></pre></td></tr></tbody></table></figure>
+<ul>
+<li>&#x67E5;&#x8BE2;&#x9009;&#x4FEE;1&#x53F7;&#x8BFE;&#x7A0B;&#x7684;&#x5B66;&#x751F;&#x6700;&#x9AD8;&#x5206;&#x6570;</li>
+</ul>
+<figure class="highlight sql"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> <span class="keyword">MAX</span>(Grade)</span><br><span class="line"><span class="keyword">FROM</span> SC</span><br><span class="line"><span class="keyword">WHERE</span> Cno=<span class="string">&apos;1&apos;</span>;</span><br></pre></td></tr></tbody></table></figure>
+<ul>
+<li>&#x67E5;&#x8BE2;&#x5B66;&#x751F;201215012&#x9009;&#x4FEE;&#x8BFE;&#x7A0B;&#x7684;&#x603B;&#x5B66;&#x5206;&#x6570;&#x3002;</li>
+</ul>
+<figure class="highlight sql"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> <span class="keyword">SUM</span>(Ccredit)</span><br><span class="line"><span class="keyword">FROM</span> SC,Course</span><br><span class="line"><span class="keyword">WHERE</span> Sno=<span class="string">&apos;201215012&apos;</span> <span class="keyword">AND</span> SC.Cno = Course.Cno;</span><br></pre></td></tr></tbody></table></figure>
+<ul>
+<li>&#x6C42;&#x5404;&#x4E2A;&#x8BFE;&#x7A0B;&#x53F7;&#x53CA;&#x76F8;&#x5E94;&#x7684;&#x9009;&#x8BFE;&#x4EBA;&#x6570;</li>
+</ul>
+<figure class="highlight routeros"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">SELECT Cno&#xFF0C;COUNT(Sno)</span><br><span class="line"><span class="keyword">FROM</span> SC</span><br><span class="line">GROUP BY Cno;</span><br></pre></td></tr></tbody></table></figure>
+<ul>
+<li>&#x67E5;&#x8BE2;&#x9009;&#x4FEE;&#x4E86;&#x4E09;&#x95E8;&#x4EE5;&#x4E0A;&#x8BFE;&#x7A0B;&#x7684;&#x5B66;&#x751F;&#x5B66;&#x53F7;</li>
+</ul>
+<figure class="highlight routeros"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">SELECT Sno</span><br><span class="line"><span class="keyword">FROM</span> SC</span><br><span class="line">GROUP BY Sno</span><br><span class="line">HAVING COUNT(*) &gt; 3;</span><br></pre></td></tr></tbody></table></figure>
+<ul>
+<li>&#x67E5;&#x8BE2;&#x5E73;&#x5747;&#x6210;&#x7EE9;&#x5927;&#x4E8E;&#x7B49;&#x4E8E; 90 &#x5206;&#x7684;&#x5B66;&#x751F;&#x5B66;&#x53F7;&#x548C;&#x5E73;&#x5747;&#x6210;&#x7EE9;</li>
+</ul>
+<figure class="highlight routeros"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">SELECT Sno, AVG(Grade)</span><br><span class="line"><span class="keyword">FROM</span> SC</span><br><span class="line">GROUP BY Sno</span><br><span class="line">HAVING AVG(Grade) &gt;= 90;</span><br></pre></td></tr></tbody></table></figure>
+<ul>
+<li>&#x67E5;&#x8BE2;&#x6BCF;&#x4E2A;&#x5B66;&#x751F;&#x53CA;&#x5176;&#x9009;&#x4FEE;&#x8BFE;&#x7684;&#x60C5;&#x51B5;</li>
+</ul>
+<figure class="highlight n1ql"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> Student.*, SC.*</span><br><span class="line"><span class="keyword">FROM</span> Student, SC</span><br><span class="line"><span class="keyword">WHERE</span> Student.Sno = SC.Sno;</span><br></pre></td></tr></tbody></table></figure>
+<ul>
+<li>&#x67E5;&#x8BE2;&#x9009;&#x4FEE; 2 &#x53F7;&#x8BFE;&#x7A0B;&#x4E14;&#x6210;&#x7EE9;&#x5728; 90 &#x5206;&#x4EE5;&#x4E0A;&#x7684;&#x6240;&#x6709;&#x5B66;&#x751F;&#x7684;&#x5B66;&#x53F7;&#x548C;&#x59D3;&#x540D;</li>
+</ul>
+<figure class="highlight mipsasm"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">SELECT Student.Sno, Sname</span><br><span class="line">FROM Student,<span class="keyword">SC</span></span><br><span class="line"><span class="keyword">WHERE </span>Student.Sno=<span class="keyword">SC.Sno </span><span class="keyword">AND </span><span class="keyword">SC.Cno </span>= <span class="string">&apos;2&apos;</span> <span class="keyword">AND </span><span class="keyword">SC.Grade </span>&gt; <span class="number">90</span><span class="comment">;</span></span><br></pre></td></tr></tbody></table></figure>
+<ul>
+<li>&#x67E5;&#x8BE2;&#x6BCF;&#x4E2A;&#x5B66;&#x751F;&#x7684;&#x5B66;&#x53F7;&#x3001;&#x59D3;&#x540D;&#x3001;&#x9009;&#x4FEE;&#x7684;&#x8BFE;&#x7A0B;&#x540D;&#x53CA;&#x6210;&#x7EE9;</li>
+</ul>
+<figure class="highlight nginx"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="attribute">SELECT</span> Student.S<span class="literal">no</span>, Sname, Cname, Grade</span><br><span class="line">FROM Student, SC, Course</span><br><span class="line">WHERE Student.S<span class="literal">no</span>=SC.S<span class="literal">no</span> AND SC.C<span class="literal">no</span>=Course.C<span class="literal">no</span>;</span><br></pre></td></tr></tbody></table></figure>
+<h3 id="3-7-&#x89C6;&#x56FE;"><a href="#3-7-&#x89C6;&#x56FE;" class="headerlink" title="3.7 &#x89C6;&#x56FE;"></a>3.7 &#x89C6;&#x56FE;</h3><ul>
+<li>&#x5EFA;&#x7ACB;&#x89C6;&#x56FE;</li>
+</ul>
+<figure class="highlight sql"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">CREATE</span> <span class="keyword">VIEW</span> &lt;&#x89C6;&#x56FE;&#x540D;&gt; </span><br><span class="line"><span class="keyword">AS</span> &lt;&#x5B50;&#x67E5;&#x8BE2;&gt;</span><br><span class="line">[<span class="keyword">WITH</span> <span class="keyword">CHECK</span> <span class="keyword">OPTION</span>];</span><br></pre></td></tr></tbody></table></figure>
+<ul>
+<li>&#x5EFA;&#x7ACB;&#x4FE1;&#x606F;&#x7CFB;&#x5B66;&#x751F;&#x7684;&#x89C6;&#x56FE;</li>
+</ul>
+<figure class="highlight sql"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">CREATE</span> <span class="keyword">VIEW</span> IS_Student</span><br><span class="line"><span class="keyword">AS</span></span><br><span class="line"><span class="keyword">SELECT</span> Sno,sname,Sage</span><br><span class="line"><span class="keyword">FROM</span> Student</span><br><span class="line"><span class="keyword">WHERE</span> Sdept=<span class="string">&apos;IS&apos;</span>;</span><br></pre></td></tr></tbody></table></figure>
+<ul>
+<li>&#x5B9A;&#x4E49;&#x4E00;&#x4E2A;&#x53CD;&#x6620;&#x5B66;&#x751F;&#x51FA;&#x751F;&#x5E74;&#x4EFD;&#x7684;&#x89C6;&#x56FE;</li>
+</ul>
+<figure class="highlight sql"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">CREATE</span> <span class="keyword">VIEW</span> BT_S(Sno,Sname, Sbirth)</span><br><span class="line"><span class="keyword">AS</span></span><br><span class="line"><span class="keyword">SELECT</span> Sno,Sname,<span class="number">2014</span>-Sage</span><br><span class="line"><span class="keyword">FROM</span> Student;</span><br></pre></td></tr></tbody></table></figure>
+<h3 id="&#x6570;&#x636E;&#x5E93;&#x5B89;&#x5168;&#x6027;"><a href="#&#x6570;&#x636E;&#x5E93;&#x5B89;&#x5168;&#x6027;" class="headerlink" title="&#x6570;&#x636E;&#x5E93;&#x5B89;&#x5168;&#x6027;"></a>&#x6570;&#x636E;&#x5E93;&#x5B89;&#x5168;&#x6027;</h3><ul>
+<li>&#x6570;&#x636E;&#x5E93;&#x7684;&#x6570;&#x636E;&#x4FDD;&#x62A4;&#x4E3B;&#x8981;&#x5305;&#x62EC;&#x6570;&#x636E;&#x7684;&#x5B89;&#x5168;&#x6027;&#x548C;&#x5B8C;&#x6574;&#x6027;&#x3002;</li>
+<li>&#x6570;&#x636E;&#x5E93;&#x7684;&#x5B89;&#x5168;&#x6027;&#x662F;&#x6307;&#x4FDD;&#x62A4;&#x6570;&#x636E;&#x5E93;&#x4EE5;&#x9632;&#x6B62;&#x4E0D;&#x5408;&#x6CD5;&#x4F7F;&#x7528;&#x6240;&#x9020;&#x6210;&#x7684;&#x6570;&#x636E;&#x6CC4;&#x9732;&#x3001;&#x66F4;&#x6539;&#x6216;&#x7834;&#x574F;&#x3002;</li>
+<li>&#x6570;&#x636E;&#x5E93;&#x7684;&#x4E0D;&#x5B89;&#x5168;&#x56E0;&#x7D20;<ol>
+<li>&#x975E;&#x6388;&#x6743;&#x7528;&#x6237;&#x5BF9;&#x6570;&#x636E;&#x5E93;&#x7684;&#x6076;&#x610F;&#x5B58;&#x53D6;&#x548C;&#x7834;&#x574F;<ul>
+<li>&#x4EE5;&#x4FDD;&#x8BC1;&#x6570;&#x636E;&#x514D;&#x53D7;&#x672A;&#x7ECF;&#x6388;&#x6743;&#x7684;&#x8BBF;&#x95EE;&#x548C;&#x7834;&#x574F;&#xFF0C;&#x6570;&#x636E;&#x5E93;&#x7BA1;&#x7406;&#x7CFB;&#x7EDF;&#x63D0;&#x4F9B;&#x7684;&#x5B89;&#x5168;&#x63AA;&#x65BD;&#x4E3B;&#x8981;&#x5305;&#x62EC;&#x7528;&#x6237;&#x8EAB;&#x4EFD;&#x9274;&#x522B;&#x3001;&#x5B58;&#x53D6;&#x63A7;&#x5236;&#x548C;&#x89C6;&#x56FE;&#x7B49;&#x6280;&#x672F;&#x3002;</li>
+</ul>
+</li>
+<li>&#x6570;&#x636E;&#x5E93;&#x4E2D;&#x91CD;&#x8981;&#x6216;&#x654F;&#x611F;&#x7684;&#x6570;&#x636E;&#x88AB;&#x6CC4;&#x9732;<ul>
+<li>&#x4E3A;&#x9632;&#x6B62;&#x6570;&#x636E;&#x6CC4;&#x9732;&#xFF0C;&#x6570;&#x636E;&#x5E93;&#x7BA1;&#x7406;&#x7CFB;&#x7EDF;&#x63D0;&#x4F9B;&#x7684;&#x4E3B;&#x8981;&#x6280;&#x672F;&#x6709;&#x5F3A;&#x5236;&#x5B58;&#x53D6;&#x63A7;&#x5236;&#x3001;&#x6570;&#x636E;&#x52A0;&#x5BC6;&#x5B58;&#x50A8;&#x548C;&#x52A0;&#x5BC6;&#x4F20;&#x8F93;&#x7B49;&#x3002;</li>
+</ul>
+</li>
+<li>&#x5B89;&#x5168;&#x73AF;&#x5883;&#x7684;&#x8106;&#x5F31;&#x6027;</li>
+</ol>
+</li>
+</ul>
+<script src="/live2dw/lib/L2Dwidget.min.js?0c58a1486de42ac6cc1c59c7d98ae887"></script><script>L2Dwidget.init({});</script>
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <div>
+      
+        <div>
+    
+        <div style="text-align:center;color: #ccc;font-size:14px;">
+            -------------&#x672C;&#x6587;&#x7ED3;&#x675F;<i class="fa fa-paw"></i>&#x611F;&#x8C22;&#x60A8;&#x7684;&#x9605;&#x8BFB;-------------
+        </div>
+    
+</div>
+
+      
+    </div>
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/&#x6570;&#x636E;&#x5E93;&#x7CFB;&#x7EDF;/" rel="tag"> <i class="fa fa-tag"></i> &#x6570;&#x636E;&#x5E93;&#x7CFB;&#x7EDF;</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2018/03/22/&#x6DF1;&#x5165;&#x7406;&#x89E3;&#x8BA1;&#x7B97;&#x673A;&#x7CFB;&#x7EDF;&#x8BFB;&#x4E66;&#x7B14;&#x8BB0;/" rel="next" title="&#x6DF1;&#x5165;&#x7406;&#x89E3;&#x8BA1;&#x7B97;&#x673A;&#x7CFB;&#x7EDF;&#x8BFB;&#x4E66;&#x7B14;&#x8BB0;">
+                <i class="fa fa-chevron-left"></i> &#x6DF1;&#x5165;&#x7406;&#x89E3;&#x8BA1;&#x7B97;&#x673A;&#x7CFB;&#x7EDF;&#x8BFB;&#x4E66;&#x7B14;&#x8BB0;
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2018/03/22/CCF_201709-5_&#x9664;&#x6CD5;/" rel="prev" title="CCF 201709-5 &#x9664;&#x6CD5; Java">
+                CCF 201709-5 &#x9664;&#x6CD5; Java <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+
+          
+
+  
+
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            &#x6587;&#x7AE0;&#x76EE;&#x5F55;
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            &#x7AD9;&#x70B9;&#x6982;&#x89C8;
+          </li>
+        </ul>
+      
+
+      <section class="site-overview-wrap sidebar-panel">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope="" itemtype="http://schema.org/Person">
+            
+              <img class="site-author-image" itemprop="image" src="/images/avatar.jpg" alt="Kings Cooober">
+            
+              <p class="site-author-name" itemprop="name">Kings Cooober</p>
+              <p class="site-description motion-element" itemprop="description">&#x4E00;&#x4E2A;&#x4EBA;&#x5E78;&#x8FD0;&#x7684;&#x524D;&#x63D0;&#xFF0C;&#x662F;&#x4ED6;&#x6709;&#x80FD;&#x529B;&#x6539;&#x53D8;&#x81EA;&#x5DF1;&#x3002;</p>
+          </div>
+
+          <nav class="site-state motion-element">
+
+            
+              <div class="site-state-item site-state-posts">
+              
+                <a href="/archives">
+              
+                  <span class="site-state-item-count">22</span>
+                  <span class="site-state-item-name">&#x65E5;&#x5FD7;</span>
+                </a>
+              </div>
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-categories">
+                <a href="/categories/index.html">
+                  <span class="site-state-item-count">6</span>
+                  <span class="site-state-item-name">&#x5206;&#x7C7B;</span>
+                </a>
+              </div>
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-tags">
+                <a href="/tags/index.html">
+                  <span class="site-state-item-count">16</span>
+                  <span class="site-state-item-name">&#x6807;&#x7B7E;</span>
+                </a>
+              </div>
+            
+
+          </nav>
+
+          
+
+          
+            <div class="links-of-author motion-element">
+                
+                  <span class="links-of-author-item">
+                    <a href="https://github.com/vimerbai" target="_blank" title="GitHub">
+                      
+                        <i class="fa fa-fw fa-github"></i>GitHub</a>
+                  </span>
+                
+                  <span class="links-of-author-item">
+                    <a href="mailto:vimer.bai@gmail.com" target="_blank" title="E-Mail">
+                      
+                        <i class="fa fa-fw fa-envelope"></i>E-Mail</a>
+                  </span>
+                
+            </div>
+          
+
+          
+          
+
+          
+          
+
+          
+
+        </div>
+      </section>
+
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#&#x6570;&#x636E;&#x5E93;&#x7CFB;&#x7EDF;&#x6982;&#x8BBA;"><span class="nav-number">1.</span> <span class="nav-text">&#x6570;&#x636E;&#x5E93;&#x7CFB;&#x7EDF;&#x6982;&#x8BBA;</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#1-1-&#x6570;&#x636E;&#x5E93;&#x7CFB;&#x7EDF;&#x6982;&#x8FF0;"><span class="nav-number">1.1.</span> <span class="nav-text">1.1 &#x6570;&#x636E;&#x5E93;&#x7CFB;&#x7EDF;&#x6982;&#x8FF0;</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#1-2-&#x6570;&#x636E;&#x6A21;&#x578B;"><span class="nav-number">1.2.</span> <span class="nav-text">1.2 &#x6570;&#x636E;&#x6A21;&#x578B;</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#1-3-&#x6570;&#x636E;&#x5E93;&#x7CFB;&#x7EDF;&#x7684;&#x7ED3;&#x6784;"><span class="nav-number">1.3.</span> <span class="nav-text">1.3 &#x6570;&#x636E;&#x5E93;&#x7CFB;&#x7EDF;&#x7684;&#x7ED3;&#x6784;</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#1-4-&#x6570;&#x636E;&#x5E93;&#x7CFB;&#x7EDF;&#x7684;&#x7EC4;&#x6210;"><span class="nav-number">1.4.</span> <span class="nav-text">1.4 &#x6570;&#x636E;&#x5E93;&#x7CFB;&#x7EDF;&#x7684;&#x7EC4;&#x6210;</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-1-&#x5173;&#x7CFB;&#x6570;&#x636E;&#x7ED3;&#x6784;&#x53CA;&#x5F62;&#x5F0F;&#x5B9A;&#x4E49;"><span class="nav-number">1.5.</span> <span class="nav-text">2.1 &#x5173;&#x7CFB;&#x6570;&#x636E;&#x7ED3;&#x6784;&#x53CA;&#x5F62;&#x5F0F;&#x5B9A;&#x4E49;</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-2-&#x5173;&#x7CFB;&#x64CD;&#x4F5C;"><span class="nav-number">1.6.</span> <span class="nav-text">2.2 &#x5173;&#x7CFB;&#x64CD;&#x4F5C;</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-3-&#x5173;&#x7CFB;&#x7684;&#x5B8C;&#x6574;&#x6027;"><span class="nav-number">1.7.</span> <span class="nav-text">2.3 &#x5173;&#x7CFB;&#x7684;&#x5B8C;&#x6574;&#x6027;</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-4-&#x5173;&#x7CFB;&#x4EE3;&#x6570;"><span class="nav-number">1.8.</span> <span class="nav-text">2.4 &#x5173;&#x7CFB;&#x4EE3;&#x6570;</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-1-SQL-&#x6982;&#x8FF0;"><span class="nav-number">1.9.</span> <span class="nav-text">3.1 SQL &#x6982;&#x8FF0;</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-2-&#x5B66;&#x751F;-&#x8BFE;&#x7A0B;&#x6570;&#x636E;&#x5E93;"><span class="nav-number">1.10.</span> <span class="nav-text">3.2 &#x5B66;&#x751F;-&#x8BFE;&#x7A0B;&#x6570;&#x636E;&#x5E93;</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-3-&#x6570;&#x636E;&#x5B9A;&#x4E49;"><span class="nav-number">1.11.</span> <span class="nav-text">3.3 &#x6570;&#x636E;&#x5B9A;&#x4E49;</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-7-&#x89C6;&#x56FE;"><span class="nav-number">1.12.</span> <span class="nav-text">3.7 &#x89C6;&#x56FE;</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#&#x6570;&#x636E;&#x5E93;&#x5B89;&#x5168;&#x6027;"><span class="nav-number">1.13.</span> <span class="nav-text">&#x6570;&#x636E;&#x5E93;&#x5B89;&#x5168;&#x6027;</span></a></li></ol></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
+      
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright">&#xA9; <span itemprop="copyrightYear">2018</span>
+  <span class="with-love">
+    <i class="fa fa-user"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Kings Cooober</span>
+
+  
+</div>
+
+<!--
+
+  <div class="powered-by">由 <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a> 强力驱动</div>
+
+
+
+  <span class="post-meta-divider">|</span>
+
+
+
+  <div class="theme-info">主题 &mdash; <a class="theme-link" target="_blank" href="https://github.com/iissnan/hexo-theme-next">NexT.Gemini</a> v5.1.4</div>
+
+-->
+
+
+
+        
+<div class="busuanzi-count">
+  <script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+  
+    <span class="site-uv">
+      &#x672C;&#x7AD9;&#x8BBF;&#x5BA2;&#x6570; <i class="fa fa-user"></i>
+      <span class="busuanzi-value" id="busuanzi_value_site_uv"></span>
+      &#x4EBA;&#x6B21;
+    </span>
+  
+
+  
+    <span class="site-pv">
+      &#x672C;&#x7AD9;&#x603B;&#x8BBF;&#x95EE;&#x91CF; <i class="fa fa-eye"></i>
+      <span class="busuanzi-value" id="busuanzi_value_site_pv"></span>
+      &#x6B21;
+    </span>
+  
+</div>
+
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+    
+
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+  
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.4"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.4"></script>
+
+
+
+  
+  
+
+
+  <script type="text/javascript" src="/js/src/affix.js?v=5.1.4"></script>
+
+  <script type="text/javascript" src="/js/src/schemes/pisces.js?v=5.1.4"></script>
+
+
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  
+
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+  
+  
+  
+  <link rel="stylesheet" href="/lib/algolia-instant-search/instantsearch.min.css">
+
+  
+  
+  <script src="/lib/algolia-instant-search/instantsearch.min.js"></script>
+  
+
+  <script src="/js/src/algolia-search.js?v=5.1.4"></script>
+
+
+
+  
+
+  
+  <script src="https://cdn1.lncld.net/static/js/av-core-mini-0.6.4.js"></script>
+  <script>AV.initialize("95RjKPrtxF62OkSvHTocK31J-gzGzoHsz", "9tYuomCsaxPnD6BsQeakdmJv");</script>
+  <script>
+    function showTime(Counter) {
+      var query = new AV.Query(Counter);
+      var entries = [];
+      var $visitors = $(".leancloud_visitors");
+
+      $visitors.each(function () {
+        entries.push( $(this).attr("id").trim() );
+      });
+
+      query.containedIn('url', entries);
+      query.find()
+        .done(function (results) {
+          var COUNT_CONTAINER_REF = '.leancloud-visitors-count';
+
+          if (results.length === 0) {
+            $visitors.find(COUNT_CONTAINER_REF).text(0);
+            return;
+          }
+
+          for (var i = 0; i < results.length; i++) {
+            var item = results[i];
+            var url = item.get('url');
+            var time = item.get('time');
+            var element = document.getElementById(url);
+
+            $(element).find(COUNT_CONTAINER_REF).text(time);
+          }
+          for(var i = 0; i < entries.length; i++) {
+            var url = entries[i];
+            var element = document.getElementById(url);
+            var countSpan = $(element).find(COUNT_CONTAINER_REF);
+            if( countSpan.text() == '') {
+              countSpan.text(0);
+            }
+          }
+        })
+        .fail(function (object, error) {
+          console.log("Error: " + error.code + " " + error.message);
+        });
+    }
+
+    function addCount(Counter) {
+      var $visitors = $(".leancloud_visitors");
+      var url = $visitors.attr('id').trim();
+      var title = $visitors.attr('data-flag-title').trim();
+      var query = new AV.Query(Counter);
+
+      query.equalTo("url", url);
+      query.find({
+        success: function(results) {
+          if (results.length > 0) {
+            var counter = results[0];
+            counter.fetchWhenSave(true);
+            counter.increment("time");
+            counter.save(null, {
+              success: function(counter) {
+                var $element = $(document.getElementById(url));
+                $element.find('.leancloud-visitors-count').text(counter.get('time'));
+              },
+              error: function(counter, error) {
+                console.log('Failed to save Visitor num, with error message: ' + error.message);
+              }
+            });
+          } else {
+            var newcounter = new Counter();
+            /* Set ACL */
+            var acl = new AV.ACL();
+            acl.setPublicReadAccess(true);
+            acl.setPublicWriteAccess(true);
+            newcounter.setACL(acl);
+            /* End Set ACL */
+            newcounter.set("title", title);
+            newcounter.set("url", url);
+            newcounter.set("time", 1);
+            newcounter.save(null, {
+              success: function(newcounter) {
+                var $element = $(document.getElementById(url));
+                $element.find('.leancloud-visitors-count').text(newcounter.get('time'));
+              },
+              error: function(newcounter, error) {
+                console.log('Failed to create');
+              }
+            });
+          }
+        },
+        error: function(error) {
+          console.log('Error:' + error.code + " " + error.message);
+        }
+      });
+    }
+
+    $(function() {
+      var Counter = AV.Object.extend("Counter");
+      if ($('.leancloud_visitors').length == 1) {
+        addCount(Counter);
+      } else if ($('.post-title-link').length > 1) {
+        showTime(Counter);
+      }
+    });
+  </script>
+
+
+
+  
+
+  
+
+  
+  
+
+  
+
+  
+
+  
+
+<!-- 页面点击小红心 -->
+<script type="text/javascript" src="/js/src/love.js"></script>
+<!-- 背景动画 -->
+<script type="text/javascript" src="/js/src/particle.js"></script>
+
+
+
+
+<script src="/live2dw/lib/L2Dwidget.min.js?0c58a1486de42ac6cc1c59c7d98ae887"></script><script>L2Dwidget.init({});</script></body></html>
