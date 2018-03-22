@@ -1227,12 +1227,13 @@
         
           
           &#x9996;&#x5148;&#x5728; Linux &#x7CFB;&#x7EDF;&#x4E2D;&#x6253;&#x5F00;&#x7EC8;&#x7AEF;&#xFF0C;&#x786E;&#x8BA4; U &#x76D8;&#x8DEF;&#x5F84;&#xFF1A;
-1sudo fdisk -l
+sudo fdisk -l
+
 &#x683C;&#x5F0F;&#x5316; U &#x76D8;&#xFF0C;&#x4E3A;&#x4E86;&#x683C;&#x5F0F;&#x5316;&#x9996;&#x5148;&#x9700;&#x8981; umount U &#x76D8;&#xFF1A;/dev/sdb &#x662F;&#x6211;&#x7684; U &#x76D8;&#x8BBE;&#x5907;&#x3002;
-1sudo umount /dev/sdb*
+sudo umount /dev/sdb*
 &#x683C;&#x5F0F;&#x5316; U &#x76D8;&#xFF1A;
-1sudo mkfs.vfat /dev/sdb -I
-&#x4F7F;&#x7528; dd &#x547D;N
+sudo mkfs.vfat /dev/sdb -I
+&#x4F7F;&#x7528; dd &#x547D;&#x4EE4;
           ...
           <!--noindex-->
           <div class="post-button text-center">
@@ -1558,15 +1559,26 @@
       
         
           
-          Start vi Editor12vi file// Opens &apos;file&apos; in vi, or creates a file named &apos;file&apos; if it does not exist.
-12vi file1 file2// Opens files sequentially.
-12view file// OPens &apos;file&apos; in read-only mode.
-12vi -R file// Opens &apos;file&apos; in read-only mode.
-12vi -r file// Recovers &apos;file&apos; after system crash.
-12vi + file// Opens &apos;file&apos; at last line.
-Exit vi Editor12ZZ// Saves changes and exits.
-12:x// Saves changes and exits.
-12:wq// Saves changes and exits.
+          Start vi Editorvi file
+// Opens &apos;file&apos; in vi, or creates a file named &apos;file&apos; if it does not exist.
+vi file1 file2
+// Opens files sequentially.
+view file
+// OPens &apos;file&apos; in read-only mode.
+vi -R file
+// Opens &apos;file&apos; in read-only mode.
+vi -r file
+// Recovers &apos;file&apos; after system crash.
+vi + file
+// Opens &apos;file&apos; at last line.
+Exit vi EditorZZ
+// Saves changes and exits.
+:x
+// Saves changes and exits.
+:wq
+// Saves changes and exits.
+:w
+// Sa
           ...
           <!--noindex-->
           <div class="post-button text-center">

@@ -440,12 +440,47 @@
 <ul>
 <li>&#x975E;&#x9012;&#x5F52;&#x56DE;&#x6EAF;&#x6846;&#x67B6;</li>
 </ul>
-<figure class="highlight c++"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">int</span> a[n], i; 		<span class="comment">// &#x521D;&#x59CB;&#x5316;&#x6570;&#x7EC4;a[];</span></span><br><span class="line">i = <span class="number">1</span>;</span><br><span class="line"></span><br><span class="line"><span class="keyword">while</span> (i &gt; <span class="number">0</span> (&#x6709;&#x8DEF;&#x53EF;&#x8D70;) <span class="keyword">and</span> (&#x4E3A;&#x8FBE;&#x5230;&#x76EE;&#x6807;)) { <span class="comment">// &#x8FD8;&#x672A;&#x56DE;&#x6EAF;&#x5230;&#x5934;</span></span><br><span class="line">true<span class="keyword">if</span> (i &gt; n) {			<span class="comment">// &#x641C;&#x7D22;&#x5230;&#x53F6;&#x8282;&#x70B9;</span></span><br><span class="line">truetrue&#x641C;&#x7D22;&#x5230;&#x4E00;&#x4E2A;&#x89E3;&#xFF0C;&#x8F93;&#x51FA;&#x3002;</span><br><span class="line">true} <span class="keyword">else</span> {                <span class="comment">// &#x5904;&#x7406;&#x7B2C;i&#x4E2A;&#x8282;&#x70B9;</span></span><br><span class="line">truetruea[i]&#x7B2C;&#x4E00;&#x4E2A;&#x53EF;&#x80FD;&#x7684;&#x503C;&#xFF1B;</span><br><span class="line">truetrue<span class="keyword">while</span> (a[i] &#x5728;&#x4E0D;&#x6EE1;&#x8DB3;&#x7EA6;&#x675F;&#x6761;&#x4EF6;&#x4E14;&#x5728;&#x641C;&#x7D22;&#x7A7A;&#x95F4;&#x5185;) {</span><br><span class="line">truetruetruea[i]&#x4E0B;&#x4E00;&#x4E2A;&#x53EF;&#x80FD;&#x7684;&#x503C;&#xFF1B;</span><br><span class="line">truetrue}</span><br><span class="line">truetrue<span class="keyword">if</span> (a[i] &#x5728;&#x641C;&#x7D22;&#x7A7A;&#x95F4;&#x5185;) {</span><br><span class="line">truetruetrue&#x6807;&#x8BC6;&#x5360;&#x7528;&#x7684;&#x8D44;&#x6E90;&#xFF1B;</span><br><span class="line">truetruetruei = i + <span class="number">1</span>&#xFF1B;          <span class="comment">// &#x6269;&#x5C55;&#x4E0B;&#x4E00;&#x4E2A;&#x8282;&#x70B9;</span></span><br><span class="line">truetrue} <span class="keyword">else</span> {</span><br><span class="line">truetruetrue&#x6E05;&#x7406;&#x6240;&#x5360;&#x7684;&#x72B6;&#x6001;&#x7A7A;&#x95F4;&#xFF1B;          <span class="comment">// &#x56DE;&#x6EAF;</span></span><br><span class="line">truetruetruei = i - <span class="number">1</span>&#xFF1B;</span><br><span class="line">truetrue}</span><br><span class="line">true}</span><br><span class="line">}</span><br></pre></td></tr></tbody></table></figure>
+<pre><code class="c++">int a[n], i;         // &#x521D;&#x59CB;&#x5316;&#x6570;&#x7EC4;a[];
+i = 1;
+
+while (i &gt; 0 (&#x6709;&#x8DEF;&#x53EF;&#x8D70;) and (&#x4E3A;&#x8FBE;&#x5230;&#x76EE;&#x6807;)) { // &#x8FD8;&#x672A;&#x56DE;&#x6EAF;&#x5230;&#x5934;
+    if (i &gt; n) {            // &#x641C;&#x7D22;&#x5230;&#x53F6;&#x8282;&#x70B9;
+        &#x641C;&#x7D22;&#x5230;&#x4E00;&#x4E2A;&#x89E3;&#xFF0C;&#x8F93;&#x51FA;&#x3002;
+    } else {                // &#x5904;&#x7406;&#x7B2C;i&#x4E2A;&#x8282;&#x70B9;
+        a[i]&#x7B2C;&#x4E00;&#x4E2A;&#x53EF;&#x80FD;&#x7684;&#x503C;&#xFF1B;
+        while (a[i] &#x5728;&#x4E0D;&#x6EE1;&#x8DB3;&#x7EA6;&#x675F;&#x6761;&#x4EF6;&#x4E14;&#x5728;&#x641C;&#x7D22;&#x7A7A;&#x95F4;&#x5185;) {
+            a[i]&#x4E0B;&#x4E00;&#x4E2A;&#x53EF;&#x80FD;&#x7684;&#x503C;&#xFF1B;
+        }
+        if (a[i] &#x5728;&#x641C;&#x7D22;&#x7A7A;&#x95F4;&#x5185;) {
+            &#x6807;&#x8BC6;&#x5360;&#x7528;&#x7684;&#x8D44;&#x6E90;&#xFF1B;
+            i = i + 1&#xFF1B;          // &#x6269;&#x5C55;&#x4E0B;&#x4E00;&#x4E2A;&#x8282;&#x70B9;
+        } else {
+            &#x6E05;&#x7406;&#x6240;&#x5360;&#x7684;&#x72B6;&#x6001;&#x7A7A;&#x95F4;&#xFF1B;          // &#x56DE;&#x6EAF;
+            i = i - 1&#xFF1B;
+        }
+    }
+}
+</code></pre>
 <ul>
 <li>&#x9012;&#x5F52;&#x7684;&#x7B97;&#x6CD5;&#x6846;&#x67B6;</li>
 </ul>
 <p>&#x56DE;&#x6EAF;&#x6CD5;&#x662F;&#x5BF9;&#x89E3;&#x7A7A;&#x95F4;&#x7684;&#x6DF1;&#x5EA6;&#x4F18;&#x5148;&#x641C;&#x7D22;&#xFF0C;&#x5728;&#x4E00;&#x822C;&#x60C5;&#x51B5;&#x4E0B;&#x4F7F;&#x7528;&#x9012;&#x5F52;&#x51FD;&#x6570;&#x6765;&#x5B9E;&#x73B0;&#x56DE;&#x6EAF;&#x6CD5;&#x6BD4;&#x8F83;&#x7B80;&#x5355;&#xFF0C;&#x5176;&#x4E2D; i &#x4E3A;&#x641C;&#x7D22;&#x7684;&#x6DF1;&#x5EA6;&#xFF0C;&#x6846;&#x67B6;&#x5982;&#x4E0B;&#xFF1A;</p>
-<figure class="highlight c++"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">int</span> a[n];</span><br><span class="line"><span class="keyword">try</span> (<span class="keyword">int</span> n) {</span><br><span class="line">true<span class="keyword">if</span> (i &gt; n)</span><br><span class="line">truetrue&#x8F93;&#x51FA;&#x7ED3;&#x679C;&#xFF1B;</span><br><span class="line">true<span class="keyword">else</span> {</span><br><span class="line">truetrue<span class="keyword">for</span> (<span class="keyword">int</span> j = &#x4E0B;&#x754C;&#xFF1B; j &lt;= &#x4E0A;&#x754C;&#xFF1B; j = j + <span class="number">1</span>) {</span><br><span class="line">truetruetrue<span class="keyword">if</span> (fun (j)) {</span><br><span class="line">truetruetruetruea[i] = j;</span><br><span class="line">truetruetruetrue...</span><br><span class="line">truetruetruetrue<span class="keyword">try</span>(i + <span class="number">1</span>)</span><br><span class="line">truetruetruetrue&#x56DE;&#x6EAF;&#x524D;&#x7684;&#x6E05;&#x7406;&#x5DE5;&#x4F5C;(&#x5982; a[i] &#x7F6E;&#x7A7A;&#x503C;&#x7B49;)&#xFF1B;</span><br><span class="line">truetruetrue}</span><br><span class="line">truetrue}</span><br><span class="line">true}</span><br><span class="line">}</span><br></pre></td></tr></tbody></table></figure>
+<pre><code class="c++">int a[n];
+try (int n) {
+    if (i &gt; n)
+        &#x8F93;&#x51FA;&#x7ED3;&#x679C;&#xFF1B;
+    else {
+        for (int j = &#x4E0B;&#x754C;&#xFF1B; j &lt;= &#x4E0A;&#x754C;&#xFF1B; j = j + 1) {
+            if (fun (j)) {
+                a[i] = j;
+                ...
+                try(i + 1)
+                &#x56DE;&#x6EAF;&#x524D;&#x7684;&#x6E05;&#x7406;&#x5DE5;&#x4F5C;(&#x5982; a[i] &#x7F6E;&#x7A7A;&#x503C;&#x7B49;)&#xFF1B;
+            }
+        }
+    }
+}
+</code></pre>
 <script src="/live2dw/lib/L2Dwidget.min.js?0c58a1486de42ac6cc1c59c7d98ae887"></script><script>L2Dwidget.init({});</script>
       
     </div>
