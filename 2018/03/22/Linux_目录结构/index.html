@@ -1,0 +1,1489 @@
+<!DOCTYPE html><html class="theme-next gemini use-motion" lang="zh-Hans"><head>
+  <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<script src="//cdn.bootcss.com/pace/1.0.2/pace.min.js"></script>
+<link href="//cdn.bootcss.com/pace/1.0.2/themes/pink/pace-theme-flash.css" rel="stylesheet">
+<style>
+	.pace .pace-progress {
+	    background: #FFFFFF; /*进度条颜色*/
+	    height: 3px;
+	}
+	.pace .pace-progress-inner {
+	    box-shadow: 0 0 10px rgba(0, 0, 0, 0.75), 0 0 5px    rgba(0, 0, 0, 0.72); /*阴影颜色*/
+	}
+	.pace .pace-activity {
+	    border-top-color: rgba(0, 0, 0, 0.75);    /*上边框颜色*/
+	    border-left-color: rgba(0, 0, 0, 0.75);    /*左边框颜色*/
+}
+</style>
+<meta name="theme-color" content="#222">
+
+
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform">
+<meta http-equiv="Cache-Control" content="no-siteapp">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css">
+
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css">
+
+<link href="/css/main.css?v=5.1.4" rel="stylesheet" type="text/css">
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=5.1.4">
+
+
+  <link rel="mask-icon" href="/images/logo.svg?v=5.1.4" color="#222">
+
+
+
+
+
+  <meta name="keywords" content="linux,">
+
+
+
+
+
+
+
+
+
+
+<meta name="description" content="Linux &amp;#x6587;&amp;#x4EF6;&amp;#x76EE;&amp;#x5F55;&amp;#x7ED3;&amp;#x6784;&amp;#x5BF9;&amp;#x4E8E;&amp;#x6BCF;&amp;#x4E00;&amp;#x4E2A;Linux&amp;#x5B66;&amp;#x4E60;&amp;#x8005;&amp;#x6765;&amp;#x8BF4;&amp;#xFF0C;&amp;#x4E86;&amp;#x89E3;Linux&amp;#x6587;&amp;#x4EF6;&amp;#x7CFB;&amp;#x7EDF;">
+<meta name="keywords" content="linux">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Linux &#x76EE;&#x5F55;&#x7ED3;&#x6784;">
+<meta property="og:url" content="http://yoursite.com/2018/03/22/Linux_&#x76EE;&#x5F55;&#x7ED3;&#x6784;/index.html">
+<meta property="og:site_name" content="Kings Cooober&apos;s Blog">
+<meta property="og:description" content="Linux &amp;#x6587;&amp;#x4EF6;&amp;#x76EE;&amp;#x5F55;&amp;#x7ED3;&amp;#x6784;&amp;#x5BF9;&amp;#x4E8E;&amp;#x6BCF;&amp;#x4E00;&amp;#x4E2A;Linux&amp;#x5B66;&amp;#x4E60;&amp;#x8005;&amp;#x6765;&amp;#x8BF4;&amp;#xFF0C;&amp;#x4E86;&amp;#x89E3;Linux&amp;#x6587;&amp;#x4EF6;&amp;#x7CFB;&amp;#x7EDF;">
+<meta property="og:locale" content="zh-Hans">
+<meta property="og:image" content="http://img.blog.csdn.net/20170124221106377?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvbWFzdGVyNTUxMg==/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast">
+<meta property="og:image" content="http://img.blog.csdn.net/20170402143015550?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvbWFzdGVyNTUxMg==/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast">
+<meta property="og:updated_time" content="2018-03-22T11:08:35.659Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Linux &#x76EE;&#x5F55;&#x7ED3;&#x6784;">
+<meta name="twitter:description" content="Linux &amp;#x6587;&amp;#x4EF6;&amp;#x76EE;&amp;#x5F55;&amp;#x7ED3;&amp;#x6784;&amp;#x5BF9;&amp;#x4E8E;&amp;#x6BCF;&amp;#x4E00;&amp;#x4E2A;Linux&amp;#x5B66;&amp;#x4E60;&amp;#x8005;&amp;#x6765;&amp;#x8BF4;&amp;#xFF0C;&amp;#x4E86;&amp;#x89E3;Linux&amp;#x6587;&amp;#x4EF6;&amp;#x7CFB;&amp;#x7EDF;">
+<meta name="twitter:image" content="http://img.blog.csdn.net/20170124221106377?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvbWFzdGVyNTUxMg==/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast">
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Gemini',
+    version: '5.1.4',
+    sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
+    fancybox: true,
+    tabs: true,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    duoshuo: {
+      userId: '0',
+      author: '博主'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+
+  <link rel="canonical" href="http://yoursite.com/2018/03/22/Linux_&#x76EE;&#x5F55;&#x7ED3;&#x6784;/">
+
+
+
+
+
+  <title>Linux &#x76EE;&#x5F55;&#x7ED3;&#x6784; | Kings Cooober&apos;s Blog</title>
+  
+
+
+
+
+
+
+
+
+</head>
+
+<body itemscope="" itemtype="http://schema.org/WebPage" lang="zh-Hans">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left page-post-detail">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope="" itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/" class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">Kings Cooober&apos;s Blog</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <p class="site-subtitle"></p>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br>
+            
+            &#x9996;&#x9875;
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-about">
+          <a href="/about/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-user"></i> <br>
+            
+            &#x5173;&#x4E8E;
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br>
+            
+            &#x6807;&#x7B7E;
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-categories">
+          <a href="/categories/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-th"></i> <br>
+            
+            &#x5206;&#x7C7B;
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br>
+            
+            &#x5F52;&#x6863;
+          </a>
+        </li>
+      
+
+      
+        <li class="menu-item menu-item-search">
+          
+            <a href="javascript:;" class="popup-trigger">
+          
+            
+              <i class="menu-item-icon fa fa-search fa-fw"></i> <br>
+            
+            &#x641C;&#x7D22;
+          </a>
+        </li>
+      
+    </ul>
+  
+
+  
+    <div class="site-search">
+      
+  
+  <div class="algolia-popup popup search-popup">
+    <div class="algolia-search">
+      <div class="algolia-search-input-icon">
+        <i class="fa fa-search"></i>
+      </div>
+      <div class="algolia-search-input" id="algolia-search-input"></div>
+    </div>
+
+    <div class="algolia-results">
+      <div id="algolia-stats"></div>
+      <div id="algolia-hits"></div>
+      <div id="algolia-pagination" class="algolia-pagination"></div>
+    </div>
+
+    <span class="popup-btn-close">
+      <i class="fa fa-times-circle"></i>
+    </span>
+  </div>
+
+
+
+
+    </div>
+  
+</nav>
+
+
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/03/22/Linux_&#x76EE;&#x5F55;&#x7ED3;&#x6784;/">
+
+    <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Kings Cooober">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Kings Cooober&apos;s Blog">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">Linux &#x76EE;&#x5F55;&#x7ED3;&#x6784;</h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">&#x53D1;&#x8868;&#x4E8E;</span>
+              
+              <time title="&#x521B;&#x5EFA;&#x4E8E;" itemprop="dateCreated datePublished" datetime="2018-03-22T12:49:14+08:00">
+                2018-03-22
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">&#x5206;&#x7C7B;&#x4E8E;</span>
+              
+              
+                <span itemprop="about" itemscope="" itemtype="http://schema.org/Thing">
+                  <a href="/categories/Linux/" itemprop="url" rel="index">
+                    <span itemprop="name">Linux</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+             <span id="/2018/03/22/Linux_&#x76EE;&#x5F55;&#x7ED3;&#x6784;/" class="leancloud_visitors" data-flag-title="Linux &#x76EE;&#x5F55;&#x7ED3;&#x6784;">
+               <span class="post-meta-divider">|</span>
+               <span class="post-meta-item-icon">
+                 <i class="fa fa-eye"></i>
+               </span>
+               
+                 <span class="post-meta-item-text">&#x9605;&#x8BFB;&#x6B21;&#x6570;:</span>
+               
+                 <span class="leancloud-visitors-count"></span>
+             </span>
+          
+
+          
+            <span class="post-meta-divider">|</span>
+            <span class="page-pv">&#x672C;&#x6587;&#x603B;&#x9605;&#x8BFB;&#x91CF; <i class="fa fa-file-o"></i>
+            <span class="busuanzi-value" id="busuanzi_value_page_pv"></span>&#x6B21;
+            </span>
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <h3 id="Linux-&#x6587;&#x4EF6;&#x76EE;&#x5F55;&#x7ED3;&#x6784;"><a href="#Linux-&#x6587;&#x4EF6;&#x76EE;&#x5F55;&#x7ED3;&#x6784;" class="headerlink" title="Linux &#x6587;&#x4EF6;&#x76EE;&#x5F55;&#x7ED3;&#x6784;"></a><strong>Linux &#x6587;&#x4EF6;&#x76EE;&#x5F55;&#x7ED3;&#x6784;</strong></h3><p>&#x5BF9;&#x4E8E;&#x6BCF;&#x4E00;&#x4E2A;Linux&#x5B66;&#x4E60;&#x8005;&#x6765;&#x8BF4;&#xFF0C;&#x4E86;&#x89E3;Linux&#x6587;&#x4EF6;&#x7CFB;&#x7EDF;&#x7684;&#x76EE;&#x5F55;&#x7ED3;&#x6784;&#xFF0C;&#x662F;&#x5B66;&#x597D;Linux&#x7684;&#x81F3;&#x5173;&#x91CD;&#x8981;&#x7684;&#x4E00;&#x6B65;.&#xFF0C;&#x6DF1;&#x5165;&#x4E86;&#x89E3;Linux&#x6587;&#x4EF6;&#x76EE;&#x5F55;&#x7ED3;&#x6784;&#x7684;&#x6807;&#x51C6;&#x548C;&#x6BCF;&#x4E2A;&#x76EE;&#x5F55;&#x7684;&#x8BE6;&#x7EC6;&#x529F;&#x80FD;&#xFF0C;&#x5BF9;&#x4E8E;&#x6211;&#x4EEC;&#x7528;&#x597D;Linux&#x7CFB;&#x7EDF;&#x81F3;&#x5173;&#x91CD;&#x8981;&#xFF0C;&#x4E0B;&#x9762;&#x6211;&#x4EEC;&#x5C31;&#x5F00;&#x59CB;&#x4E86;&#x89E3;&#x4E00;&#x4E0B;Linux&#x76EE;&#x5F55;&#x7ED3;&#x6784;&#x7684;&#x76F8;&#x5173;&#x77E5;&#x8BC6;&#x3002;</p>
+<p>&#x5F53;&#x5728;&#x4F7F;&#x7528;Linux&#x7684;&#x65F6;&#x5019;&#xFF0C;&#x5982;&#x679C;&#x4F60;&#x901A;&#x8FC7;ls -l / &#x5C31;&#x4F1A;&#x53D1;&#x73B0;&#xFF0C;&#x5728; / &#x4E0B;&#x5305;&#x542B;&#x5F88;&#x591A;&#x7684;&#x76EE;&#x5F55;&#xFF0C;&#x6BD4;&#x5982;etc&#x3001;usr&#x3001;var&#x3001;bin &#x7B49;&#x76EE;&#x5F55;&#xFF0C;&#x8FDB;&#x5165;&#x8FD9;&#x4E9B;&#x76EE;&#x5F55;&#x4E5F;&#x4F1A;&#x53D1;&#x73B0;&#x5F88;&#x591A;&#x7684;&#x76EE;&#x5F55;&#x6216;&#x6587;&#x4EF6;&#x3002;&#x6211;&#x4EEC;&#x628A;&#x8FD9;&#x79CD;&#x6587;&#x4EF6;&#x7CFB;&#x7EDF;&#x7684;&#x7ED3;&#x6784;&#x79F0;&#x4E3A;&#x6811;&#x5F62;&#x7ED3;&#x6784;&#x3002;</p>
+<p>&#x6587;&#x4EF6;&#x7CFB;&#x7EDF;&#x662F;&#x7528;&#x6765;&#x7EC4;&#x7EC7;&#x548C;&#x6392;&#x5217;&#x6587;&#x4EF6;&#x5B58;&#x53D6;&#x7684;&#xFF0C;&#x6240;&#x4EE5;&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x901A;&#x8FC7; ls &#x7B49;&#x547D;&#x4EE4;&#x5DE5;&#x5177;&#x6765;&#x67E5;&#x770B;&#x5176;&#x7ED3;&#x6784;&#xFF0C;&#x5728;Linux&#x7CFB;&#x7EDF;&#x4E2D;&#xFF0C;&#x6211;&#x4EEC;&#x89C1;&#x5230;&#x7684;&#x90FD;&#x662F;&#x6811;&#x5F62;&#x7ED3;&#x6784;&#xFF1B;&#x6BD4;&#x5982;&#x64CD;&#x4F5C;&#x7CFB;&#x7EDF;&#x5B89;&#x88C5;&#x5728;&#x4E00;&#x4E2A;&#x6587;&#x4EF6;&#x7CFB;&#x7EDF;&#x4E2D;&#xFF0C;&#x4ED6;&#x8868;&#x73B0;&#x4E3A;&#x7531; / &#x8D77;&#x59CB;&#x7684;&#x6811;&#x5F62;&#x7ED3;&#x6784;&#x3002;Linux&#x6587;&#x4EF6;&#x7CFB;&#x7EDF;&#x7684;&#x6700;&#x9876;&#x7AEF;&#x662F; / &#xFF0C;&#x6211;&#x4EEC;&#x79F0; / &#x4E3A;Linux&#x7684;&#x6839;&#x76EE;&#x5F55;&#xFF0C;&#x4E5F;&#x5C31;&#x662F;Linux&#x64CD;&#x4F5C;&#x7CFB;&#x7EDF;&#x7684;&#x6587;&#x4EF6;&#x7CFB;&#x7EDF;&#x3002;Linxu&#x6587;&#x4EF6;&#x7CFB;&#x7EDF;&#x7684;&#x5165;&#x53E3;&#x5C31;&#x662F; /&#xFF0C;&#x6240;&#x6709;&#x7684;&#x76EE;&#x5F55;&#xFF0C;&#x6587;&#x4EF6;&#xFF0C;&#x8BBE;&#x5907;&#x90FD;&#x5728; / &#x4E4B;&#x4E0B;&#xFF0C; / &#x5C31;&#x662F;Linux&#x6587;&#x4EF6;&#x7CFB;&#x7EDF;&#x7684;&#x7EC4;&#x7EC7;&#x8005;&#xFF0C;&#x4E5F;&#x662F;&#x6700;&#x4E0A;&#x7EA7;&#x7684;&#x9886;&#x5BFC;&#x8005;&#x3002;</p>
+<p>&#x7531;&#x4E8E;Linux&#x662F;&#x5F00;&#x653E;&#x6E90;&#x4EE3;&#x7801;&#xFF0C;&#x5404;&#x5927;&#x516C;&#x53F8;&#x548C;&#x56E2;&#x4F53;&#x6839;&#x636E;Linux&#x7684;&#x6838;&#x5FC3;&#x4EE3;&#x7801;&#x505A;&#x5404;&#x81EA;&#x7684;&#x64CD;&#x4F5C;&#xFF0C;&#x7F16;&#x7A0B;&#x3002;&#x8FD9;&#x6837;&#x5C31;&#x9020;&#x6210;&#x6839;&#x4E0B;&#x7684;&#x76EE;&#x5F55;&#x4E0D;&#x540C;&#x3002;&#x8FD9;&#x6837;&#x5C31;&#x9020;&#x6210;&#x4E2A;&#x4EBA;&#x4E0D;&#x80FD;&#x4F7F;&#x7528;&#x4ED6;&#x4EBA;&#x7684;Linux&#x7CFB;&#x7EDF;&#x7684;PC&#x3002;&#x56E0;&#x4E3A;&#x4F60;&#x6839;&#x672C;&#x4E0D;&#x77E5;&#x9053;&#x4E00;&#x4E9B;&#x57FA;&#x672C;&#x7684;&#x914D;&#x7F6E;&#xFF0C;&#x6587;&#x4EF6;&#x5728;&#x54EA;&#x91CC;&#x3002;&#x3002;&#x3002;&#x8FD9;&#x5C31;&#x9020;&#x6210;&#x4E86;&#x6DF7;&#x4E71;&#x3002;&#x8FD9;&#x5C31;&#x662F;FHS&#xFF08;Filesystem Hierarchy Standard &#xFF09;&#x673A;&#x6784;&#x8BDE;&#x751F;&#x7684;&#x539F;&#x56E0;&#x3002;&#x8BE5;&#x673A;&#x6784;&#x662F;Linux&#x7231;&#x597D;&#x8005;&#x81EA;&#x53D1;&#x7EC4;&#x6210;&#x7684;&#x4E00;&#x4E2A;&#x56E2;&#x4F53;&#xFF0C;&#x4E3B;&#x8981;&#x662F;&#x662F;&#x5BF9;Linux&#x505A;&#x4E00;&#x4E9B;&#x57FA;&#x672C;&#x7684;&#x8981;&#x6C42;&#xFF0C;&#x4E0D;&#x81F3;&#x4E8E;&#x662F;&#x64CD;&#x4F5C;&#x8005;&#x6362;&#x4E00;&#x53F0;&#x4E3B;&#x673A;&#x5C31;&#x6210;&#x4E86;Linux&#x7684;&#x2018;&#x6587;&#x76F2;&#x2019;&#x3002;</p>
+<p>&#x6839;&#x636E;FHS(<a href="http://www.pathname.com/fhs/)&#x7684;&#x5B98;&#x65B9;&#x6587;&#x4EF6;&#x6307;&#x51FA;&#xFF0C;" target="_blank" rel="noopener">http://www.pathname.com/fhs/)&#x7684;&#x5B98;&#x65B9;&#x6587;&#x4EF6;&#x6307;&#x51FA;&#xFF0C;</a> &#x4ED6;&#x4EEC;&#x7684;&#x4E3B;&#x8981;&#x76EE;&#x7684;&#x662F;&#x5E0C;&#x671B;&#x8BA9;&#x4F7F;&#x7528;&#x8005;&#x53EF;&#x4EE5;&#x4E86;&#x89E3;&#x5230;&#x5DF2;&#x5B89;&#x88C5;&#x8F6F;&#x4EF6;&#x901A;&#x5E38;&#x653E;&#x7F6E;&#x4E8E;&#x90A3;&#x4E2A;&#x76EE;&#x5F55;&#x4E0B;&#xFF0C; &#x6240;&#x4EE5;&#x4ED6;&#x4EEC;&#x5E0C;&#x671B;&#x72EC;&#x7ACB;&#x7684;&#x8F6F;&#x4EF6;&#x5F00;&#x53D1;&#x5546;&#x3001;&#x64CD;&#x4F5C;&#x7CFB;&#x7EDF;&#x5236;&#x4F5C;&#x8005;&#x3001;&#x4EE5;&#x53CA;&#x60F3;&#x8981;&#x7EF4;&#x62A4;&#x7CFB;&#x7EDF;&#x7684;&#x7528;&#x6237;&#xFF0C;&#x90FD;&#x80FD;&#x591F;&#x9075;&#x5FAA;FHS&#x7684;&#x6807;&#x51C6;&#x3002; &#x4E5F;&#x5C31;&#x662F;&#x8BF4;&#xFF0C;FHS&#x7684;&#x91CD;&#x70B9;&#x5728;&#x4E8E;&#x89C4;&#x8303;&#x6BCF;&#x4E2A;&#x7279;&#x5B9A;&#x7684;&#x76EE;&#x5F55;&#x4E0B;&#x5E94;&#x8BE5;&#x8981;&#x653E;&#x7F6E;&#x4EC0;&#x4E48;&#x6837;&#x5B50;&#x7684;&#x6570;&#x636E;&#x800C;&#x5DF2;&#x3002; &#x8FD9;&#x6837;&#x505A;&#x597D;&#x5904;&#x975E;&#x5E38;&#x591A;&#xFF0C;&#x56E0;&#x4E3A;Linux&#x64CD;&#x4F5C;&#x7CFB;&#x7EDF;&#x5C31;&#x80FD;&#x591F;&#x5728;&#x65E2;&#x6709;&#x7684;&#x9762;&#x8C8C;&#x4E0B;(&#x76EE;&#x5F55;&#x67B6;&#x6784;&#x4E0D;&#x53D8;)&#x53D1;&#x5C55;&#x51FA;&#x5F00;&#x53D1;&#x8005;&#x60F3;&#x8981;&#x7684;&#x72EC;&#x7279;&#x98CE;&#x683C;&#x3002;</p>
+<p>&#x4E8B;&#x5B9E;&#x4E0A;&#xFF0C;FHS&#x662F;&#x6839;&#x636E;&#x8FC7;&#x53BB;&#x7684;&#x7ECF;&#x9A8C;&#x4E00;&#x76F4;&#x518D;&#x6301;&#x7EED;&#x7684;&#x6539;&#x7248;&#x7684;&#xFF0C;FHS&#x4F9D;&#x636E;&#x6587;&#x4EF6;&#x7CFB;&#x7EDF;&#x4F7F;&#x7528;&#x7684;&#x9891;&#x7E41;&#x4E0E;&#x5426;&#x4E0E;&#x662F;&#x5426;&#x5141;&#x8BB8;&#x4F7F;&#x7528;&#x8005;&#x968F;&#x610F;&#x66F4;&#x52A8;&#xFF0C; &#x800C;&#x5C06;&#x76EE;&#x5F55;&#x5B9A;&#x4E49;&#x6210;&#x4E3A;&#x56DB;&#x79CD;&#x4EA4;&#x4E92;&#x4F5C;&#x7528;&#x7684;&#x5F62;&#x6001;&#xFF0C;&#x7528;&#x8868;&#x683C;&#x6765;&#x8BF4;&#x6709;&#x70B9;&#x50CF;&#x5E95;&#x4E0B;&#x8FD9;&#x6837;&#xFF1A;</p>
+<p><img src="http://img.blog.csdn.net/20170124221106377?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvbWFzdGVyNTUxMg==/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast" alt="&#x8FD9;&#x91CC;&#x5199;&#x56FE;&#x7247;&#x63CF;&#x8FF0;"></p>
+<h4 id="&#x56DB;&#x79CD;&#x7C7B;&#x578B;&#xFF1A;"><a href="#&#x56DB;&#x79CD;&#x7C7B;&#x578B;&#xFF1A;" class="headerlink" title="&#x56DB;&#x79CD;&#x7C7B;&#x578B;&#xFF1A;"></a><strong>&#x56DB;&#x79CD;&#x7C7B;&#x578B;&#xFF1A;</strong></h4><p><strong>1.&#x53EF;&#x5206;&#x4EAB;&#x7684;&#xFF1A;</strong></p>
+<p>&#x53EF;&#x4EE5;&#x5206;&#x4EAB;&#x7ED9;&#x5176;&#x4ED6;&#x7CFB;&#x7EDF;&#x6302;&#x8F7D;&#x4F7F;&#x7528;&#x7684;&#x76EE;&#x5F55;&#xFF0C;&#x6240;&#x4EE5;&#x5305;&#x62EC;&#x6267;&#x884C;&#x6587;&#x4EF6;&#x4E0E;&#x7528;&#x6237;&#x7684;&#x90AE;&#x4EF6;&#x7B49;&#x6570;&#x636E;&#xFF0C;&#x662F;&#x80FD;&#x591F;&#x5206;&#x4EAB;&#x7ED9;&#x7F51;&#x7EDC;&#x4E0A;&#x5176;&#x4ED6;&#x4E3B;&#x673A;&#x6302;&#x8F7D;&#x7528;&#x7684;&#x76EE;&#x5F55;&#xFF1B;</p>
+<p><strong>2.&#x4E0D;&#x53EF;&#x5206;&#x4EAB;&#x7684;&#xFF1A;</strong></p>
+<p>&#x81EA;&#x5DF1;&#x673A;&#x5668;&#x4E0A;&#x9762;&#x8FD0;&#x4F5C;&#x7684;&#x88C5;&#x7F6E;&#x6587;&#x4EF6;&#x6216;&#x8005;&#x662F;&#x4E0E;&#x7A0B;&#x5E8F;&#x6709;&#x5173;&#x7684;socket&#x6587;&#x4EF6;&#x7B49;&#xFF0C;&#x7531;&#x4E8E;&#x4EC5;&#x4E0E;&#x81EA;&#x8EAB;&#x673A;&#x5668;&#x6709;&#x5173;&#xFF0C;&#x6240;&#x4EE5;&#x4E0D;&#x9002;&#x5408;&#x5206;&#x4EAB;&#x7ED9;&#x5176;&#x4ED6;&#x7684;&#x4E3B;&#x673A;&#xFF1B;</p>
+<p><strong>3.&#x4E0D;&#x53D8;&#x7684;&#xFF1A;</strong></p>
+<p>&#x6709;&#x4E9B;&#x6570;&#x636E;&#x662F;&#x4E0D;&#x4F1A;&#x7ECF;&#x5E38;&#x53D8;&#x52A8;&#x7684;&#xFF0C;&#x8DDF;&#x968F;&#x7740;distribution&#x800C;&#x4E0D;&#x53D8;&#x52A8;&#x3002;&#x4F8B;&#x5982;&#x51FD;&#x5F0F;&#x5E93;&#xFF0C;&#x6587;&#x4EF6;&#x8BF4;&#x660E;&#x6587;&#x4EF6;&#x3002;&#x7CFB;&#x7EDF;&#x7BA1;&#x7406;&#x5458;&#x6240;&#x7BA1;&#x7406;&#x7684;&#x4E3B;&#x673A;&#x670D;&#x52A1;&#x914D;&#x7F6E;&#x6587;&#x4EF6;&#x7B49;&#x7B49;&#xFF1B;</p>
+<p><strong>4.&#x53EF;&#x53D8;&#x52A8;&#x7684;&#xFF1A;</strong></p>
+<p>&#x7ECF;&#x5E38;&#x6539;&#x53D8;&#x7684;&#x6570;&#x636E;&#xFF0C;&#x4F8B;&#x5982;&#x767B;&#x9646;&#x6587;&#x4EF6;&#xFF0C;&#x4E00;&#x822C;&#x7528;&#x6237;&#x53EF;&#x81EA;&#x884C;&#x6536;&#x53D7;&#x7684;&#x65B0;&#x95FB;&#x7EC4;&#x7B49;&#x3002;</p>
+<p>&#x4E8B;&#x5B9E;&#x4E0A;&#xFF0C;FHS&#x6B63;&#x5BF9;&#x76EE;&#x5F55;&#x6811;&#x67B6;&#x6784;&#x4EC5;&#x5B9A;&#x4E49;&#x51FA;&#x4E09;&#x5C42;&#x76EE;&#x5F55;&#x5E95;&#x4E0B;&#x5E94;&#x8BE5;&#x653E;&#x7F6E;&#x4EC0;&#x4E48;&#x6570;&#x636E;&#x800C;&#x5DF2;&#xFF1A;</p>
+<p>/ (root,&#x6839;&#x76EE;&#x5F55;)&#xFF1A;&#x4E0E;&#x5F00;&#x673A;&#x7CFB;&#x7EDF;&#x6709;&#x5173;&#xFF1B;<br>/usr (unix software resource)&#xFF1A;&#x4E0E;&#x8F6F;&#x4EF6;&#x5B89;&#x88C5;/&#x6267;&#x884C;&#x6709;&#x5173;&#xFF1B;<br>/var (variable)&#xFF1A;&#x4E0E;&#x7CFB;&#x7EDF;&#x8FD0;&#x4F5C;&#x8FC7;&#x7A0B;&#x6709;&#x5173;&#x3002;</p>
+<h4 id="&#x4E00;-&#x6839;&#x76EE;&#x5F55;-&#x7684;&#x610F;&#x4E49;&#x4E0E;&#x5185;&#x5BB9;&#xFF1A;"><a href="#&#x4E00;-&#x6839;&#x76EE;&#x5F55;-&#x7684;&#x610F;&#x4E49;&#x4E0E;&#x5185;&#x5BB9;&#xFF1A;" class="headerlink" title="&#x4E00;.&#x6839;&#x76EE;&#x5F55;( / )&#x7684;&#x610F;&#x4E49;&#x4E0E;&#x5185;&#x5BB9;&#xFF1A;"></a><strong>&#x4E00;.&#x6839;&#x76EE;&#x5F55;( / )&#x7684;&#x610F;&#x4E49;&#x4E0E;&#x5185;&#x5BB9;&#xFF1A;</strong></h4><p>&#x6839;&#x76EE;&#x5F55;&#x662F;&#x6574;&#x4E2A;&#x7CFB;&#x7EDF;&#x6700;&#x91CD;&#x8981;&#x7684;&#x4E00;&#x4E2A;&#x76EE;&#x5F55;&#xFF0C;&#x56E0;&#x4E3A;&#x4E0D;&#x4F46;&#x6240;&#x6709;&#x7684;&#x76EE;&#x5F55;&#x90FD;&#x662F;&#x7531;&#x6839;&#x76EE;&#x5F55;&#x884D;&#x751F;&#x51FA;&#x6765;&#x7684;&#xFF0C;&#x540C;&#x65F6;&#x6839;&#x76EE;&#x5F55;&#x4E0E;&#x5F00;&#x673A;/&#x8FD8;&#x539F;/&#x7CFB;&#x7EDF;&#x4FEE;&#x590D;&#x7B49;&#x52A8;&#x4F5C;&#x6709;&#x5173;&#x3002;&#x7531;&#x4E8E;&#x7CFB;&#x7EDF;&#x5F00;&#x673A;&#x65F6;&#x9700;&#x8981;&#x7279;&#x5B9A;&#x7684;&#x5F00;&#x673A;&#x8F6F;&#x4EF6;&#xFF0C;&#x6838;&#x5FC3;&#x6587;&#x4EF6;&#xFF0C;&#x5F00;&#x673A;&#x6240;&#x9700;&#x7A0B;&#x5E8F;&#xFF0C;&#x51FD;&#x5F0F;&#x5E93;&#x7B49;&#x7B49;&#x6587;&#x4EF6;&#x6570;&#x636E;&#xFF0C;&#x82E5;&#x7CFB;&#x7EDF;&#x51FA;&#x73B0;&#x9519;&#x8BEF;&#x65F6;&#xFF0C;&#x6839;&#x76EE;&#x5F55;&#x4E5F;&#x5FC5;&#x987B;&#x8981;&#x5305;&#x542B;&#x6709;&#x80FD;&#x591F;&#x4FEE;&#x590D;&#x6587;&#x4EF6;&#x7CFB;&#x7EDF;&#x7684;&#x7A0B;&#x5E8F;&#x624D;&#x884C;&#x3002;&#x56E0;&#x4E3A;&#x6839;&#x76EE;&#x5F55;&#x975E;&#x5E38;&#x91CD;&#x8981;&#xFF0C;&#x6240;&#x4EE5;&#x5728;FHS&#x7684;&#x8981;&#x6C42;&#x65B9;&#x9762;&#xFF0C;&#x4ED6;&#x5E0C;&#x671B;&#x6839;&#x76EE;&#x5F55;&#x4E0B;&#x4E0D;&#x8981;&#x653E;&#x5728;&#x975E;&#x5E38;&#x5927;&#x7684;&#x5206;&#x533A;&#xFF0C;&#x56E0;&#x4E3A;&#x8D8A;&#x5927;&#x7684;&#x5206;&#x533A;&#x5185;&#x4F60;&#x4F1A;&#x653E;&#x5165;&#x8D8A;&#x591A;&#x7684;&#x6570;&#x636E;&#xFF0C;&#x5982;&#x6B64;&#x4E00;&#x6765;&#x6839;&#x76EE;&#x5F55;&#x6240;&#x5728;&#x5206;&#x533A;&#x5C31;&#x53EF;&#x80FD;&#x4F1A;&#x6709;&#x8F83;&#x591A;&#x7684;&#x53D1;&#x751F;&#x9519;&#x8BEF;&#x7684;&#x673A;&#x4F1A;&#x3002;</p>
+<p>&#x56E0;&#x6B64;FHS&#x6807;&#x51C6;&#x5EFA;&#x8BAE;&#xFF1A;&#x6839;&#x76EE;&#x5F55;(/)&#x6240;&#x5728;&#x5206;&#x533A;&#x5E94;&#x8BE5;&#x8D8A;&#x5C0F;&#x8D8A;&#x597D;&#xFF0C; &#x4E14;&#x5E94;&#x7528;&#x7A0B;&#x5E8F;&#x6240;&#x5B89;&#x88C5;&#x7684;&#x8F6F;&#x4EF6;&#x6700;&#x597D;&#x4E0D;&#x8981;&#x4E0E;&#x6839;&#x76EE;&#x5F55;&#x653E;&#x5728;&#x540C;&#x4E00;&#x4E2A;&#x5206;&#x533A;&#x5185;&#xFF0C;&#x4FDD;&#x6301;&#x6839;&#x76EE;&#x5F55;&#x8D8A;&#x5C0F;&#x8D8A;&#x597D;&#x3002; &#x5982;&#x6B64;&#x4E0D;&#x4F46;&#x6548;&#x80FD;&#x8F83;&#x4F73;&#xFF0C;&#x6839;&#x76EE;&#x5F55;&#x6240;&#x5728;&#x7684;&#x6587;&#x4EF6;&#x7CFB;&#x7EDF;&#x4E5F;&#x8F83;&#x4E0D;&#x5BB9;&#x6613;&#x53D1;&#x751F;&#x95EE;&#x9898;&#x3002;&#x8BF4;&#x767D;&#x4E86;&#xFF0C;&#x5C31;&#x662F;&#x6839;&#x76EE;&#x5F55;&#x548C;Windows&#x7684;C&#x76D8;&#x4E00;&#x4E2A;&#x6837;&#x3002;</p>
+<p>&#x6839;&#x636E;&#x4EE5;&#x4E0A;&#x539F;&#x56E0;&#xFF0C;FHS&#x8BA4;&#x4E3A;&#x6839;&#x76EE;&#x5F55;&#x4E0B;&#x5E94;&#x8BE5;&#x5305;&#x542B;&#x4EE5;&#x4E0B;&#x5B50;&#x76EE;&#x5F55;&#xFF1A;</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">&#x76EE;&#x5F55;</th>
+<th>&#x5E94;&#x653E;&#x7F6E;&#x6863;&#x6848;&#x5185;&#x5BB9;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">/bin</td>
+<td>&#x7CFB;&#x7EDF;&#x6709;&#x5F88;&#x591A;&#x653E;&#x7F6E;&#x6267;&#x884C;&#x6587;&#x6863;&#x7684;&#x76EE;&#x5F55;&#xFF0C;&#x4F46;/bin&#x6BD4;&#x8F83;&#x7279;&#x6B8A;&#x3002;&#x56E0;&#x4E3A;/bin&#x653E;&#x7F6E;&#x7684;&#x662F;&#x5355;&#x4EBA;&#x7EF4;&#x62A4;&#x6A21;&#x5F0F;&#x4E0B;&#x8FD8;&#x80FD;&#x591F;&#x88AB;&#x64CD;&#x4F5C;&#x7684;&#x6307;&#x4EE4;&#x3002;&#x5728;/bin&#x5E95;&#x4E0B;&#x7684;&#x6307;&#x4EE4;&#x53EF;&#x4EE5;&#x88AB;root&#x4E0E;&#x666E;&#x901A;&#x7528;&#x6237;&#x6240;&#x4F7F;&#x7528;&#xFF0C;&#x4E3B;&#x8981;&#x6709;: ls, cd, pwd, cat, chmod, chown, date, mv, mkdir, cp, bash&#x7B49;&#x7B49;&#x5E38;&#x7528;&#x7684;&#x547D;&#x4EE4;&#x3002;</td>
+</tr>
+<tr>
+<td style="text-align:center">/boot</td>
+<td>&#x4E3B;&#x8981;&#x653E;&#x7F6E;&#x5F00;&#x673A;&#x4F1A;&#x4F7F;&#x7528;&#x7684;&#x6863;&#x6848;&#xFF0C;&#x5305;&#x62EC;Linux&#x6838;&#x5FC3;&#x6863;&#x6848;&#x4EE5;&#x53CA;&#x5F00;&#x673A;&#x6240;&#x9700;&#x8BBE;&#x5B9A;&#x6587;&#x6863;&#x7B49;&#x3002;Linux kernel&#x5E38;&#x7528;&#x7684;&#x6587;&#x6863;&#x540D;&#x4E3A;: vmlinuz&#xFF0C;&#x5982;&#x679C;&#x4F7F;&#x7528;&#x7684;&#x662F;grub&#x8FD9;&#x4E2A;&#x5F00;&#x673A;&#x7BA1;&#x7406;&#x7A0B;&#x5E8F;&#xFF0C;&#x5219;&#x8FD8;&#x4F1A;&#x5B58;&#x5728;/boot/grub &#x8FD9;&#x4E2A;&#x76EE;&#x5F55;&#x3002;</td>
+</tr>
+<tr>
+<td style="text-align:center">/dev</td>
+<td>&#x5728;linux&#x7CFB;&#x7EDF;&#x4E0A;&#xFF0C;&#x4EFB;&#x4F55;&#x88C5;&#x7F6E;&#x4E0E;&#x5468;&#x8FB9;&#x8BBE;&#x5907;&#x90FD;&#x662F;&#x4EE5;&#x6587;&#x6863;&#x7684;&#x5F62;&#x5F0F;&#x5B58;&#x5728;&#x4E8E;&#x8FD9;&#x4E2A;&#x76EE;&#x5F55;&#x5F53;&#x4E2D;&#x3002;&#x53EA;&#x8981;&#x901A;&#x8FC7;&#x5B58;&#x53D6;&#x8FD9;&#x4E2A;&#x76EE;&#x5F55;&#x4E0B;&#x7684;&#x67D0;&#x4E2A;&#x6587;&#x6863;&#xFF0C;&#x5C31;&#x7B49;&#x4E8E;&#x5B58;&#x53D6;&#x67D0;&#x4E2A;&#x8BBE;&#x5907;&#x3002;&#x4F8B;&#x5982;&#x91CD;&#x8981;&#x7684;&#x6587;&#x6863;&#x6709; /dev/null, /dev/zero, /dev/tty, /dev/lp<em>, /dev/hd</em>, /dev/sd* &#x7B49;&#x7B49;&#x3002;</td>
+</tr>
+<tr>
+<td style="text-align:center">/etc</td>
+<td>&#x7CFB;&#x7EDF;&#x4E3B;&#x8981;&#x7684;&#x914D;&#x7F6E;&#x6587;&#x6863;&#x51E0;&#x4E4E;&#x90FD;&#x653E;&#x5728;&#x8FD9;&#x4E2A;&#x76EE;&#x5F55;&#x5185;&#xFF0C;&#x4F8B;&#x5982;&#x7528;&#x6237;&#x7684;&#x8D26;&#x53F7;&#x5BC6;&#x7801;&#xFF0C;&#x5404;&#x79CD;&#x670D;&#x52A1;&#x7684;&#x542F;&#x52A8;&#x6587;&#x6863;&#x7B49;&#x7B49;&#x3002;&#x4E00;&#x822C;&#x6765;&#x8BF4;&#xFF0C;&#x8FD9;&#x4E2A;&#x76EE;&#x5F55;&#x4E0B;&#x7684;&#x5404;&#x4E2A;&#x6587;&#x6863;&#x5C5E;&#x6027;&#x662F;&#x53EF;&#x4EE5;&#x8BA9;&#x666E;&#x901A;&#x7528;&#x6237;&#x67E5;&#x9605;&#x7684;&#xFF0C;&#x4F46;&#x662F;&#x53EA;&#x6709;root&#x7528;&#x6237;&#x624D;&#x6709;&#x6743;&#x529B;&#x4FEE;&#x6539;&#x3002;FHS&#x5EFA;&#x8BAE;&#x4E0D;&#x8981;&#x653E;&#x7F6E;&#x53EF;&#x6267;&#x884C;&#x6587;&#x4EF6;(binary)&#x5728;&#x8FD9;&#x4E2A;&#x76EE;&#x5F55;&#x4E2D;&#x3002;&#x6BD4;&#x8F83;&#x91CD;&#x8981;&#x7684;&#x6863;&#x6848;&#x6709;: /etc/inittab, /etc/init.d, /etc/modprobe.conf, /etc/X11, /etc/fstab, /etc/sysconfig &#x7B49;&#x7B49;&#x3002;&#x53E6;&#x5916;&#xFF0C;&#x5176;&#x4E0B;&#x91CD;&#x8981;&#x7684;&#x76EE;&#x5F55;&#x6709;: /etc/init.d/ &#x6240;&#x6709;&#x670D;&#x52A1;&#x7684;&#x9884;&#x8BBE;&#x542F;&#x52A8;script&#x90FD;&#x662F;&#x653E;&#x5728;&#x8FD9;&#x91CC;&#x7684;&#xFF0C;&#x4F8B;&#x5982;&#x8981;&#x5176;&#x542F;&#x52A8;&#x6216;&#x8005;&#x5173;&#x95ED;iptables&#x7684;&#x8BDD; /etc/init.d/iptables start/stop ; /etc/xinetd.d/ &#x8FD9;&#x5C31;&#x662F;&#x6240;&#x8C13;&#x7684;super daemon&#x7BA1;&#x7406;&#x7684;&#x5404;&#x9879;&#x670D;&#x52A1;&#x7684;&#x914D;&#x7F6E;&#x6587;&#x4EF6;&#x76EE;&#x5F55;&#x3002; /etc/X11/ &#x4E0E;X windows&#x6709;&#x5404;&#x79CD;&#x914D;&#x7F6E;&#x6587;&#x4EF6;&#x90FD;&#x5728;&#x8FD9;&#x91CC;&#xFF0C;&#x5C24;&#x5176;&#x662F;xorg.conf &#x6216; XF86Config &#x8FD9;&#x4E24;&#x4E2A;X server&#x7684;&#x914D;&#x7F6E;&#x6587;&#x4EF6;&#x3002;</td>
+</tr>
+<tr>
+<td style="text-align:center">/home</td>
+<td>&#x8FD9;&#x662F;&#x7CFB;&#x7EDF;&#x9884;&#x8BBE;&#x7684;&#x666E;&#x901A;&#x7528;&#x6237;&#x7684;&#x5BB6;&#x76EE;&#x5F55;(home directory)&#x3002;&#x5728;&#x521B;&#x5EFA;&#x4E00;&#x4E2A;&#x666E;&#x901A;&#x7528;&#x6237;&#x65F6;&#xFF0C;&#x7CFB;&#x7EDF;&#x4F1A;&#x81EA;&#x52A8;&#x5728;&#x8FD9;&#x4E2A;&#x76EE;&#x5F55;&#x5EFA;&#x4E00;&#x4E2A;&#x4E0E;&#x7528;&#x6237;&#x540D;&#x76F8;&#x540C;&#x7684;&#x76EE;&#x5F55;&#xFF0C;&#x4F5C;&#x4E3A;&#x65B0;&#x589E;&#x7528;&#x6237;&#x7684;&#x5BB6;&#x76EE;&#x5F55;&#x3002;</td>
+</tr>
+<tr>
+<td style="text-align:center">/lib</td>
+<td>&#x7CFB;&#x7EDF;&#x7684;&#x51FD;&#x5F0F;&#x5E93;&#x975E;&#x5E38;&#x7684;&#x591A;&#xFF0C;&#x800C; /lib &#x653E;&#x7F6E;&#x7684;&#x5219;&#x662F;&#x5728;&#x5F00;&#x673A;&#x7684;&#x65F6;&#x4F1A;&#x7528;&#x5230;&#x7684;&#x51FD;&#x5F0F;&#x5E93;&#xFF0C;&#x4EE5;&#x53CA;&#x5728; /bin &#x6216; /sbin &#x5E95;&#x4E0B;&#x7684;&#x6307;&#x4EE4;&#x4F1A;&#x547C;&#x53EB;&#x7684;&#x51FD;&#x5F0F;&#x5E93;&#x3002;</td>
+</tr>
+<tr>
+<td style="text-align:center">/media</td>
+<td>&#x8FD9;&#x4E2A; /media &#x5E95;&#x4E0B;&#x653E;&#x7F6E;&#x7684;&#x5C31;&#x662F;&#x53EF;&#x79FB;&#x9664;&#x7684;&#x88C5;&#x7F6E;&#x3002;&#x5305;&#x62EC;&#x8F6F;&#x789F;&#xFF0C;&#x5149;&#x789F;&#xFF0C;DVD&#x7B49;&#x7B49;&#x88C5;&#x7F6E;&#x90FD;&#x6682;&#x65F6;&#x6302;&#x8F7D;&#x5728;&#x8FD9;&#x4E2A;&#x76EE;&#x5F55;&#x3002;&#x5E38;&#x89C1;&#x7684;&#x6302;&#x8F7D;&#x76EE;&#x5F55;&#x540D;&#x6709;&#xFF1A;/media/floppy  /media/cdrom &#x7B49;&#x7B49;&#x3002;</td>
+</tr>
+<tr>
+<td style="text-align:center">/mnt</td>
+<td>&#x5982;&#x679C;&#x4F60;&#x60F3;&#x8981;&#x6682;&#x65F6;&#x6302;&#x8F7D;&#x67D0;&#x4E9B;&#x989D;&#x5916;&#x7684;&#x88C5;&#x7F6E;&#xFF0C;&#x5982;U&#x76D8;&#x3002;&#x4E00;&#x822C;&#x5EFA;&#x8BAE;&#x4F60;&#x53EF;&#x4EE5;&#x6302;&#x8F7D;&#x5728;&#x8FD9;&#x4E2A;&#x76EE;&#x5F55;&#x3002;&#x5728;&#x65E9;&#x4E9B;&#x65F6;&#x5019;&#x6CA1;&#x8FD9;&#x4E2A;&#x76EE;&#x5F55;&#x7684;&#x7528;&#x9014;&#x4E0E; /media &#x76F8;&#x540C;&#xFF0C;&#x53EA;&#x662F;&#x6709;&#x4E86; /media &#x4E4B;&#x540E;&#xFF0C;&#x8FD9;&#x4E2A;&#x76EE;&#x5F55;&#x5C31;&#x7528;&#x6765;&#x6682;&#x65F6;&#x6302;&#x8F7D;&#x4E34;&#x65F6;&#x88C5;&#x7F6E;&#x4E86;&#x3002;</td>
+</tr>
+<tr>
+<td style="text-align:center">/opt</td>
+<td>&#x8FD9;&#x4E2A;&#x662F;&#x7ED9;&#x7B2C;&#x4E09;&#x65B9;&#x534F;&#x529B;&#x8F6F;&#x4EF6;&#x653E;&#x7F6E;&#x7684;&#x76EE;&#x5F55;&#x3002;&#x4E3E;&#x4F8B;&#x6765;&#x8BF4;&#xFF0C;KDE &#x8FD9;&#x4E2A;&#x684C;&#x9762;&#x7BA1;&#x7406;&#x7CFB;&#x7EDF;&#x662F;&#x4E00;&#x4E2A;&#x72EC;&#x7ACB;&#x7684;&#x8BA1;&#x5212;&#xFF0C;&#x4E0D;&#x8FC7;&#x4ED6;&#x53EF;&#x4EE5;&#x5B89;&#x88C5;&#x5230; Linux &#x7CFB;&#x7EDF;&#x4E2D;&#xFF0C;&#x56E0;&#x6B64; KDE &#x7684;&#x8F6F;&#x4EF6;&#x5C31;&#x5EFA;&#x8BAE;&#x653E;&#x7F6E;&#x5728;&#x6B64;&#x76EE;&#x5F55;&#x4E0B;&#x3002;&#x53E6;&#x5916;&#xFF0C;&#x5982;&#x679C;&#x4F60;&#x60F3;&#x8981;&#x81EA;&#x884C;&#x5B89;&#x88C5;&#x989D;&#x5916;&#x7684;&#x8F6F;&#x4EF6;&#xFF0C;&#x90A3;&#x4E48;&#x4E5F;&#x53EF;&#x4EE5;&#x5C06;&#x4F60;&#x7684;&#x8F6F;&#x4EF6;&#x4F53;&#x5B89;&#x88C5;&#x5230;&#x8FD9;&#x91CC;&#x6765;&#x3002;&#x4E0D;&#x8FC7;&#xFF0C;&#x4EE5;&#x524D;&#x7684; Linux &#x7CFB;&#x7EDF;&#x4E2D;&#xFF0C;&#x6211;&#x8FD8;&#x662F;&#x4E60;&#x60EF;&#x653E;&#x7F6E;&#x5728; /usr/local &#x76EE;&#x5F55;&#x4E0B;&#x3002;</td>
+</tr>
+<tr>
+<td style="text-align:center">/root</td>
+<td>&#x7CFB;&#x7EDF;&#x7BA1;&#x7406;&#x5458;&#xFF08;root&#xFF09;&#x7684;&#x5BB6;&#x76EE;&#x5F55;&#x3002;&#x4E4B;&#x6240;&#x4EE5;&#x653E;&#x5728;&#x8FD9;&#x91CC;&#xFF0C;&#x662F;&#x56E0;&#x4E3A;&#x5982;&#x679C;&#x8FDB;&#x5165;&#x5355;&#x4EBA;&#x7EF4;&#x62A4;&#x6A21;&#x5F0F;&#x800C;&#x4EC5;&#x6302;&#x8F7D;&#x6839;&#x76EE;&#x5F55;&#x65F6;&#xFF0C;&#x8BE5;&#x76EE;&#x5F55;&#x5C31;&#x80FD;&#x591F;&#x62E5;&#x6709; root &#x7684;&#x5BB6;&#x76EE;&#x5F55;&#xFF0C;&#x6240;&#x4EE5;&#x6211;&#x4EEC;&#x4F1A;&#x5E0C;&#x671B; root &#x7684;&#x5BB6;&#x76EE;&#x5F55;&#x4E0E;&#x6839;&#x76EE;&#x5F55;&#x653E;&#x7F6E;&#x5728;&#x540C;&#x4E00;&#x5206;&#x533A;&#x4E2D;&#x3002;</td>
+</tr>
+<tr>
+<td style="text-align:center">/sbin</td>
+<td>Linux&#x6709;&#x975E;&#x5E38;&#x591A;&#x6307;&#x4EE4;&#x662F;&#x7528;&#x6765;&#x8BBE;&#x5B9A;&#x7CFB;&#x7EDF;&#x73AF;&#x5883;&#x7684;&#xFF0C;&#x8FD9;&#x4E9B;&#x6307;&#x4EE4;&#x53EA;&#x6709; root &#x624D;&#x80FD;&#x591F;&#x5229;&#x7528;&#x6765;&#x8BBE;&#x5B9A;&#x7CFB;&#x7EDF;&#xFF0C;&#x5176;&#x4ED6;&#x4F7F;&#x7528;&#x8005;&#x6700;&#x591A;&#x53EA;&#x80FD;&#x7528;&#x6765;&#x67E5;&#x8BE2;&#x800C;&#x5DF2;&#x3002;&#x653E;&#x5728; /sbin &#x5E95;&#x4E0B;&#x7684;&#x4E3A;&#x5F00;&#x673A;&#x8FC7;&#x7A0B;&#x4E2D;&#x6240;&#x9700;&#x8981;&#x7684;&#xFF0C;&#x91CC;&#x9762;&#x5305;&#x62EC;&#x4E86;&#x5F00;&#x673A;&#xFF0C;&#x4FEE;&#x590D;&#xFF0C;&#x8FD8;&#x539F;&#x7CFB;&#x7EDF;&#x6240;&#x9700;&#x8981;&#x7684;&#x6307;&#x4EE4;&#x3002;&#x81F3;&#x4E0E;&#x67D0;&#x4E9B;&#x4F3A;&#x670D;&#x5668;&#x8F6F;&#x4F53;&#x7A0B;&#x5F0F;&#xFF0C;&#x4E00;&#x822C;&#x5219;&#x653E;&#x7F6E;&#x5230; /usr/sbin &#x5F53;&#x4E2D;&#x3002;&#x81F3;&#x4E8E;&#x672C;&#x673A;&#x81EA;&#x884C;&#x5B89;&#x88C5;&#x7684;&#x8F6F;&#x4F53;&#x6240;&#x4EA7;&#x751F;&#x7684;&#x7CFB;&#x7EDF;&#x6267;&#x884C;&#x6863;&#xFF08;system binary&#xFF09;&#xFF0C;&#x5219;&#x653E;&#x7F6E;&#x5230; /usr/local/sbin/ &#x5F53;&#x4E2D;&#x4E86;&#x3002;&#x5E38;&#x89C1;&#x7684;&#x6307;&#x4EE4;&#x5305;&#x62EC;&#xFF1A; fdisk&#xFF0C; fsck&#xFF0C; ifconfig&#xFF0C; init&#xFF0C; mkfs &#x7B49;&#x7B49;&#x3002;</td>
+</tr>
+<tr>
+<td style="text-align:center">/srv</td>
+<td>srv&#x53EF;&#x4EE5;&#x770B;&#x4F5C; service &#x7684;&#x7F29;&#x5199;&#xFF0C;&#x662F;&#x4E00;&#x4E9B;&#x7F51;&#x7EDC;&#x670D;&#x52A1;&#x542F;&#x52A8;&#x4E4B;&#x540E;&#xFF0C;&#x8FD9;&#x4E9B;&#x670D;&#x52A1;&#x6240;&#x9700;&#x53D6;&#x7528;&#x7684;&#x8D44;&#x6599;&#x76EE;&#x5F55;&#x3002;&#x5E38;&#x89C1;&#x7684;&#x670D;&#x52A1;&#x4F8B;&#x5982; WWW, FTP &#x7B49;&#x7B49;&#x3002;&#x4E3E;&#x4F8B;&#x6765;&#x8BF4;&#xFF0C; WWW &#x4F3A;&#x670D;&#x5668;&#x9700;&#x8981;&#x7684;&#x7F51;&#x9875;&#x8D44;&#x6599;&#x5C31;&#x53EF;&#x4EE5;&#x653E;&#x7F6E;&#x5728; /srv/www/ &#x91CC;&#x9762;&#x3002;</td>
+</tr>
+<tr>
+<td style="text-align:center">/tmp</td>
+<td>&#x8FD9;&#x662F;&#x8BA9;&#x4E00;&#x822C;&#x4F7F;&#x7528;&#x8005;&#x6216;&#x8005;&#x662F;&#x6B63;&#x5728;&#x6267;&#x884C;&#x7684;&#x7A0B;&#x5E8F;&#x6682;&#x65F6;&#x653E;&#x7F6E;&#x6863;&#x6848;&#x7684;&#x5730;&#x65B9;&#x3002;&#x8FD9;&#x4E2A;&#x76EE;&#x5F55;&#x662F;&#x4EFB;&#x4F55;&#x4EBA;&#x90FD;&#x80FD;&#x591F;&#x5B58;&#x53D6;&#x7684;&#xFF0C;&#x6240;&#x4EE5;&#x4F60;&#x9700;&#x8981;&#x5B9A;&#x671F;&#x7684;&#x6E05;&#x7406;&#x4E00;&#x4E0B;&#x3002;&#x5F53;&#x7136;&#xFF0C;&#x91CD;&#x8981;&#x8D44;&#x6599;&#x4E0D;&#x53EF;&#x653E;&#x7F6E;&#x5728;&#x6B64;&#x76EE;&#x5F55;&#x3002;&#x56E0;&#x4E3A; FHS &#x751A;&#x81F3;&#x5EFA;&#x8BAE;&#x5728;&#x5F00;&#x673A;&#x65F6;&#xFF0C;&#x5E94;&#x8BE5;&#x8981;&#x5C06; /tmp &#x4E0B;&#x7684;&#x8D44;&#x6599;&#x90FD;&#x5220;&#x9664;&#x3002;</td>
+</tr>
+</tbody>
+</table>
+<p>&#x4E8B;&#x5B9E;&#x4E0A; FHS &#x9488;&#x5BF9;&#x6839;&#x76EE;&#x5F55;&#x6240;&#x5B9A;&#x4E49;&#x7684;&#x6807;&#x51C6;&#x5C31;&#x4EC5;&#x9650;&#x4E8E;&#x4E0A;&#x8868;&#xFF0C;&#x4E0D;&#x8FC7;&#x4ECD;&#x65E7;&#x6709;&#x4E9B;&#x76EE;&#x5F55;&#x4E5F;&#x9700;&#x8981;&#x6211;&#x4EEC;&#x4E86;&#x89E3;&#x4E00;&#x4E0B;&#xFF0C;&#x5177;&#x4F53;&#x5982;&#x4E0B;&#xFF1A;</p>
+<table>
+<thead>
+<tr>
+<th>&#x76EE;&#x5F55;</th>
+<th>&#x5E94;&#x653E;&#x7F6E;&#x6587;&#x4EF6;&#x5185;&#x5BB9;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>/lost+found</td>
+<td>&#x8FD9;&#x4E2A;&#x76EE;&#x5F55;&#x662F;&#x4F7F;&#x7528;&#x6807;&#x51C6;&#x7684; ext2 / ext3 &#x6587;&#x4EF6;&#x7CFB;&#x7EDF;&#x683C;&#x5F0F;&#x65F6;&#x624D;&#x4F1A;&#x4EA7;&#x751F;&#x7684;&#x4E00;&#x4E2A;&#x76EE;&#x5F55;&#xFF0C; &#x76EE;&#x7684;&#x5728;&#x4E8E;&#x5F53;&#x6863;&#x6848;&#x7CFB;&#x7EDF;&#x53D1;&#x751F;&#x9519;&#x8BEF;&#x65F6;&#xFF0C;&#x5C06;&#x4E00;&#x4E9B;&#x9057;&#x5931;&#x7684;&#x7247;&#x6BB5;&#x653E;&#x7F6E;&#x5230;&#x8FD9;&#x4E2A;&#x76EE;&#x5F55;&#x4E0B;&#x3002;&#x8FD9;&#x4E2A;&#x76EE;&#x5F55;&#x901A;&#x5E38;&#x4F1A;&#x5728;&#x5206;&#x5272;&#x69FD;&#x7684;&#x6700;&#x9876;&#x5C42;&#x5B58;&#x5728;&#xFF0C;&#x4F8B;&#x5982;&#x4F60;&#x52A0;&#x88C5;&#x4E00;&#x4E2A;&#x786C;&#x76D8;&#x4E8E; /disk &#x4E2D;&#xFF0C;&#x90A3;&#x5728;&#x8FD9;&#x4E2A;&#x7CFB;&#x7EDF;&#x4E0B;&#x5C31;&#x4F1A;&#x81EA;&#x52A8;&#x4EA7;&#x751F;&#x4E00;&#x4E2A;&#x8FD9;&#x6837;&#x7684;&#x76EE;&#x5F55; /disk/lost+found</td>
+</tr>
+<tr>
+<td>/proc</td>
+<td>&#x8FD9;&#x4E2A;&#x76EE;&#x5F55;&#x672C;&#x8EAB;&#x662F;&#x4E00;&#x4E2A;&#x865A;&#x62DF;&#x6587;&#x4EF6;&#x7CFB;&#x7EDF;&#xFF08;virtual filesystem)&#x3002;&#x4ED6;&#x653E;&#x7F6E;&#x7684;&#x8D44;&#x6599;&#x90FD;&#x5728;&#x5185;&#x5B58;&#x5F53;&#x4E2D;&#xFF0C;&#x4F8B;&#x5982;&#x7CFB;&#x7EDF;&#x6838;&#x5FC3;&#xFF0C;&#x884C;&#x7A0B;&#x8D44;&#x8BAF;&#xFF08;process&#xFF09;&#xFF0C;&#x56E0;&#x4E3A;&#x8FD9;&#x4E2A;&#x76EE;&#x5F55;&#x4E0B;&#x7684;&#x8D44;&#x6599;&#x90FD;&#x5728;&#x5185;&#x5B58;&#x5F53;&#x4E2D;&#xFF0C;&#x6240;&#x4EE5;&#x672C;&#x8EAB;&#x4E0D;&#x5360;&#x4EFB;&#x4F55;&#x786C;&#x76D8;&#x7A7A;&#x95F4;&#x3002;&#x6BD4;&#x8F83;&#x91CD;&#x8981;&#x7684;&#x6587;&#x4EF6;&#x76EE;&#x5F55;&#x6709;&#xFF1A; /proc/cpuinfo&#xFF0C; /proc/dma&#xFF0C; /proc/interrupts&#xFF0C; /proc/ioports&#xFF0C; /proc/net/* &#x7B49;&#x7B49;&#x3002;</td>
+</tr>
+<tr>
+<td>/sys</td>
+<td>&#x8FD9;&#x4E2A;&#x76EE;&#x5F55;&#x5176;&#x5B9E;&#x8DDF; /proc &#x975E;&#x5E38;&#x7C7B;&#x4F3C;&#xFF0C;&#x4E5F;&#x662F;&#x4E00;&#x4E2A;&#x865A;&#x62DF;&#x7684;&#x6587;&#x4EF6;&#x7CFB;&#x7EDF;&#xFF0C;&#x4E3B;&#x8981;&#x4E5F;&#x662F;&#x8BB0;&#x5F55;&#x4E0E;&#x6838;&#x5FC3;&#x76F8;&#x5173;&#x7684;&#x6587;&#x4EF6;&#x3002;&#x5305;&#x62EC;&#x76EE;&#x524D;&#x5DF2;&#x8F7D;&#x5165;&#x7684;&#x6838;&#x5FC3;&#x6A21;&#x7EC4;&#x4E0E;&#x6838;&#x5FC3;&#x4FA6;&#x6D4B;&#x5230;&#x7684;&#x786C;&#x4EF6;&#x88C5;&#x7F6E;&#x6587;&#x4EF6;&#x7B49;&#x7B49;&#x3002;&#x8FD9;&#x4E2A;&#x76EE;&#x5F55;&#x540C;&#x6837;&#x4E0D;&#x5360;&#x786C;&#x76D8;&#x5BB9;&#x91CF;&#x3002;</td>
+</tr>
+</tbody>
+</table>
+<p>&#x9664;&#x4E86;&#x8FD9;&#x4E9B;&#x76EE;&#x5F55;&#x7684;&#x5185;&#x5BB9;&#x4E4B;&#x5916;&#xFF0C;&#x53E6;&#x5916;&#x8981;&#x6CE8;&#x610F;&#x7684;&#x662F;&#xFF0C;&#x56E0;&#x4E3A;&#x6839;&#x76EE;&#x5F55;&#x4E0E;&#x5F00;&#x673A;&#x6709;&#x5173;&#xFF0C;&#x5F00;&#x673A;&#x8FC7;&#x7A0B;&#x4E2D;&#x4EC5;&#x6709;&#x6839;&#x76EE;&#x5F55;&#x4F1A;&#x88AB;&#x6302;&#x8F7D;&#xFF0C;&#x5176;&#x4ED6;&#x5206;&#x533A;&#x5219;&#x662F;&#x5728;&#x5F00;&#x673A;&#x5B8C;&#x6210;&#x4E4B;&#x540E;&#x624D;&#x4F1A;&#x6301;&#x7EED;&#x8FDB;&#x884C;&#x6302;&#x8F7D;&#x7684;&#x884C;&#x4E3A;&#x3002;&#x5C31;&#x662F;&#x56E0;&#x4E3A;&#x5982;&#x6B64;&#xFF0C;&#x56E0;&#x6B64;&#x6839;&#x76EE;&#x5F55;&#x4E0B;&#x4E0E;&#x5F00;&#x673A;&#x8FC7;&#x7A0B;&#x6709;&#x5173;&#x7684;&#x76EE;&#x5F55;&#xFF0C;&#x5C31;&#x4E0D;&#x80FD;&#x591F;&#x4E0E;&#x6839;&#x76EE;&#x5F55;&#xFF0C;&#x5C31;&#x4E0D;&#x80FD;&#x591F;&#x4E0E;&#x6839;&#x76EE;&#x5F55;&#x653E;&#x5230;&#x4E0D;&#x540C;&#x7684;&#x5206;&#x533A;&#x53BB;&#x3002;&#x4E0D;&#x80FD;&#x4E0E;&#x6839;&#x76EE;&#x5F55;&#x5206;&#x5F00;&#x7684;&#x76EE;&#x5F55;&#x5982;&#x4E0B;&#xFF1A;</p>
+<p>/etc &#xFF1A; &#x914D;&#x7F6E;&#x6587;&#x4EF6;<br>/bin &#xFF1A; &#x91CD;&#x8981;&#x7684;&#x53EF;&#x6267;&#x884C;&#x6587;&#x4EF6;<br>/dev &#xFF1A; &#x6240;&#x9700;&#x8981;&#x7684;&#x88C5;&#x7F6E;&#x6587;&#x4EF6;<br>/lib &#xFF1A; &#x53EF;&#x6267;&#x884C;&#x6587;&#x4EF6;&#x6240;&#x9700;&#x8981;&#x7684;&#x51FD;&#x5F0F;&#x5E93;&#x4E0E;&#x6838;&#x5FC3;&#x6240;&#x9700;&#x7684;&#x6A21;&#x5757;<br>/sbin &#xFF1A; &#x91CD;&#x8981;&#x7684;&#x7CFB;&#x7EDF;&#x6267;&#x884C;&#x6587;&#x4EF6;</p>
+<p>&#x8FD9;&#x4E94;&#x4E2A;&#x76EE;&#x5F55;&#x5343;&#x4E07;&#x4E0D;&#x80FD;&#x4E0E;&#x6839;&#x76EE;&#x5F55;&#x5206;&#x5F00;&#x5728;&#x4E0D;&#x540C;&#x7684;&#x5206;&#x533A;&#x3002;</p>
+<h4 id="&#x4E8C;-usr-&#x7684;&#x610F;&#x4E49;&#x4E0E;&#x5185;&#x5BB9;&#xFF1A;"><a href="#&#x4E8C;-usr-&#x7684;&#x610F;&#x4E49;&#x4E0E;&#x5185;&#x5BB9;&#xFF1A;" class="headerlink" title="&#x4E8C;. /usr &#x7684;&#x610F;&#x4E49;&#x4E0E;&#x5185;&#x5BB9;&#xFF1A;"></a><strong>&#x4E8C;. /usr &#x7684;&#x610F;&#x4E49;&#x4E0E;&#x5185;&#x5BB9;&#xFF1A;</strong></h4><p>&#x4F9D;&#x636E;FHS&#x7684;&#x57FA;&#x672C;&#x5B9A;&#x4E49;&#xFF0C;/usr &#x91CC;&#x9762;&#x653E;&#x7F6E;&#x7684;&#x6570;&#x636E;&#x5C5E;&#x4E8E;&#x53EF;&#x5206;&#x4EAB;&#x7684;&#x4E0E;&#x4E0D;&#x53EF;&#x53D8;&#x52A8;&#x7684;&#xFF08;shareable&#xFF0C; static&#xFF09;&#x3002;&#x5982;&#x679C;&#x4F60;&#x77E5;&#x9053;&#x5982;&#x4F55;&#x901A;&#x8FC7;&#x7F51;&#x7EDC;&#x8FDB;&#x884C;&#x5206;&#x533A;&#x7684;&#x6302;&#x8F7D;&#xFF0C;&#x90A3;&#x4E48; /usr &#x786E;&#x5B9E;&#x53EF;&#x4EE5;&#x5206;&#x4EAB;&#x7ED9;&#x5C40;&#x57DF;&#x7F51;&#x7EDC;&#x5185;&#x7684;&#x5176;&#x4ED6;&#x4E3B;&#x673A;&#x6765;&#x4F7F;&#x7528;&#x3002;</p>
+<p>/usr &#x4E0D;&#x662F; user &#x7684;&#x7F29;&#x5199;&#xFF0C;&#x5176;&#x5B9E; usr &#x662F; Unix Software Resource &#x7684;&#x7F29;&#x5199;&#xFF0C;&#x4E5F;&#x5C31;&#x662F;Unix&#x64CD;&#x4F5C;&#x7CFB;&#x7EDF;&#x8F6F;&#x4EF6;&#x8D44;&#x6E90;&#x6240;&#x653E;&#x7F6E;&#x7684;&#x76EE;&#x5F55;&#xFF0C;&#x800C;&#x4E0D;&#x662F;&#x7528;&#x6237;&#x7684;&#x6570;&#x636E;&#x3002;&#x8FD9;&#x70B9;&#x8981;&#x6CE8;&#x610F;&#x3002;FHS &#x5EFA;&#x8BAE;&#x6240;&#x6709;&#x8F6F;&#x4EF6;&#x5F00;&#x53D1;&#x8005;&#xFF0C;&#x5E94;&#x8BE5;&#x5C06;&#x4ED6;&#x4EEC;&#x7684;&#x6570;&#x636E;&#x5408;&#x7406;&#x7684;&#x653E;&#x7F6E;&#x5230;&#x8FD9;&#x4E2A;&#x76EE;&#x5F55;&#x4E0B;&#x7684;&#x6B64;&#x76EE;&#x5F55;&#xFF0C;&#x800C;&#x4E0D;&#x662F;&#x81EA;&#x884C;&#x5EFA;&#x7ACB;&#x8BE5;&#x8F6F;&#x4EF6;&#x81EA;&#x5DF1;&#x7684;&#x72EC;&#x7ACB;&#x76EE;&#x5F55;&#x3002;</p>
+<p>&#x56E0;&#x4E3A;&#x662F;&#x6240;&#x6709;&#x7CFB;&#x7EDF;&#x9ED8;&#x8BA4;&#x7684;&#x8F6F;&#x4EF6;&#x90FD;&#x4F1A;&#x653E;&#x7F6E;&#x5728; /usr &#x5E95;&#x4E0B;&#xFF0C;&#x56E0;&#x6B64;&#x8FD9;&#x4E2A;&#x76EE;&#x5F55;&#x6709;&#x70B9;&#x7C7B;&#x4F3C; windows &#x7CFB;&#x7EDF;&#x7684; C:Windows + C:Program files &#x8FD9;&#x4E24;&#x4E2A;&#x76EE;&#x5F55;&#x7684;&#x7EFC;&#x5408;&#x4F53;&#xFF0C;&#x7CFB;&#x7EDF;&#x521A;&#x5B89;&#x88C5;&#x5B8C;&#x6BD5;&#x65F6;&#xFF0C;&#x8FD9;&#x4E2A;&#x76EE;&#x5F55;&#x4F1A;&#x5360;&#x7528;&#x6700;&#x591A;&#x7684;&#x786C;&#x76D8;&#x5BB9;&#x91CF;&#x3002;&#x4E00;&#x822C;&#x6765;&#x8BF4;&#xFF0C;/usr &#x7684;&#x4E0B;&#x7EA7;&#x76EE;&#x5F55;&#x5EFA;&#x8BAE;&#x6709;&#x5E95;&#x4E0B;&#x8FD9;&#x4E9B;&#xFF1A;</p>
+<table>
+<thead>
+<tr>
+<th>&#x76EE;&#x5F55;</th>
+<th>&#x5E94;&#x653E;&#x7F6E;&#x6587;&#x4EF6;&#x5185;&#x5BB9;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>/usr/X11R6/</td>
+<td>&#x4E3A;X Window System &#x91CD;&#x8981;&#x6570;&#x636E;&#x6240;&#x653E;&#x7F6E;&#x7684;&#x76EE;&#x5F55;&#xFF0C;&#x4E4B;&#x6240;&#x4EE5;&#x53D6;&#x540D;&#x4E3A; X11R6 &#x662F;&#x56E0;&#x4E3A;&#x6700;&#x540E;&#x7684; X &#x7248;&#x672C;&#x4E3A; 11 &#x7248;&#xFF0C;&#x4E14;&#x8BE5;&#x7248;&#x7684;&#x7B2C; 6 &#x6B21;&#x4E8B;&#x51FA;&#x4E4B;&#x610F;&#x3002;</td>
+</tr>
+<tr>
+<td>/usr/bin/</td>
+<td>&#x7EDD;&#x5927;&#x90E8;&#x5206;&#x7684;&#x7528;&#x6237;&#x53EF;&#x4F7F;&#x7528;&#x7684;&#x547D;&#x4EE4;&#x90FD;&#x653E;&#x5728;&#x8FD9;&#x91CC;&#x3002;&#x8BF7;&#x6CE8;&#x610F;&#x5230;&#x4ED6;&#x4E0E; /bin &#x7684;&#x4E0D;&#x540C;&#x4E4B;&#x5904;&#x3002;</td>
+</tr>
+<tr>
+<td>/usr/include/</td>
+<td>C/C++ &#x7B49;&#x7A0B;&#x5E8F;&#x8BED;&#x8A00;&#x7684;&#x5934;&#x6587;&#x4EF6;&#xFF08;header&#xFF09;&#x4E0E;&#x51FD;&#x6570;&#x5E93;&#x6587;&#x4EF6;&#xFF08;include&#xFF09;&#x653E;&#x7F6E;&#x5904;&#xFF0C;&#x5F53;&#x6211;&#x4EEC;&#x4EE5; tar &#x65B9;&#x5F0F;&#xFF08; *.tar.gz &#x7684;&#x65B9;&#x5F0F;&#x5B89;&#x88C5;&#x8F6F;&#x4EF6; ) &#x5B89;&#x88C5;&#x67D0;&#x4E9B;&#x6570;&#x636E;&#x65F6;&#xFF0C;&#x4F1A;&#x4F7F;&#x7528;&#x5230;&#x91CC;&#x9762;&#x7684;&#x8BB8;&#x591A;&#x5305;&#x542B;&#x6587;&#x4EF6;&#x3002;</td>
+</tr>
+<tr>
+<td>/usr/lib/</td>
+<td>&#x5305;&#x542B;&#x5E94;&#x7528;&#x8F6F;&#x4EF6;&#x7684;&#x51FD;&#x5F0F;&#x5E93;&#xFF0C;&#x76EE;&#x6807;&#x6587;&#x4EF6;&#xFF08;object file&#xFF09;&#xFF0C;&#x4EE5;&#x53CA;&#x4E0D;&#x88AB;&#x4E00;&#x822C;&#x4F7F;&#x7528;&#x8005;&#x60EF;&#x7528;&#x7684;&#x6267;&#x884C;&#x6587;&#x4EF6;&#x6216;&#x811A;&#x672C;&#xFF08;script&#xFF09;&#x3002;&#x67D0;&#x4E9B;&#x8F6F;&#x4EF6;&#x4F1A;&#x63D0;&#x4F9B;&#x4E00;&#x4E9B;&#x7279;&#x6B8A;&#x7684;&#x6307;&#x4EE4;&#x6765;&#x8FDB;&#x884C;&#x670D;&#x52A1;&#x5668;&#x7684;&#x8BBE;&#x5B9A;&#xFF0C;&#x8FD9;&#x4E9B;&#x6307;&#x4EE4;&#x4E5F;&#x4E0D;&#x4F1A;&#x7ECF;&#x5E38;&#x88AB;&#x7CFB;&#x7EDF;&#x7BA1;&#x7406;&#x5458;&#x64CD;&#x4F5C;&#xFF0C;&#x90A3;&#x5C31;&#x4F1A;&#x88AB;&#x6446;&#x653E;&#x5230;&#x8FD9;&#x4E2A;&#x76EE;&#x5F55;&#x4E0B;&#x3002;&#x8981;&#x6CE8;&#x610F;&#x7684;&#x662F;&#xFF0C;&#x5982;&#x679C;&#x4F60;&#x4F7F;&#x7528;&#x7684;&#x65F6;X86_64&#x7684; Linux &#x7CFB;&#x7EDF;&#xFF0C;&#x90A3;&#x53EF;&#x80FD;&#x4F1A;&#x6709; /usr/lib64/ &#x76EE;&#x5F55;&#x4EA7;&#x751F;&#x3002;</td>
+</tr>
+<tr>
+<td>/usr/local/</td>
+<td>root &#x7528;&#x6237;&#x5728;&#x672C;&#x673A;&#x81EA;&#x884C;&#x5B89;&#x88C5;&#x81EA;&#x5DF1;&#x4E0B;&#x7684;&#x8F6F;&#x4EF6;&#xFF0C;&#x5EFA;&#x8BAE;&#x5B89;&#x88C5;&#x5230;&#x6B64;&#x76EE;&#x5F55;&#xFF0C;&#x8FD9;&#x6837;&#x4F1A;&#x6BD4;&#x8F83;&#x4FBF;&#x4E8E;&#x7BA1;&#x7406;&#x3002;&#x4E3E;&#x4F8B;&#x6765;&#x8BF4;&#xFF0C;&#x4F60;&#x7684;&#x7CFB;&#x7EDF;&#x9ED8;&#x8BA4;&#x63D0;&#x4F9B;&#x7684;&#x8F6F;&#x4EF6;&#x7248;&#x672C;&#x8F83;&#x65E7;&#xFF0C;&#x4F60;&#x60F3;&#x5B89;&#x88C5;&#x8F83;&#x65B0;&#x7684;&#x8F6F;&#x4EF6;&#x4F46;&#x53C8;&#x4E0D;&#x60F3;&#x79FB;&#x9664;&#x65E7;&#x7248;&#xFF0C;&#x6B64;&#x65F6;&#x4F60;&#x53EF;&#x4EE5;&#x5C06;&#x65B0;&#x7248;&#x8F6F;&#x4EF6;&#x5B89;&#x88C5;&#x4E8E; /usr/local/ &#x76EE;&#x5F55;&#x4E0B;&#xFF0C;&#x53EF;&#x4E0E;&#x539F;&#x6765;&#x7684;&#x65E7;&#x7248;&#x8F6F;&#x4EF6;&#x53C8;&#x5206;&#x522B;&#xFF0C;&#x4F60;&#x53EF;&#x4EE5;&#x81EA;&#x884C;&#x5230; /usr/local &#x53BB;&#x770B;&#x770B;&#xFF0C;&#x8BE5;&#x76EE;&#x5F55;&#x4E0B;&#x4E5F;&#x662F;&#x5177;&#x6709; bin&#xFF0C; etc&#xFF0C; include&#xFF0C; lib &#x7B49;&#x7B49;&#x7684;&#x4E0B;&#x7EA7;&#x76EE;&#x5F55;&#x3002;</td>
+</tr>
+<tr>
+<td>/usr/sbin</td>
+<td>&#x975E;&#x7CFB;&#x7EDF;&#x6B63;&#x5E38;&#x8FD0;&#x4F5C;&#x6240;&#x9700;&#x8981;&#x7684;&#x7CFB;&#x7EDF;&#x6307;&#x4EE4;&#x3002;&#x6700;&#x5E38;&#x89C1;&#x7684;&#x5C31;&#x662F;&#x67D0;&#x4E9B;&#x7F51;&#x7EDC;&#x670D;&#x52A1;&#x5668;&#x8F6F;&#x4EF6;&#x7684;&#x6307;&#x4EE4;&#xFF08;daemon&#xFF09;&#x3002;</td>
+</tr>
+<tr>
+<td>/usr/share/</td>
+<td>&#x653E;&#x7F6E;&#x5171;&#x4EAB;&#x6587;&#x4EF6;&#x7684;&#x5730;&#x65B9;&#xFF0C;&#x5728;&#x8FD9;&#x4E2A;&#x76EE;&#x5F55;&#x4E0B;&#x65B9;&#x653E;&#x7F6E;&#x7684;&#x6570;&#x636E;&#x51E0;&#x4E4E;&#x662F;&#x4E0D;&#x5206;&#x786C;&#x4EF6;&#x67B6;&#x6784;&#x5747;&#x53EF;&#x4EE5;&#x8BFB;&#x53D6;&#x7684;&#x6570;&#x636E;&#xFF0C;&#x56E0;&#x4E3A;&#x51E0;&#x4E4E;&#x90FD;&#x662F;&#x6587;&#x672C;&#x6587;&#x4EF6;&#x3002;&#x5728;&#x6B64;&#x76EE;&#x5F55;&#x4E0B;&#x5E38;&#x89C1;&#x7684;&#x76EE;&#x5F55;&#x6709;&#xFF1A; /usr/share/man &#xFF1A;&#x8FDE;&#x673A;&#x5E2E;&#x52A9;&#x6587;&#x4EF6;&#x3002;</td>
+</tr>
+<tr>
+<td>/usr/src</td>
+<td>&#x4E00;&#x822C;&#x6E90;&#x4EE3;&#x7801;&#x5EFA;&#x8BAE;&#x653E;&#x7F6E;&#x5230;&#x8FD9;&#x91CC;&#xFF0C;src &#x6709; source &#x7684;&#x610F;&#x601D;&#x3002;&#x81F3;&#x4E8E;&#x6838;&#x5FC3;&#x6E90;&#x4EE3;&#x7801;&#x5219;&#x5EFA;&#x8BAE;&#x653E;&#x7F6E;&#x5230; /usr/src/linux/ &#x76EE;&#x5F55;&#x4E0B;&#x3002;</td>
+</tr>
+</tbody>
+</table>
+<h4 id="&#x4E09;-var-&#x7684;&#x610F;&#x4E49;&#x4E0E;&#x5185;&#x5BB9;&#xFF1A;"><a href="#&#x4E09;-var-&#x7684;&#x610F;&#x4E49;&#x4E0E;&#x5185;&#x5BB9;&#xFF1A;" class="headerlink" title="&#x4E09;. /var &#x7684;&#x610F;&#x4E49;&#x4E0E;&#x5185;&#x5BB9;&#xFF1A;"></a><strong>&#x4E09;. /var &#x7684;&#x610F;&#x4E49;&#x4E0E;&#x5185;&#x5BB9;&#xFF1A;</strong></h4><p>&#x5982;&#x679C; /usr &#x662F;&#x5B89;&#x88C5;&#x65F6;&#x4F1A;&#x5360;&#x7528;&#x8F83;&#x5927;&#x786C;&#x76D8;&#x5BB9;&#x91CF;&#x7684;&#x76EE;&#x5F55;&#xFF0C;&#x90A3;&#x4E48; /var &#x5C31;&#x662F;&#x5728;&#x7CFB;&#x7EDF;&#x8FD0;&#x4F5C;&#x540E;&#x624D;&#x4F1A;&#x6E10;&#x6E10;&#x5360;&#x7528;&#x786C;&#x76D8;&#x5BB9;&#x91CF;&#x7684;&#x76EE;&#x5F55;&#x3002;&#x56E0;&#x4E3A; /var &#x76EE;&#x5F55;&#x4E3B;&#x8981;&#x9488;&#x5BF9;&#x5E38;&#x6001;&#x6027;&#x53D8;&#x52A8;&#x7684;&#x6587;&#x4EF6;&#xFF0C;&#x5305;&#x62EC;&#x7F13;&#x5B58;&#xFF08;cache&#xFF09;&#xFF0C;&#x767B;&#x9646;&#x6587;&#x4EF6;&#xFF08;log file&#xFF09;&#x4EE5;&#x53CA;&#x67D0;&#x4E9B;&#x8F6F;&#x4EF6;&#x8FD0;&#x4F5C;&#x65F6;&#x6240;&#x4EA7;&#x751F;&#x7684;&#x6587;&#x4EF6;&#xFF0C;&#x5305;&#x62EC;&#x7A0B;&#x5E8F;&#x6587;&#x4EF6;&#xFF08;lock file&#xFF0C; run file&#xFF09;&#xFF0C;&#x6216;&#x8005;&#x4F8B;&#x5982; MySQL &#x6570;&#x636E;&#x5E93;&#x7684;&#x6587;&#x4EF6;&#x7B49;&#x7B49;&#x3002;&#x5E38;&#x89C1;&#x7684;&#x4E0B;&#x7EA7;&#x76EE;&#x5F55;&#x5982;&#x4E0B;&#xFF1A;</p>
+<table>
+<thead>
+<tr>
+<th>&#x76EE;&#x5F55;</th>
+<th>&#x5E94;&#x653E;&#x7F6E;&#x6587;&#x4EF6;&#x5185;&#x5BB9;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>/var/cache/</td>
+<td>&#x5E94;&#x7528;&#x7A0B;&#x5E8F;&#x672C;&#x8EAB;&#x8FD0;&#x4F5C;&#x8FC7;&#x7A0B;&#x4E2D;&#x4F1A;&#x4EA7;&#x751F;&#x7684;&#x4E00;&#x4E9B;&#x6570;&#x636E;&#x6587;&#x4EF6;&#x6682;&#x5B58;&#x76EE;&#x5F55;</td>
+</tr>
+<tr>
+<td>/var/lib/</td>
+<td>&#x7A0B;&#x5E8F;&#x672C;&#x8EAB;&#x6267;&#x884C;&#x7684;&#x8FC7;&#x7A0B;&#x4E2D;&#xFF0C;&#x9700;&#x8981;&#x4F7F;&#x7528;&#x5230;&#x7684;&#x6570;&#x636E;&#x6587;&#x4EF6;&#x653E;&#x7F6E;&#x7684;&#x76EE;&#x5F55;&#x3002;&#x5728;&#x6B64;&#x76EE;&#x5F55;&#x4E0B;&#x5404;&#x81EA;&#x7684;&#x8F6F;&#x4EF6;&#x5E94;&#x8BE5;&#x6709;&#x5404;&#x81EA;&#x7684;&#x76EE;&#x5F55;&#x3002;&#x4E3E;&#x4F8B;&#x6765;&#x8BF4;&#xFF0C;MySQL &#x7684;&#x6570;&#x636E;&#x5E93;&#x653E;&#x7F6E;&#x5230; /var/lib/mysql/ &#x800C; rpm &#x7684;&#x6570;&#x636E;&#x5E93;&#x5219;&#x653E;&#x5230; /var/lib/rpm/ &#x53BB;&#x3002;</td>
+</tr>
+<tr>
+<td>/var/lock/</td>
+<td>&#x67D0;&#x4E9B;&#x88C5;&#x7F6E;&#x6216;&#x8005;&#x6587;&#x4EF6;&#x8D44;&#x6E90;&#x4E00;&#x6B21;&#x53EA;&#x80FD;&#x88AB;&#x4E00;&#x4E2A;&#x5E94;&#x7528;&#x7A0B;&#x5E8F;&#x6240;&#x4F7F;&#x7528;&#xFF0C;&#x5982;&#x679C;&#x540C;&#x65F6;&#x6709;&#x4E24;&#x4E2A;&#x7A0B;&#x5E8F;&#x4F7F;&#x7528;&#x8BE5;&#x88C5;&#x7F6E;&#x65F6;&#xFF0C;&#x5C31;&#x53EF;&#x80FD;&#x4EA7;&#x751F;&#x4E00;&#x4E9B;&#x9519;&#x8BEF;&#x7684;&#x72B6;&#x51B5;&#xFF0C;&#x56E0;&#x6B64;&#x5C31;&#x5F97;&#x8981;&#x5C06;&#x8BE5;&#x88C5;&#x7F6E;&#x4E0A;&#x9501;&#xFF0C;&#x4EE5;&#x786E;&#x4FDD;&#x8BE5;&#x88C5;&#x7F6E;&#x53EA;&#x4F1A;&#x7ED9;&#x5355;&#x4E00;&#x8F6F;&#x4EF6;&#x6240;&#x4F7F;&#x7528;&#x3002;&#x4E3E;&#x4F8B;&#x6765;&#x8BF4;&#xFF0C;&#x523B;&#x5F55;&#x673A;&#x6B63;&#x5728;&#x523B;&#x5F55;&#x4E00;&#x5757;&#x5149;&#x76D8;&#xFF0C;&#x4F60;&#x60F3;&#x4E00;&#x4E0B;&#xFF0C;&#x4F1A;&#x4E0D;&#x4F1A;&#x6709;&#x4E24;&#x4E2A;&#x4EBA;&#x540C;&#x65F6;&#x4F7F;&#x7528;&#x4E00;&#x4E2A;&#x523B;&#x5F55;&#x673A;&#x70E7;&#x7247;&#xFF1F;&#x5982;&#x679C;&#x4E24;&#x4E2A;&#x4EBA;&#x540C;&#x65F6;&#x523B;&#x5F55;&#xFF0C;&#x90A3;&#x7247;&#x5B50;&#x5199;&#x5165;&#x7684;&#x65F6;&#x8C01;&#x7684;&#x6570;&#x636E;&#xFF1F;&#x6240;&#x4EE5;&#x5F53;&#x7B2C;&#x4E00;&#x4E2A;&#x4EBA;&#x5728;&#x523B;&#x5F55;&#x65F6;&#x8BE5;&#x523B;&#x5F55;&#x673A;&#x5C31;&#x4F1A;&#x88AB;&#x4E0A;&#x9501;&#xFF0C;&#x7B2C;&#x4E8C;&#x4E2A;&#x4EBA;&#x5C31;&#x5F97;&#x8981;&#x7B49;&#x8BE5;&#x88C5;&#x7F6E;&#x89E3;&#x9664;&#x9501;&#x5B9A;&#x624D;&#x80FD;&#x591F;&#x7EE7;&#x7EED;&#x4F7F;&#x7528;&#x3002;</td>
+</tr>
+<tr>
+<td>/var/log/</td>
+<td>&#x975E;&#x5E38;&#x91CD;&#x8981;&#x3002;&#x8FD9;&#x662F;&#x767B;&#x9646;&#x6587;&#x4EF6;&#x653E;&#x7F6E;&#x7684;&#x76EE;&#x5F55;&#x3002;&#x91CC;&#x9762;&#x6BD4;&#x8F83;&#x91CD;&#x8981;&#x7684;&#x6587;&#x4EF6;&#x5982; /var/log/messages&#xFF0C; /var/log/wtmp &#xFF08;&#x8BB0;&#x5F55;&#x767B;&#x5165;&#x8005;&#x7684;&#x4FE1;&#x606F;&#xFF09;&#x7B49;&#x3002;</td>
+</tr>
+<tr>
+<td>/var/mail/</td>
+<td>&#x653E;&#x7F6E;&#x4E2A;&#x4EBA;&#x7535;&#x5B50;&#x90AE;&#x4EF6;&#x4FE1;&#x7BB1;&#x7684;&#x76EE;&#x5F55;&#xFF0C;&#x4E0D;&#x8FC7;&#x8FD9;&#x4E2A;&#x76EE;&#x5F55;&#x4E5F;&#x88AB;&#x653E;&#x7F6E;&#x5230; /var/spool/mail/ &#x76EE;&#x5F55;&#x4E2D;&#xFF0C;&#x901A;&#x5E38;&#x8FD9;&#x4E24;&#x4E2A;&#x76EE;&#x5F55;&#x662F;&#x4E92;&#x4E3A;&#x94FE;&#x63A5;&#x6587;&#x4EF6;&#x3002;</td>
+</tr>
+<tr>
+<td>/var/run/</td>
+<td>&#x67D0;&#x4E9B;&#x7A0B;&#x5E8F;&#x6216;&#x8005;&#x662F;&#x670D;&#x52A1;&#x542F;&#x52A8;&#x540E;&#xFF0C;&#x4F1A;&#x5C06;&#x4ED6;&#x4EEC;&#x7684;PID&#x653E;&#x7F6E;&#x5728;&#x8FD9;&#x4E2A;&#x76EE;&#x5F55;&#x4E0B;</td>
+</tr>
+<tr>
+<td>/var/spool/</td>
+<td>&#x8FD9;&#x4E2A;&#x76EE;&#x5F55;&#x901A;&#x5E38;&#x653E;&#x7F6E;&#x4E00;&#x4E9B;&#x961F;&#x5217;&#x6570;&#x636E;&#xFF0C;&#x6240;&#x8C13;&#x7684;&#x201C;&#x961F;&#x5217;&#x201D;&#x5C31;&#x662F;&#x6392;&#x961F;&#x7B49;&#x5F85;&#x5176;&#x4ED6;&#x7A0B;&#x5E8F;&#x6240;&#x4F7F;&#x7528;&#x7684;&#x6570;&#x636E;&#x3002;&#x8FD9;&#x4E9B;&#x6570;&#x636E;&#x88AB;&#x4F7F;&#x7528;&#x540E;&#x901A;&#x5E38;&#x90FD;&#x4F1A;&#x88AB;&#x5220;&#x9664;&#x3002;&#x4E3E;&#x4F8B;&#x6765;&#x8BF4;&#xFF0C;&#x7CFB;&#x7EDF;&#x6536;&#x5230;&#x4FE1;&#x606F;&#x4F1A;&#x653E;&#x7F6E;&#x5230; /var/spool/mail &#x4E2D;&#xFF0C;&#x4F46;&#x4F7F;&#x7528;&#x8005;&#x6536;&#x4E0B;&#x8BE5;&#x4FE1;&#x4EF6;&#x540E;&#x8BE5;&#x5C01;&#x4FE1;&#x539F;&#x5219;&#x4E0A;&#x5C31;&#x4F1A;&#x88AB;&#x5220;&#x9664;&#x3002;&#x4FE1;&#x4EF6;&#x5982;&#x679C;&#x662F;&#x6682;&#x65F6;&#x5BC4;&#x4E0D;&#x51FA;&#x53BB;&#x5C31;&#x4F1A;&#x88AB;&#x653E;&#x5230; /var/spool/mqueue/ &#x4E2D;&#xFF0C;&#x7B49;&#x5230;&#x88AB;&#x9001;&#x51FA;&#x53BB;&#x540E;&#x5C31;&#x88AB;&#x5220;&#x9664;&#x3002;&#x5982;&#x679C;&#x662F;&#x5DE5;&#x4F5C;&#x6392;&#x7A0B;&#x6570;&#x636E;&#xFF08;crontab&#xFF09;&#xFF0C;&#x5C31;&#x4F1A;&#x88AB;&#x653E;&#x7F6E;&#x5230; /var/spool/cron/ &#x76EE;&#x5F55;&#x4E2D;&#x3002;</td>
+</tr>
+</tbody>
+</table>
+<p>&#x7531;&#x4E8E;FHS&#x4EC5;&#x662F;&#x5B9A;&#x4E49;&#x51FA;&#x6700;&#x4E0A;&#x5C42; &#xFF08; / &#xFF09;&#x53CA;&#x6B21;&#x5C42;&#xFF08; /usr&#xFF0C; /var &#xFF09;&#x7684;&#x76EE;&#x5F55;&#x5185;&#x5BB9;&#x5E94;&#x8BE5;&#x8981;&#x653E;&#x7F6E;&#x7684;&#x6587;&#x4EF6;&#x6216;&#x76EE;&#x5F55;&#x6570;&#x636E;&#xFF0C;&#x56E0;&#x6B64;&#xFF0C;&#x5728;&#x5176;&#x4ED6;&#x6B21;&#x76EE;&#x5F55;&#x5C42;&#x7EA7;&#x5185;&#xFF0C;&#x5C31;&#x53EF;&#x4EE5;&#x968F;&#x5F00;&#x53D1;&#x8005;&#x81EA;&#x884C;&#x6765;&#x914D;&#x7F6E;&#x4E86;&#x3002;</p>
+<h4 id="&#x56DB;-&#x76EE;&#x5F55;&#x6811;&#xFF1A;"><a href="#&#x56DB;-&#x76EE;&#x5F55;&#x6811;&#xFF1A;" class="headerlink" title="&#x56DB;. &#x76EE;&#x5F55;&#x6811;&#xFF1A;"></a><strong>&#x56DB;. &#x76EE;&#x5F55;&#x6811;&#xFF1A;</strong></h4><p>&#x5728; Linux &#x5E95;&#x4E0B;&#xFF0C;&#x6240;&#x6709;&#x7684;&#x6587;&#x4EF6;&#x4E0E;&#x76EE;&#x5F55;&#x90FD;&#x662F;&#x90FD;&#x662F;&#x7531;&#x6839;&#x76EE;&#x5F55;&#x5F00;&#x59CB;&#x7684;&#x3002;&#x90A3;&#x662F;&#x6240;&#x6709;&#x76EE;&#x5F55;&#x6709;&#x6587;&#x4EF6;&#x7684;&#x6E90;&#x5934;&#xFF0C;&#x7136;&#x540E;&#x518D;&#x4E00;&#x4E2A;&#x4E00;&#x4E2A;&#x7684;&#x5206;&#x652F;&#x4E0B;&#x6765;&#xFF0C;&#x56E0;&#x6B64;&#xFF0C;&#x6211;&#x4EEC;&#x4E5F;&#x79F0;&#x8FD9;&#x79CD;&#x76EE;&#x5F55;&#x914D;&#x7F6E;&#x65B9;&#x5F0F;&#x4E3A;&#xFF1A;&#x76EE;&#x5F55;&#x6811;&#xFF08;directory tree&#xFF09;&#xFF0C;&#x8FD9;&#x4E2A;&#x76EE;&#x5F55;&#x6811;&#x7684;&#x4E3B;&#x8981;&#x7279;&#x6027;&#x6709;&#xFF1A;</p>
+<p>&#x76EE;&#x5F55;&#x6811;&#x7684;&#x8D77;&#x59CB;&#x70B9;&#x4E3A;&#x6839;&#x76EE;&#x5F55;&#xFF08; /&#xFF0C; root&#xFF09;&#xFF1B;</p>
+<p>&#x6BCF;&#x4E00;&#x4E2A;&#x76EE;&#x5F55;&#x4E0D;&#x6B62;&#x80FD;&#x4F7F;&#x7528;&#x672C;&#x5730;&#x7AEF;&#x7684; partition &#x7684;&#x6587;&#x4EF6;&#x7CFB;&#x7EDF;&#xFF0C;&#x4E5F;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;&#x7F51;&#x7EDC;&#x4E0A;&#x7684; filesystem&#x3002;&#x4E3E;&#x4F8B;&#x6765;&#x8BF4;&#xFF0C;&#x53EF;&#x4EE5;&#x5229;&#x7528; Network File System (NFS) &#x670D;&#x52A1;&#x5668;&#x6302;&#x8F7D;&#x67D0;&#x7279;&#x5B9A;&#x76EE;&#x5F55;&#x7B49;&#x3002;</p>
+<p>&#x6BCF;&#x4E00;&#x4E2A;&#x6587;&#x4EF6;&#x5728;&#x6B21;&#x76EE;&#x5F55;&#x6811;&#x4E2D;&#x7684;&#x6587;&#x4EF6;&#x540D;(&#x5305;&#x542B;&#x5B8C;&#x6574;&#x8DEF;&#x5F84;)&#x90FD;&#x662F;&#x72EC;&#x4E00;&#x65E0;&#x4E8C;&#x7684;&#x3002;</p>
+<p>&#x5982;&#x679C;&#x6211;&#x4EEC;&#x5C06;&#x6574;&#x4E2A;&#x76EE;&#x5F55;&#x6811;&#x4EE5;&#x56FE;&#x7684;&#x65B9;&#x6CD5;&#x6765;&#x663E;&#x793A;&#xFF0C;&#x5E76;&#x4E14;&#x5C06;&#x8F83;&#x4E3A;&#x91CD;&#x8981;&#x7684;&#x6587;&#x4EF6;&#x6570;&#x636E;&#x5217;&#x51FA;&#x6765;&#x7684;&#x8BDD;&#xFF0C;&#x90A3;&#x4E48;&#x76EE;&#x5F55;&#x6811;&#x67B6;&#x6784;&#x5C31;&#x5982;&#x4E0B;&#x56FE;&#x6240;&#x793A;&#xFF1A;</p>
+<p><img src="http://img.blog.csdn.net/20170402143015550?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvbWFzdGVyNTUxMg==/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast" alt="&#x8FD9;&#x91CC;&#x5199;&#x56FE;&#x7247;&#x63CF;&#x8FF0;"></p>
+<script src="/live2dw/lib/L2Dwidget.min.js?0c58a1486de42ac6cc1c59c7d98ae887"></script><script>L2Dwidget.init({});</script>
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/linux/" rel="tag"># linux</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2018/03/22/vim_Editor_Assistant/" rel="next" title="vim Editor Assistant">
+                <i class="fa fa-chevron-left"></i> vim Editor Assistant
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2018/03/22/&#x5728;Linux&#x7CFB;&#x7EDF;&#x4E0B;&#x7528;dd&#x547D;&#x4EE4;&#x5236;&#x4F5C;ISO&#x955C;&#x50CF;U&#x76D8;&#x542F;&#x52A8;&#x76D8;/" rel="prev" title="&#x5728;Linux&#x7CFB;&#x7EDF;&#x4E0B;&#x7528;dd&#x547D;&#x4EE4;&#x5236;&#x4F5C;ISO&#x955C;&#x50CF;U&#x76D8;&#x542F;&#x52A8;&#x76D8;">
+                &#x5728;Linux&#x7CFB;&#x7EDF;&#x4E0B;&#x7528;dd&#x547D;&#x4EE4;&#x5236;&#x4F5C;ISO&#x955C;&#x50CF;U&#x76D8;&#x542F;&#x52A8;&#x76D8; <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+
+          
+
+  
+
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            &#x6587;&#x7AE0;&#x76EE;&#x5F55;
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            &#x7AD9;&#x70B9;&#x6982;&#x89C8;
+          </li>
+        </ul>
+      
+
+      <section class="site-overview-wrap sidebar-panel">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope="" itemtype="http://schema.org/Person">
+            
+              <img class="site-author-image" itemprop="image" src="/images/avatar.jpg" alt="Kings Cooober">
+            
+              <p class="site-author-name" itemprop="name">Kings Cooober</p>
+              <p class="site-description motion-element" itemprop="description">&#x4E00;&#x4E2A;&#x4EBA;&#x5E78;&#x8FD0;&#x7684;&#x524D;&#x63D0;&#xFF0C;&#x662F;&#x4ED6;&#x6709;&#x80FD;&#x529B;&#x6539;&#x53D8;&#x81EA;&#x5DF1;&#x3002;</p>
+          </div>
+
+          <nav class="site-state motion-element">
+
+            
+              <div class="site-state-item site-state-posts">
+              
+                <a href="/archives/">
+              
+                  <span class="site-state-item-count">11</span>
+                  <span class="site-state-item-name">&#x65E5;&#x5FD7;</span>
+                </a>
+              </div>
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-categories">
+                
+                  <span class="site-state-item-count">3</span>
+                  <span class="site-state-item-name">&#x5206;&#x7C7B;</span>
+                
+              </div>
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-tags">
+                
+                  <span class="site-state-item-count">8</span>
+                  <span class="site-state-item-name">&#x6807;&#x7B7E;</span>
+                
+              </div>
+            
+
+          </nav>
+
+          
+
+          
+            <div class="links-of-author motion-element">
+                
+                  <span class="links-of-author-item">
+                    <a href="https://github.com/vimerbai" target="_blank" title="GitHub">
+                      
+                        <i class="fa fa-fw fa-github"></i>GitHub</a>
+                  </span>
+                
+                  <span class="links-of-author-item">
+                    <a href="mailto:vimer.bai@gmail.com" target="_blank" title="E-Mail">
+                      
+                        <i class="fa fa-fw fa-envelope"></i>E-Mail</a>
+                  </span>
+                
+            </div>
+          
+
+          
+          
+
+          
+          
+
+          
+
+        </div>
+      </section>
+
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#Linux-&#x6587;&#x4EF6;&#x76EE;&#x5F55;&#x7ED3;&#x6784;"><span class="nav-number">1.</span> <span class="nav-text">Linux &#x6587;&#x4EF6;&#x76EE;&#x5F55;&#x7ED3;&#x6784;</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#&#x56DB;&#x79CD;&#x7C7B;&#x578B;&#xFF1A;"><span class="nav-number">1.1.</span> <span class="nav-text">&#x56DB;&#x79CD;&#x7C7B;&#x578B;&#xFF1A;</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#&#x4E00;-&#x6839;&#x76EE;&#x5F55;-&#x7684;&#x610F;&#x4E49;&#x4E0E;&#x5185;&#x5BB9;&#xFF1A;"><span class="nav-number">1.2.</span> <span class="nav-text">&#x4E00;.&#x6839;&#x76EE;&#x5F55;( / )&#x7684;&#x610F;&#x4E49;&#x4E0E;&#x5185;&#x5BB9;&#xFF1A;</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#&#x4E8C;-usr-&#x7684;&#x610F;&#x4E49;&#x4E0E;&#x5185;&#x5BB9;&#xFF1A;"><span class="nav-number">1.3.</span> <span class="nav-text">&#x4E8C;. /usr &#x7684;&#x610F;&#x4E49;&#x4E0E;&#x5185;&#x5BB9;&#xFF1A;</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#&#x4E09;-var-&#x7684;&#x610F;&#x4E49;&#x4E0E;&#x5185;&#x5BB9;&#xFF1A;"><span class="nav-number">1.4.</span> <span class="nav-text">&#x4E09;. /var &#x7684;&#x610F;&#x4E49;&#x4E0E;&#x5185;&#x5BB9;&#xFF1A;</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#&#x56DB;-&#x76EE;&#x5F55;&#x6811;&#xFF1A;"><span class="nav-number">1.5.</span> <span class="nav-text">&#x56DB;. &#x76EE;&#x5F55;&#x6811;&#xFF1A;</span></a></li></ol></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
+      
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright">&#xA9; <span itemprop="copyrightYear">2018</span>
+  <span class="with-love">
+    <i class="fa fa-user"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Kings Cooober</span>
+
+  
+</div>
+
+<!--
+
+  <div class="powered-by">由 <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a> 强力驱动</div>
+
+
+
+  <span class="post-meta-divider">|</span>
+
+
+
+  <div class="theme-info">主题 &mdash; <a class="theme-link" target="_blank" href="https://github.com/iissnan/hexo-theme-next">NexT.Gemini</a> v5.1.4</div>
+
+-->
+
+
+
+        
+<div class="busuanzi-count">
+  <script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+  
+    <span class="site-uv">
+      &#x672C;&#x7AD9;&#x8BBF;&#x5BA2;&#x6570; <i class="fa fa-user"></i>
+      <span class="busuanzi-value" id="busuanzi_value_site_uv"></span>
+      &#x4EBA;&#x6B21;
+    </span>
+  
+
+  
+    <span class="site-pv">
+      &#x672C;&#x7AD9;&#x603B;&#x8BBF;&#x95EE;&#x91CF; <i class="fa fa-eye"></i>
+      <span class="busuanzi-value" id="busuanzi_value_site_pv"></span>
+      &#x6B21;
+    </span>
+  
+</div>
+
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+    
+
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+  
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.4"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.4"></script>
+
+
+
+  
+  
+
+
+  <script type="text/javascript" src="/js/src/affix.js?v=5.1.4"></script>
+
+  <script type="text/javascript" src="/js/src/schemes/pisces.js?v=5.1.4"></script>
+
+
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  
+
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  <script type="text/javascript">
+    // Popup Window;
+    var isfetched = false;
+    var isXml = true;
+    // Search DB path;
+    var search_path = "search.xml";
+    if (search_path.length === 0) {
+      search_path = "search.xml";
+    } else if (/json$/i.test(search_path)) {
+      isXml = false;
+    }
+    var path = "/" + search_path;
+    // monitor main search box;
+
+    var onPopupClose = function (e) {
+      $('.popup').hide();
+      $('#local-search-input').val('');
+      $('.search-result-list').remove();
+      $('#no-result').remove();
+      $(".local-search-pop-overlay").remove();
+      $('body').css('overflow', '');
+    }
+
+    function proceedsearch() {
+      $("body")
+        .append('<div class="search-popup-overlay local-search-pop-overlay"></div>')
+        .css('overflow', 'hidden');
+      $('.search-popup-overlay').click(onPopupClose);
+      $('.popup').toggle();
+      var $localSearchInput = $('#local-search-input');
+      $localSearchInput.attr("autocapitalize", "none");
+      $localSearchInput.attr("autocorrect", "off");
+      $localSearchInput.focus();
+    }
+
+    // search function;
+    var searchFunc = function(path, search_id, content_id) {
+      'use strict';
+
+      // start loading animation
+      $("body")
+        .append('<div class="search-popup-overlay local-search-pop-overlay">' +
+          '<div id="search-loading-icon">' +
+          '<i class="fa fa-spinner fa-pulse fa-5x fa-fw"></i>' +
+          '</div>' +
+          '</div>')
+        .css('overflow', 'hidden');
+      $("#search-loading-icon").css('margin', '20% auto 0 auto').css('text-align', 'center');
+
+      $.ajax({
+        url: path,
+        dataType: isXml ? "xml" : "json",
+        async: true,
+        success: function(res) {
+          // get the contents from search data
+          isfetched = true;
+          $('.popup').detach().appendTo('.header-inner');
+          var datas = isXml ? $("entry", res).map(function() {
+            return {
+              title: $("title", this).text(),
+              content: $("content",this).text(),
+              url: $("url" , this).text()
+            };
+          }).get() : res;
+          var input = document.getElementById(search_id);
+          var resultContent = document.getElementById(content_id);
+          var inputEventFunction = function() {
+            var searchText = input.value.trim().toLowerCase();
+            var keywords = searchText.split(/[\s\-]+/);
+            if (keywords.length > 1) {
+              keywords.push(searchText);
+            }
+            var resultItems = [];
+            if (searchText.length > 0) {
+              // perform local searching
+              datas.forEach(function(data) {
+                var isMatch = false;
+                var hitCount = 0;
+                var searchTextCount = 0;
+                var title = data.title.trim();
+                var titleInLowerCase = title.toLowerCase();
+                var content = data.content.trim().replace(/<[^>]+>/g,"");
+                var contentInLowerCase = content.toLowerCase();
+                var articleUrl = decodeURIComponent(data.url);
+                var indexOfTitle = [];
+                var indexOfContent = [];
+                // only match articles with not empty titles
+                if(title != '') {
+                  keywords.forEach(function(keyword) {
+                    function getIndexByWord(word, text, caseSensitive) {
+                      var wordLen = word.length;
+                      if (wordLen === 0) {
+                        return [];
+                      }
+                      var startPosition = 0, position = [], index = [];
+                      if (!caseSensitive) {
+                        text = text.toLowerCase();
+                        word = word.toLowerCase();
+                      }
+                      while ((position = text.indexOf(word, startPosition)) > -1) {
+                        index.push({position: position, word: word});
+                        startPosition = position + wordLen;
+                      }
+                      return index;
+                    }
+
+                    indexOfTitle = indexOfTitle.concat(getIndexByWord(keyword, titleInLowerCase, false));
+                    indexOfContent = indexOfContent.concat(getIndexByWord(keyword, contentInLowerCase, false));
+                  });
+                  if (indexOfTitle.length > 0 || indexOfContent.length > 0) {
+                    isMatch = true;
+                    hitCount = indexOfTitle.length + indexOfContent.length;
+                  }
+                }
+
+                // show search results
+
+                if (isMatch) {
+                  // sort index by position of keyword
+
+                  [indexOfTitle, indexOfContent].forEach(function (index) {
+                    index.sort(function (itemLeft, itemRight) {
+                      if (itemRight.position !== itemLeft.position) {
+                        return itemRight.position - itemLeft.position;
+                      } else {
+                        return itemLeft.word.length - itemRight.word.length;
+                      }
+                    });
+                  });
+
+                  // merge hits into slices
+
+                  function mergeIntoSlice(text, start, end, index) {
+                    var item = index[index.length - 1];
+                    var position = item.position;
+                    var word = item.word;
+                    var hits = [];
+                    var searchTextCountInSlice = 0;
+                    while (position + word.length <= end && index.length != 0) {
+                      if (word === searchText) {
+                        searchTextCountInSlice++;
+                      }
+                      hits.push({position: position, length: word.length});
+                      var wordEnd = position + word.length;
+
+                      // move to next position of hit
+
+                      index.pop();
+                      while (index.length != 0) {
+                        item = index[index.length - 1];
+                        position = item.position;
+                        word = item.word;
+                        if (wordEnd > position) {
+                          index.pop();
+                        } else {
+                          break;
+                        }
+                      }
+                    }
+                    searchTextCount += searchTextCountInSlice;
+                    return {
+                      hits: hits,
+                      start: start,
+                      end: end,
+                      searchTextCount: searchTextCountInSlice
+                    };
+                  }
+
+                  var slicesOfTitle = [];
+                  if (indexOfTitle.length != 0) {
+                    slicesOfTitle.push(mergeIntoSlice(title, 0, title.length, indexOfTitle));
+                  }
+
+                  var slicesOfContent = [];
+                  while (indexOfContent.length != 0) {
+                    var item = indexOfContent[indexOfContent.length - 1];
+                    var position = item.position;
+                    var word = item.word;
+                    // cut out 100 characters
+                    var start = position - 20;
+                    var end = position + 80;
+                    if(start < 0){
+                      start = 0;
+                    }
+                    if (end < position + word.length) {
+                      end = position + word.length;
+                    }
+                    if(end > content.length){
+                      end = content.length;
+                    }
+                    slicesOfContent.push(mergeIntoSlice(content, start, end, indexOfContent));
+                  }
+
+                  // sort slices in content by search text's count and hits' count
+
+                  slicesOfContent.sort(function (sliceLeft, sliceRight) {
+                    if (sliceLeft.searchTextCount !== sliceRight.searchTextCount) {
+                      return sliceRight.searchTextCount - sliceLeft.searchTextCount;
+                    } else if (sliceLeft.hits.length !== sliceRight.hits.length) {
+                      return sliceRight.hits.length - sliceLeft.hits.length;
+                    } else {
+                      return sliceLeft.start - sliceRight.start;
+                    }
+                  });
+
+                  // select top N slices in content
+
+                  var upperBound = parseInt('1');
+                  if (upperBound >= 0) {
+                    slicesOfContent = slicesOfContent.slice(0, upperBound);
+                  }
+
+                  // highlight title and content
+
+                  function highlightKeyword(text, slice) {
+                    var result = '';
+                    var prevEnd = slice.start;
+                    slice.hits.forEach(function (hit) {
+                      result += text.substring(prevEnd, hit.position);
+                      var end = hit.position + hit.length;
+                      result += '<b class="search-keyword">' + text.substring(hit.position, end) + '</b>';
+                      prevEnd = end;
+                    });
+                    result += text.substring(prevEnd, slice.end);
+                    return result;
+                  }
+
+                  var resultItem = '';
+
+                  if (slicesOfTitle.length != 0) {
+                    resultItem += "<li><a href='" + articleUrl + "' class='search-result-title'>" + highlightKeyword(title, slicesOfTitle[0]) + "</a>";
+                  } else {
+                    resultItem += "<li><a href='" + articleUrl + "' class='search-result-title'>" + title + "</a>";
+                  }
+
+                  slicesOfContent.forEach(function (slice) {
+                    resultItem += "<a href='" + articleUrl + "'>" +
+                      "<p class=\"search-result\">" + highlightKeyword(content, slice) +
+                      "...</p>" + "</a>";
+                  });
+
+                  resultItem += "</li>";
+                  resultItems.push({
+                    item: resultItem,
+                    searchTextCount: searchTextCount,
+                    hitCount: hitCount,
+                    id: resultItems.length
+                  });
+                }
+              })
+            };
+            if (keywords.length === 1 && keywords[0] === "") {
+              resultContent.innerHTML = '<div id="no-result"><i class="fa fa-search fa-5x" /></div>'
+            } else if (resultItems.length === 0) {
+              resultContent.innerHTML = '<div id="no-result"><i class="fa fa-frown-o fa-5x" /></div>'
+            } else {
+              resultItems.sort(function (resultLeft, resultRight) {
+                if (resultLeft.searchTextCount !== resultRight.searchTextCount) {
+                  return resultRight.searchTextCount - resultLeft.searchTextCount;
+                } else if (resultLeft.hitCount !== resultRight.hitCount) {
+                  return resultRight.hitCount - resultLeft.hitCount;
+                } else {
+                  return resultRight.id - resultLeft.id;
+                }
+              });
+              var searchResultList = '<ul class=\"search-result-list\">';
+              resultItems.forEach(function (result) {
+                searchResultList += result.item;
+              })
+              searchResultList += "</ul>";
+              resultContent.innerHTML = searchResultList;
+            }
+          }
+
+          if ('auto' === 'auto') {
+            input.addEventListener('input', inputEventFunction);
+          } else {
+            $('.search-icon').click(inputEventFunction);
+            input.addEventListener('keypress', function (event) {
+              if (event.keyCode === 13) {
+                inputEventFunction();
+              }
+            });
+          }
+
+          // remove loading animation
+          $(".local-search-pop-overlay").remove();
+          $('body').css('overflow', '');
+
+          proceedsearch();
+        }
+      });
+    }
+
+    // handle and trigger popup window;
+    $('.popup-trigger').click(function(e) {
+      e.stopPropagation();
+      if (isfetched === false) {
+        searchFunc(path, 'local-search-input', 'local-search-result');
+      } else {
+        proceedsearch();
+      };
+    });
+
+    $('.popup-btn-close').click(onPopupClose);
+    $('.popup').click(function(e){
+      e.stopPropagation();
+    });
+    $(document).on('keyup', function (event) {
+      var shouldDismissSearchPopup = event.which === 27 &&
+        $('.search-popup').is(':visible');
+      if (shouldDismissSearchPopup) {
+        onPopupClose();
+      }
+    });
+  </script>
+
+
+
+
+  
+  
+  
+  <link rel="stylesheet" href="/lib/algolia-instant-search/instantsearch.min.css">
+
+  
+  
+  <script src="/lib/algolia-instant-search/instantsearch.min.js"></script>
+  
+
+  <script src="/js/src/algolia-search.js?v=5.1.4"></script>
+
+
+
+  
+
+  
+  <script src="https://cdn1.lncld.net/static/js/av-core-mini-0.6.4.js"></script>
+  <script>AV.initialize("95RjKPrtxF62OkSvHTocK31J-gzGzoHsz", "9tYuomCsaxPnD6BsQeakdmJv");</script>
+  <script>
+    function showTime(Counter) {
+      var query = new AV.Query(Counter);
+      var entries = [];
+      var $visitors = $(".leancloud_visitors");
+
+      $visitors.each(function () {
+        entries.push( $(this).attr("id").trim() );
+      });
+
+      query.containedIn('url', entries);
+      query.find()
+        .done(function (results) {
+          var COUNT_CONTAINER_REF = '.leancloud-visitors-count';
+
+          if (results.length === 0) {
+            $visitors.find(COUNT_CONTAINER_REF).text(0);
+            return;
+          }
+
+          for (var i = 0; i < results.length; i++) {
+            var item = results[i];
+            var url = item.get('url');
+            var time = item.get('time');
+            var element = document.getElementById(url);
+
+            $(element).find(COUNT_CONTAINER_REF).text(time);
+          }
+          for(var i = 0; i < entries.length; i++) {
+            var url = entries[i];
+            var element = document.getElementById(url);
+            var countSpan = $(element).find(COUNT_CONTAINER_REF);
+            if( countSpan.text() == '') {
+              countSpan.text(0);
+            }
+          }
+        })
+        .fail(function (object, error) {
+          console.log("Error: " + error.code + " " + error.message);
+        });
+    }
+
+    function addCount(Counter) {
+      var $visitors = $(".leancloud_visitors");
+      var url = $visitors.attr('id').trim();
+      var title = $visitors.attr('data-flag-title').trim();
+      var query = new AV.Query(Counter);
+
+      query.equalTo("url", url);
+      query.find({
+        success: function(results) {
+          if (results.length > 0) {
+            var counter = results[0];
+            counter.fetchWhenSave(true);
+            counter.increment("time");
+            counter.save(null, {
+              success: function(counter) {
+                var $element = $(document.getElementById(url));
+                $element.find('.leancloud-visitors-count').text(counter.get('time'));
+              },
+              error: function(counter, error) {
+                console.log('Failed to save Visitor num, with error message: ' + error.message);
+              }
+            });
+          } else {
+            var newcounter = new Counter();
+            /* Set ACL */
+            var acl = new AV.ACL();
+            acl.setPublicReadAccess(true);
+            acl.setPublicWriteAccess(true);
+            newcounter.setACL(acl);
+            /* End Set ACL */
+            newcounter.set("title", title);
+            newcounter.set("url", url);
+            newcounter.set("time", 1);
+            newcounter.save(null, {
+              success: function(newcounter) {
+                var $element = $(document.getElementById(url));
+                $element.find('.leancloud-visitors-count').text(newcounter.get('time'));
+              },
+              error: function(newcounter, error) {
+                console.log('Failed to create');
+              }
+            });
+          }
+        },
+        error: function(error) {
+          console.log('Error:' + error.code + " " + error.message);
+        }
+      });
+    }
+
+    $(function() {
+      var Counter = AV.Object.extend("Counter");
+      if ($('.leancloud_visitors').length == 1) {
+        addCount(Counter);
+      } else if ($('.post-title-link').length > 1) {
+        showTime(Counter);
+      }
+    });
+  </script>
+
+
+
+  
+
+  
+
+  
+  
+
+  
+
+  
+
+  
+
+<!-- 页面点击小红心 -->
+<script type="text/javascript" src="/js/src/love.js"></script>
+<!-- 背景动画 -->
+<script type="text/javascript" src="/js/src/particle.js"></script>
+
+
+
+
+<script src="/live2dw/lib/L2Dwidget.min.js?0c58a1486de42ac6cc1c59c7d98ae887"></script><script>L2Dwidget.init({});</script></body></html>
