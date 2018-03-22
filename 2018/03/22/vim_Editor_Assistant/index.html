@@ -86,18 +86,18 @@
 
 
 
-<meta name="description" content="Start vi Editorvi file // Opens &amp;apos;file&amp;apos; in vi, or creates a file named &amp;apos;file&amp;apos; if it does not exist. vi file1 file2 // Opens files sequentially. view file // OPens &amp;apos;file&amp;apos; i">
+<meta name="description" content="Start vi Editor12vi file// Opens &amp;apos;file&amp;apos; in vi, or creates a file named &amp;apos;file&amp;apos; if it does not exist. 12vi file1 file2// Opens files sequentially. 12view file// OPens &amp;apos;file&amp;apos">
 <meta name="keywords" content="vim">
 <meta property="og:type" content="article">
 <meta property="og:title" content="vim Editor Assistant">
 <meta property="og:url" content="http://yoursite.com/2018/03/22/vim_Editor_Assistant/index.html">
 <meta property="og:site_name" content="Kings Cooober&apos;s Blog">
-<meta property="og:description" content="Start vi Editorvi file // Opens &amp;apos;file&amp;apos; in vi, or creates a file named &amp;apos;file&amp;apos; if it does not exist. vi file1 file2 // Opens files sequentially. view file // OPens &amp;apos;file&amp;apos; i">
+<meta property="og:description" content="Start vi Editor12vi file// Opens &amp;apos;file&amp;apos; in vi, or creates a file named &amp;apos;file&amp;apos; if it does not exist. 12vi file1 file2// Opens files sequentially. 12view file// OPens &amp;apos;file&amp;apos">
 <meta property="og:locale" content="zh-Hans">
 <meta property="og:updated_time" content="2018-03-22T11:08:53.046Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="vim Editor Assistant">
-<meta name="twitter:description" content="Start vi Editorvi file // Opens &amp;apos;file&amp;apos; in vi, or creates a file named &amp;apos;file&amp;apos; if it does not exist. vi file1 file2 // Opens files sequentially. view file // OPens &amp;apos;file&amp;apos; i">
+<meta name="twitter:description" content="Start vi Editor12vi file// Opens &amp;apos;file&amp;apos; in vi, or creates a file named &amp;apos;file&amp;apos; if it does not exist. 12vi file1 file2// Opens files sequentially. 12view file// OPens &amp;apos;file&amp;apos">
 
 
 
@@ -199,7 +199,7 @@
       
         
         <li class="menu-item menu-item-about">
-          <a href="/about/" rel="section">
+          <a href="/about" rel="section">
             
               <i class="menu-item-icon fa fa-fw fa-user"></i> <br>
             
@@ -209,7 +209,7 @@
       
         
         <li class="menu-item menu-item-tags">
-          <a href="/tags/" rel="section">
+          <a href="/tags" rel="section">
             
               <i class="menu-item-icon fa fa-fw fa-tags"></i> <br>
             
@@ -219,7 +219,7 @@
       
         
         <li class="menu-item menu-item-categories">
-          <a href="/categories/" rel="section">
+          <a href="/categories" rel="section">
             
               <i class="menu-item-icon fa fa-fw fa-th"></i> <br>
             
@@ -229,7 +229,7 @@
       
         
         <li class="menu-item menu-item-archives">
-          <a href="/archives/" rel="section">
+          <a href="/archives" rel="section">
             
               <i class="menu-item-icon fa fa-fw fa-archive"></i> <br>
             
@@ -413,200 +413,89 @@
       
 
       
-        <h3 id="Start-vi-Editor"><a href="#Start-vi-Editor" class="headerlink" title="Start vi Editor"></a>Start vi Editor</h3><pre><code>vi file
-// Opens &apos;file&apos; in vi, or creates a file named &apos;file&apos; if it does not exist.
-</code></pre><pre><code>vi file1 file2
-// Opens files sequentially.
-</code></pre><pre><code>view file
-// OPens &apos;file&apos; in read-only mode.
-</code></pre><pre><code>vi -R file
-// Opens &apos;file&apos; in read-only mode.
-</code></pre><pre><code>vi -r file
-// Recovers &apos;file&apos; after system crash.
-</code></pre><pre><code>vi + file
-// Opens &apos;file&apos; at last line.
-</code></pre><h3 id="Exit-vi-Editor"><a href="#Exit-vi-Editor" class="headerlink" title="Exit vi Editor"></a>Exit vi Editor</h3><pre><code>ZZ
-// Saves changes and exits.
-</code></pre><pre><code>:x
-// Saves changes and exits.
-</code></pre><pre><code>:wq
-// Saves changes and exits.
-</code></pre><pre><code>:w
-// Saves changes.
-</code></pre><pre><code>:q
-// Quit.
-</code></pre><pre><code>:q!
-// Quit without saving changes.
-</code></pre><pre><code>:wq file
-// Saves as &apos;file&apos; and exits.
-</code></pre><h3 id="Insert-append"><a href="#Insert-append" class="headerlink" title="Insert, append"></a>Insert, append</h3><pre><code>i
-// Insert text before cursor.
-</code></pre><pre><code>I
-// Insert text at beginning of current line.
-</code></pre><pre><code>a
-// Append text after cursor.
-</code></pre><pre><code>A
-// Append text at the end of current line.
-</code></pre><pre><code>o
-// Open and insert text in new line below current line.
-</code></pre><pre><code>O
-// Open and insert text ine new line above current line.
-</code></pre><pre><code>r
-// Replace single character at cursor position.
-</code></pre><pre><code>R
-// Replace multiple character starting with character at cursor position.
-</code></pre><pre><code>s
-// Substitute a single character.
-</code></pre><pre><code>S
-// Substitute entire line.
-</code></pre><h3 id="Delete"><a href="#Delete" class="headerlink" title="Delete"></a>Delete</h3><pre><code>x
-// Deletes a single character at cursor position.
-</code></pre><pre><code>X
-// Deletes a single character before cursor positon.
-</code></pre><pre><code>dw
-// Deletes from cursor position to next word.
-</code></pre><pre><code>dd
-// Deletes entire line cursor is on.
-</code></pre><pre><code>D
-// Deletes remainder of line, starting at cursor position.
-</code></pre><pre><code>[Ctrl] u
-// Deletes from cursor to beginning of line.
-</code></pre><pre><code>d$
-// Deletes from cursor to end of line.
-</code></pre><pre><code>d^
-// Deletes to first character in line, preserving indentation.
-</code></pre><pre><code>ndd
-// Deletes n number of lines (2dd deletes 2 lines).
-</code></pre><pre><code>nx
-// Deletes n number of characters, starting with character under cursor (2x deletes 2 characters).
-</code></pre><h3 id="Yank-Copy"><a href="#Yank-Copy" class="headerlink" title="Yank, Copy"></a>Yank, Copy</h3><pre><code>yw
-// Yank word.
-</code></pre><pre><code>yy
-// Yank current line.
-</code></pre><pre><code>:y
-// Yank current line.
-</code></pre><pre><code>y^
-// Yank from cursor to first character of line.
-</code></pre><pre><code>y0
-// Yank from cursor to beginning of line.
-</code></pre><pre><code>y$
-// Yank from cursor to end of line.
-</code></pre><pre><code>Y
-// Yank current line.
-</code></pre><pre><code>nyy or nY
-// Yank n number of lines (2yy or 2Y copies 2lines).
-</code></pre><h3 id="Paste"><a href="#Paste" class="headerlink" title="Paste"></a>Paste</h3><pre><code>p
-// Paste after cursor.
-</code></pre><pre><code>P
-// Paste before cursor.
-</code></pre><p>###Search</p>
-<pre><code>/word
-// Search forward for &apos;word&apos;.
-</code></pre><pre><code>?
-// Repeats previous &apos;/&apos; search.
-</code></pre><pre><code>n
-// Repeat last search in same direction.
-</code></pre><pre><code>N
-// Repeat last search in opposite direction.
-</code></pre><pre><code>*
-// Search forward for word under the cursor.
-</code></pre><pre><code>#
-// Search backward for word under the cursor.
-</code></pre><pre><code>fx
-// Search forward for next &apos;x&apos; on same line.
-</code></pre><pre><code>Fx
-// Search backward for previous &apos;x&apos; on same line.
-</code></pre><pre><code>tx
-// Search forwark for character before next &apos;x&apos;.
-</code></pre><pre><code>Tx
-// Search backward for character after previous &apos;x&apos; on same line.
-</code></pre><h3 id="Move-cursor"><a href="#Move-cursor" class="headerlink" title="Move cursor"></a>Move cursor</h3><pre><code>H
-// Move to highest visible line on screen (top line).
-</code></pre><pre><code>M
-// Move to middle of screen (center).
-</code></pre><pre><code>L
-// Move to lowest visible line on screen (bottom line).
-</code></pre><pre><code>l 
-// Move right.
-</code></pre><pre><code>h
-// Move left.
-</code></pre><pre><code>K
-Move up.
-</code></pre><pre><code>j
-Move down.
-</code></pre><pre><code>^ 
-// Move to first character on current line.
-</code></pre><pre><code>$
-// Move to last column on current line.
-</code></pre><pre><code>0
-// Move to first column on current line.
-</code></pre><pre><code>+
-// Move to first character on next line.
-</code></pre><pre><code>-
-// Move to first character on previous line
-</code></pre><pre><code>w
-// Move to beginning of next word.
-</code></pre><pre><code>b
-// Move to beginning of previous word.
-</code></pre><pre><code>(
-// Move to beginning of current sentence.
-
-)
-// Move to beginning of next sentence.
-</code></pre><pre><code>{
-// Move a paragraph back.
-
-}
-// Move a paragraph forward.
-</code></pre><pre><code>G
-// Move to first character on last line.
-
-gg
-// Move to first character on first line.
-</code></pre><h3 id="Move-screen"><a href="#Move-screen" class="headerlink" title="Move screen"></a>Move screen</h3><pre><code>[Ctrl] d
-// Move backward half screen.
-
-[Ctrl] f
-// Move backward full screen.
-
-[Ctrl] u
-// Move forword half screen.
-
-[Ctrl] b
-// Move forward full screen.
-
-[Ctrl] e
-// Move up one line.
-
-[Ctrl] y
-// Move down one line.
-</code></pre><pre><code>G
-// Move to last line in file.
-
-nG
-// Move to n number line.
-</code></pre><h3 id="Other"><a href="#Other" class="headerlink" title="Other"></a>Other</h3><pre><code>.
-// Repeat last edit command.
-</code></pre><pre><code>u
-// Undo last change.
-
-U
-// Undo all changes on line.
-</code></pre><pre><code>[Ctrl] g
-// Show current filename and line count.
-</code></pre><pre><code>:f
-// Show current filename and line count.
-</code></pre><pre><code>:f filename
-// Rename current file to &apos;filename&apos;.
-</code></pre><pre><code>:cd dirname
-// Change directory to &apos;dirname&apos;.
-</code></pre><pre><code>~
-// Change character case.
-</code></pre><pre><code>:.=
-// Show current line number.
-</code></pre><pre><code>:=
-// Show total number of lines.
-</code></pre><script src="/live2dw/lib/L2Dwidget.min.js?0c58a1486de42ac6cc1c59c7d98ae887"></script><script>L2Dwidget.init({});</script>
+        <h3 id="Start-vi-Editor"><a href="#Start-vi-Editor" class="headerlink" title="Start vi Editor"></a>Start vi Editor</h3><figure class="highlight vhdl"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">vi <span class="keyword">file</span></span><br><span class="line">// Opens <span class="symbol">&apos;file</span>&apos; <span class="keyword">in</span> vi, <span class="keyword">or</span> creates a <span class="keyword">file</span> named <span class="symbol">&apos;file</span>&apos; <span class="keyword">if</span> it does <span class="keyword">not</span> exist.</span><br></pre></td></tr></tbody></table></figure>
+<figure class="highlight vim"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">vi</span> file1 file2</span><br><span class="line">// Opens <span class="keyword">files</span> sequentially.</span><br></pre></td></tr></tbody></table></figure>
+<figure class="highlight vim"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">view</span> <span class="keyword">file</span></span><br><span class="line">// OPens <span class="string">&apos;file&apos;</span> in <span class="keyword">read</span>-<span class="keyword">only</span> <span class="keyword">mode</span>.</span><br></pre></td></tr></tbody></table></figure>
+<figure class="highlight vim"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">vi</span> -R <span class="keyword">file</span></span><br><span class="line">// Opens <span class="string">&apos;file&apos;</span> in <span class="keyword">read</span>-<span class="keyword">only</span> <span class="keyword">mode</span>.</span><br></pre></td></tr></tbody></table></figure>
+<figure class="highlight vim"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">vi</span> -r <span class="keyword">file</span></span><br><span class="line">// Recovers <span class="string">&apos;file&apos;</span> after <span class="built_in">system</span> crash.</span><br></pre></td></tr></tbody></table></figure>
+<figure class="highlight vim"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">vi</span> + <span class="keyword">file</span></span><br><span class="line">// Opens <span class="string">&apos;file&apos;</span> at <span class="keyword">last</span> <span class="built_in">line</span>.</span><br></pre></td></tr></tbody></table></figure>
+<h3 id="Exit-vi-Editor"><a href="#Exit-vi-Editor" class="headerlink" title="Exit vi Editor"></a>Exit vi Editor</h3><figure class="highlight erlang"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">ZZ</span><br><span class="line">// Saves changes <span class="keyword">and</span> exits.</span><br></pre></td></tr></tbody></table></figure>
+<figure class="highlight erlang"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">:x</span><br><span class="line">// Saves changes <span class="keyword">and</span> exits.</span><br></pre></td></tr></tbody></table></figure>
+<figure class="highlight vim"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">:<span class="keyword">wq</span></span><br><span class="line">// Saves <span class="keyword">changes</span> <span class="built_in">and</span> exits.</span><br></pre></td></tr></tbody></table></figure>
+<figure class="highlight less"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-pseudo">:w</span></span><br><span class="line"><span class="comment">// Saves changes.</span></span><br></pre></td></tr></tbody></table></figure>
+<figure class="highlight stylus"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">:q</span><br><span class="line"><span class="comment">// Quit.</span></span><br></pre></td></tr></tbody></table></figure>
+<figure class="highlight less"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-pseudo">:q</span>!</span><br><span class="line"><span class="comment">// Quit without saving changes.</span></span><br></pre></td></tr></tbody></table></figure>
+<figure class="highlight vim"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">:<span class="keyword">wq</span> <span class="keyword">file</span></span><br><span class="line">// Saves <span class="keyword">as</span> <span class="string">&apos;file&apos;</span> <span class="built_in">and</span> exits.</span><br></pre></td></tr></tbody></table></figure>
+<h3 id="Insert-append"><a href="#Insert-append" class="headerlink" title="Insert, append"></a>Insert, append</h3><figure class="highlight sql"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">i</span><br><span class="line">// <span class="keyword">Insert</span> <span class="built_in">text</span> <span class="keyword">before</span> cursor.</span><br></pre></td></tr></tbody></table></figure>
+<figure class="highlight sql"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">I</span><br><span class="line">// <span class="keyword">Insert</span> <span class="built_in">text</span> <span class="keyword">at</span> <span class="keyword">beginning</span> <span class="keyword">of</span> <span class="keyword">current</span> line.</span><br></pre></td></tr></tbody></table></figure>
+<figure class="highlight stylus"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">a</span><br><span class="line"><span class="comment">// Append text after cursor.</span></span><br></pre></td></tr></tbody></table></figure>
+<figure class="highlight vhdl"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">A</span><br><span class="line">// Append <span class="literal">text</span> at the <span class="keyword">end</span> <span class="keyword">of</span> current <span class="literal">line</span>.</span><br></pre></td></tr></tbody></table></figure>
+<figure class="highlight vhdl"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">o</span><br><span class="line">// <span class="keyword">Open</span> <span class="keyword">and</span> insert <span class="literal">text</span> <span class="keyword">in</span> <span class="keyword">new</span> <span class="literal">line</span> below current <span class="literal">line</span>.</span><br></pre></td></tr></tbody></table></figure>
+<figure class="highlight vhdl"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">O</span><br><span class="line">// <span class="keyword">Open</span> <span class="keyword">and</span> insert <span class="literal">text</span> ine <span class="keyword">new</span> <span class="literal">line</span> above current <span class="literal">line</span>.</span><br></pre></td></tr></tbody></table></figure>
+<figure class="highlight sql"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">r</span><br><span class="line">// <span class="keyword">Replace</span> single <span class="built_in">character</span> <span class="keyword">at</span> <span class="keyword">cursor</span> position.</span><br></pre></td></tr></tbody></table></figure>
+<figure class="highlight sql"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">R</span><br><span class="line">// <span class="keyword">Replace</span> multiple <span class="built_in">character</span> <span class="keyword">starting</span> <span class="keyword">with</span> <span class="built_in">character</span> <span class="keyword">at</span> <span class="keyword">cursor</span> position.</span><br></pre></td></tr></tbody></table></figure>
+<figure class="highlight stata"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">s</span></span><br><span class="line"><span class="comment">// Substitute a single character.</span></span><br></pre></td></tr></tbody></table></figure>
+<figure class="highlight stata"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">S</span></span><br><span class="line"><span class="comment">// Substitute entire line.</span></span><br></pre></td></tr></tbody></table></figure>
+<h3 id="Delete"><a href="#Delete" class="headerlink" title="Delete"></a>Delete</h3><figure class="highlight 1c"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">x</span><br><span class="line"><span class="comment">// Deletes a single character at cursor position.</span></span><br></pre></td></tr></tbody></table></figure>
+<figure class="highlight 1c"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">X</span><br><span class="line"><span class="comment">// Deletes a single character before cursor positon.</span></span><br></pre></td></tr></tbody></table></figure>
+<figure class="highlight vim"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">dw</span><br><span class="line">// Deletes from <span class="built_in">cursor</span> position <span class="keyword">to</span> <span class="keyword">next</span> word.</span><br></pre></td></tr></tbody></table></figure>
+<figure class="highlight vim"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">dd</span><br><span class="line">// Deletes entire <span class="built_in">line</span> <span class="built_in">cursor</span> <span class="keyword">is</span> <span class="keyword">on</span>.</span><br></pre></td></tr></tbody></table></figure>
+<figure class="highlight maxima"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">D</span><br><span class="line">// Deletes <span class="built_in">remainder</span> of line, starting <span class="built_in">at</span> cursor <span class="built_in">position</span>.</span><br></pre></td></tr></tbody></table></figure>
+<figure class="highlight vhdl"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">[Ctrl] u</span><br><span class="line">// Deletes from cursor <span class="keyword">to</span> beginning <span class="keyword">of</span> <span class="literal">line</span>.</span><br></pre></td></tr></tbody></table></figure>
+<figure class="highlight vhdl"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">d$</span><br><span class="line">// Deletes from cursor <span class="keyword">to</span> <span class="keyword">end</span> <span class="keyword">of</span> <span class="literal">line</span>.</span><br></pre></td></tr></tbody></table></figure>
+<figure class="highlight vhdl"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">d^</span><br><span class="line">// Deletes <span class="keyword">to</span> first <span class="built_in">character</span> <span class="keyword">in</span> <span class="literal">line</span>, preserving indentation.</span><br></pre></td></tr></tbody></table></figure>
+<figure class="highlight erlang"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">ndd</span><br><span class="line">// Deletes n number <span class="keyword">of</span> lines (<span class="number">2</span>dd deletes <span class="number">2</span> lines).</span><br></pre></td></tr></tbody></table></figure>
+<figure class="highlight vhdl"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">nx</span><br><span class="line">// Deletes n number <span class="keyword">of</span> characters, starting <span class="keyword">with</span> <span class="built_in">character</span> under cursor (<span class="number">2</span>x deletes <span class="number">2</span> characters).</span><br></pre></td></tr></tbody></table></figure>
+<h3 id="Yank-Copy"><a href="#Yank-Copy" class="headerlink" title="Yank, Copy"></a>Yank, Copy</h3><figure class="highlight stata"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">yw</span></span><br><span class="line"><span class="comment">// Yank word.</span></span><br></pre></td></tr></tbody></table></figure>
+<figure class="highlight 1c"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">yy</span><br><span class="line"><span class="comment">// Yank current line.</span></span><br></pre></td></tr></tbody></table></figure>
+<figure class="highlight less"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-pseudo">:y</span></span><br><span class="line"><span class="comment">// Yank current line.</span></span><br></pre></td></tr></tbody></table></figure>
+<figure class="highlight vhdl"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">y^</span><br><span class="line">// Yank from cursor <span class="keyword">to</span> first <span class="built_in">character</span> <span class="keyword">of</span> <span class="literal">line</span>.</span><br></pre></td></tr></tbody></table></figure>
+<figure class="highlight vhdl"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">y0</span><br><span class="line">// Yank from cursor <span class="keyword">to</span> beginning <span class="keyword">of</span> <span class="literal">line</span>.</span><br></pre></td></tr></tbody></table></figure>
+<figure class="highlight vhdl"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">y$</span><br><span class="line">// Yank from cursor <span class="keyword">to</span> <span class="keyword">end</span> <span class="keyword">of</span> <span class="literal">line</span>.</span><br></pre></td></tr></tbody></table></figure>
+<figure class="highlight stata"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">Y</span></span><br><span class="line"><span class="comment">// Yank current line.</span></span><br></pre></td></tr></tbody></table></figure>
+<figure class="highlight lua"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">nyy <span class="keyword">or</span> nY</span><br><span class="line">// Yank n number of <span class="built_in">lines</span> (<span class="number">2</span>yy <span class="keyword">or</span> <span class="number">2</span>Y copies <span class="number">2</span><span class="built_in">lines</span>).</span><br></pre></td></tr></tbody></table></figure>
+<h3 id="Paste"><a href="#Paste" class="headerlink" title="Paste"></a>Paste</h3><figure class="highlight stylus"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">p</span><br><span class="line"><span class="comment">// Paste after cursor.</span></span><br></pre></td></tr></tbody></table></figure>
+<figure class="highlight 1c"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">P</span><br><span class="line"><span class="comment">// Paste before cursor.</span></span><br></pre></td></tr></tbody></table></figure>
+<p>###Search</p>
+<figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">/word</span><br><span class="line">// Search forward <span class="keyword">for</span> <span class="string">&apos;word&apos;</span>.</span><br></pre></td></tr></tbody></table></figure>
+<figure class="highlight vim"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">?</span><br><span class="line">// Repeats <span class="keyword">previous</span> <span class="string">&apos;/&apos;</span> <span class="built_in">search</span>.</span><br></pre></td></tr></tbody></table></figure>
+<figure class="highlight awk"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">n</span><br><span class="line"><span class="regexp">//</span> Repeat last search <span class="keyword">in</span> same direction.</span><br></pre></td></tr></tbody></table></figure>
+<figure class="highlight awk"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">N</span><br><span class="line"><span class="regexp">//</span> Repeat last search <span class="keyword">in</span> opposite direction.</span><br></pre></td></tr></tbody></table></figure>
+<figure class="highlight gams"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">*</span></span><br><span class="line"><span class="comment">// Search forward for word under the cursor.</span></span><br></pre></td></tr></tbody></table></figure>
+<figure class="highlight vala"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#</span></span><br><span class="line"><span class="comment">// Search backward for word under the cursor.</span></span><br></pre></td></tr></tbody></table></figure>
+<figure class="highlight vhdl"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">fx</span><br><span class="line">// Search forward <span class="keyword">for</span> <span class="keyword">next</span> <span class="string">&apos;x&apos;</span> <span class="keyword">on</span> same <span class="literal">line</span>.</span><br></pre></td></tr></tbody></table></figure>
+<figure class="highlight vim"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">Fx</span><br><span class="line">// Search backward <span class="keyword">for</span> <span class="keyword">previous</span> <span class="string">&apos;x&apos;</span> <span class="keyword">on</span> same <span class="built_in">line</span>.</span><br></pre></td></tr></tbody></table></figure>
+<figure class="highlight awk"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">tx</span><br><span class="line"><span class="regexp">//</span> Search forwark <span class="keyword">for</span> character before <span class="keyword">next</span> <span class="string">&apos;x&apos;</span>.</span><br></pre></td></tr></tbody></table></figure>
+<figure class="highlight vhdl"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">Tx</span><br><span class="line">// Search backward <span class="keyword">for</span> <span class="built_in">character</span> <span class="keyword">after</span> previous <span class="string">&apos;x&apos;</span> <span class="keyword">on</span> same <span class="literal">line</span>.</span><br></pre></td></tr></tbody></table></figure>
+<h3 id="Move-cursor"><a href="#Move-cursor" class="headerlink" title="Move cursor"></a>Move cursor</h3><figure class="highlight vhdl"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">H</span><br><span class="line">// Move <span class="keyword">to</span> highest visible <span class="literal">line</span> <span class="keyword">on</span> screen (top <span class="literal">line</span>).</span><br></pre></td></tr></tbody></table></figure>
+<figure class="highlight cal"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">M</span><br><span class="line">// Move <span class="keyword">to</span> middle <span class="keyword">of</span> screen (center).</span><br></pre></td></tr></tbody></table></figure>
+<figure class="highlight vhdl"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">L</span><br><span class="line">// Move <span class="keyword">to</span> lowest visible <span class="literal">line</span> <span class="keyword">on</span> screen (bottom <span class="literal">line</span>).</span><br></pre></td></tr></tbody></table></figure>
+<figure class="highlight 1c"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">l </span><br><span class="line"><span class="comment">// Move right.</span></span><br></pre></td></tr></tbody></table></figure>
+<figure class="highlight stata"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">h</span></span><br><span class="line"><span class="comment">// Move left.</span></span><br></pre></td></tr></tbody></table></figure>
+<figure class="highlight armasm"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">K</span><br><span class="line"><span class="keyword">Move </span>up.</span><br></pre></td></tr></tbody></table></figure>
+<figure class="highlight mipsasm"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">j</span></span><br><span class="line"><span class="keyword">Move </span>down.</span><br></pre></td></tr></tbody></table></figure>
+<figure class="highlight vhdl"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">^ </span><br><span class="line">// Move <span class="keyword">to</span> first <span class="built_in">character</span> <span class="keyword">on</span> current <span class="literal">line</span>.</span><br></pre></td></tr></tbody></table></figure>
+<figure class="highlight vim"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$</span><br><span class="line">// Move <span class="keyword">to</span> <span class="keyword">last</span> column <span class="keyword">on</span> current <span class="built_in">line</span>.</span><br></pre></td></tr></tbody></table></figure>
+<figure class="highlight vim"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="number">0</span></span><br><span class="line">// Move <span class="keyword">to</span> <span class="keyword">first</span> column <span class="keyword">on</span> current <span class="built_in">line</span>.</span><br></pre></td></tr></tbody></table></figure>
+<figure class="highlight vhdl"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">+</span><br><span class="line">// Move <span class="keyword">to</span> first <span class="built_in">character</span> <span class="keyword">on</span> <span class="keyword">next</span> <span class="literal">line</span>.</span><br></pre></td></tr></tbody></table></figure>
+<figure class="highlight vim"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">-</span><br><span class="line">// Move <span class="keyword">to</span> <span class="keyword">first</span> character <span class="keyword">on</span> <span class="keyword">previous</span> <span class="built_in">line</span></span><br></pre></td></tr></tbody></table></figure>
+<figure class="highlight vhdl"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">w</span><br><span class="line">// Move <span class="keyword">to</span> beginning <span class="keyword">of</span> <span class="keyword">next</span> word.</span><br></pre></td></tr></tbody></table></figure>
+<figure class="highlight armasm"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">b</span></span><br><span class="line"><span class="keyword">// </span><span class="keyword">Move </span>to <span class="keyword">beginning </span>of previous word.</span><br></pre></td></tr></tbody></table></figure>
+<figure class="highlight vhdl"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">(</span><br><span class="line">// Move <span class="keyword">to</span> beginning <span class="keyword">of</span> current sentence.</span><br><span class="line"></span><br><span class="line">)</span><br><span class="line">// Move <span class="keyword">to</span> beginning <span class="keyword">of</span> <span class="keyword">next</span> sentence.</span><br></pre></td></tr></tbody></table></figure>
+<figure class="highlight 1c"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">{</span><br><span class="line"><span class="comment">// Move a paragraph back.</span></span><br><span class="line"></span><br><span class="line">}</span><br><span class="line"><span class="comment">// Move a paragraph forward.</span></span><br></pre></td></tr></tbody></table></figure>
+<figure class="highlight vim"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">G</span><br><span class="line">// Move <span class="keyword">to</span> <span class="keyword">first</span> character <span class="keyword">on</span> <span class="keyword">last</span> <span class="built_in">line</span>.</span><br><span class="line"></span><br><span class="line">gg</span><br><span class="line">// Move <span class="keyword">to</span> <span class="keyword">first</span> character <span class="keyword">on</span> <span class="keyword">first</span> <span class="built_in">line</span>.</span><br></pre></td></tr></tbody></table></figure>
+<h3 id="Move-screen"><a href="#Move-screen" class="headerlink" title="Move screen"></a>Move screen</h3><figure class="highlight cs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line">[<span class="meta">Ctrl</span>] d</span><br><span class="line"><span class="comment">// Move backward half screen.</span></span><br><span class="line"></span><br><span class="line">[<span class="meta">Ctrl</span>] f</span><br><span class="line"><span class="comment">// Move backward full screen.</span></span><br><span class="line"></span><br><span class="line">[<span class="meta">Ctrl</span>] u</span><br><span class="line"><span class="comment">// Move forword half screen.</span></span><br><span class="line"></span><br><span class="line">[<span class="meta">Ctrl</span>] b</span><br><span class="line"><span class="comment">// Move forward full screen.</span></span><br><span class="line"></span><br><span class="line">[<span class="meta">Ctrl</span>] e</span><br><span class="line"><span class="comment">// Move up one line.</span></span><br><span class="line"></span><br><span class="line">[<span class="meta">Ctrl</span>] y</span><br><span class="line"><span class="comment">// Move down one line.</span></span><br></pre></td></tr></tbody></table></figure>
+<figure class="highlight vim"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">G</span><br><span class="line">// Move <span class="keyword">to</span> <span class="keyword">last</span> <span class="built_in">line</span> in <span class="keyword">file</span>.</span><br><span class="line"></span><br><span class="line">nG</span><br><span class="line">// Move <span class="keyword">to</span> n <span class="keyword">number</span> <span class="built_in">line</span>.</span><br></pre></td></tr></tbody></table></figure>
+<h3 id="Other"><a href="#Other" class="headerlink" title="Other"></a>Other</h3><figure class="highlight vim"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">.</span><br><span class="line">// Repeat <span class="keyword">last</span> <span class="keyword">edit</span> <span class="keyword">command</span>.</span><br></pre></td></tr></tbody></table></figure>
+<figure class="highlight vim"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">u</span></span><br><span class="line">// Undo <span class="keyword">last</span> <span class="keyword">change</span>.</span><br><span class="line"></span><br><span class="line">U</span><br><span class="line">// Undo <span class="keyword">all</span> <span class="keyword">changes</span> <span class="keyword">on</span> <span class="built_in">line</span>.</span><br></pre></td></tr></tbody></table></figure>
+<figure class="highlight sql"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">[Ctrl] g</span><br><span class="line">// <span class="keyword">Show</span> <span class="keyword">current</span> filename <span class="keyword">and</span> line count.</span><br></pre></td></tr></tbody></table></figure>
+<figure class="highlight sql"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">:f</span><br><span class="line">// <span class="keyword">Show</span> <span class="keyword">current</span> filename <span class="keyword">and</span> line count.</span><br></pre></td></tr></tbody></table></figure>
+<figure class="highlight sql"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">:f filename</span><br><span class="line">// <span class="keyword">Rename</span> <span class="keyword">current</span> <span class="keyword">file</span> <span class="keyword">to</span> <span class="string">&apos;filename&apos;</span>.</span><br></pre></td></tr></tbody></table></figure>
+<figure class="highlight sql"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">:cd dirname</span><br><span class="line">// <span class="keyword">Change</span> <span class="keyword">directory</span> <span class="keyword">to</span> <span class="string">&apos;dirname&apos;</span>.</span><br></pre></td></tr></tbody></table></figure>
+<figure class="highlight elixir"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">~</span><br><span class="line">/<span class="regexp">/ Change character case.</span></span><br></pre></td></tr></tbody></table></figure>
+<figure class="highlight sql"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">:.=</span><br><span class="line">// <span class="keyword">Show</span> <span class="keyword">current</span> line number.</span><br></pre></td></tr></tbody></table></figure>
+<figure class="highlight sql"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">:=</span><br><span class="line">// <span class="keyword">Show</span> total <span class="built_in">number</span> <span class="keyword">of</span> lines.</span><br></pre></td></tr></tbody></table></figure>
+<script src="/live2dw/lib/L2Dwidget.min.js?0c58a1486de42ac6cc1c59c7d98ae887"></script><script>L2Dwidget.init({});</script>
       
     </div>
     
@@ -619,11 +508,24 @@ U
 
     
 
+    <div>
+      
+        <div>
+    
+        <div style="text-align:center;color: #ccc;font-size:14px;">
+            -------------&#x672C;&#x6587;&#x7ED3;&#x675F;<i class="fa fa-paw"></i>&#x611F;&#x8C22;&#x60A8;&#x7684;&#x9605;&#x8BFB;-------------
+        </div>
+    
+</div>
+
+      
+    </div>
+
     <footer class="post-footer">
       
         <div class="post-tags">
           
-            <a href="/tags/vim/" rel="tag"># vim</a>
+            <a href="/tags/vim/" rel="tag"> <i class="fa fa-tag"></i> vim</a>
           
         </div>
       
@@ -725,7 +627,7 @@ U
             
               <div class="site-state-item site-state-posts">
               
-                <a href="/archives/">
+                <a href="/archives">
               
                   <span class="site-state-item-count">11</span>
                   <span class="site-state-item-name">&#x65E5;&#x5FD7;</span>
@@ -737,10 +639,10 @@ U
               
               
               <div class="site-state-item site-state-categories">
-                
+                <a href="/categories/index.html">
                   <span class="site-state-item-count">3</span>
                   <span class="site-state-item-name">&#x5206;&#x7C7B;</span>
-                
+                </a>
               </div>
             
 
@@ -748,10 +650,10 @@ U
               
               
               <div class="site-state-item site-state-tags">
-                
+                <a href="/tags/index.html">
                   <span class="site-state-item-count">8</span>
                   <span class="site-state-item-name">&#x6807;&#x7B7E;</span>
-                
+                </a>
               </div>
             
 
@@ -1012,323 +914,6 @@ U
 
 
   
-
-  <script type="text/javascript">
-    // Popup Window;
-    var isfetched = false;
-    var isXml = true;
-    // Search DB path;
-    var search_path = "search.xml";
-    if (search_path.length === 0) {
-      search_path = "search.xml";
-    } else if (/json$/i.test(search_path)) {
-      isXml = false;
-    }
-    var path = "/" + search_path;
-    // monitor main search box;
-
-    var onPopupClose = function (e) {
-      $('.popup').hide();
-      $('#local-search-input').val('');
-      $('.search-result-list').remove();
-      $('#no-result').remove();
-      $(".local-search-pop-overlay").remove();
-      $('body').css('overflow', '');
-    }
-
-    function proceedsearch() {
-      $("body")
-        .append('<div class="search-popup-overlay local-search-pop-overlay"></div>')
-        .css('overflow', 'hidden');
-      $('.search-popup-overlay').click(onPopupClose);
-      $('.popup').toggle();
-      var $localSearchInput = $('#local-search-input');
-      $localSearchInput.attr("autocapitalize", "none");
-      $localSearchInput.attr("autocorrect", "off");
-      $localSearchInput.focus();
-    }
-
-    // search function;
-    var searchFunc = function(path, search_id, content_id) {
-      'use strict';
-
-      // start loading animation
-      $("body")
-        .append('<div class="search-popup-overlay local-search-pop-overlay">' +
-          '<div id="search-loading-icon">' +
-          '<i class="fa fa-spinner fa-pulse fa-5x fa-fw"></i>' +
-          '</div>' +
-          '</div>')
-        .css('overflow', 'hidden');
-      $("#search-loading-icon").css('margin', '20% auto 0 auto').css('text-align', 'center');
-
-      $.ajax({
-        url: path,
-        dataType: isXml ? "xml" : "json",
-        async: true,
-        success: function(res) {
-          // get the contents from search data
-          isfetched = true;
-          $('.popup').detach().appendTo('.header-inner');
-          var datas = isXml ? $("entry", res).map(function() {
-            return {
-              title: $("title", this).text(),
-              content: $("content",this).text(),
-              url: $("url" , this).text()
-            };
-          }).get() : res;
-          var input = document.getElementById(search_id);
-          var resultContent = document.getElementById(content_id);
-          var inputEventFunction = function() {
-            var searchText = input.value.trim().toLowerCase();
-            var keywords = searchText.split(/[\s\-]+/);
-            if (keywords.length > 1) {
-              keywords.push(searchText);
-            }
-            var resultItems = [];
-            if (searchText.length > 0) {
-              // perform local searching
-              datas.forEach(function(data) {
-                var isMatch = false;
-                var hitCount = 0;
-                var searchTextCount = 0;
-                var title = data.title.trim();
-                var titleInLowerCase = title.toLowerCase();
-                var content = data.content.trim().replace(/<[^>]+>/g,"");
-                var contentInLowerCase = content.toLowerCase();
-                var articleUrl = decodeURIComponent(data.url);
-                var indexOfTitle = [];
-                var indexOfContent = [];
-                // only match articles with not empty titles
-                if(title != '') {
-                  keywords.forEach(function(keyword) {
-                    function getIndexByWord(word, text, caseSensitive) {
-                      var wordLen = word.length;
-                      if (wordLen === 0) {
-                        return [];
-                      }
-                      var startPosition = 0, position = [], index = [];
-                      if (!caseSensitive) {
-                        text = text.toLowerCase();
-                        word = word.toLowerCase();
-                      }
-                      while ((position = text.indexOf(word, startPosition)) > -1) {
-                        index.push({position: position, word: word});
-                        startPosition = position + wordLen;
-                      }
-                      return index;
-                    }
-
-                    indexOfTitle = indexOfTitle.concat(getIndexByWord(keyword, titleInLowerCase, false));
-                    indexOfContent = indexOfContent.concat(getIndexByWord(keyword, contentInLowerCase, false));
-                  });
-                  if (indexOfTitle.length > 0 || indexOfContent.length > 0) {
-                    isMatch = true;
-                    hitCount = indexOfTitle.length + indexOfContent.length;
-                  }
-                }
-
-                // show search results
-
-                if (isMatch) {
-                  // sort index by position of keyword
-
-                  [indexOfTitle, indexOfContent].forEach(function (index) {
-                    index.sort(function (itemLeft, itemRight) {
-                      if (itemRight.position !== itemLeft.position) {
-                        return itemRight.position - itemLeft.position;
-                      } else {
-                        return itemLeft.word.length - itemRight.word.length;
-                      }
-                    });
-                  });
-
-                  // merge hits into slices
-
-                  function mergeIntoSlice(text, start, end, index) {
-                    var item = index[index.length - 1];
-                    var position = item.position;
-                    var word = item.word;
-                    var hits = [];
-                    var searchTextCountInSlice = 0;
-                    while (position + word.length <= end && index.length != 0) {
-                      if (word === searchText) {
-                        searchTextCountInSlice++;
-                      }
-                      hits.push({position: position, length: word.length});
-                      var wordEnd = position + word.length;
-
-                      // move to next position of hit
-
-                      index.pop();
-                      while (index.length != 0) {
-                        item = index[index.length - 1];
-                        position = item.position;
-                        word = item.word;
-                        if (wordEnd > position) {
-                          index.pop();
-                        } else {
-                          break;
-                        }
-                      }
-                    }
-                    searchTextCount += searchTextCountInSlice;
-                    return {
-                      hits: hits,
-                      start: start,
-                      end: end,
-                      searchTextCount: searchTextCountInSlice
-                    };
-                  }
-
-                  var slicesOfTitle = [];
-                  if (indexOfTitle.length != 0) {
-                    slicesOfTitle.push(mergeIntoSlice(title, 0, title.length, indexOfTitle));
-                  }
-
-                  var slicesOfContent = [];
-                  while (indexOfContent.length != 0) {
-                    var item = indexOfContent[indexOfContent.length - 1];
-                    var position = item.position;
-                    var word = item.word;
-                    // cut out 100 characters
-                    var start = position - 20;
-                    var end = position + 80;
-                    if(start < 0){
-                      start = 0;
-                    }
-                    if (end < position + word.length) {
-                      end = position + word.length;
-                    }
-                    if(end > content.length){
-                      end = content.length;
-                    }
-                    slicesOfContent.push(mergeIntoSlice(content, start, end, indexOfContent));
-                  }
-
-                  // sort slices in content by search text's count and hits' count
-
-                  slicesOfContent.sort(function (sliceLeft, sliceRight) {
-                    if (sliceLeft.searchTextCount !== sliceRight.searchTextCount) {
-                      return sliceRight.searchTextCount - sliceLeft.searchTextCount;
-                    } else if (sliceLeft.hits.length !== sliceRight.hits.length) {
-                      return sliceRight.hits.length - sliceLeft.hits.length;
-                    } else {
-                      return sliceLeft.start - sliceRight.start;
-                    }
-                  });
-
-                  // select top N slices in content
-
-                  var upperBound = parseInt('1');
-                  if (upperBound >= 0) {
-                    slicesOfContent = slicesOfContent.slice(0, upperBound);
-                  }
-
-                  // highlight title and content
-
-                  function highlightKeyword(text, slice) {
-                    var result = '';
-                    var prevEnd = slice.start;
-                    slice.hits.forEach(function (hit) {
-                      result += text.substring(prevEnd, hit.position);
-                      var end = hit.position + hit.length;
-                      result += '<b class="search-keyword">' + text.substring(hit.position, end) + '</b>';
-                      prevEnd = end;
-                    });
-                    result += text.substring(prevEnd, slice.end);
-                    return result;
-                  }
-
-                  var resultItem = '';
-
-                  if (slicesOfTitle.length != 0) {
-                    resultItem += "<li><a href='" + articleUrl + "' class='search-result-title'>" + highlightKeyword(title, slicesOfTitle[0]) + "</a>";
-                  } else {
-                    resultItem += "<li><a href='" + articleUrl + "' class='search-result-title'>" + title + "</a>";
-                  }
-
-                  slicesOfContent.forEach(function (slice) {
-                    resultItem += "<a href='" + articleUrl + "'>" +
-                      "<p class=\"search-result\">" + highlightKeyword(content, slice) +
-                      "...</p>" + "</a>";
-                  });
-
-                  resultItem += "</li>";
-                  resultItems.push({
-                    item: resultItem,
-                    searchTextCount: searchTextCount,
-                    hitCount: hitCount,
-                    id: resultItems.length
-                  });
-                }
-              })
-            };
-            if (keywords.length === 1 && keywords[0] === "") {
-              resultContent.innerHTML = '<div id="no-result"><i class="fa fa-search fa-5x" /></div>'
-            } else if (resultItems.length === 0) {
-              resultContent.innerHTML = '<div id="no-result"><i class="fa fa-frown-o fa-5x" /></div>'
-            } else {
-              resultItems.sort(function (resultLeft, resultRight) {
-                if (resultLeft.searchTextCount !== resultRight.searchTextCount) {
-                  return resultRight.searchTextCount - resultLeft.searchTextCount;
-                } else if (resultLeft.hitCount !== resultRight.hitCount) {
-                  return resultRight.hitCount - resultLeft.hitCount;
-                } else {
-                  return resultRight.id - resultLeft.id;
-                }
-              });
-              var searchResultList = '<ul class=\"search-result-list\">';
-              resultItems.forEach(function (result) {
-                searchResultList += result.item;
-              })
-              searchResultList += "</ul>";
-              resultContent.innerHTML = searchResultList;
-            }
-          }
-
-          if ('auto' === 'auto') {
-            input.addEventListener('input', inputEventFunction);
-          } else {
-            $('.search-icon').click(inputEventFunction);
-            input.addEventListener('keypress', function (event) {
-              if (event.keyCode === 13) {
-                inputEventFunction();
-              }
-            });
-          }
-
-          // remove loading animation
-          $(".local-search-pop-overlay").remove();
-          $('body').css('overflow', '');
-
-          proceedsearch();
-        }
-      });
-    }
-
-    // handle and trigger popup window;
-    $('.popup-trigger').click(function(e) {
-      e.stopPropagation();
-      if (isfetched === false) {
-        searchFunc(path, 'local-search-input', 'local-search-result');
-      } else {
-        proceedsearch();
-      };
-    });
-
-    $('.popup-btn-close').click(onPopupClose);
-    $('.popup').click(function(e){
-      e.stopPropagation();
-    });
-    $(document).on('keyup', function (event) {
-      var shouldDismissSearchPopup = event.which === 27 &&
-        $('.search-popup').is(':visible');
-      if (shouldDismissSearchPopup) {
-        onPopupClose();
-      }
-    });
-  </script>
 
 
 
