@@ -256,26 +256,20 @@
   
     <div class="site-search">
       
-  
-  <div class="algolia-popup popup search-popup">
-    <div class="algolia-search">
-      <div class="algolia-search-input-icon">
-        <i class="fa fa-search"></i>
-      </div>
-      <div class="algolia-search-input" id="algolia-search-input"></div>
-    </div>
-
-    <div class="algolia-results">
-      <div id="algolia-stats"></div>
-      <div id="algolia-hits"></div>
-      <div id="algolia-pagination" class="algolia-pagination"></div>
-    </div>
-
+  <div class="popup search-popup local-search-popup">
+  <div class="local-search-header clearfix">
+    <span class="search-icon">
+      <i class="fa fa-search"></i>
+    </span>
     <span class="popup-btn-close">
       <i class="fa fa-times-circle"></i>
     </span>
+    <div class="local-search-input-wrapper">
+      <input autocomplete="off" placeholder="&#x641C;&#x7D22;..." spellcheck="false" type="text" id="local-search-input">
+    </div>
   </div>
-
+  <div id="local-search-result"></div>
+</div>
 
 
 
@@ -348,28 +342,6 @@
           </span>
 
           
-            <span class="post-category">
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">&#x5206;&#x7C7B;&#x4E8E;</span>
-              
-              
-                <span itemprop="about" itemscope="" itemtype="http://schema.org/Thing">
-                  <a href="/categories/&#x8BFB;&#x4E66;&#x7B14;&#x8BB0;/" itemprop="url" rel="index">
-                    <span itemprop="name">&#x8BFB;&#x4E66;&#x7B14;&#x8BB0;</span>
-                  </a>
-                </span>
-
-                
-                
-              
-            </span>
-          
 
           
             
@@ -396,6 +368,37 @@
             </span>
           
 
+          
+            <div class="post-wordcount">
+              
+                
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-file-word-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">&#x5B57;&#x6570;&#x7EDF;&#x8BA1;:</span>
+                
+                <span title="&#x5B57;&#x6570;&#x7EDF;&#x8BA1;">
+                  
+                </span>
+              
+
+              
+                <span class="post-meta-divider">|</span>
+              
+
+              
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-clock-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">&#x9605;&#x8BFB;&#x65F6;&#x957F; &#x2248;</span>
+                
+                <span title="&#x9605;&#x8BFB;&#x65F6;&#x957F;">
+                  
+                </span>
+              
+            </div>
           
 
           
@@ -658,7 +661,7 @@
 <li><p>&#x5B9A;&#x4E49;&#x57FA;&#x672C;&#x8868;&#xFF1A;<br>  <code>CREATE TABLE &lt;&#x8868;&#x540D;&gt; &#xFF08;&lt;&#x5217;&#x540D;&gt;&lt;&#x6570;&#x636E;&#x7C7B;&#x578B;&gt; [&#x5217;&#x7EA7;&#x5B8C;&#x6574;&#x6027;&#x7EA6;&#x675F;&#x6761;&#x4EF6;] ...&#xFF09;</code></p>
 </li>
 <li><p>&#x5EFA;&#x7ACB;&#x4E00;&#x4E2A; &#x201C;&#x5B66;&#x751F;&#x201D; &#x8868; Student</p>
-  <figure class="highlight sql"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">CREATE</span> <span class="keyword">TABLE</span> Student (</span><br><span class="line">trueSno <span class="built_in">CHAR</span>(<span class="number">9</span>) PRIMARY <span class="keyword">KEY</span>,</span><br><span class="line">trueSname <span class="built_in">CHAR</span>(<span class="number">20</span>) <span class="keyword">UNIQUE</span>,</span><br><span class="line">trueSsex <span class="built_in">CHAR</span>(<span class="number">2</span>),</span><br><span class="line">trueSage <span class="built_in">SMALLINT</span>,</span><br><span class="line">trueSdept <span class="built_in">CHAR</span>(<span class="number">20</span>)</span><br><span class="line">);</span><br></pre></td></tr></tbody></table></figure>
+  <figure class="highlight plain"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">CREATE TABLE Student (</span><br><span class="line">trueSno CHAR(9) PRIMARY KEY,</span><br><span class="line">trueSname CHAR(20) UNIQUE,</span><br><span class="line">trueSsex CHAR(2),</span><br><span class="line">trueSage SMALLINT,</span><br><span class="line">trueSdept CHAR(20)</span><br><span class="line">);</span><br></pre></td></tr></tbody></table></figure>
 </li>
 <li><p>&#x6570;&#x636E;&#x7C7B;&#x578B;</p>
 </li>
@@ -737,7 +740,7 @@
 <li><p>&#x6A21;&#x5F0F;&#x4E0E;&#x8868;<br>  <code>CREATE TABLE &#x201C;S-T&#x201D;.Student(...)</code>  /<em> Student &#x6240;&#x5C5E;&#x7684;&#x6A21;&#x5F0F;&#x662F; S-T </em>/</p>
 </li>
 <li><p>&#x4FEE;&#x6539;&#x57FA;&#x672C;&#x8868;</p>
-  <figure class="highlight sql"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">ALTER</span> <span class="keyword">TABLE</span> &lt;&#x8868;&#x540D;&gt;</span><br><span class="line">[<span class="keyword">ADD</span> [<span class="keyword">COLUMN</span>] &lt;&#x65B0;&#x5217;&#x540D;&gt;&lt;&#x6570;&#x636E;&#x7ED3;&#x6784;&gt; [&#x5B8C;&#x6574;&#x6027;&#x7EA6;&#x675F;]]</span><br><span class="line">[<span class="keyword">DROP</span> [<span class="keyword">COLUMN</span>] &lt;&#x5217;&#x540D;&gt; [<span class="keyword">CASCADE</span> | RESTRICT]]</span><br><span class="line">[<span class="keyword">ALTER</span> <span class="keyword">COLUMN</span> &lt;&#x5217;&#x540D;&gt;&lt;&#x6570;&#x636E;&#x7ED3;&#x6784;&gt;]&#xFF1B;</span><br></pre></td></tr></tbody></table></figure>
+  <figure class="highlight plain"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">ALTER TABLE &lt;&#x8868;&#x540D;&gt;</span><br><span class="line">[ADD [COLUMN] &lt;&#x65B0;&#x5217;&#x540D;&gt;&lt;&#x6570;&#x636E;&#x7ED3;&#x6784;&gt; [&#x5B8C;&#x6574;&#x6027;&#x7EA6;&#x675F;]]</span><br><span class="line">[DROP [COLUMN] &lt;&#x5217;&#x540D;&gt; [CASCADE | RESTRICT]]</span><br><span class="line">[ALTER COLUMN &lt;&#x5217;&#x540D;&gt;&lt;&#x6570;&#x636E;&#x7ED3;&#x6784;&gt;]&#xFF1B;</span><br></pre></td></tr></tbody></table></figure>
 </li>
 <li><p>&#x5411; Student &#x8868;&#x589E;&#x52A0;&#x201C;&#x5165;&#x5B66;&#x65F6;&#x95F4;&#x201D;&#x5217;&#xFF0C;&#x5176;&#x6570;&#x636E;&#x7C7B;&#x578B;&#x4E3A;&#x65E5;&#x671F;<br>  <code>ALTER TABLE Student ADD S_entrance DATE&#xFF1B;</code></p>
 </li>
@@ -746,56 +749,56 @@
 <li><p>&#x589E;&#x52A0;&#x8BFE;&#x7A0B;&#x540D;&#x79F0;&#x5FC5;&#x987B;&#x53D6;&#x552F;&#x4E00;&#x503C;&#x7684;&#x7EA6;&#x675F;&#x6761;&#x4EF6;<br>  <code>ALTER TABLE Course ADD UNIQUE(Cname)&#xFF1B;</code></p>
 </li>
 <li><p>&#x5220;&#x9664;&#x57FA;&#x672C;&#x8868;</p>
-  <figure class="highlight sql"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">DROP</span> <span class="keyword">TABLE</span> &lt;&#x8868;&#x540D;&gt; [RESTRICT | <span class="keyword">CASCADE</span>];</span><br></pre></td></tr></tbody></table></figure>
+  <figure class="highlight plain"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">DROP TABLE &lt;&#x8868;&#x540D;&gt; [RESTRICT | CASCADE];</span><br></pre></td></tr></tbody></table></figure>
 </li>
 <li><p>&#x5220;&#x9664; Student &#x8868;<br>  <code>DROP TABLE Student CASCADE;</code></p>
 </li>
 <li><p>&#x5EFA;&#x7ACB;&#x7D22;&#x5F15;</p>
-<figure class="highlight n1ql"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">CREATE</span> [<span class="keyword">UNIQUE</span>] [<span class="keyword">CLUSTER</span>] <span class="keyword">INDEX</span> &lt;&#x7D22;&#x5F15;&#x540D;&gt; <span class="keyword">ON</span> &lt;&#x8868;&#x540D;&gt;(&lt;&#x5217;&#x540D;&gt; ...);</span><br></pre></td></tr></tbody></table></figure>
+<figure class="highlight plain"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">CREATE [UNIQUE] [CLUSTER] INDEX &lt;&#x7D22;&#x5F15;&#x540D;&gt; ON &lt;&#x8868;&#x540D;&gt;(&lt;&#x5217;&#x540D;&gt; ...);</span><br></pre></td></tr></tbody></table></figure>
 </li>
 <li><p>&#x4FEE;&#x6539;&#x7D22;&#x5F15;<br>  <code>ALTER INDEX &lt;&#x65E7;&#x7D22;&#x5F15;&#x540D;&gt; RENAME TO &lt;&#x65B0;&#x7D22;&#x5F15;&#x540D;&gt;;</code></p>
 </li>
 <li><p>&#x5220;&#x9664;&#x7D22;&#x5F15;<br>  <code>DROP INDEX &lt;&#x7D22;&#x5F15;&#x540D;&gt;</code></p>
 </li>
 <li><p>&#x6570;&#x636E;&#x67E5;&#x8BE2;</p>
-  <figure class="highlight n1ql"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> [<span class="keyword">ALL</span> | <span class="keyword">DISTINCT</span>] &lt;&#x76EE;&#x6807;&#x8868;&#x8FBE;&#x5F0F;&gt; [,&lt;&#x76EE;&#x6807;&#x8868;&#x8FBE;&#x5F0F;&#x5217;&#x8868;&gt;] ...</span><br><span class="line"><span class="keyword">FROM</span> &lt;&#x8868;&#x540D;&#x6216;&#x89C6;&#x56FE;&#x540D;&gt; [,&lt;&#x8868;&#x540D;&#x6216;&#x89C6;&#x56FE;&#x540D;&gt; ...] | (&lt;<span class="keyword">SELECT</span> &#x8BED;&#x53E5;&gt;) [<span class="keyword">AS</span>] &lt;&#x522B;&#x540D;&gt;</span><br><span class="line">[<span class="keyword">WHERE</span> &lt;&#x6761;&#x4EF6;&#x8868;&#x8FBE;&#x5F0F;&gt;]</span><br><span class="line">[<span class="keyword">GROUP</span> <span class="keyword">BY</span> &lt;&#x5217;&#x540D; <span class="number">1</span>&gt; [<span class="keyword">HAVING</span> &lt;&#x6761;&#x4EF6;&#x8868;&#x8FBE;&#x5F0F;&gt;]]</span><br><span class="line">[<span class="keyword">ORDER</span> <span class="keyword">BY</span> &lt;&#x5217;&#x540D; <span class="number">2</span>&gt; [<span class="keyword">ASC</span> | <span class="keyword">DESC</span>]];</span><br></pre></td></tr></tbody></table></figure>
+  <figure class="highlight plain"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">SELECT [ALL | DISTINCT] &lt;&#x76EE;&#x6807;&#x8868;&#x8FBE;&#x5F0F;&gt; [,&lt;&#x76EE;&#x6807;&#x8868;&#x8FBE;&#x5F0F;&#x5217;&#x8868;&gt;] ...</span><br><span class="line">FROM &lt;&#x8868;&#x540D;&#x6216;&#x89C6;&#x56FE;&#x540D;&gt; [,&lt;&#x8868;&#x540D;&#x6216;&#x89C6;&#x56FE;&#x540D;&gt; ...] | (&lt;SELECT &#x8BED;&#x53E5;&gt;) [AS] &lt;&#x522B;&#x540D;&gt;</span><br><span class="line">[WHERE &lt;&#x6761;&#x4EF6;&#x8868;&#x8FBE;&#x5F0F;&gt;]</span><br><span class="line">[GROUP BY &lt;&#x5217;&#x540D; 1&gt; [HAVING &lt;&#x6761;&#x4EF6;&#x8868;&#x8FBE;&#x5F0F;&gt;]]</span><br><span class="line">[ORDER BY &lt;&#x5217;&#x540D; 2&gt; [ASC | DESC]];</span><br></pre></td></tr></tbody></table></figure>
 </li>
 </ul>
 <ul>
 <li><p>&#x67E5;&#x8BE2;&#x5168;&#x4F53;&#x5B66;&#x751F;&#x7684;&#x5B66;&#x53F7;&#x548C;&#x59D3;&#x540D;</p>
-  <figure class="highlight n1ql"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> Sno, Sname</span><br><span class="line"><span class="keyword">FROM</span> Student;</span><br></pre></td></tr></tbody></table></figure>
+  <figure class="highlight plain"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">SELECT Sno, Sname</span><br><span class="line">FROM Student;</span><br></pre></td></tr></tbody></table></figure>
 </li>
 <li><p>&#x67E5;&#x8BE2;&#x5168;&#x4F53;&#x5B66;&#x751F;&#x7684;&#x59D3;&#x540D;&#x3001;&#x5B66;&#x53F7;&#x3001;&#x6240;&#x5728;&#x7CFB;&#x3002;</p>
-<figure class="highlight n1ql"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> Sname, Sno, Sdept</span><br><span class="line"><span class="keyword">FROM</span> Student;</span><br></pre></td></tr></tbody></table></figure>
+<figure class="highlight plain"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">SELECT Sname, Sno, Sdept</span><br><span class="line">FROM Student;</span><br></pre></td></tr></tbody></table></figure>
 </li>
 <li><p>&#x67E5;&#x8BE2;&#x5168;&#x90E8;&#x5217;</p>
-<figure class="highlight n1ql"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> *</span><br><span class="line"><span class="keyword">FROM</span> Student;</span><br></pre></td></tr></tbody></table></figure>
+<figure class="highlight plain"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">SELECT *</span><br><span class="line">FROM Student;</span><br></pre></td></tr></tbody></table></figure>
 </li>
 <li><p>&#x67E5;&#x8BE2;&#x5168;&#x4F53;&#x5B66;&#x751F;&#x7684;&#x59D3;&#x540D;&#x53CA;&#x5176;&#x51FA;&#x751F;&#x5E74;&#x4EFD;</p>
-<figure class="highlight n1ql"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> Sname, <span class="number">2017</span>-Sage</span><br><span class="line"><span class="keyword">FROM</span> Student;</span><br></pre></td></tr></tbody></table></figure>
+<figure class="highlight plain"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">SELECT Sname, 2017-Sage</span><br><span class="line">FROM Student;</span><br></pre></td></tr></tbody></table></figure>
 </li>
 <li><p>&#x67E5;&#x8BE2;&#x5168;&#x4F53;&#x5B66;&#x751F;&#x7684;&#x59D3;&#x540D;&#x3001;&#x51FA;&#x751F;&#x5E74;&#x4EFD;&#x548C;&#x6240;&#x5728;&#x7CFB;&#xFF0C;&#x8981;&#x6C42;&#x7528;&#x5C0F;&#x5199;&#x5B57;&#x6BCD;&#x8868;&#x793A;&#x7CFB;&#x540D;</p>
-<figure class="highlight sql"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> Sname, <span class="string">&apos;Year of Brith:&apos;</span>, <span class="number">2017</span>-Sage, <span class="keyword">LOWER</span>(Sdept)</span><br><span class="line"><span class="keyword">FROM</span> Student;</span><br></pre></td></tr></tbody></table></figure>
+<figure class="highlight plain"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">SELECT Sname, &apos;Year of Brith:&apos;, 2017-Sage, LOWER(Sdept)</span><br><span class="line">FROM Student;</span><br></pre></td></tr></tbody></table></figure>
 </li>
 <li><p>&#x67E5;&#x8BE2;&#x9009;&#x4FEE;&#x4E86;&#x8BFE;&#x7A0B;&#x7684;&#x5B66;&#x751F;&#x5B66;&#x53F7;&#xFF08;&#x53BB;&#x6389;&#x91CD;&#x590D;&#x884C;&#xFF09;</p>
-<figure class="highlight n1ql"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> <span class="keyword">DISTINCT</span> Sno</span><br><span class="line"><span class="keyword">FROM</span> SC&#xFF1B;</span><br></pre></td></tr></tbody></table></figure>
+<figure class="highlight plain"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">SELECT DISTINCT Sno</span><br><span class="line">FROM SC&#xFF1B;</span><br></pre></td></tr></tbody></table></figure>
 </li>
 <li><p>&#x67E5;&#x8BE2;&#x6240;&#x6709;&#x5E74;&#x9F84;&#x5728; 20 &#x5C81;&#x4EE5;&#x4E0B;&#x7684;&#x5B66;&#x751F;&#x59D3;&#x540D;&#x53CA;&#x5176;&#x5E74;&#x9F84;</p>
-  <figure class="highlight n1ql"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> Sname&#xFF0C;Sage</span><br><span class="line"><span class="keyword">FROM</span> Student</span><br><span class="line"><span class="keyword">WHERE</span> Sage &lt; <span class="number">20</span>;</span><br></pre></td></tr></tbody></table></figure>
+  <figure class="highlight plain"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">SELECT Sname&#xFF0C;Sage</span><br><span class="line">FROM Student</span><br><span class="line">WHERE Sage &lt; 20;</span><br></pre></td></tr></tbody></table></figure>
 </li>
 </ul>
 <ul>
 <li><p>&#x67E5;&#x8BE2;&#x8003;&#x8BD5;&#x6210;&#x7EE9;&#x4E0D;&#x53CA;&#x683C;&#x7684;&#x5B66;&#x751F;&#x7684;&#x5B66;&#x53F7;</p>
-  <figure class="highlight n1ql"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> <span class="keyword">DISTINCT</span> Sno</span><br><span class="line"><span class="keyword">FROM</span> SC</span><br><span class="line"><span class="keyword">WHERE</span> Grade &lt; <span class="number">60</span>;</span><br></pre></td></tr></tbody></table></figure>
+  <figure class="highlight plain"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">SELECT DISTINCT Sno</span><br><span class="line">FROM SC</span><br><span class="line">WHERE Grade &lt; 60;</span><br></pre></td></tr></tbody></table></figure>
 </li>
 <li><p>&#x67E5;&#x8BE2;&#x5E74;&#x9F84;&#x5728; 20 &#xFF5E; 23 &#x5C81;&#x4E4B;&#x95F4;&#x7684;&#x5B66;&#x751F;&#x7684;&#x59D3;&#x540D;&#x3001;&#x7CFB;&#x522B;&#x548C;&#x5E74;&#x9F84;</p>
-<figure class="highlight n1ql"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> Sname&#xFF0C;Sdept&#xFF0C;Sage</span><br><span class="line"><span class="keyword">FROM</span> Student</span><br><span class="line"><span class="keyword">WHERE</span> Sage <span class="keyword">BETWEEN</span> <span class="number">20</span> <span class="keyword">AND</span> <span class="number">23</span>&#xFF1B;</span><br></pre></td></tr></tbody></table></figure>
+<figure class="highlight plain"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">SELECT Sname&#xFF0C;Sdept&#xFF0C;Sage</span><br><span class="line">FROM Student</span><br><span class="line">WHERE Sage BETWEEN 20 AND 23&#xFF1B;</span><br></pre></td></tr></tbody></table></figure>
 </li>
 <li><p>&#x67E5;&#x8BE2;&#x5E74;&#x9F84;&#x4E0D;&#x5728; 20 &#xFF5E; 23 &#x4E4B;&#x95F4;&#x7684;&#x5B66;&#x751F;&#x7684;&#x59D3;&#x540D;&#x3001;&#x7CFB;&#x522B;&#x548C;&#x5E74;&#x9F84;</p>
-<figure class="highlight n1ql"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> Sname&#xFF0C;Sdept&#xFF0C;Sage</span><br><span class="line"><span class="keyword">FROM</span> Student</span><br><span class="line"><span class="keyword">WHERE</span> Sage <span class="keyword">NOT</span> <span class="keyword">BETWEEN</span> <span class="number">20</span> <span class="keyword">AND</span> <span class="number">23</span> &#xFF1B;</span><br></pre></td></tr></tbody></table></figure>
+<figure class="highlight plain"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">SELECT Sname&#xFF0C;Sdept&#xFF0C;Sage</span><br><span class="line">FROM Student</span><br><span class="line">WHERE Sage NOT BETWEEN 20 AND 23 &#xFF1B;</span><br></pre></td></tr></tbody></table></figure>
 </li>
 <li><p>&#x67E5;&#x8BE2;&#x65E2;&#x4E0D;&#x662F;&#x8BA1;&#x7B97;&#x673A;&#x7CFB;&#x3001;&#x6570;&#x5B66;&#x7CFB;&#x3001;&#x4E5F;&#x4E0D;&#x662F;&#x4FE1;&#x606F;&#x7CFB;&#x7684;&#x5B66;&#x751F;&#x7684;&#x59D3;&#x540D;&#x548C;&#x6027;&#x522B;</p>
-  <figure class="highlight sql"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> Sname&#xFF0C;Ssex</span><br><span class="line"><span class="keyword">FROM</span> Student</span><br><span class="line"><span class="keyword">WHERE</span> Sdept <span class="keyword">NOT</span> <span class="keyword">IN</span> (<span class="string">&apos;CS&apos;</span>, <span class="string">&apos;MA&apos;</span>, <span class="string">&apos;IS&apos;</span>);</span><br></pre></td></tr></tbody></table></figure>
+  <figure class="highlight plain"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">SELECT Sname&#xFF0C;Ssex</span><br><span class="line">FROM Student</span><br><span class="line">WHERE Sdept NOT IN (&apos;CS&apos;, &apos;MA&apos;, &apos;IS&apos;);</span><br></pre></td></tr></tbody></table></figure>
 </li>
 </ul>
 <ul>
@@ -803,25 +806,25 @@
 <li><p>&#x901A;&#x914D;&#x7B26; _ &#x4EE3;&#x8868;&#x4EFB;&#x610F;&#x5355;&#x4E2A;&#x5B57;&#x7B26;</p>
 </li>
 <li><p>&#x67E5;&#x8BE2;&#x5B66;&#x53F7;&#x4E3A; 201215121 &#x7684;&#x5B66;&#x751F;&#x7684;&#x8BE6;&#x7EC6;&#x60C5;&#x51B5;</p>
-  <figure class="highlight oxygene"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> * </span><br><span class="line"><span class="keyword">FROM</span> Student</span><br><span class="line"><span class="keyword">WHERE</span> Sno LIKE <span class="string">&apos;201215121&apos;</span>;  &#x7B49;&#x4EF7;&#x4E8E; <span class="keyword">WHERE</span> Sno = <span class="string">&apos;201215121&apos;</span>;</span><br></pre></td></tr></tbody></table></figure>
+  <figure class="highlight plain"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">SELECT * </span><br><span class="line">FROM Student</span><br><span class="line">WHERE Sno LIKE &apos;201215121&apos;;  &#x7B49;&#x4EF7;&#x4E8E; WHERE Sno = &apos;201215121&apos;;</span><br></pre></td></tr></tbody></table></figure>
 </li>
 <li><p>&#x67E5;&#x8BE2;&#x6240;&#x6709;&#x59D3;&#x5218;&#x7684;&#x5B66;&#x751F;&#x7684;&#x59D3;&#x540D;&#x3001;&#x5B66;&#x53F7;&#x548C;&#x6027;&#x522B;</p>
-  <figure class="highlight n1ql"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> Sname&#xFF0C;Sno&#xFF0C;Ssex</span><br><span class="line"><span class="keyword">FROM</span> Student</span><br><span class="line"><span class="keyword">WHERE</span> Sname <span class="keyword">LIKE</span> &#x2018;&#x5218;%&#x2019;&#xFF1B;</span><br></pre></td></tr></tbody></table></figure>
+  <figure class="highlight plain"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">SELECT Sname&#xFF0C;Sno&#xFF0C;Ssex</span><br><span class="line">FROM Student</span><br><span class="line">WHERE Sname LIKE &#x2018;&#x5218;%&#x2019;&#xFF1B;</span><br></pre></td></tr></tbody></table></figure>
 </li>
 <li><p>&#x67E5;&#x8BE2;&#x6240;&#x6709;&#x4E0D;&#x662F;&#x59D3;&#x5218;&#x7684;&#x5B66;&#x751F;&#x7684;&#x59D3;&#x540D;&#x3001;&#x5B66;&#x53F7;&#x548C;&#x6027;&#x522B;</p>
-  <figure class="highlight n1ql"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> Sname&#xFF0C; Sno&#xFF0C;Ssex</span><br><span class="line"><span class="keyword">FROM</span> Student</span><br><span class="line"><span class="keyword">WHERE</span> Sname <span class="keyword">NOT</span> <span class="keyword">LIKE</span> &#x2018;&#x5218;%&#x2018;&#xFF1B;</span><br></pre></td></tr></tbody></table></figure>
+  <figure class="highlight plain"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">SELECT Sname&#xFF0C; Sno&#xFF0C;Ssex</span><br><span class="line">FROM Student</span><br><span class="line">WHERE Sname NOT LIKE &#x2018;&#x5218;%&#x2018;&#xFF1B;</span><br></pre></td></tr></tbody></table></figure>
 </li>
 <li><p>&#x67E5;&#x8BE2;&#x6240;&#x6709;&#x6709;&#x6210;&#x7EE9;&#x7684;&#x5B66;&#x751F;&#x7684;&#x5B66;&#x53F7;&#x548C;&#x8BFE;&#x7A0B;&#x53F7;</p>
-<figure class="highlight n1ql"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> Sno&#xFF0C;Cno</span><br><span class="line"><span class="keyword">FROM</span> SC</span><br><span class="line"><span class="keyword">WHERE</span> Grade <span class="keyword">IS</span> <span class="keyword">NOT</span> <span class="literal">NULL</span>&#xFF1B;</span><br></pre></td></tr></tbody></table></figure>
+<figure class="highlight plain"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">SELECT Sno&#xFF0C;Cno</span><br><span class="line">FROM SC</span><br><span class="line">WHERE Grade IS NOT NULL&#xFF1B;</span><br></pre></td></tr></tbody></table></figure>
 </li>
 <li><p>&#x67E5;&#x8BE2;&#x9009;&#x4FEE;&#x4E86;3&#x53F7;&#x8BFE;&#x7A0B;&#x7684;&#x5B66;&#x751F;&#x7684;&#x5B66;&#x53F7;&#x548C;&#x6210;&#x7EE9;&#xFF0C;&#x67E5;&#x8BE2;&#x7ED3;&#x679C;&#x6309;&#x5206;&#x6570;&#x7684;&#x964D;&#x5E8F;&#x6392;&#x5217;</p>
 </li>
 </ul>
-<figure class="highlight sql"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> Sno&#xFF0C;Grade</span><br><span class="line"><span class="keyword">FROM</span> SC</span><br><span class="line"><span class="keyword">WHERE</span> Cno = &#x2019;<span class="number">3</span>&#x2018;</span><br><span class="line"><span class="keyword">ORDER</span> <span class="keyword">BY</span> Grade <span class="keyword">DESC</span>(<span class="keyword">default</span> <span class="keyword">ASC</span>);</span><br></pre></td></tr></tbody></table></figure>
+<figure class="highlight plain"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">SELECT Sno&#xFF0C;Grade</span><br><span class="line">FROM SC</span><br><span class="line">WHERE Cno = &#x2019;3&#x2018;</span><br><span class="line">ORDER BY Grade DESC(default ASC);</span><br></pre></td></tr></tbody></table></figure>
 <ul>
 <li>&#x67E5;&#x8BE2;&#x5168;&#x4F53;&#x5B66;&#x751F;&#x60C5;&#x51B5;&#xFF0C;&#x67E5;&#x8BE2;&#x7ED3;&#x679C;&#x6309;&#x6240;&#x5728;&#x7CFB;&#x7684;&#x7CFB;&#x53F7;&#x5347;&#x5E8F;&#x6392;&#x5E8F;&#xFF0C;&#x540C;&#x4E00;&#x7CFB;&#x4E2D;&#x7684;&#x5B66;&#x751F;&#x6309;&#x5E74;&#x9F84;&#x964D;&#x5E8F;&#x6392;&#x5E8F;&#x3002;</li>
 </ul>
-<figure class="highlight n1ql"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> * </span><br><span class="line"><span class="keyword">FROM</span> Student</span><br><span class="line"><span class="keyword">ORDER</span> <span class="keyword">BY</span> Sdept, Sage, <span class="keyword">DESC</span>;</span><br></pre></td></tr></tbody></table></figure>
+<figure class="highlight plain"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">SELECT * </span><br><span class="line">FROM Student</span><br><span class="line">ORDER BY Sdept, Sage, DESC;</span><br></pre></td></tr></tbody></table></figure>
 <ul>
 <li>&#x805A;&#x96C6;&#x51FD;&#x6570;</li>
 </ul>
@@ -867,47 +870,47 @@
 <ul>
 <li>&#x67E5;&#x8BE2;&#x5B66;&#x751F;&#x603B;&#x6570;</li>
 </ul>
-<figure class="highlight n1ql"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> <span class="built_in">COUNT</span>(*)</span><br><span class="line"><span class="keyword">FROM</span> Student;</span><br></pre></td></tr></tbody></table></figure>
+<figure class="highlight plain"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">SELECT COUNT(*)</span><br><span class="line">FROM Student;</span><br></pre></td></tr></tbody></table></figure>
 <ul>
 <li>&#x67E5;&#x8BE2;&#x9009;&#x4FEE;&#x4E86;&#x8BFE;&#x7A0B;&#x7684;&#x5B66;&#x751F;&#x4EBA;&#x6570;</li>
 </ul>
-<figure class="highlight n1ql"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> <span class="built_in">COUNT</span>(<span class="keyword">DISTINCT</span> Sno)</span><br><span class="line"><span class="keyword">FROM</span> SC;</span><br></pre></td></tr></tbody></table></figure>
+<figure class="highlight plain"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">SELECT COUNT(DISTINCT Sno)</span><br><span class="line">FROM SC;</span><br></pre></td></tr></tbody></table></figure>
 <ul>
 <li>&#x8BA1;&#x7B97;&#x9009;&#x4FEE;&#x4E86;&#x4E00;&#x53F7;&#x8BFE;&#x7A0B;&#x7684;&#x5B66;&#x751F;&#x5E73;&#x5747;&#x6210;&#x7EE9;</li>
 </ul>
-<figure class="highlight sql"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> <span class="keyword">AVG</span>(Grade)</span><br><span class="line"><span class="keyword">From</span> SC</span><br><span class="line"><span class="keyword">WHERE</span> Cno=<span class="string">&apos;1&apos;</span>;</span><br></pre></td></tr></tbody></table></figure>
+<figure class="highlight plain"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">SELECT AVG(Grade)</span><br><span class="line">From SC</span><br><span class="line">WHERE Cno=&apos;1&apos;;</span><br></pre></td></tr></tbody></table></figure>
 <ul>
 <li>&#x67E5;&#x8BE2;&#x9009;&#x4FEE;1&#x53F7;&#x8BFE;&#x7A0B;&#x7684;&#x5B66;&#x751F;&#x6700;&#x9AD8;&#x5206;&#x6570;</li>
 </ul>
-<figure class="highlight sql"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> <span class="keyword">MAX</span>(Grade)</span><br><span class="line"><span class="keyword">FROM</span> SC</span><br><span class="line"><span class="keyword">WHERE</span> Cno=<span class="string">&apos;1&apos;</span>;</span><br></pre></td></tr></tbody></table></figure>
+<figure class="highlight plain"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">SELECT MAX(Grade)</span><br><span class="line">FROM SC</span><br><span class="line">WHERE Cno=&apos;1&apos;;</span><br></pre></td></tr></tbody></table></figure>
 <ul>
 <li>&#x67E5;&#x8BE2;&#x5B66;&#x751F;201215012&#x9009;&#x4FEE;&#x8BFE;&#x7A0B;&#x7684;&#x603B;&#x5B66;&#x5206;&#x6570;&#x3002;</li>
 </ul>
-<figure class="highlight sql"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> <span class="keyword">SUM</span>(Ccredit)</span><br><span class="line"><span class="keyword">FROM</span> SC,Course</span><br><span class="line"><span class="keyword">WHERE</span> Sno=<span class="string">&apos;201215012&apos;</span> <span class="keyword">AND</span> SC.Cno = Course.Cno;</span><br></pre></td></tr></tbody></table></figure>
+<figure class="highlight plain"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">SELECT SUM(Ccredit)</span><br><span class="line">FROM SC,Course</span><br><span class="line">WHERE Sno=&apos;201215012&apos; AND SC.Cno = Course.Cno;</span><br></pre></td></tr></tbody></table></figure>
 <ul>
 <li>&#x6C42;&#x5404;&#x4E2A;&#x8BFE;&#x7A0B;&#x53F7;&#x53CA;&#x76F8;&#x5E94;&#x7684;&#x9009;&#x8BFE;&#x4EBA;&#x6570;</li>
 </ul>
-<figure class="highlight routeros"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">SELECT Cno&#xFF0C;COUNT(Sno)</span><br><span class="line"><span class="keyword">FROM</span> SC</span><br><span class="line">GROUP BY Cno;</span><br></pre></td></tr></tbody></table></figure>
+<figure class="highlight plain"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">SELECT Cno&#xFF0C;COUNT(Sno)</span><br><span class="line">FROM SC</span><br><span class="line">GROUP BY Cno;</span><br></pre></td></tr></tbody></table></figure>
 <ul>
 <li>&#x67E5;&#x8BE2;&#x9009;&#x4FEE;&#x4E86;&#x4E09;&#x95E8;&#x4EE5;&#x4E0A;&#x8BFE;&#x7A0B;&#x7684;&#x5B66;&#x751F;&#x5B66;&#x53F7;</li>
 </ul>
-<figure class="highlight routeros"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">SELECT Sno</span><br><span class="line"><span class="keyword">FROM</span> SC</span><br><span class="line">GROUP BY Sno</span><br><span class="line">HAVING COUNT(*) &gt; 3;</span><br></pre></td></tr></tbody></table></figure>
+<figure class="highlight plain"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">SELECT Sno</span><br><span class="line">FROM SC</span><br><span class="line">GROUP BY Sno</span><br><span class="line">HAVING COUNT(*) &gt; 3;</span><br></pre></td></tr></tbody></table></figure>
 <ul>
 <li>&#x67E5;&#x8BE2;&#x5E73;&#x5747;&#x6210;&#x7EE9;&#x5927;&#x4E8E;&#x7B49;&#x4E8E; 90 &#x5206;&#x7684;&#x5B66;&#x751F;&#x5B66;&#x53F7;&#x548C;&#x5E73;&#x5747;&#x6210;&#x7EE9;</li>
 </ul>
-<figure class="highlight routeros"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">SELECT Sno, AVG(Grade)</span><br><span class="line"><span class="keyword">FROM</span> SC</span><br><span class="line">GROUP BY Sno</span><br><span class="line">HAVING AVG(Grade) &gt;= 90;</span><br></pre></td></tr></tbody></table></figure>
+<figure class="highlight plain"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">SELECT Sno, AVG(Grade)</span><br><span class="line">FROM SC</span><br><span class="line">GROUP BY Sno</span><br><span class="line">HAVING AVG(Grade) &gt;= 90;</span><br></pre></td></tr></tbody></table></figure>
 <ul>
 <li>&#x67E5;&#x8BE2;&#x6BCF;&#x4E2A;&#x5B66;&#x751F;&#x53CA;&#x5176;&#x9009;&#x4FEE;&#x8BFE;&#x7684;&#x60C5;&#x51B5;</li>
 </ul>
-<figure class="highlight n1ql"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> Student.*, SC.*</span><br><span class="line"><span class="keyword">FROM</span> Student, SC</span><br><span class="line"><span class="keyword">WHERE</span> Student.Sno = SC.Sno;</span><br></pre></td></tr></tbody></table></figure>
+<figure class="highlight plain"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">SELECT Student.*, SC.*</span><br><span class="line">FROM Student, SC</span><br><span class="line">WHERE Student.Sno = SC.Sno;</span><br></pre></td></tr></tbody></table></figure>
 <ul>
 <li>&#x67E5;&#x8BE2;&#x9009;&#x4FEE; 2 &#x53F7;&#x8BFE;&#x7A0B;&#x4E14;&#x6210;&#x7EE9;&#x5728; 90 &#x5206;&#x4EE5;&#x4E0A;&#x7684;&#x6240;&#x6709;&#x5B66;&#x751F;&#x7684;&#x5B66;&#x53F7;&#x548C;&#x59D3;&#x540D;</li>
 </ul>
-<figure class="highlight mipsasm"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">SELECT Student.Sno, Sname</span><br><span class="line">FROM Student,<span class="keyword">SC</span></span><br><span class="line"><span class="keyword">WHERE </span>Student.Sno=<span class="keyword">SC.Sno </span><span class="keyword">AND </span><span class="keyword">SC.Cno </span>= <span class="string">&apos;2&apos;</span> <span class="keyword">AND </span><span class="keyword">SC.Grade </span>&gt; <span class="number">90</span><span class="comment">;</span></span><br></pre></td></tr></tbody></table></figure>
+<figure class="highlight plain"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">SELECT Student.Sno, Sname</span><br><span class="line">FROM Student,SC</span><br><span class="line">WHERE Student.Sno=SC.Sno AND SC.Cno = &apos;2&apos; AND SC.Grade &gt; 90;</span><br></pre></td></tr></tbody></table></figure>
 <ul>
 <li>&#x67E5;&#x8BE2;&#x6BCF;&#x4E2A;&#x5B66;&#x751F;&#x7684;&#x5B66;&#x53F7;&#x3001;&#x59D3;&#x540D;&#x3001;&#x9009;&#x4FEE;&#x7684;&#x8BFE;&#x7A0B;&#x540D;&#x53CA;&#x6210;&#x7EE9;</li>
 </ul>
-<figure class="highlight nginx"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="attribute">SELECT</span> Student.S<span class="literal">no</span>, Sname, Cname, Grade</span><br><span class="line">FROM Student, SC, Course</span><br><span class="line">WHERE Student.S<span class="literal">no</span>=SC.S<span class="literal">no</span> AND SC.C<span class="literal">no</span>=Course.C<span class="literal">no</span>;</span><br></pre></td></tr></tbody></table></figure>
+<figure class="highlight plain"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">SELECT Student.Sno, Sname, Cname, Grade</span><br><span class="line">FROM Student, SC, Course</span><br><span class="line">WHERE Student.Sno=SC.Sno AND SC.Cno=Course.Cno;</span><br></pre></td></tr></tbody></table></figure>
 <h3 id="3-7-&#x89C6;&#x56FE;"><a href="#3-7-&#x89C6;&#x56FE;" class="headerlink" title="3.7 &#x89C6;&#x56FE;"></a>3.7 &#x89C6;&#x56FE;</h3><ul>
 <li>&#x5EFA;&#x7ACB;&#x89C6;&#x56FE;</li>
 </ul>
@@ -1081,7 +1084,7 @@
               
               <div class="site-state-item site-state-categories">
                 <a href="/categories/index.html">
-                  <span class="site-state-item-count">6</span>
+                  <span class="site-state-item-count">5</span>
                   <span class="site-state-item-name">&#x5206;&#x7C7B;</span>
                 </a>
               </div>
@@ -1092,7 +1095,7 @@
               
               <div class="site-state-item site-state-tags">
                 <a href="/tags/index.html">
-                  <span class="site-state-item-count">16</span>
+                  <span class="site-state-item-count">13</span>
                   <span class="site-state-item-name">&#x6807;&#x7B7E;</span>
                 </a>
               </div>
@@ -1168,6 +1171,15 @@
   <span class="author" itemprop="copyrightHolder">Kings Cooober</span>
 
   
+    <span class="post-meta-divider">|</span>
+    <span class="post-meta-item-icon">
+      <i class="fa fa-area-chart"></i>
+    </span>
+    
+      <span class="post-meta-item-text">Site words total count:</span>
+    
+    <span title="Site words total count"></span>
+  
 </div>
 
 <!--
@@ -1225,6 +1237,12 @@
       </div>
     
 
+    
+      <div id="needsharebutton-float">
+        <span class="btn">
+          <i class="fa fa-share-alt" aria-hidden="true"></i>
+        </span>
+      </div>
     
 
   </div>
@@ -1356,20 +1374,324 @@
 
   
 
+  <script type="text/javascript">
+    // Popup Window;
+    var isfetched = false;
+    var isXml = true;
+    // Search DB path;
+    var search_path = "search.xml";
+    if (search_path.length === 0) {
+      search_path = "search.xml";
+    } else if (/json$/i.test(search_path)) {
+      isXml = false;
+    }
+    var path = "/" + search_path;
+    // monitor main search box;
+
+    var onPopupClose = function (e) {
+      $('.popup').hide();
+      $('#local-search-input').val('');
+      $('.search-result-list').remove();
+      $('#no-result').remove();
+      $(".local-search-pop-overlay").remove();
+      $('body').css('overflow', '');
+    }
+
+    function proceedsearch() {
+      $("body")
+        .append('<div class="search-popup-overlay local-search-pop-overlay"></div>')
+        .css('overflow', 'hidden');
+      $('.search-popup-overlay').click(onPopupClose);
+      $('.popup').toggle();
+      var $localSearchInput = $('#local-search-input');
+      $localSearchInput.attr("autocapitalize", "none");
+      $localSearchInput.attr("autocorrect", "off");
+      $localSearchInput.focus();
+    }
+
+    // search function;
+    var searchFunc = function(path, search_id, content_id) {
+      'use strict';
+
+      // start loading animation
+      $("body")
+        .append('<div class="search-popup-overlay local-search-pop-overlay">' +
+          '<div id="search-loading-icon">' +
+          '<i class="fa fa-spinner fa-pulse fa-5x fa-fw"></i>' +
+          '</div>' +
+          '</div>')
+        .css('overflow', 'hidden');
+      $("#search-loading-icon").css('margin', '20% auto 0 auto').css('text-align', 'center');
+
+      $.ajax({
+        url: path,
+        dataType: isXml ? "xml" : "json",
+        async: true,
+        success: function(res) {
+          // get the contents from search data
+          isfetched = true;
+          $('.popup').detach().appendTo('.header-inner');
+          var datas = isXml ? $("entry", res).map(function() {
+            return {
+              title: $("title", this).text(),
+              content: $("content",this).text(),
+              url: $("url" , this).text()
+            };
+          }).get() : res;
+          var input = document.getElementById(search_id);
+          var resultContent = document.getElementById(content_id);
+          var inputEventFunction = function() {
+            var searchText = input.value.trim().toLowerCase();
+            var keywords = searchText.split(/[\s\-]+/);
+            if (keywords.length > 1) {
+              keywords.push(searchText);
+            }
+            var resultItems = [];
+            if (searchText.length > 0) {
+              // perform local searching
+              datas.forEach(function(data) {
+                var isMatch = false;
+                var hitCount = 0;
+                var searchTextCount = 0;
+                var title = data.title.trim();
+                var titleInLowerCase = title.toLowerCase();
+                var content = data.content.trim().replace(/<[^>]+>/g,"");
+                var contentInLowerCase = content.toLowerCase();
+                var articleUrl = decodeURIComponent(data.url);
+                var indexOfTitle = [];
+                var indexOfContent = [];
+                // only match articles with not empty titles
+                if(title != '') {
+                  keywords.forEach(function(keyword) {
+                    function getIndexByWord(word, text, caseSensitive) {
+                      var wordLen = word.length;
+                      if (wordLen === 0) {
+                        return [];
+                      }
+                      var startPosition = 0, position = [], index = [];
+                      if (!caseSensitive) {
+                        text = text.toLowerCase();
+                        word = word.toLowerCase();
+                      }
+                      while ((position = text.indexOf(word, startPosition)) > -1) {
+                        index.push({position: position, word: word});
+                        startPosition = position + wordLen;
+                      }
+                      return index;
+                    }
+
+                    indexOfTitle = indexOfTitle.concat(getIndexByWord(keyword, titleInLowerCase, false));
+                    indexOfContent = indexOfContent.concat(getIndexByWord(keyword, contentInLowerCase, false));
+                  });
+                  if (indexOfTitle.length > 0 || indexOfContent.length > 0) {
+                    isMatch = true;
+                    hitCount = indexOfTitle.length + indexOfContent.length;
+                  }
+                }
+
+                // show search results
+
+                if (isMatch) {
+                  // sort index by position of keyword
+
+                  [indexOfTitle, indexOfContent].forEach(function (index) {
+                    index.sort(function (itemLeft, itemRight) {
+                      if (itemRight.position !== itemLeft.position) {
+                        return itemRight.position - itemLeft.position;
+                      } else {
+                        return itemLeft.word.length - itemRight.word.length;
+                      }
+                    });
+                  });
+
+                  // merge hits into slices
+
+                  function mergeIntoSlice(text, start, end, index) {
+                    var item = index[index.length - 1];
+                    var position = item.position;
+                    var word = item.word;
+                    var hits = [];
+                    var searchTextCountInSlice = 0;
+                    while (position + word.length <= end && index.length != 0) {
+                      if (word === searchText) {
+                        searchTextCountInSlice++;
+                      }
+                      hits.push({position: position, length: word.length});
+                      var wordEnd = position + word.length;
+
+                      // move to next position of hit
+
+                      index.pop();
+                      while (index.length != 0) {
+                        item = index[index.length - 1];
+                        position = item.position;
+                        word = item.word;
+                        if (wordEnd > position) {
+                          index.pop();
+                        } else {
+                          break;
+                        }
+                      }
+                    }
+                    searchTextCount += searchTextCountInSlice;
+                    return {
+                      hits: hits,
+                      start: start,
+                      end: end,
+                      searchTextCount: searchTextCountInSlice
+                    };
+                  }
+
+                  var slicesOfTitle = [];
+                  if (indexOfTitle.length != 0) {
+                    slicesOfTitle.push(mergeIntoSlice(title, 0, title.length, indexOfTitle));
+                  }
+
+                  var slicesOfContent = [];
+                  while (indexOfContent.length != 0) {
+                    var item = indexOfContent[indexOfContent.length - 1];
+                    var position = item.position;
+                    var word = item.word;
+                    // cut out 100 characters
+                    var start = position - 20;
+                    var end = position + 80;
+                    if(start < 0){
+                      start = 0;
+                    }
+                    if (end < position + word.length) {
+                      end = position + word.length;
+                    }
+                    if(end > content.length){
+                      end = content.length;
+                    }
+                    slicesOfContent.push(mergeIntoSlice(content, start, end, indexOfContent));
+                  }
+
+                  // sort slices in content by search text's count and hits' count
+
+                  slicesOfContent.sort(function (sliceLeft, sliceRight) {
+                    if (sliceLeft.searchTextCount !== sliceRight.searchTextCount) {
+                      return sliceRight.searchTextCount - sliceLeft.searchTextCount;
+                    } else if (sliceLeft.hits.length !== sliceRight.hits.length) {
+                      return sliceRight.hits.length - sliceLeft.hits.length;
+                    } else {
+                      return sliceLeft.start - sliceRight.start;
+                    }
+                  });
+
+                  // select top N slices in content
+
+                  var upperBound = parseInt('1');
+                  if (upperBound >= 0) {
+                    slicesOfContent = slicesOfContent.slice(0, upperBound);
+                  }
+
+                  // highlight title and content
+
+                  function highlightKeyword(text, slice) {
+                    var result = '';
+                    var prevEnd = slice.start;
+                    slice.hits.forEach(function (hit) {
+                      result += text.substring(prevEnd, hit.position);
+                      var end = hit.position + hit.length;
+                      result += '<b class="search-keyword">' + text.substring(hit.position, end) + '</b>';
+                      prevEnd = end;
+                    });
+                    result += text.substring(prevEnd, slice.end);
+                    return result;
+                  }
+
+                  var resultItem = '';
+
+                  if (slicesOfTitle.length != 0) {
+                    resultItem += "<li><a href='" + articleUrl + "' class='search-result-title'>" + highlightKeyword(title, slicesOfTitle[0]) + "</a>";
+                  } else {
+                    resultItem += "<li><a href='" + articleUrl + "' class='search-result-title'>" + title + "</a>";
+                  }
+
+                  slicesOfContent.forEach(function (slice) {
+                    resultItem += "<a href='" + articleUrl + "'>" +
+                      "<p class=\"search-result\">" + highlightKeyword(content, slice) +
+                      "...</p>" + "</a>";
+                  });
+
+                  resultItem += "</li>";
+                  resultItems.push({
+                    item: resultItem,
+                    searchTextCount: searchTextCount,
+                    hitCount: hitCount,
+                    id: resultItems.length
+                  });
+                }
+              })
+            };
+            if (keywords.length === 1 && keywords[0] === "") {
+              resultContent.innerHTML = '<div id="no-result"><i class="fa fa-search fa-5x" /></div>'
+            } else if (resultItems.length === 0) {
+              resultContent.innerHTML = '<div id="no-result"><i class="fa fa-frown-o fa-5x" /></div>'
+            } else {
+              resultItems.sort(function (resultLeft, resultRight) {
+                if (resultLeft.searchTextCount !== resultRight.searchTextCount) {
+                  return resultRight.searchTextCount - resultLeft.searchTextCount;
+                } else if (resultLeft.hitCount !== resultRight.hitCount) {
+                  return resultRight.hitCount - resultLeft.hitCount;
+                } else {
+                  return resultRight.id - resultLeft.id;
+                }
+              });
+              var searchResultList = '<ul class=\"search-result-list\">';
+              resultItems.forEach(function (result) {
+                searchResultList += result.item;
+              })
+              searchResultList += "</ul>";
+              resultContent.innerHTML = searchResultList;
+            }
+          }
+
+          if ('auto' === 'auto') {
+            input.addEventListener('input', inputEventFunction);
+          } else {
+            $('.search-icon').click(inputEventFunction);
+            input.addEventListener('keypress', function (event) {
+              if (event.keyCode === 13) {
+                inputEventFunction();
+              }
+            });
+          }
+
+          // remove loading animation
+          $(".local-search-pop-overlay").remove();
+          $('body').css('overflow', '');
+
+          proceedsearch();
+        }
+      });
+    }
+
+    // handle and trigger popup window;
+    $('.popup-trigger').click(function(e) {
+      e.stopPropagation();
+      if (isfetched === false) {
+        searchFunc(path, 'local-search-input', 'local-search-result');
+      } else {
+        proceedsearch();
+      };
+    });
+
+    $('.popup-btn-close').click(onPopupClose);
+    $('.popup').click(function(e){
+      e.stopPropagation();
+    });
+    $(document).on('keyup', function (event) {
+      var shouldDismissSearchPopup = event.which === 27 &&
+        $('.search-popup').is(':visible');
+      if (shouldDismissSearchPopup) {
+        onPopupClose();
+      }
+    });
+  </script>
 
 
-
-  
-  
-  
-  <link rel="stylesheet" href="/lib/algolia-instant-search/instantsearch.min.css">
-
-  
-  
-  <script src="/lib/algolia-instant-search/instantsearch.min.js"></script>
-  
-
-  <script src="/js/src/algolia-search.js?v=5.1.4"></script>
 
 
 
@@ -1487,6 +1809,31 @@
   
 
   
+  
+  
+  <link rel="stylesheet" href="/lib/needsharebutton/needsharebutton.css">
+
+  
+  
+  <script src="/lib/needsharebutton/needsharebutton.js"></script>
+
+  <script>
+    
+    
+      flOptions = {};
+      
+          flOptions.iconStyle = "box";
+      
+          flOptions.boxForm = "horizontal";
+      
+          flOptions.position = "middleRight";
+      
+          flOptions.networks = "Weibo,Wechat,Douban,QQZone,Twitter,Facebook";
+      
+      new needShareButton('#needsharebutton-float', flOptions);
+    
+  </script>
+
   
 
   
