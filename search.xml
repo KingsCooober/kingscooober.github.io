@@ -1,6 +1,28 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[团队程序设计天梯赛 L1-039. 古风排版]]></title>
+    <url>%2F2018%2F03%2F25%2FL1-039.%E5%8F%A4%E9%A3%8E%E6%8E%92%E7%89%88%2F</url>
+    <content type="text"><![CDATA[L1-039. &#x53E4;&#x98CE;&#x6392;&#x7248;&#x4E2D;&#x56FD;&#x7684;&#x53E4;&#x4EBA;&#x5199;&#x6587;&#x5B57;&#xFF0C;&#x662F;&#x4ECE;&#x53F3;&#x5411;&#x5DE6;&#x7AD6;&#x5411;&#x6392;&#x7248;&#x7684;&#x3002;&#x672C;&#x9898;&#x5C31;&#x8BF7;&#x4F60;&#x7F16;&#x5199;&#x7A0B;&#x5E8F;&#xFF0C;&#x628A;&#x4E00;&#x6BB5;&#x6587;&#x5B57;&#x6309;&#x53E4;&#x98CE;&#x6392;&#x7248;&#x3002; &#x8F93;&#x5165;&#x683C;&#x5F0F;&#xFF1A;&#x8F93;&#x5165;&#x5728;&#x7B2C;&#x4E00;&#x884C;&#x7ED9;&#x51FA;&#x4E00;&#x4E2A;&#x6B63;&#x6574;&#x6570;N&#xFF08;&lt;100&#xFF09;&#xFF0C;&#x662F;&#x6BCF;&#x4E00;&#x5217;&#x7684;&#x5B57;&#x7B26;&#x6570;&#x3002;&#x7B2C;&#x4E8C;&#x884C;&#x7ED9;&#x51FA;&#x4E00;&#x4E2A;&#x957F;&#x5EA6;&#x4E0D;&#x8D85;&#x8FC7;1000&#x7684;&#x975E;&#x7A7A;&#x5B57;&#x7B26;&#x4E32;&#xFF0C;&#x4EE5;&#x56DE;&#x8F66;&#x7ED3;&#x675F;&#x3002; &#x8F93;&#x51FA;&#x683C;&#x5F0F;&#xFF1A;&#x6309;&#x53E4;&#x98CE;&#x683C;&#x5F0F;&#x6392;&#x7248;&#x7ED9;&#x5B9A;&#x7684;&#x5B57;&#x7B26;&#x4E32;&#xFF0C;&#x6BCF;&#x5217;N&#x4E2A;&#x5B57;&#x7B26;&#xFF08;&#x9664;&#x4E86;&#x6700;&#x540E;&#x4E00;&#x5217;&#x53EF;&#x80FD;&#x4E0D;&#x8DB3;N&#x4E2A;&#xFF09; &#x8F93;&#x5165;&#x6837;&#x4F8B;&#xFF1A;4This is a test case &#x8F93;&#x51FA;&#x6837;&#x4F8B;&#xFF1A;asa Tst ihe tsi ce s 123456789101112131415161718192021222324252627282930#include &lt;iostream&gt;using namespace std;int main() { int n; cin &gt;&gt; n; string s; getchar(); getline(cin, s); int col = ((s.length() - 1) / n + 1); char cs[n][col]; for (int i = 0; i &lt; n; ++i) { for (int j = 0; j &lt; col; ++j) { cs[i][j] = &apos; &apos;; } } int index = 0; for (int j = col - 1; j &gt;= 0; j--) { for (int i = 0; i &lt; n; i++) { if (index &lt; s.length()) cs[i][j] = s[index++]; } } for (int i = 0; i &lt; n; ++i) { for (int j = 0; j &lt; col; ++j) { cout &lt;&lt; cs[i][j]; } cout &lt;&lt; endl; } return 0;} L2Dwidget.init({});]]></content>
+      <categories>
+        <category>Algorithm</category>
+      </categories>
+      <tags>
+        <tag>PAT</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[团队程序设计天梯赛 L1-038. 新世界]]></title>
+    <url>%2F2018%2F03%2F25%2FL1-038.%E6%96%B0%E4%B8%96%E7%95%8C%2F</url>
+    <content type="text"><![CDATA[L1-038. &#x65B0;&#x4E16;&#x754C;&#x8FD9;&#x9053;&#x8D85;&#x7EA7;&#x7B80;&#x5355;&#x7684;&#x9898;&#x76EE;&#x6CA1;&#x6709;&#x4EFB;&#x4F55;&#x8F93;&#x5165;&#x3002; &#x4F60;&#x53EA;&#x9700;&#x8981;&#x5728;&#x7B2C;&#x4E00;&#x884C;&#x4E2D;&#x8F93;&#x51FA;&#x7A0B;&#x5E8F;&#x5458;&#x94A6;&#x5B9A;&#x540D;&#x8A00;&#x201C;Hello World&#x201D;&#xFF0C;&#x5E76;&#x4E14;&#x5728;&#x7B2C;&#x4E8C;&#x884C;&#x4E2D;&#x8F93;&#x51FA;&#x66F4;&#x65B0;&#x7248;&#x7684;&#x201C;Hello New World&#x201D;&#x5C31;&#x53EF;&#x4EE5;&#x4E86;&#x3002; 123456789#include &lt;iostream&gt;using namespace std;int main() { cout &lt;&lt; &quot;Hello World&quot; &lt;&lt; endl; cout &lt;&lt; &quot;Hello New World&quot; &lt;&lt; endl; return 0;} L2Dwidget.init({});]]></content>
+      <categories>
+        <category>Algorithm</category>
+      </categories>
+      <tags>
+        <tag>PAT</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[团队程序设计天梯赛 L1-037.A除以B]]></title>
     <url>%2F2018%2F03%2F24%2FL1-037.A%E9%99%A4%E4%BB%A5B%2F</url>
     <content type="text"><![CDATA[L1-037. A&#x9664;&#x4EE5;B&#x771F;&#x7684;&#x662F;&#x7B80;&#x5355;&#x9898;&#x54C8; &#x2014;&#x2014; &#x7ED9;&#x5B9A;&#x4E24;&#x4E2A;&#x7EDD;&#x5BF9;&#x503C;&#x4E0D;&#x8D85;&#x8FC7;100&#x7684;&#x6574;&#x6570;A&#x548C;B&#xFF0C;&#x8981;&#x6C42;&#x4F60;&#x6309;&#x7167;&#x201C;A/B=&#x5546;&#x201D;&#x7684;&#x683C;&#x5F0F;&#x8F93;&#x51FA;&#x7ED3;&#x679C;&#x3002; &#x8F93;&#x5165;&#x683C;&#x5F0F;&#xFF1A;&#x8F93;&#x5165;&#x5728;&#x7B2C;&#x4E00;&#x884C;&#x7ED9;&#x51FA;&#x4E24;&#x4E2A;&#x6574;&#x6570;A&#x548C;B&#xFF08;-100 &lt;= A, B, &lt;= 100&#xFF09;&#xFF0C;&#x6570;&#x5B57;&#x95F4;&#x4EE5;&#x7A7A;&#x683C;&#x5206;&#x9694;&#x3002; &#x8F93;&#x51FA;&#x683C;&#x5F0F;&#xFF1A;&#x5728;&#x4E00;&#x884C;&#x4E2D;&#x8F93;&#x51FA;&#x7ED3;&#x679C;&#xFF1A;&#x5982;&#x679C;&#x5206;&#x6BCD;&#x662F;&#x6B63;&#x6570;&#xFF0C;&#x5219;&#x8F93;&#x51FA;&#x201C;A/B=&#x5546;&#x201D;&#xFF1B;&#x5982;&#x679C;&#x5206;&#x6BCD;&#x662F;&#x8D1F;&#x6570;&#xFF0C;&#x5219;&#x8981;&#x7528;&#x62EC;&#x53F7;&#x628A;&#x5206;&#x6BCD;&#x62EC;&#x8D77;&#x6765;&#x8F93;&#x51FA;&#xFF1B;&#x5982;&#x679C;&#x5206;&#x6BCD;&#x4E3A;&#x96F6;&#xFF0C;&#x5219;&#x8F93;&#x51FA;&#x7684;&#x5546;&#x5E94;&#x4E3A;&#x201C;Error&#x201D;&#x3002;&#x8F93;&#x51FA;&#x7684;&#x5546;&#x5E94;&#x4FDD;&#x7559;&#x5C0F;&#x6570;&#x70B9;&#x540E;2&#x4F4D;&#x3002; &#x8F93;&#x5165;&#x6837;&#x4F8B;1&#xFF1A;-1 2 &#x8F93;&#x51FA;&#x6837;&#x4F8B;1&#xFF1A;-1/2=-0.50 &#x8F93;&#x5165;&#x6837;&#x4F8B;2&#xFF1A;1 -3 &#x8F93;&#x51FA;&#x6837;&#x4F8B;2&#xFF1A;1/(-3)=-0.33 &#x8F93;&#x5165;&#x6837;&#x4F8B;3&#xFF1A;5 0 &#x8F93;&#x51FA;&#x6837;&#x4F8B;3&#xFF1A;5/0=Error 12345678910111213141516171819202122#include &lt;iostream&gt;#include &lt;cstdio&gt;using namespace std;int main() { int a, b; cin &gt;&gt; a &gt;&gt; b; double res = (double)a / b; if (b &lt; 0) { printf(&quot;%d/(%d)=%.2f&quot;, a, b, res); } else if (b == 0) { printf(&quot;%d/0=Error&quot;, a); } else { printf(&quot;%d/%d=%.2f&quot;, a, b, res); } return 0;} L2Dwidget.init({});]]></content>
