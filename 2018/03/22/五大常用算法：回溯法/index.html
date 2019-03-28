@@ -1,4 +1,12 @@
-<!DOCTYPE html><html class="theme-next gemini use-motion" lang="zh-Hans"><head>
+<!DOCTYPE html>
+
+
+
+  
+
+
+<html class="theme-next gemini use-motion" lang="zh-Hans">
+<head><meta name="generator" content="Hexo 3.8.0">
   <meta charset="UTF-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
@@ -75,7 +83,7 @@
 
 
 
-  <meta name="keywords" content="&#x56DE;&#x6EAF;&#x6CD5;,">
+  <meta name="keywords" content="回溯法,">
 
 
 
@@ -86,18 +94,18 @@
 
 
 
-<meta name="description" content="1&amp;#x3001;&amp;#x6982;&amp;#x5FF5;&amp;#x56DE;&amp;#x6EAF;&amp;#x7B97;&amp;#x6CD5;&amp;#x5B9E;&amp;#x9645;&amp;#x4E0A;&amp;#x662F;&amp;#x4E00;&amp;#x4E2A;&amp;#x7C7B;&amp;#x4F3C;&amp;#x679A;&amp;#x4E3E;&amp;#x7684;&amp;#x641C;&amp;#x7D22;&amp;#x5C1D;&amp;#x8BD5;&amp;#x8FC7;&amp;#x7A0B;&amp;#xFF0C">
-<meta name="keywords" content="&#x56DE;&#x6EAF;&#x6CD5;">
+<meta name="description" content="1、概念回溯算法实际上是一个类似枚举的搜索尝试过程，主要是在搜索尝试过程中寻找问题的解，当发现已不满足求解条件时，就“回溯”返回，尝试别的路径。 回溯法是一种优选搜索法，按选优条件向前搜索，已到达目标。但当搜索到某一步时，发现原先选择并不优或达不到目标，就退回一步重新选择，这种走不通就退回再走的技术称为回溯法，而满足回溯条件的某个状态的点称为“回溯点”。 许多复杂的，规模较大的的问题都可以使用回溯">
+<meta name="keywords" content="回溯法">
 <meta property="og:type" content="article">
-<meta property="og:title" content="&#x4E94;&#x5927;&#x5E38;&#x7528;&#x7B97;&#x6CD5;&#xFF1A;&#x56DE;&#x6EAF;&#x6CD5;">
-<meta property="og:url" content="http://yoursite.com/2018/03/22/&#x4E94;&#x5927;&#x5E38;&#x7528;&#x7B97;&#x6CD5;&#xFF1A;&#x56DE;&#x6EAF;&#x6CD5;/index.html">
-<meta property="og:site_name" content="Kings Cooober&apos;s Blog">
-<meta property="og:description" content="1&amp;#x3001;&amp;#x6982;&amp;#x5FF5;&amp;#x56DE;&amp;#x6EAF;&amp;#x7B97;&amp;#x6CD5;&amp;#x5B9E;&amp;#x9645;&amp;#x4E0A;&amp;#x662F;&amp;#x4E00;&amp;#x4E2A;&amp;#x7C7B;&amp;#x4F3C;&amp;#x679A;&amp;#x4E3E;&amp;#x7684;&amp;#x641C;&amp;#x7D22;&amp;#x5C1D;&amp;#x8BD5;&amp;#x8FC7;&amp;#x7A0B;&amp;#xFF0C">
+<meta property="og:title" content="五大常用算法：回溯法">
+<meta property="og:url" content="http://yoursite.com/2018/03/22/五大常用算法：回溯法/index.html">
+<meta property="og:site_name" content="Kings Cooober&#39;s Blog">
+<meta property="og:description" content="1、概念回溯算法实际上是一个类似枚举的搜索尝试过程，主要是在搜索尝试过程中寻找问题的解，当发现已不满足求解条件时，就“回溯”返回，尝试别的路径。 回溯法是一种优选搜索法，按选优条件向前搜索，已到达目标。但当搜索到某一步时，发现原先选择并不优或达不到目标，就退回一步重新选择，这种走不通就退回再走的技术称为回溯法，而满足回溯条件的某个状态的点称为“回溯点”。 许多复杂的，规模较大的的问题都可以使用回溯">
 <meta property="og:locale" content="zh-Hans">
 <meta property="og:updated_time" content="2018-06-28T10:27:31.942Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="&#x4E94;&#x5927;&#x5E38;&#x7528;&#x7B97;&#x6CD5;&#xFF1A;&#x56DE;&#x6EAF;&#x6CD5;">
-<meta name="twitter:description" content="1&amp;#x3001;&amp;#x6982;&amp;#x5FF5;&amp;#x56DE;&amp;#x6EAF;&amp;#x7B97;&amp;#x6CD5;&amp;#x5B9E;&amp;#x9645;&amp;#x4E0A;&amp;#x662F;&amp;#x4E00;&amp;#x4E2A;&amp;#x7C7B;&amp;#x4F3C;&amp;#x679A;&amp;#x4E3E;&amp;#x7684;&amp;#x641C;&amp;#x7D22;&amp;#x5C1D;&amp;#x8BD5;&amp;#x8FC7;&amp;#x7A0B;&amp;#xFF0C">
+<meta name="twitter:title" content="五大常用算法：回溯法">
+<meta name="twitter:description" content="1、概念回溯算法实际上是一个类似枚举的搜索尝试过程，主要是在搜索尝试过程中寻找问题的解，当发现已不满足求解条件时，就“回溯”返回，尝试别的路径。 回溯法是一种优选搜索法，按选优条件向前搜索，已到达目标。但当搜索到某一步时，发现原先选择并不优或达不到目标，就退回一步重新选择，这种走不通就退回再走的技术称为回溯法，而满足回溯条件的某个状态的点称为“回溯点”。 许多复杂的，规模较大的的问题都可以使用回溯">
 
 
 
@@ -127,13 +135,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/2018/03/22/&#x4E94;&#x5927;&#x5E38;&#x7528;&#x7B97;&#x6CD5;&#xFF1A;&#x56DE;&#x6EAF;&#x6CD5;/">
+  <link rel="canonical" href="http://yoursite.com/2018/03/22/五大常用算法：回溯法/">
 
 
 
 
 
-  <title>&#x4E94;&#x5927;&#x5E38;&#x7528;&#x7B97;&#x6CD5;&#xFF1A;&#x56DE;&#x6EAF;&#x6CD5; | Kings Cooober&apos;s Blog</title>
+  <title>五大常用算法：回溯法 | Kings Cooober's Blog</title>
   
 
 
@@ -145,7 +153,7 @@
 
 </head>
 
-<body itemscope="" itemtype="http://schema.org/WebPage" lang="zh-Hans">
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
 
   
   
@@ -156,7 +164,7 @@
     <div class="headband"></div>
     <a href="https://github.com/kingscooober"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://s3.amazonaws.com/github/ribbons/forkme_right_darkblue_121621.png" alt="Fork me on GitHub"></a>
 
-    <header id="header" class="header" itemscope="" itemtype="http://schema.org/WPHeader">
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
       <div class="header-inner"><div class="site-brand-wrapper">
   <div class="site-meta ">
     
@@ -164,7 +172,7 @@
     <div class="custom-logo-site-title">
       <a href="/" class="brand" rel="start">
         <span class="logo-line-before"><i></i></span>
-        <span class="site-title">Kings Cooober&apos;s Blog</span>
+        <span class="site-title">Kings Cooober's Blog</span>
         <span class="logo-line-after"><i></i></span>
       </a>
     </div>
@@ -194,7 +202,7 @@
             
               <i class="menu-item-icon fa fa-fw fa-home"></i> <br>
             
-            &#x9996;&#x9875;
+            首页
           </a>
         </li>
       
@@ -204,7 +212,7 @@
             
               <i class="menu-item-icon fa fa-fw fa-user"></i> <br>
             
-            &#x5173;&#x4E8E;
+            关于
           </a>
         </li>
       
@@ -214,7 +222,7 @@
             
               <i class="menu-item-icon fa fa-fw fa-tags"></i> <br>
             
-            &#x6807;&#x7B7E;
+            标签
           </a>
         </li>
       
@@ -224,7 +232,7 @@
             
               <i class="menu-item-icon fa fa-fw fa-th"></i> <br>
             
-            &#x5206;&#x7C7B;
+            分类
           </a>
         </li>
       
@@ -234,7 +242,7 @@
             
               <i class="menu-item-icon fa fa-fw fa-archive"></i> <br>
             
-            &#x5F52;&#x6863;
+            归档
           </a>
         </li>
       
@@ -247,7 +255,7 @@
             
               <i class="menu-item-icon fa fa-search fa-fw"></i> <br>
             
-            &#x641C;&#x7D22;
+            搜索
           </a>
         </li>
       
@@ -266,7 +274,7 @@
       <i class="fa fa-times-circle"></i>
     </span>
     <div class="local-search-input-wrapper">
-      <input autocomplete="off" placeholder="&#x641C;&#x7D22;..." spellcheck="false" type="text" id="local-search-input">
+      <input autocomplete="off" placeholder="搜索..." spellcheck="false" type="text" id="local-search-input">
     </div>
   </div>
   <div id="local-search-result"></div>
@@ -298,21 +306,21 @@
   
   
 
-  <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
   
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/03/22/&#x4E94;&#x5927;&#x5E38;&#x7528;&#x7B97;&#x6CD5;&#xFF1A;&#x56DE;&#x6EAF;&#x6CD5;/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/03/22/五大常用算法：回溯法/">
 
-    <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Kings Cooober">
-      <meta itemprop="description" content="">
+      <meta itemprop="description" content>
       <meta itemprop="image" content="/images/avatar.jpg">
     </span>
 
-    <span hidden itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Kings Cooober&apos;s Blog">
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Kings Cooober's Blog">
     </span>
 
     
@@ -320,7 +328,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">&#x4E94;&#x5927;&#x5E38;&#x7528;&#x7B97;&#x6CD5;&#xFF1A;&#x56DE;&#x6EAF;&#x6CD5;</h1>
+          <h1 class="post-title" itemprop="name headline">五大常用算法：回溯法</h1>
         
 
         <div class="post-meta">
@@ -330,9 +338,9 @@
                 <i class="fa fa-calendar-o"></i>
               </span>
               
-                <span class="post-meta-item-text">&#x53D1;&#x8868;&#x4E8E;</span>
+                <span class="post-meta-item-text">发表于</span>
               
-              <time title="&#x521B;&#x5EFA;&#x4E8E;" itemprop="dateCreated datePublished" datetime="2018-03-22T17:29:43+08:00">
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-03-22T17:29:43+08:00">
                 2018-03-22
               </time>
             
@@ -346,9 +354,9 @@
                 <i class="fa fa-calendar-check-o"></i>
               </span>
               
-                <span class="post-meta-item-text">&#x66F4;&#x65B0;&#x4E8E;:</span>
+                <span class="post-meta-item-text">更新于&#58;</span>
               
-              <time title="&#x66F4;&#x65B0;&#x4E8E;" itemprop="dateModified" datetime="2018-06-28T18:27:31+08:00">
+              <time title="更新于" itemprop="dateModified" datetime="2018-06-28T18:27:31+08:00">
                 2018-06-28
               </time>
             
@@ -362,13 +370,13 @@
 
           
           
-             <span id="/2018/03/22/&#x4E94;&#x5927;&#x5E38;&#x7528;&#x7B97;&#x6CD5;&#xFF1A;&#x56DE;&#x6EAF;&#x6CD5;/" class="leancloud_visitors" data-flag-title="&#x4E94;&#x5927;&#x5E38;&#x7528;&#x7B97;&#x6CD5;&#xFF1A;&#x56DE;&#x6EAF;&#x6CD5;">
+             <span id="/2018/03/22/五大常用算法：回溯法/" class="leancloud_visitors" data-flag-title="五大常用算法：回溯法">
                <span class="post-meta-divider">|</span>
                <span class="post-meta-item-icon">
                  <i class="fa fa-eye"></i>
                </span>
                
-                 <span class="post-meta-item-text">&#x9605;&#x8BFB;&#x6B21;&#x6570;:</span>
+                 <span class="post-meta-item-text">阅读次数&#58;</span>
                
                  <span class="leancloud-visitors-count"></span>
              </span>
@@ -393,40 +401,40 @@
       
 
       
-        <h4 id="1&#x3001;&#x6982;&#x5FF5;"><a href="#1&#x3001;&#x6982;&#x5FF5;" class="headerlink" title="1&#x3001;&#x6982;&#x5FF5;"></a>1&#x3001;&#x6982;&#x5FF5;</h4><p>&#x56DE;&#x6EAF;&#x7B97;&#x6CD5;&#x5B9E;&#x9645;&#x4E0A;&#x662F;&#x4E00;&#x4E2A;&#x7C7B;&#x4F3C;&#x679A;&#x4E3E;&#x7684;&#x641C;&#x7D22;&#x5C1D;&#x8BD5;&#x8FC7;&#x7A0B;&#xFF0C;<br>&#x4E3B;&#x8981;&#x662F;&#x5728;&#x641C;&#x7D22;&#x5C1D;&#x8BD5;&#x8FC7;&#x7A0B;&#x4E2D;&#x5BFB;&#x627E;&#x95EE;&#x9898;&#x7684;&#x89E3;&#xFF0C;&#x5F53;&#x53D1;&#x73B0;&#x5DF2;&#x4E0D;&#x6EE1;&#x8DB3;&#x6C42;&#x89E3;&#x6761;&#x4EF6;&#x65F6;&#xFF0C;&#x5C31;&#x201C;&#x56DE;&#x6EAF;&#x201D;&#x8FD4;&#x56DE;&#xFF0C;&#x5C1D;&#x8BD5;&#x522B;&#x7684;&#x8DEF;&#x5F84;&#x3002;</p>
-<p>&#x56DE;&#x6EAF;&#x6CD5;&#x662F;&#x4E00;&#x79CD;&#x4F18;&#x9009;&#x641C;&#x7D22;&#x6CD5;&#xFF0C;&#x6309;&#x9009;&#x4F18;&#x6761;&#x4EF6;&#x5411;&#x524D;&#x641C;&#x7D22;&#xFF0C;&#x5DF2;&#x5230;&#x8FBE;&#x76EE;&#x6807;&#x3002;&#x4F46;&#x5F53;&#x641C;&#x7D22;&#x5230;&#x67D0;&#x4E00;&#x6B65;&#x65F6;&#xFF0C;&#x53D1;&#x73B0;&#x539F;&#x5148;&#x9009;&#x62E9;&#x5E76;&#x4E0D;&#x4F18;&#x6216;&#x8FBE;&#x4E0D;&#x5230;&#x76EE;&#x6807;&#xFF0C;&#x5C31;&#x9000;&#x56DE;&#x4E00;&#x6B65;&#x91CD;&#x65B0;&#x9009;&#x62E9;&#xFF0C;&#x8FD9;&#x79CD;&#x8D70;&#x4E0D;&#x901A;&#x5C31;&#x9000;&#x56DE;&#x518D;&#x8D70;&#x7684;&#x6280;&#x672F;&#x79F0;&#x4E3A;&#x56DE;&#x6EAF;&#x6CD5;&#xFF0C;&#x800C;&#x6EE1;&#x8DB3;&#x56DE;&#x6EAF;&#x6761;&#x4EF6;&#x7684;&#x67D0;&#x4E2A;&#x72B6;&#x6001;&#x7684;&#x70B9;&#x79F0;&#x4E3A;&#x201C;&#x56DE;&#x6EAF;&#x70B9;&#x201D;&#x3002;</p>
-<p>&#x8BB8;&#x591A;&#x590D;&#x6742;&#x7684;&#xFF0C;&#x89C4;&#x6A21;&#x8F83;&#x5927;&#x7684;&#x7684;&#x95EE;&#x9898;&#x90FD;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;&#x56DE;&#x6EAF;&#x6CD5;&#xFF0C;&#x6709;&#x201C;&#x901A;&#x7528;&#x89E3;&#x9898;&#x65B9;&#x6CD5;&#x201D;&#x7684;&#x7F8E;&#x79F0;&#x3002;</p>
+        <h4 id="1、概念"><a href="#1、概念" class="headerlink" title="1、概念"></a>1、概念</h4><p>回溯算法实际上是一个类似枚举的搜索尝试过程，<br>主要是在搜索尝试过程中寻找问题的解，当发现已不满足求解条件时，就“回溯”返回，尝试别的路径。</p>
+<p>回溯法是一种优选搜索法，按选优条件向前搜索，已到达目标。但当搜索到某一步时，发现原先选择并不优或达不到目标，就退回一步重新选择，这种走不通就退回再走的技术称为回溯法，而满足回溯条件的某个状态的点称为“回溯点”。</p>
+<p>许多复杂的，规模较大的的问题都可以使用回溯法，有“通用解题方法”的美称。</p>
 <hr>
-<h4 id="2&#x3001;&#x57FA;&#x672C;&#x601D;&#x60F3;"><a href="#2&#x3001;&#x57FA;&#x672C;&#x601D;&#x60F3;" class="headerlink" title="2&#x3001;&#x57FA;&#x672C;&#x601D;&#x60F3;"></a>2&#x3001;&#x57FA;&#x672C;&#x601D;&#x60F3;</h4><p>&#x5728;&#x5305;&#x542B;&#x95EE;&#x9898;&#x7684;&#x6240;&#x6709;&#x89E3;&#x7684;&#x89E3;&#x7A7A;&#x95F4;&#x6811;&#x4E2D;&#xFF0C;&#x6309;&#x7167;&#x6DF1;&#x5EA6;&#x4F18;&#x5148;&#x641C;&#x7D22;&#x7684;&#x7B56;&#x7565;&#xFF0C;&#x4ECE;&#x6839;&#x8282;&#x70B9;&#x51FA;&#x53D1;&#x6DF1;&#x5EA6;&#x641C;&#x7D22;&#x89E3;&#x7A7A;&#x95F4;&#x6811;&#x3002;&#x5F53;&#x641C;&#x7D22;&#x5230;&#x67D0;&#x4E00;&#x8282;&#x70B9;&#x65F6;&#xFF0C;&#x8981;&#x5148;&#x5224;&#x65AD;&#x8BE5;&#x8282;&#x70B9;&#x662F;&#x5426;&#x5305;&#x542B;&#x95EE;&#x9898;&#x7684;&#x89E3;&#xFF0C;&#x5982;&#x679C;&#x5305;&#x542B;&#xFF0C;&#x5C31;&#x4ECE;&#x8BE5;&#x8282;&#x70B9;&#x51FA;&#x53D1;&#x7EE7;&#x7EED;&#x63A2;&#x7D22;&#x4E0B;&#x53BB;&#xFF0C;&#x5982;&#x679C;&#x8BE5;&#x8282;&#x70B9;&#x4E0D;&#x5305;&#x542B;&#x95EE;&#x9898;&#x7684;&#x89E3;&#xFF0C;&#x5219;&#x9010;&#x5C42;&#x5411;&#x5176;&#x7956;&#x5148;&#x8282;&#x70B9;&#x56DE;&#x6EAF;&#x3002;&#xFF08;&#x56DE;&#x6EAF;&#x6CD5;&#x5C31;&#x662F;&#x5BF9;&#x9690;&#x5F0F;&#x56FE;&#x7684;&#x6DF1;&#x5EA6;&#x4F18;&#x5148;&#x641C;&#x7D22;&#x7B97;&#x6CD5;&#xFF09;&#x3002;</p>
-<p>&#x82E5;&#x7528;&#x56DE;&#x6EAF;&#x6CD5;&#x6C42;&#x95EE;&#x9898;&#x7684;&#x6240;&#x6709;&#x89E3;&#x65F6;&#xFF0C;&#x8981;&#x56DE;&#x6EAF;&#x5230;&#x6839;&#xFF0C;&#x4E14;&#x6839;&#x8282;&#x70B9;&#x7684;&#x6240;&#x6709;&#x53EF;&#x884C;&#x7684;&#x5B50;&#x6811;&#x90FD;&#x8981;&#x5DF2;&#x88AB;&#x641C;&#x7D22;&#x904D;&#x624D;&#x7ED3;&#x675F;&#x3002;</p>
-<p>&#x800C;&#x82E5;&#x4F7F;&#x7528;&#x56DE;&#x6EAF;&#x6CD5;&#x6C42;&#x4EBA;&#x4E00;&#x4E2A;&#x89E3;&#x65F6;&#xFF0C;&#x53EA;&#x8981;&#x641C;&#x7D22;&#x5230;&#x95EE;&#x9898;&#x7684;&#x4E00;&#x4E2A;&#x89E3;&#x5C31;&#x53EF;&#x4EE5;&#x7ED3;&#x675F;&#x3002;</p>
+<h4 id="2、基本思想"><a href="#2、基本思想" class="headerlink" title="2、基本思想"></a>2、基本思想</h4><p>在包含问题的所有解的解空间树中，按照深度优先搜索的策略，从根节点出发深度搜索解空间树。当搜索到某一节点时，要先判断该节点是否包含问题的解，如果包含，就从该节点出发继续探索下去，如果该节点不包含问题的解，则逐层向其祖先节点回溯。（回溯法就是对隐式图的深度优先搜索算法）。</p>
+<p>若用回溯法求问题的所有解时，要回溯到根，且根节点的所有可行的子树都要已被搜索遍才结束。</p>
+<p>而若使用回溯法求人一个解时，只要搜索到问题的一个解就可以结束。</p>
 <hr>
-<h4 id="3&#x3001;&#x7528;&#x56DE;&#x6EAF;&#x6CD5;&#x89E3;&#x9898;&#x7684;&#x4E00;&#x822C;&#x6B65;&#x9AA4;"><a href="#3&#x3001;&#x7528;&#x56DE;&#x6EAF;&#x6CD5;&#x89E3;&#x9898;&#x7684;&#x4E00;&#x822C;&#x6B65;&#x9AA4;" class="headerlink" title="3&#x3001;&#x7528;&#x56DE;&#x6EAF;&#x6CD5;&#x89E3;&#x9898;&#x7684;&#x4E00;&#x822C;&#x6B65;&#x9AA4;"></a>3&#x3001;&#x7528;&#x56DE;&#x6EAF;&#x6CD5;&#x89E3;&#x9898;&#x7684;&#x4E00;&#x822C;&#x6B65;&#x9AA4;</h4><ol>
-<li>&#x9488;&#x5BF9;&#x6240;&#x7ED9;&#x95EE;&#x9898;&#xFF0C;&#x786E;&#x5B9A;&#x95EE;&#x9898;&#x7684;&#x89E3;&#x7A7A;&#x95F4;&#xFF1A;</li>
+<h4 id="3、用回溯法解题的一般步骤"><a href="#3、用回溯法解题的一般步骤" class="headerlink" title="3、用回溯法解题的一般步骤"></a>3、用回溯法解题的一般步骤</h4><ol>
+<li>针对所给问题，确定问题的解空间：</li>
 </ol>
-<p>&#x9996;&#x5148;&#x5E94;&#x660E;&#x786E;&#x5B9A;&#x4E49;&#x95EE;&#x9898;&#x7684;&#x89E3;&#x7A7A;&#x95F4;&#xFF0C;&#x95EE;&#x9898;&#x7684;&#x89E3;&#x7A7A;&#x95F4;&#x5E94;&#x81F3;&#x5C11;&#x5305;&#x542B;&#x95EE;&#x9898;&#x7684;&#x4E00;&#x4E2A;&#xFF08;&#x6700;&#x4F18;&#xFF09;&#x89E3;&#x3002;</p>
+<p>首先应明确定义问题的解空间，问题的解空间应至少包含问题的一个（最优）解。</p>
 <ol>
-<li>&#x786E;&#x5B9A;&#x8282;&#x70B9;&#x7684;&#x6269;&#x5C55;&#x641C;&#x7D22;&#x89C4;&#x5219;</li>
-<li>&#x4EE5;&#x6DF1;&#x5EA6;&#x4F18;&#x5148;&#x51E1;&#x662F;&#x641C;&#x7D22;&#x89E3;&#x7A7A;&#x95F4;&#xFF0C;&#x5E76;&#x5728;&#x641C;&#x7D22;&#x8FC7;&#x7A0B;&#x4E2D;&#x7528;&#x526A;&#x679D;&#x51FD;&#x6570;&#x907F;&#x514D;&#x65E0;&#x6548;&#x641C;&#x7D22;&#x3002;</li>
+<li>确定节点的扩展搜索规则</li>
+<li>以深度优先凡是搜索解空间，并在搜索过程中用剪枝函数避免无效搜索。</li>
 </ol>
 <hr>
-<h4 id="4&#x3001;&#x7B97;&#x6CD5;&#x6846;&#x67B6;"><a href="#4&#x3001;&#x7B97;&#x6CD5;&#x6846;&#x67B6;" class="headerlink" title="4&#x3001;&#x7B97;&#x6CD5;&#x6846;&#x67B6;"></a>4&#x3001;&#x7B97;&#x6CD5;&#x6846;&#x67B6;</h4><ul>
-<li><p>&#x95EE;&#x9898;&#x6846;&#x67B6; </p>
+<h4 id="4、算法框架"><a href="#4、算法框架" class="headerlink" title="4、算法框架"></a>4、算法框架</h4><ul>
+<li><p>问题框架 </p>
 <ul>
-<li>&#x8BBE;&#x95EE;&#x9898;&#x7684;&#x89E3;&#x662F;&#x4E00;&#x4E2A;n&#x7EF4;&#x5411;&#x91CF;&#xFF08; a1&#xFF0C;a2&#xFF0C;&#x2026;&#x2026; &#xFF0C;an&#xFF09;&#xFF0C;&#x7EA6;&#x675F;&#x6761;&#x4EF6;&#x662F; ai&#xFF08; i = 1&#xFF0C;2&#xFF0C;3&#xFF0C;&#x2026;&#x2026;&#xFF0C;n &#xFF09;&#x4E4B;&#x95F4;&#x6EE1;&#x8DB3;&#x67D0;&#x79CD;&#x6761;&#x4EF6;&#xFF0C;&#x8BB0;&#x4E3A; f(ai)&#x3002;</li>
+<li>设问题的解是一个n维向量（ a1，a2，…… ，an），约束条件是 ai（ i = 1，2，3，……，n ）之间满足某种条件，记为 f(ai)。</li>
 </ul>
 </li>
 </ul>
 <ul>
-<li>&#x975E;&#x9012;&#x5F52;&#x56DE;&#x6EAF;&#x6846;&#x67B6;</li>
+<li>非递归回溯框架</li>
 </ul>
-<figure class="highlight c++"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">int</span> a[n], i; 		<span class="comment">// &#x521D;&#x59CB;&#x5316;&#x6570;&#x7EC4;a[];</span></span><br><span class="line">i = <span class="number">1</span>;</span><br><span class="line"></span><br><span class="line"><span class="keyword">while</span> (i &gt; <span class="number">0</span> (&#x6709;&#x8DEF;&#x53EF;&#x8D70;) <span class="keyword">and</span> (&#x4E3A;&#x8FBE;&#x5230;&#x76EE;&#x6807;)) { <span class="comment">// &#x8FD8;&#x672A;&#x56DE;&#x6EAF;&#x5230;&#x5934;</span></span><br><span class="line">true<span class="keyword">if</span> (i &gt; n) {			<span class="comment">// &#x641C;&#x7D22;&#x5230;&#x53F6;&#x8282;&#x70B9;</span></span><br><span class="line">truetrue&#x641C;&#x7D22;&#x5230;&#x4E00;&#x4E2A;&#x89E3;&#xFF0C;&#x8F93;&#x51FA;&#x3002;</span><br><span class="line">true} <span class="keyword">else</span> {                <span class="comment">// &#x5904;&#x7406;&#x7B2C;i&#x4E2A;&#x8282;&#x70B9;</span></span><br><span class="line">truetruea[i]&#x7B2C;&#x4E00;&#x4E2A;&#x53EF;&#x80FD;&#x7684;&#x503C;&#xFF1B;</span><br><span class="line">truetrue<span class="keyword">while</span> (a[i] &#x5728;&#x4E0D;&#x6EE1;&#x8DB3;&#x7EA6;&#x675F;&#x6761;&#x4EF6;&#x4E14;&#x5728;&#x641C;&#x7D22;&#x7A7A;&#x95F4;&#x5185;) {</span><br><span class="line">truetruetruea[i]&#x4E0B;&#x4E00;&#x4E2A;&#x53EF;&#x80FD;&#x7684;&#x503C;&#xFF1B;</span><br><span class="line">truetrue}</span><br><span class="line">truetrue<span class="keyword">if</span> (a[i] &#x5728;&#x641C;&#x7D22;&#x7A7A;&#x95F4;&#x5185;) {</span><br><span class="line">truetruetrue&#x6807;&#x8BC6;&#x5360;&#x7528;&#x7684;&#x8D44;&#x6E90;&#xFF1B;</span><br><span class="line">truetruetruei = i + <span class="number">1</span>&#xFF1B;          <span class="comment">// &#x6269;&#x5C55;&#x4E0B;&#x4E00;&#x4E2A;&#x8282;&#x70B9;</span></span><br><span class="line">truetrue} <span class="keyword">else</span> {</span><br><span class="line">truetruetrue&#x6E05;&#x7406;&#x6240;&#x5360;&#x7684;&#x72B6;&#x6001;&#x7A7A;&#x95F4;&#xFF1B;          <span class="comment">// &#x56DE;&#x6EAF;</span></span><br><span class="line">truetruetruei = i - <span class="number">1</span>&#xFF1B;</span><br><span class="line">truetrue}</span><br><span class="line">true}</span><br><span class="line">}</span><br></pre></td></tr></tbody></table></figure>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">int</span> a[n], i; 		<span class="comment">// 初始化数组a[];</span></span><br><span class="line">i = <span class="number">1</span>;</span><br><span class="line"></span><br><span class="line"><span class="keyword">while</span> (i &gt; <span class="number">0</span> (有路可走) <span class="keyword">and</span> (为达到目标)) &#123; <span class="comment">// 还未回溯到头</span></span><br><span class="line">true<span class="keyword">if</span> (i &gt; n) &#123;			<span class="comment">// 搜索到叶节点</span></span><br><span class="line">truetrue搜索到一个解，输出。</span><br><span class="line">true&#125; <span class="keyword">else</span> &#123;                <span class="comment">// 处理第i个节点</span></span><br><span class="line">truetruea[i]第一个可能的值；</span><br><span class="line">truetrue<span class="keyword">while</span> (a[i] 在不满足约束条件且在搜索空间内) &#123;</span><br><span class="line">truetruetruea[i]下一个可能的值；</span><br><span class="line">truetrue&#125;</span><br><span class="line">truetrue<span class="keyword">if</span> (a[i] 在搜索空间内) &#123;</span><br><span class="line">truetruetrue标识占用的资源；</span><br><span class="line">truetruetruei = i + <span class="number">1</span>；          <span class="comment">// 扩展下一个节点</span></span><br><span class="line">truetrue&#125; <span class="keyword">else</span> &#123;</span><br><span class="line">truetruetrue清理所占的状态空间；          <span class="comment">// 回溯</span></span><br><span class="line">truetruetruei = i - <span class="number">1</span>；</span><br><span class="line">truetrue&#125;</span><br><span class="line">true&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 <ul>
-<li>&#x9012;&#x5F52;&#x7684;&#x7B97;&#x6CD5;&#x6846;&#x67B6;</li>
+<li>递归的算法框架</li>
 </ul>
-<p>&#x56DE;&#x6EAF;&#x6CD5;&#x662F;&#x5BF9;&#x89E3;&#x7A7A;&#x95F4;&#x7684;&#x6DF1;&#x5EA6;&#x4F18;&#x5148;&#x641C;&#x7D22;&#xFF0C;&#x5728;&#x4E00;&#x822C;&#x60C5;&#x51B5;&#x4E0B;&#x4F7F;&#x7528;&#x9012;&#x5F52;&#x51FD;&#x6570;&#x6765;&#x5B9E;&#x73B0;&#x56DE;&#x6EAF;&#x6CD5;&#x6BD4;&#x8F83;&#x7B80;&#x5355;&#xFF0C;&#x5176;&#x4E2D; i &#x4E3A;&#x641C;&#x7D22;&#x7684;&#x6DF1;&#x5EA6;&#xFF0C;&#x6846;&#x67B6;&#x5982;&#x4E0B;&#xFF1A;</p>
-<figure class="highlight c++"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">int</span> a[n];</span><br><span class="line"><span class="keyword">try</span> (<span class="keyword">int</span> n) {</span><br><span class="line">true<span class="keyword">if</span> (i &gt; n)</span><br><span class="line">truetrue&#x8F93;&#x51FA;&#x7ED3;&#x679C;&#xFF1B;</span><br><span class="line">true<span class="keyword">else</span> {</span><br><span class="line">truetrue<span class="keyword">for</span> (<span class="keyword">int</span> j = &#x4E0B;&#x754C;&#xFF1B; j &lt;= &#x4E0A;&#x754C;&#xFF1B; j = j + <span class="number">1</span>) {</span><br><span class="line">truetruetrue<span class="keyword">if</span> (fun (j)) {</span><br><span class="line">truetruetruetruea[i] = j;</span><br><span class="line">truetruetruetrue...</span><br><span class="line">truetruetruetrue<span class="keyword">try</span>(i + <span class="number">1</span>)</span><br><span class="line">truetruetruetrue&#x56DE;&#x6EAF;&#x524D;&#x7684;&#x6E05;&#x7406;&#x5DE5;&#x4F5C;(&#x5982; a[i] &#x7F6E;&#x7A7A;&#x503C;&#x7B49;)&#xFF1B;</span><br><span class="line">truetruetrue}</span><br><span class="line">truetrue}</span><br><span class="line">true}</span><br><span class="line">}</span><br></pre></td></tr></tbody></table></figure>
-<script src="/live2dw/lib/L2Dwidget.min.js?0c58a1486de42ac6cc1c59c7d98ae887"></script><script>L2Dwidget.init({});</script>
+<p>回溯法是对解空间的深度优先搜索，在一般情况下使用递归函数来实现回溯法比较简单，其中 i 为搜索的深度，框架如下：</p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">int</span> a[n];</span><br><span class="line"><span class="keyword">try</span> (<span class="keyword">int</span> n) &#123;</span><br><span class="line">true<span class="keyword">if</span> (i &gt; n)</span><br><span class="line">truetrue输出结果；</span><br><span class="line">true<span class="keyword">else</span> &#123;</span><br><span class="line">truetrue<span class="keyword">for</span> (<span class="keyword">int</span> j = 下界； j &lt;= 上界； j = j + <span class="number">1</span>) &#123;</span><br><span class="line">truetruetrue<span class="keyword">if</span> (fun (j)) &#123;</span><br><span class="line">truetruetruetruea[i] = j;</span><br><span class="line">truetruetruetrue...</span><br><span class="line">truetruetruetrue<span class="keyword">try</span>(i + <span class="number">1</span>)</span><br><span class="line">truetruetruetrue回溯前的清理工作(如 a[i] 置空值等)；</span><br><span class="line">truetruetrue&#125;</span><br><span class="line">truetrue&#125;</span><br><span class="line">true&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
       
     </div>
     
@@ -444,7 +452,7 @@
         <div>
     
         <div style="text-align:center;color: #ccc;font-size:14px;">
-            -------------&#x672C;&#x6587;&#x7ED3;&#x675F;<i class="fa fa-paw"></i>&#x611F;&#x8C22;&#x60A8;&#x7684;&#x9605;&#x8BFB;-------------
+            -------------本文结束<i class="fa fa-paw"></i>感谢您的阅读-------------
         </div>
     
 </div>
@@ -456,7 +464,7 @@
       
         <div class="post-tags">
           
-            <a href="/tags/&#x56DE;&#x6EAF;&#x6CD5;/" rel="tag"> <i class="fa fa-tag"></i> &#x56DE;&#x6EAF;&#x6CD5;</a>
+            <a href="/tags/回溯法/" rel="tag"> <i class="fa fa-tag"></i> 回溯法</a>
           
         </div>
       
@@ -469,8 +477,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2018/03/22/&#x5728;Linux&#x7CFB;&#x7EDF;&#x4E0B;&#x7528;dd&#x547D;&#x4EE4;&#x5236;&#x4F5C;ISO&#x955C;&#x50CF;U&#x76D8;&#x542F;&#x52A8;&#x76D8;/" rel="next" title="&#x5728;Linux&#x7CFB;&#x7EDF;&#x4E0B;&#x7528;dd&#x547D;&#x4EE4;&#x5236;&#x4F5C;ISO&#x955C;&#x50CF;U&#x76D8;&#x542F;&#x52A8;&#x76D8;">
-                <i class="fa fa-chevron-left"></i> &#x5728;Linux&#x7CFB;&#x7EDF;&#x4E0B;&#x7528;dd&#x547D;&#x4EE4;&#x5236;&#x4F5C;ISO&#x955C;&#x50CF;U&#x76D8;&#x542F;&#x52A8;&#x76D8;
+              <a href="/2018/03/22/在Linux系统下用dd命令制作ISO镜像U盘启动盘/" rel="next" title="在Linux系统下用dd命令制作ISO镜像U盘启动盘">
+                <i class="fa fa-chevron-left"></i> 在Linux系统下用dd命令制作ISO镜像U盘启动盘
               </a>
             
           </div>
@@ -479,8 +487,8 @@
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/2018/03/22/&#x4E94;&#x5927;&#x5E38;&#x7528;&#x7B97;&#x6CD5;&#xFF1A;&#x5206;&#x6CBB;&#x6CD5;/" rel="prev" title="&#x4E94;&#x5927;&#x5E38;&#x7528;&#x7B97;&#x6CD5;&#xFF1A;&#x5206;&#x6CBB;&#x6CD5;">
-                &#x4E94;&#x5927;&#x5E38;&#x7528;&#x7B97;&#x6CD5;&#xFF1A;&#x5206;&#x6CBB;&#x6CD5; <i class="fa fa-chevron-right"></i>
+              <a href="/2018/03/22/五大常用算法：分治法/" rel="prev" title="五大常用算法：分治法">
+                五大常用算法：分治法 <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>
@@ -535,22 +543,22 @@
       
         <ul class="sidebar-nav motion-element">
           <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
-            &#x6587;&#x7AE0;&#x76EE;&#x5F55;
+            文章目录
           </li>
           <li class="sidebar-nav-overview" data-target="site-overview-wrap">
-            &#x7AD9;&#x70B9;&#x6982;&#x89C8;
+            站点概览
           </li>
         </ul>
       
 
       <section class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
-          <div class="site-author motion-element" itemprop="author" itemscope="" itemtype="http://schema.org/Person">
+          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
               <img class="site-author-image" itemprop="image" src="/images/avatar.jpg" alt="Kings Cooober">
             
               <p class="site-author-name" itemprop="name">Kings Cooober</p>
-              <p class="site-description motion-element" itemprop="description">&#x4E00;&#x4E2A;&#x4EBA;&#x5E78;&#x8FD0;&#x7684;&#x524D;&#x63D0;&#xFF0C;&#x662F;&#x4ED6;&#x6709;&#x80FD;&#x529B;&#x6539;&#x53D8;&#x81EA;&#x5DF1;&#x3002;</p>
+              <p class="site-description motion-element" itemprop="description">一个人幸运的前提，是他有能力改变自己。</p>
           </div>
 
           <nav class="site-state motion-element">
@@ -560,8 +568,8 @@
               
                 <a href="/archives">
               
-                  <span class="site-state-item-count">73</span>
-                  <span class="site-state-item-name">&#x65E5;&#x5FD7;</span>
+                  <span class="site-state-item-count">75</span>
+                  <span class="site-state-item-name">日志</span>
                 </a>
               </div>
             
@@ -572,7 +580,7 @@
               <div class="site-state-item site-state-categories">
                 <a href="/categories/index.html">
                   <span class="site-state-item-count">7</span>
-                  <span class="site-state-item-name">&#x5206;&#x7C7B;</span>
+                  <span class="site-state-item-name">分类</span>
                 </a>
               </div>
             
@@ -583,7 +591,7 @@
               <div class="site-state-item site-state-tags">
                 <a href="/tags/index.html">
                   <span class="site-state-item-count">16</span>
-                  <span class="site-state-item-name">&#x6807;&#x7B7E;</span>
+                  <span class="site-state-item-name">标签</span>
                 </a>
               </div>
             
@@ -602,7 +610,7 @@
                   </span>
                 
                   <span class="links-of-author-item">
-                    <a href="mailto:kingscooober@gmail.com" target="_blank" title="E-Mail">
+                    <a href="mailto:kingscooober@yeah.net" target="_blank" title="E-Mail">
                       
                         <i class="fa fa-fw fa-envelope"></i>E-Mail</a>
                   </span>
@@ -631,7 +639,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-4"><a class="nav-link" href="#1&#x3001;&#x6982;&#x5FF5;"><span class="nav-number">1.</span> <span class="nav-text">1&#x3001;&#x6982;&#x5FF5;</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#2&#x3001;&#x57FA;&#x672C;&#x601D;&#x60F3;"><span class="nav-number">2.</span> <span class="nav-text">2&#x3001;&#x57FA;&#x672C;&#x601D;&#x60F3;</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#3&#x3001;&#x7528;&#x56DE;&#x6EAF;&#x6CD5;&#x89E3;&#x9898;&#x7684;&#x4E00;&#x822C;&#x6B65;&#x9AA4;"><span class="nav-number">3.</span> <span class="nav-text">3&#x3001;&#x7528;&#x56DE;&#x6EAF;&#x6CD5;&#x89E3;&#x9898;&#x7684;&#x4E00;&#x822C;&#x6B65;&#x9AA4;</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#4&#x3001;&#x7B97;&#x6CD5;&#x6846;&#x67B6;"><span class="nav-number">4.</span> <span class="nav-text">4&#x3001;&#x7B97;&#x6CD5;&#x6846;&#x67B6;</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-4"><a class="nav-link" href="#1、概念"><span class="nav-number">1.</span> <span class="nav-text">1、概念</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#2、基本思想"><span class="nav-number">2.</span> <span class="nav-text">2、基本思想</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#3、用回溯法解题的一般步骤"><span class="nav-number">3.</span> <span class="nav-text">3、用回溯法解题的一般步骤</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#4、算法框架"><span class="nav-number">4.</span> <span class="nav-text">4、算法框架</span></a></li></ol></div>
             
 
           </div>
@@ -651,7 +659,7 @@
 
     <footer id="footer" class="footer">
       <div class="footer-inner">
-        <div class="copyright">&#xA9; <span itemprop="copyrightYear">2018</span>
+        <div class="copyright">&copy; <span itemprop="copyrightYear">2019</span>
   <span class="with-love">
     <i class="fa fa-user"></i>
   </span>
@@ -682,17 +690,17 @@
 
   
     <span class="site-uv">
-      &#x603B;&#x8BBF;&#x5BA2;&#x6570; <i class="fa fa-user"></i>
+      总访客数 <i class="fa fa-user"></i>
       <span class="busuanzi-value" id="busuanzi_value_site_uv"></span>
-      &#x4EBA;
+      人
     </span>
   
 
   
     <span class="site-pv">
-      &#x603B;&#x8BBF;&#x95EE;&#x91CF; <i class="fa fa-eye"></i>
+      总访问量 <i class="fa fa-eye"></i>
       <span class="busuanzi-value" id="busuanzi_value_site_pv"></span>
-      &#x6B21;
+      次
     </span>
   
 </div>
@@ -1331,6 +1339,5 @@
 <!-- mathjax! -->
 <script type="text/javascript" src="/js/src/MathJax.js"></script>
 
-
-
-<script src="/live2dw/lib/L2Dwidget.min.js?0c58a1486de42ac6cc1c59c7d98ae887"></script><script>L2Dwidget.init({});</script></body></html>
+<script src="/live2dw/lib/L2Dwidget.min.js?0c58a1486de42ac6cc1c59c7d98ae887"></script><script>L2Dwidget.init({"log":false,"pluginJsPath":"lib/","pluginModelPath":"assets/","pluginRootPath":"live2dw/","tagMode":false});</script></body>
+</html>

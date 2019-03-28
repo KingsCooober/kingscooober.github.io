@@ -1,4 +1,12 @@
-<!DOCTYPE html><html class="theme-next gemini use-motion" lang="zh-Hans"><head>
+<!DOCTYPE html>
+
+
+
+  
+
+
+<html class="theme-next gemini use-motion" lang="zh-Hans">
+<head><meta name="generator" content="Hexo 3.8.0">
   <meta charset="UTF-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
@@ -86,18 +94,18 @@
 
 
 
-<meta name="description" content="L1-048. &amp;#x77E9;&amp;#x9635;A&amp;#x4E58;&amp;#x4EE5;B&amp;#x7ED9;&amp;#x5B9A;&amp;#x4E24;&amp;#x4E2A;&amp;#x77E9;&amp;#x9635;A&amp;#x548C;B&amp;#xFF0C;&amp;#x8981;&amp;#x6C42;&amp;#x4F60;&amp;#x8BA1;&amp;#x7B97;&amp;#x5B83;&amp;#x4EEC;&amp;#x7684;&amp;#x4E58;&amp;#x79EF;&amp;#x77E9;&amp;#x9">
+<meta name="description" content="L1-048. 矩阵A乘以B给定两个矩阵A和B，要求你计算它们的乘积矩阵AB。需要注意的是，只有规模匹配的矩阵才可以相乘。即若A有Ra行、Ca列，B有Rb行、Cb列，则只有Ca与Rb相等时，两个矩阵才能相乘。 输入格式：输入先后给出两个矩阵A和B。对于每个矩阵，首先在一行中给出其行数R和列数C，随后R行，每行给出C个整数，以1个空格分隔，且行首尾没有多余的空格。输入保证两个矩阵的R和C都是正数，并">
 <meta name="keywords" content="PAT">
 <meta property="og:type" content="article">
-<meta property="og:title" content="&#x56E2;&#x961F;&#x7A0B;&#x5E8F;&#x8BBE;&#x8BA1;&#x5929;&#x68AF;&#x8D5B; L1-048. &#x77E9;&#x9635;A&#x4E58;&#x4EE5;B">
-<meta property="og:url" content="http://yoursite.com/2018/03/26/L1-048.&#x77E9;&#x9635;A&#x4E58;&#x4EE5;B/index.html">
-<meta property="og:site_name" content="Kings Cooober&apos;s Blog">
-<meta property="og:description" content="L1-048. &amp;#x77E9;&amp;#x9635;A&amp;#x4E58;&amp;#x4EE5;B&amp;#x7ED9;&amp;#x5B9A;&amp;#x4E24;&amp;#x4E2A;&amp;#x77E9;&amp;#x9635;A&amp;#x548C;B&amp;#xFF0C;&amp;#x8981;&amp;#x6C42;&amp;#x4F60;&amp;#x8BA1;&amp;#x7B97;&amp;#x5B83;&amp;#x4EEC;&amp;#x7684;&amp;#x4E58;&amp;#x79EF;&amp;#x77E9;&amp;#x9">
+<meta property="og:title" content="团队程序设计天梯赛 L1-048. 矩阵A乘以B">
+<meta property="og:url" content="http://yoursite.com/2018/03/26/L1-048.矩阵A乘以B/index.html">
+<meta property="og:site_name" content="Kings Cooober&#39;s Blog">
+<meta property="og:description" content="L1-048. 矩阵A乘以B给定两个矩阵A和B，要求你计算它们的乘积矩阵AB。需要注意的是，只有规模匹配的矩阵才可以相乘。即若A有Ra行、Ca列，B有Rb行、Cb列，则只有Ca与Rb相等时，两个矩阵才能相乘。 输入格式：输入先后给出两个矩阵A和B。对于每个矩阵，首先在一行中给出其行数R和列数C，随后R行，每行给出C个整数，以1个空格分隔，且行首尾没有多余的空格。输入保证两个矩阵的R和C都是正数，并">
 <meta property="og:locale" content="zh-Hans">
 <meta property="og:updated_time" content="2018-06-28T10:27:32.466Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="&#x56E2;&#x961F;&#x7A0B;&#x5E8F;&#x8BBE;&#x8BA1;&#x5929;&#x68AF;&#x8D5B; L1-048. &#x77E9;&#x9635;A&#x4E58;&#x4EE5;B">
-<meta name="twitter:description" content="L1-048. &amp;#x77E9;&amp;#x9635;A&amp;#x4E58;&amp;#x4EE5;B&amp;#x7ED9;&amp;#x5B9A;&amp;#x4E24;&amp;#x4E2A;&amp;#x77E9;&amp;#x9635;A&amp;#x548C;B&amp;#xFF0C;&amp;#x8981;&amp;#x6C42;&amp;#x4F60;&amp;#x8BA1;&amp;#x7B97;&amp;#x5B83;&amp;#x4EEC;&amp;#x7684;&amp;#x4E58;&amp;#x79EF;&amp;#x77E9;&amp;#x9">
+<meta name="twitter:title" content="团队程序设计天梯赛 L1-048. 矩阵A乘以B">
+<meta name="twitter:description" content="L1-048. 矩阵A乘以B给定两个矩阵A和B，要求你计算它们的乘积矩阵AB。需要注意的是，只有规模匹配的矩阵才可以相乘。即若A有Ra行、Ca列，B有Rb行、Cb列，则只有Ca与Rb相等时，两个矩阵才能相乘。 输入格式：输入先后给出两个矩阵A和B。对于每个矩阵，首先在一行中给出其行数R和列数C，随后R行，每行给出C个整数，以1个空格分隔，且行首尾没有多余的空格。输入保证两个矩阵的R和C都是正数，并">
 
 
 
@@ -127,13 +135,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/2018/03/26/L1-048.&#x77E9;&#x9635;A&#x4E58;&#x4EE5;B/">
+  <link rel="canonical" href="http://yoursite.com/2018/03/26/L1-048.矩阵A乘以B/">
 
 
 
 
 
-  <title>&#x56E2;&#x961F;&#x7A0B;&#x5E8F;&#x8BBE;&#x8BA1;&#x5929;&#x68AF;&#x8D5B; L1-048. &#x77E9;&#x9635;A&#x4E58;&#x4EE5;B | Kings Cooober&apos;s Blog</title>
+  <title>团队程序设计天梯赛 L1-048. 矩阵A乘以B | Kings Cooober's Blog</title>
   
 
 
@@ -145,7 +153,7 @@
 
 </head>
 
-<body itemscope="" itemtype="http://schema.org/WebPage" lang="zh-Hans">
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
 
   
   
@@ -156,7 +164,7 @@
     <div class="headband"></div>
     <a href="https://github.com/kingscooober"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://s3.amazonaws.com/github/ribbons/forkme_right_darkblue_121621.png" alt="Fork me on GitHub"></a>
 
-    <header id="header" class="header" itemscope="" itemtype="http://schema.org/WPHeader">
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
       <div class="header-inner"><div class="site-brand-wrapper">
   <div class="site-meta ">
     
@@ -164,7 +172,7 @@
     <div class="custom-logo-site-title">
       <a href="/" class="brand" rel="start">
         <span class="logo-line-before"><i></i></span>
-        <span class="site-title">Kings Cooober&apos;s Blog</span>
+        <span class="site-title">Kings Cooober's Blog</span>
         <span class="logo-line-after"><i></i></span>
       </a>
     </div>
@@ -194,7 +202,7 @@
             
               <i class="menu-item-icon fa fa-fw fa-home"></i> <br>
             
-            &#x9996;&#x9875;
+            首页
           </a>
         </li>
       
@@ -204,7 +212,7 @@
             
               <i class="menu-item-icon fa fa-fw fa-user"></i> <br>
             
-            &#x5173;&#x4E8E;
+            关于
           </a>
         </li>
       
@@ -214,7 +222,7 @@
             
               <i class="menu-item-icon fa fa-fw fa-tags"></i> <br>
             
-            &#x6807;&#x7B7E;
+            标签
           </a>
         </li>
       
@@ -224,7 +232,7 @@
             
               <i class="menu-item-icon fa fa-fw fa-th"></i> <br>
             
-            &#x5206;&#x7C7B;
+            分类
           </a>
         </li>
       
@@ -234,7 +242,7 @@
             
               <i class="menu-item-icon fa fa-fw fa-archive"></i> <br>
             
-            &#x5F52;&#x6863;
+            归档
           </a>
         </li>
       
@@ -247,7 +255,7 @@
             
               <i class="menu-item-icon fa fa-search fa-fw"></i> <br>
             
-            &#x641C;&#x7D22;
+            搜索
           </a>
         </li>
       
@@ -266,7 +274,7 @@
       <i class="fa fa-times-circle"></i>
     </span>
     <div class="local-search-input-wrapper">
-      <input autocomplete="off" placeholder="&#x641C;&#x7D22;..." spellcheck="false" type="text" id="local-search-input">
+      <input autocomplete="off" placeholder="搜索..." spellcheck="false" type="text" id="local-search-input">
     </div>
   </div>
   <div id="local-search-result"></div>
@@ -298,21 +306,21 @@
   
   
 
-  <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
   
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/03/26/L1-048.&#x77E9;&#x9635;A&#x4E58;&#x4EE5;B/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/03/26/L1-048.矩阵A乘以B/">
 
-    <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Kings Cooober">
-      <meta itemprop="description" content="">
+      <meta itemprop="description" content>
       <meta itemprop="image" content="/images/avatar.jpg">
     </span>
 
-    <span hidden itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Kings Cooober&apos;s Blog">
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Kings Cooober's Blog">
     </span>
 
     
@@ -320,7 +328,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">&#x56E2;&#x961F;&#x7A0B;&#x5E8F;&#x8BBE;&#x8BA1;&#x5929;&#x68AF;&#x8D5B; L1-048. &#x77E9;&#x9635;A&#x4E58;&#x4EE5;B</h1>
+          <h1 class="post-title" itemprop="name headline">团队程序设计天梯赛 L1-048. 矩阵A乘以B</h1>
         
 
         <div class="post-meta">
@@ -330,9 +338,9 @@
                 <i class="fa fa-calendar-o"></i>
               </span>
               
-                <span class="post-meta-item-text">&#x53D1;&#x8868;&#x4E8E;</span>
+                <span class="post-meta-item-text">发表于</span>
               
-              <time title="&#x521B;&#x5EFA;&#x4E8E;" itemprop="dateCreated datePublished" datetime="2018-03-26T22:37:22+08:00">
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-03-26T22:37:22+08:00">
                 2018-03-26
               </time>
             
@@ -346,9 +354,9 @@
                 <i class="fa fa-calendar-check-o"></i>
               </span>
               
-                <span class="post-meta-item-text">&#x66F4;&#x65B0;&#x4E8E;:</span>
+                <span class="post-meta-item-text">更新于&#58;</span>
               
-              <time title="&#x66F4;&#x65B0;&#x4E8E;" itemprop="dateModified" datetime="2018-06-28T18:27:32+08:00">
+              <time title="更新于" itemprop="dateModified" datetime="2018-06-28T18:27:32+08:00">
                 2018-06-28
               </time>
             
@@ -362,13 +370,13 @@
 
           
           
-             <span id="/2018/03/26/L1-048.&#x77E9;&#x9635;A&#x4E58;&#x4EE5;B/" class="leancloud_visitors" data-flag-title="&#x56E2;&#x961F;&#x7A0B;&#x5E8F;&#x8BBE;&#x8BA1;&#x5929;&#x68AF;&#x8D5B; L1-048. &#x77E9;&#x9635;A&#x4E58;&#x4EE5;B">
+             <span id="/2018/03/26/L1-048.矩阵A乘以B/" class="leancloud_visitors" data-flag-title="团队程序设计天梯赛 L1-048. 矩阵A乘以B">
                <span class="post-meta-divider">|</span>
                <span class="post-meta-item-icon">
                  <i class="fa fa-eye"></i>
                </span>
                
-                 <span class="post-meta-item-text">&#x9605;&#x8BFB;&#x6B21;&#x6570;:</span>
+                 <span class="post-meta-item-text">阅读次数&#58;</span>
                
                  <span class="leancloud-visitors-count"></span>
              </span>
@@ -393,15 +401,15 @@
       
 
       
-        <h3 id="L1-048-&#x77E9;&#x9635;A&#x4E58;&#x4EE5;B"><a href="#L1-048-&#x77E9;&#x9635;A&#x4E58;&#x4EE5;B" class="headerlink" title="L1-048. &#x77E9;&#x9635;A&#x4E58;&#x4EE5;B"></a>L1-048. &#x77E9;&#x9635;A&#x4E58;&#x4EE5;B</h3><p>&#x7ED9;&#x5B9A;&#x4E24;&#x4E2A;&#x77E9;&#x9635;A&#x548C;B&#xFF0C;&#x8981;&#x6C42;&#x4F60;&#x8BA1;&#x7B97;&#x5B83;&#x4EEC;&#x7684;&#x4E58;&#x79EF;&#x77E9;&#x9635;AB&#x3002;&#x9700;&#x8981;&#x6CE8;&#x610F;&#x7684;&#x662F;&#xFF0C;&#x53EA;&#x6709;&#x89C4;&#x6A21;&#x5339;&#x914D;&#x7684;&#x77E9;&#x9635;&#x624D;&#x53EF;&#x4EE5;&#x76F8;&#x4E58;&#x3002;&#x5373;&#x82E5;A&#x6709;Ra&#x884C;&#x3001;Ca&#x5217;&#xFF0C;B&#x6709;Rb&#x884C;&#x3001;Cb&#x5217;&#xFF0C;&#x5219;&#x53EA;&#x6709;Ca&#x4E0E;Rb&#x76F8;&#x7B49;&#x65F6;&#xFF0C;&#x4E24;&#x4E2A;&#x77E9;&#x9635;&#x624D;&#x80FD;&#x76F8;&#x4E58;&#x3002;</p>
-<h4 id="&#x8F93;&#x5165;&#x683C;&#x5F0F;&#xFF1A;"><a href="#&#x8F93;&#x5165;&#x683C;&#x5F0F;&#xFF1A;" class="headerlink" title="&#x8F93;&#x5165;&#x683C;&#x5F0F;&#xFF1A;"></a>&#x8F93;&#x5165;&#x683C;&#x5F0F;&#xFF1A;</h4><p>&#x8F93;&#x5165;&#x5148;&#x540E;&#x7ED9;&#x51FA;&#x4E24;&#x4E2A;&#x77E9;&#x9635;A&#x548C;B&#x3002;&#x5BF9;&#x4E8E;&#x6BCF;&#x4E2A;&#x77E9;&#x9635;&#xFF0C;&#x9996;&#x5148;&#x5728;&#x4E00;&#x884C;&#x4E2D;&#x7ED9;&#x51FA;&#x5176;&#x884C;&#x6570;R&#x548C;&#x5217;&#x6570;C&#xFF0C;&#x968F;&#x540E;R&#x884C;&#xFF0C;&#x6BCF;&#x884C;&#x7ED9;&#x51FA;C&#x4E2A;&#x6574;&#x6570;&#xFF0C;&#x4EE5;1&#x4E2A;&#x7A7A;&#x683C;&#x5206;&#x9694;&#xFF0C;&#x4E14;&#x884C;&#x9996;&#x5C3E;&#x6CA1;&#x6709;&#x591A;&#x4F59;&#x7684;&#x7A7A;&#x683C;&#x3002;&#x8F93;&#x5165;&#x4FDD;&#x8BC1;&#x4E24;&#x4E2A;&#x77E9;&#x9635;&#x7684;R&#x548C;C&#x90FD;&#x662F;&#x6B63;&#x6570;&#xFF0C;&#x5E76;&#x4E14;&#x6240;&#x6709;&#x6574;&#x6570;&#x7684;&#x7EDD;&#x5BF9;&#x503C;&#x4E0D;&#x8D85;&#x8FC7;100&#x3002;</p>
-<h4 id="&#x8F93;&#x51FA;&#x683C;&#x5F0F;&#xFF1A;"><a href="#&#x8F93;&#x51FA;&#x683C;&#x5F0F;&#xFF1A;" class="headerlink" title="&#x8F93;&#x51FA;&#x683C;&#x5F0F;&#xFF1A;"></a>&#x8F93;&#x51FA;&#x683C;&#x5F0F;&#xFF1A;</h4><p>&#x82E5;&#x8F93;&#x5165;&#x7684;&#x4E24;&#x4E2A;&#x77E9;&#x9635;&#x7684;&#x89C4;&#x6A21;&#x662F;&#x5339;&#x914D;&#x7684;&#xFF0C;&#x5219;&#x6309;&#x7167;&#x8F93;&#x5165;&#x7684;&#x683C;&#x5F0F;&#x8F93;&#x51FA;&#x4E58;&#x79EF;&#x77E9;&#x9635;AB&#xFF0C;&#x5426;&#x5219;&#x8F93;&#x51FA;&#x201C;Error: Ca != Rb&#x201D;&#xFF0C;&#x5176;&#x4E2D;Ca&#x662F;A&#x7684;&#x5217;&#x6570;&#xFF0C;Rb&#x662F;B&#x7684;&#x884C;&#x6570;&#x3002;</p>
-<h5 id="&#x8F93;&#x5165;&#x6837;&#x4F8B;1&#xFF1A;"><a href="#&#x8F93;&#x5165;&#x6837;&#x4F8B;1&#xFF1A;" class="headerlink" title="&#x8F93;&#x5165;&#x6837;&#x4F8B;1&#xFF1A;"></a>&#x8F93;&#x5165;&#x6837;&#x4F8B;1&#xFF1A;</h5><p>2 3<br>1 2 3<br>4 5 6<br>3 4<br>7 8 9 0<br>-1 -2 -3 -4<br>5 6 7 8</p>
-<h5 id="&#x8F93;&#x51FA;&#x6837;&#x4F8B;1&#xFF1A;"><a href="#&#x8F93;&#x51FA;&#x6837;&#x4F8B;1&#xFF1A;" class="headerlink" title="&#x8F93;&#x51FA;&#x6837;&#x4F8B;1&#xFF1A;"></a>&#x8F93;&#x51FA;&#x6837;&#x4F8B;1&#xFF1A;</h5><p>2 4<br>20 22 24 16<br>53 58 63 28</p>
-<h5 id="&#x8F93;&#x5165;&#x6837;&#x4F8B;2&#xFF1A;"><a href="#&#x8F93;&#x5165;&#x6837;&#x4F8B;2&#xFF1A;" class="headerlink" title="&#x8F93;&#x5165;&#x6837;&#x4F8B;2&#xFF1A;"></a>&#x8F93;&#x5165;&#x6837;&#x4F8B;2&#xFF1A;</h5><p>3 2<br>38 26<br>43 -5<br>0 17<br>3 2<br>-11 57<br>99 68<br>81 72</p>
-<h5 id="&#x8F93;&#x51FA;&#x6837;&#x4F8B;2&#xFF1A;"><a href="#&#x8F93;&#x51FA;&#x6837;&#x4F8B;2&#xFF1A;" class="headerlink" title="&#x8F93;&#x51FA;&#x6837;&#x4F8B;2&#xFF1A;"></a>&#x8F93;&#x51FA;&#x6837;&#x4F8B;2&#xFF1A;</h5><p>Error: 2 != 3</p>
-<figure class="highlight c++"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span> </span>{</span><br><span class="line">    <span class="keyword">int</span> a, b;</span><br><span class="line">    <span class="built_in">cin</span> &gt;&gt; a &gt;&gt; b;</span><br><span class="line">    <span class="keyword">int</span> arr[a][b];</span><br><span class="line">    <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; a; ++i) {</span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> j = <span class="number">0</span>; j &lt; b; ++j) {</span><br><span class="line">            <span class="built_in">cin</span> &gt;&gt; arr[i][j];</span><br><span class="line">        }</span><br><span class="line">    }</span><br><span class="line">    <span class="keyword">int</span> c, d;</span><br><span class="line">    <span class="built_in">cin</span> &gt;&gt; c &gt;&gt; d;</span><br><span class="line">    <span class="keyword">int</span> brr[c][d];</span><br><span class="line">    <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; c; ++i) {</span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> j = <span class="number">0</span>; j &lt; d; ++j) {</span><br><span class="line">            <span class="built_in">cin</span> &gt;&gt; brr[i][j];</span><br><span class="line">        }</span><br><span class="line">    }</span><br><span class="line"></span><br><span class="line">    <span class="keyword">if</span> (b != c) {</span><br><span class="line">        <span class="built_in">cout</span> &lt;&lt; <span class="string">&quot;Error: &quot;</span> &lt;&lt; b &lt;&lt; <span class="string">&quot; != &quot;</span> &lt;&lt; c &lt;&lt; <span class="built_in">endl</span>;</span><br><span class="line">    }</span><br><span class="line">    <span class="keyword">else</span> {</span><br><span class="line">        <span class="built_in">cout</span> &lt;&lt; a &lt;&lt; <span class="string">&quot; &quot;</span> &lt;&lt; d &lt;&lt; <span class="built_in">endl</span>;</span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; a; ++i) {</span><br><span class="line">            <span class="keyword">int</span> flag = <span class="number">1</span>;</span><br><span class="line">            <span class="keyword">for</span> (<span class="keyword">int</span> j = <span class="number">0</span>; j &lt; d; ++j) {</span><br><span class="line">                <span class="keyword">int</span> sum = <span class="number">0</span>;</span><br><span class="line">                <span class="keyword">for</span> (<span class="keyword">int</span> k = <span class="number">0</span>; k &lt; b; ++k) {</span><br><span class="line">                    sum += arr[i][k] * brr[k][j];</span><br><span class="line">                }</span><br><span class="line">                <span class="keyword">if</span> (j &lt; d - <span class="number">1</span>) {</span><br><span class="line">                    <span class="built_in">cout</span> &lt;&lt; sum &lt;&lt; <span class="string">&quot; &quot;</span>;</span><br><span class="line">                }</span><br><span class="line">                <span class="keyword">else</span></span><br><span class="line">                    <span class="built_in">cout</span> &lt;&lt; sum &lt;&lt; <span class="built_in">endl</span>;</span><br><span class="line">            }</span><br><span class="line">        }</span><br><span class="line">    }</span><br><span class="line"></span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">}</span><br></pre></td></tr></tbody></table></figure>
-<script src="/live2dw/lib/L2Dwidget.min.js?0c58a1486de42ac6cc1c59c7d98ae887"></script><script>L2Dwidget.init({});</script>
+        <h3 id="L1-048-矩阵A乘以B"><a href="#L1-048-矩阵A乘以B" class="headerlink" title="L1-048. 矩阵A乘以B"></a>L1-048. 矩阵A乘以B</h3><p>给定两个矩阵A和B，要求你计算它们的乘积矩阵AB。需要注意的是，只有规模匹配的矩阵才可以相乘。即若A有Ra行、Ca列，B有Rb行、Cb列，则只有Ca与Rb相等时，两个矩阵才能相乘。</p>
+<h4 id="输入格式："><a href="#输入格式：" class="headerlink" title="输入格式："></a>输入格式：</h4><p>输入先后给出两个矩阵A和B。对于每个矩阵，首先在一行中给出其行数R和列数C，随后R行，每行给出C个整数，以1个空格分隔，且行首尾没有多余的空格。输入保证两个矩阵的R和C都是正数，并且所有整数的绝对值不超过100。</p>
+<h4 id="输出格式："><a href="#输出格式：" class="headerlink" title="输出格式："></a>输出格式：</h4><p>若输入的两个矩阵的规模是匹配的，则按照输入的格式输出乘积矩阵AB，否则输出“Error: Ca != Rb”，其中Ca是A的列数，Rb是B的行数。</p>
+<h5 id="输入样例1："><a href="#输入样例1：" class="headerlink" title="输入样例1："></a>输入样例1：</h5><p>2 3<br>1 2 3<br>4 5 6<br>3 4<br>7 8 9 0<br>-1 -2 -3 -4<br>5 6 7 8</p>
+<h5 id="输出样例1："><a href="#输出样例1：" class="headerlink" title="输出样例1："></a>输出样例1：</h5><p>2 4<br>20 22 24 16<br>53 58 63 28</p>
+<h5 id="输入样例2："><a href="#输入样例2：" class="headerlink" title="输入样例2："></a>输入样例2：</h5><p>3 2<br>38 26<br>43 -5<br>0 17<br>3 2<br>-11 57<br>99 68<br>81 72</p>
+<h5 id="输出样例2："><a href="#输出样例2：" class="headerlink" title="输出样例2："></a>输出样例2：</h5><p>Error: 2 != 3</p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span> </span>&#123;</span><br><span class="line">    <span class="keyword">int</span> a, b;</span><br><span class="line">    <span class="built_in">cin</span> &gt;&gt; a &gt;&gt; b;</span><br><span class="line">    <span class="keyword">int</span> arr[a][b];</span><br><span class="line">    <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; a; ++i) &#123;</span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> j = <span class="number">0</span>; j &lt; b; ++j) &#123;</span><br><span class="line">            <span class="built_in">cin</span> &gt;&gt; arr[i][j];</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">int</span> c, d;</span><br><span class="line">    <span class="built_in">cin</span> &gt;&gt; c &gt;&gt; d;</span><br><span class="line">    <span class="keyword">int</span> brr[c][d];</span><br><span class="line">    <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; c; ++i) &#123;</span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> j = <span class="number">0</span>; j &lt; d; ++j) &#123;</span><br><span class="line">            <span class="built_in">cin</span> &gt;&gt; brr[i][j];</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">if</span> (b != c) &#123;</span><br><span class="line">        <span class="built_in">cout</span> &lt;&lt; <span class="string">"Error: "</span> &lt;&lt; b &lt;&lt; <span class="string">" != "</span> &lt;&lt; c &lt;&lt; <span class="built_in">endl</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">else</span> &#123;</span><br><span class="line">        <span class="built_in">cout</span> &lt;&lt; a &lt;&lt; <span class="string">" "</span> &lt;&lt; d &lt;&lt; <span class="built_in">endl</span>;</span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; a; ++i) &#123;</span><br><span class="line">            <span class="keyword">int</span> flag = <span class="number">1</span>;</span><br><span class="line">            <span class="keyword">for</span> (<span class="keyword">int</span> j = <span class="number">0</span>; j &lt; d; ++j) &#123;</span><br><span class="line">                <span class="keyword">int</span> sum = <span class="number">0</span>;</span><br><span class="line">                <span class="keyword">for</span> (<span class="keyword">int</span> k = <span class="number">0</span>; k &lt; b; ++k) &#123;</span><br><span class="line">                    sum += arr[i][k] * brr[k][j];</span><br><span class="line">                &#125;</span><br><span class="line">                <span class="keyword">if</span> (j &lt; d - <span class="number">1</span>) &#123;</span><br><span class="line">                    <span class="built_in">cout</span> &lt;&lt; sum &lt;&lt; <span class="string">" "</span>;</span><br><span class="line">                &#125;</span><br><span class="line">                <span class="keyword">else</span></span><br><span class="line">                    <span class="built_in">cout</span> &lt;&lt; sum &lt;&lt; <span class="built_in">endl</span>;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
       
     </div>
     
@@ -419,7 +427,7 @@
         <div>
     
         <div style="text-align:center;color: #ccc;font-size:14px;">
-            -------------&#x672C;&#x6587;&#x7ED3;&#x675F;<i class="fa fa-paw"></i>&#x611F;&#x8C22;&#x60A8;&#x7684;&#x9605;&#x8BFB;-------------
+            -------------本文结束<i class="fa fa-paw"></i>感谢您的阅读-------------
         </div>
     
 </div>
@@ -444,8 +452,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2018/03/26/L1-047.&#x88C5;&#x7761;/" rel="next" title="&#x56E2;&#x961F;&#x7A0B;&#x5E8F;&#x8BBE;&#x8BA1;&#x5929;&#x68AF;&#x8D5B; L1-047. &#x88C5;&#x7761;">
-                <i class="fa fa-chevron-left"></i> &#x56E2;&#x961F;&#x7A0B;&#x5E8F;&#x8BBE;&#x8BA1;&#x5929;&#x68AF;&#x8D5B; L1-047. &#x88C5;&#x7761;
+              <a href="/2018/03/26/L1-047.装睡/" rel="next" title="团队程序设计天梯赛 L1-047. 装睡">
+                <i class="fa fa-chevron-left"></i> 团队程序设计天梯赛 L1-047. 装睡
               </a>
             
           </div>
@@ -454,8 +462,8 @@
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/2018/04/05/&#x673A;&#x5668;&#x5B66;&#x4E60;&#x7B14;&#x8BB0;/" rel="prev" title="&#x673A;&#x5668;&#x5B66;&#x4E60;&#x7B14;&#x8BB0;">
-                &#x673A;&#x5668;&#x5B66;&#x4E60;&#x7B14;&#x8BB0; <i class="fa fa-chevron-right"></i>
+              <a href="/2018/04/05/机器学习笔记/" rel="prev" title="机器学习笔记">
+                机器学习笔记 <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>
@@ -510,22 +518,22 @@
       
         <ul class="sidebar-nav motion-element">
           <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
-            &#x6587;&#x7AE0;&#x76EE;&#x5F55;
+            文章目录
           </li>
           <li class="sidebar-nav-overview" data-target="site-overview-wrap">
-            &#x7AD9;&#x70B9;&#x6982;&#x89C8;
+            站点概览
           </li>
         </ul>
       
 
       <section class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
-          <div class="site-author motion-element" itemprop="author" itemscope="" itemtype="http://schema.org/Person">
+          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
               <img class="site-author-image" itemprop="image" src="/images/avatar.jpg" alt="Kings Cooober">
             
               <p class="site-author-name" itemprop="name">Kings Cooober</p>
-              <p class="site-description motion-element" itemprop="description">&#x4E00;&#x4E2A;&#x4EBA;&#x5E78;&#x8FD0;&#x7684;&#x524D;&#x63D0;&#xFF0C;&#x662F;&#x4ED6;&#x6709;&#x80FD;&#x529B;&#x6539;&#x53D8;&#x81EA;&#x5DF1;&#x3002;</p>
+              <p class="site-description motion-element" itemprop="description">一个人幸运的前提，是他有能力改变自己。</p>
           </div>
 
           <nav class="site-state motion-element">
@@ -535,8 +543,8 @@
               
                 <a href="/archives">
               
-                  <span class="site-state-item-count">73</span>
-                  <span class="site-state-item-name">&#x65E5;&#x5FD7;</span>
+                  <span class="site-state-item-count">75</span>
+                  <span class="site-state-item-name">日志</span>
                 </a>
               </div>
             
@@ -547,7 +555,7 @@
               <div class="site-state-item site-state-categories">
                 <a href="/categories/index.html">
                   <span class="site-state-item-count">7</span>
-                  <span class="site-state-item-name">&#x5206;&#x7C7B;</span>
+                  <span class="site-state-item-name">分类</span>
                 </a>
               </div>
             
@@ -558,7 +566,7 @@
               <div class="site-state-item site-state-tags">
                 <a href="/tags/index.html">
                   <span class="site-state-item-count">16</span>
-                  <span class="site-state-item-name">&#x6807;&#x7B7E;</span>
+                  <span class="site-state-item-name">标签</span>
                 </a>
               </div>
             
@@ -577,7 +585,7 @@
                   </span>
                 
                   <span class="links-of-author-item">
-                    <a href="mailto:kingscooober@gmail.com" target="_blank" title="E-Mail">
+                    <a href="mailto:kingscooober@yeah.net" target="_blank" title="E-Mail">
                       
                         <i class="fa fa-fw fa-envelope"></i>E-Mail</a>
                   </span>
@@ -606,7 +614,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#L1-048-&#x77E9;&#x9635;A&#x4E58;&#x4EE5;B"><span class="nav-number">1.</span> <span class="nav-text">L1-048. &#x77E9;&#x9635;A&#x4E58;&#x4EE5;B</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#&#x8F93;&#x5165;&#x683C;&#x5F0F;&#xFF1A;"><span class="nav-number">1.1.</span> <span class="nav-text">&#x8F93;&#x5165;&#x683C;&#x5F0F;&#xFF1A;</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#&#x8F93;&#x51FA;&#x683C;&#x5F0F;&#xFF1A;"><span class="nav-number">1.2.</span> <span class="nav-text">&#x8F93;&#x51FA;&#x683C;&#x5F0F;&#xFF1A;</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#&#x8F93;&#x5165;&#x6837;&#x4F8B;1&#xFF1A;"><span class="nav-number">1.2.1.</span> <span class="nav-text">&#x8F93;&#x5165;&#x6837;&#x4F8B;1&#xFF1A;</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#&#x8F93;&#x51FA;&#x6837;&#x4F8B;1&#xFF1A;"><span class="nav-number">1.2.2.</span> <span class="nav-text">&#x8F93;&#x51FA;&#x6837;&#x4F8B;1&#xFF1A;</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#&#x8F93;&#x5165;&#x6837;&#x4F8B;2&#xFF1A;"><span class="nav-number">1.2.3.</span> <span class="nav-text">&#x8F93;&#x5165;&#x6837;&#x4F8B;2&#xFF1A;</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#&#x8F93;&#x51FA;&#x6837;&#x4F8B;2&#xFF1A;"><span class="nav-number">1.2.4.</span> <span class="nav-text">&#x8F93;&#x51FA;&#x6837;&#x4F8B;2&#xFF1A;</span></a></li></ol></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#L1-048-矩阵A乘以B"><span class="nav-number">1.</span> <span class="nav-text">L1-048. 矩阵A乘以B</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#输入格式："><span class="nav-number">1.1.</span> <span class="nav-text">输入格式：</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#输出格式："><span class="nav-number">1.2.</span> <span class="nav-text">输出格式：</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#输入样例1："><span class="nav-number">1.2.1.</span> <span class="nav-text">输入样例1：</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#输出样例1："><span class="nav-number">1.2.2.</span> <span class="nav-text">输出样例1：</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#输入样例2："><span class="nav-number">1.2.3.</span> <span class="nav-text">输入样例2：</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#输出样例2："><span class="nav-number">1.2.4.</span> <span class="nav-text">输出样例2：</span></a></li></ol></li></ol></li></ol></div>
             
 
           </div>
@@ -626,7 +634,7 @@
 
     <footer id="footer" class="footer">
       <div class="footer-inner">
-        <div class="copyright">&#xA9; <span itemprop="copyrightYear">2018</span>
+        <div class="copyright">&copy; <span itemprop="copyrightYear">2019</span>
   <span class="with-love">
     <i class="fa fa-user"></i>
   </span>
@@ -657,17 +665,17 @@
 
   
     <span class="site-uv">
-      &#x603B;&#x8BBF;&#x5BA2;&#x6570; <i class="fa fa-user"></i>
+      总访客数 <i class="fa fa-user"></i>
       <span class="busuanzi-value" id="busuanzi_value_site_uv"></span>
-      &#x4EBA;
+      人
     </span>
   
 
   
     <span class="site-pv">
-      &#x603B;&#x8BBF;&#x95EE;&#x91CF; <i class="fa fa-eye"></i>
+      总访问量 <i class="fa fa-eye"></i>
       <span class="busuanzi-value" id="busuanzi_value_site_pv"></span>
-      &#x6B21;
+      次
     </span>
   
 </div>
@@ -1306,6 +1314,5 @@
 <!-- mathjax! -->
 <script type="text/javascript" src="/js/src/MathJax.js"></script>
 
-
-
-<script src="/live2dw/lib/L2Dwidget.min.js?0c58a1486de42ac6cc1c59c7d98ae887"></script><script>L2Dwidget.init({});</script></body></html>
+<script src="/live2dw/lib/L2Dwidget.min.js?0c58a1486de42ac6cc1c59c7d98ae887"></script><script>L2Dwidget.init({"log":false,"pluginJsPath":"lib/","pluginModelPath":"assets/","pluginRootPath":"live2dw/","tagMode":false});</script></body>
+</html>

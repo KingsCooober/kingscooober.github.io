@@ -1,4 +1,12 @@
-<!DOCTYPE html><html class="theme-next gemini use-motion" lang="zh-Hans"><head>
+<!DOCTYPE html>
+
+
+
+  
+
+
+<html class="theme-next gemini use-motion" lang="zh-Hans">
+<head><meta name="generator" content="Hexo 3.8.0">
   <meta charset="UTF-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
@@ -86,18 +94,18 @@
 
 
 
-<meta name="description" content="&amp;#x9012;&amp;#x5F52;&amp;#x66F4;&amp;#x6539;&amp;#x76EE;&amp;#x5F55;&amp;#x6743;&amp;#x9650;&amp;#x4E3A;755&amp;#xFF0C;&amp;#x5E38;&amp;#x89C4;&amp;#x6587;&amp;#x4EF6;&amp;#x6743;&amp;#x9650;&amp;#x4E3A;644&amp;#x5C06;&amp;#x6587;&amp;#x4EF6;&amp;#x4ECE;U&amp;#x76D8;&amp;#x6216;&amp;#x79FB;&amp;">
+<meta name="description" content="递归更改目录权限为755，常规文件权限为644将文件从U盘或移动硬盘复制到linux系统时，会使文件的权限放大，全部变为777的权限。我们的目的是要把目录权限全部设定为755，文件权限全部设定为644。这两者被设定的权限不一致，可以用如下方式解决。 1$chmod 755 -R your_file_name/ -R 的参数表示递归处理，将所有的文件目录和文件都设为755的权限。  1$find y">
 <meta name="keywords" content="Linux">
 <meta property="og:type" content="article">
-<meta property="og:title" content="&#x89E3;&#x51B3;&#x590D;&#x5236;&#x6587;&#x4EF6;&#x5230; Linux &#x7CFB;&#x7EDF;&#x65F6;&#x7684;&#x6743;&#x9650;&#x95EE;&#x9898;">
-<meta property="og:url" content="http://yoursite.com/2018/07/17/&#x89E3;&#x51B3;&#x590D;&#x5236;&#x6587;&#x4EF6;&#x5230; Linux &#x7CFB;&#x7EDF;&#x65F6;&#x7684;&#x6743;&#x9650;&#x95EE;&#x9898;/index.html">
-<meta property="og:site_name" content="Kings Cooober&apos;s Blog">
-<meta property="og:description" content="&amp;#x9012;&amp;#x5F52;&amp;#x66F4;&amp;#x6539;&amp;#x76EE;&amp;#x5F55;&amp;#x6743;&amp;#x9650;&amp;#x4E3A;755&amp;#xFF0C;&amp;#x5E38;&amp;#x89C4;&amp;#x6587;&amp;#x4EF6;&amp;#x6743;&amp;#x9650;&amp;#x4E3A;644&amp;#x5C06;&amp;#x6587;&amp;#x4EF6;&amp;#x4ECE;U&amp;#x76D8;&amp;#x6216;&amp;#x79FB;&amp;">
+<meta property="og:title" content="解决复制文件到 Linux 系统时的权限问题">
+<meta property="og:url" content="http://yoursite.com/2018/07/17/解决复制文件到 Linux 系统时的权限问题/index.html">
+<meta property="og:site_name" content="Kings Cooober&#39;s Blog">
+<meta property="og:description" content="递归更改目录权限为755，常规文件权限为644将文件从U盘或移动硬盘复制到linux系统时，会使文件的权限放大，全部变为777的权限。我们的目的是要把目录权限全部设定为755，文件权限全部设定为644。这两者被设定的权限不一致，可以用如下方式解决。 1$chmod 755 -R your_file_name/ -R 的参数表示递归处理，将所有的文件目录和文件都设为755的权限。  1$find y">
 <meta property="og:locale" content="zh-Hans">
 <meta property="og:updated_time" content="2018-07-17T13:07:41.724Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="&#x89E3;&#x51B3;&#x590D;&#x5236;&#x6587;&#x4EF6;&#x5230; Linux &#x7CFB;&#x7EDF;&#x65F6;&#x7684;&#x6743;&#x9650;&#x95EE;&#x9898;">
-<meta name="twitter:description" content="&amp;#x9012;&amp;#x5F52;&amp;#x66F4;&amp;#x6539;&amp;#x76EE;&amp;#x5F55;&amp;#x6743;&amp;#x9650;&amp;#x4E3A;755&amp;#xFF0C;&amp;#x5E38;&amp;#x89C4;&amp;#x6587;&amp;#x4EF6;&amp;#x6743;&amp;#x9650;&amp;#x4E3A;644&amp;#x5C06;&amp;#x6587;&amp;#x4EF6;&amp;#x4ECE;U&amp;#x76D8;&amp;#x6216;&amp;#x79FB;&amp;">
+<meta name="twitter:title" content="解决复制文件到 Linux 系统时的权限问题">
+<meta name="twitter:description" content="递归更改目录权限为755，常规文件权限为644将文件从U盘或移动硬盘复制到linux系统时，会使文件的权限放大，全部变为777的权限。我们的目的是要把目录权限全部设定为755，文件权限全部设定为644。这两者被设定的权限不一致，可以用如下方式解决。 1$chmod 755 -R your_file_name/ -R 的参数表示递归处理，将所有的文件目录和文件都设为755的权限。  1$find y">
 
 
 
@@ -127,13 +135,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/2018/07/17/&#x89E3;&#x51B3;&#x590D;&#x5236;&#x6587;&#x4EF6;&#x5230; Linux &#x7CFB;&#x7EDF;&#x65F6;&#x7684;&#x6743;&#x9650;&#x95EE;&#x9898;/">
+  <link rel="canonical" href="http://yoursite.com/2018/07/17/解决复制文件到 Linux 系统时的权限问题/">
 
 
 
 
 
-  <title>&#x89E3;&#x51B3;&#x590D;&#x5236;&#x6587;&#x4EF6;&#x5230; Linux &#x7CFB;&#x7EDF;&#x65F6;&#x7684;&#x6743;&#x9650;&#x95EE;&#x9898; | Kings Cooober&apos;s Blog</title>
+  <title>解决复制文件到 Linux 系统时的权限问题 | Kings Cooober's Blog</title>
   
 
 
@@ -145,7 +153,7 @@
 
 </head>
 
-<body itemscope="" itemtype="http://schema.org/WebPage" lang="zh-Hans">
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
 
   
   
@@ -156,7 +164,7 @@
     <div class="headband"></div>
     <a href="https://github.com/kingscooober"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://s3.amazonaws.com/github/ribbons/forkme_right_darkblue_121621.png" alt="Fork me on GitHub"></a>
 
-    <header id="header" class="header" itemscope="" itemtype="http://schema.org/WPHeader">
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
       <div class="header-inner"><div class="site-brand-wrapper">
   <div class="site-meta ">
     
@@ -164,7 +172,7 @@
     <div class="custom-logo-site-title">
       <a href="/" class="brand" rel="start">
         <span class="logo-line-before"><i></i></span>
-        <span class="site-title">Kings Cooober&apos;s Blog</span>
+        <span class="site-title">Kings Cooober's Blog</span>
         <span class="logo-line-after"><i></i></span>
       </a>
     </div>
@@ -194,7 +202,7 @@
             
               <i class="menu-item-icon fa fa-fw fa-home"></i> <br>
             
-            &#x9996;&#x9875;
+            首页
           </a>
         </li>
       
@@ -204,7 +212,7 @@
             
               <i class="menu-item-icon fa fa-fw fa-user"></i> <br>
             
-            &#x5173;&#x4E8E;
+            关于
           </a>
         </li>
       
@@ -214,7 +222,7 @@
             
               <i class="menu-item-icon fa fa-fw fa-tags"></i> <br>
             
-            &#x6807;&#x7B7E;
+            标签
           </a>
         </li>
       
@@ -224,7 +232,7 @@
             
               <i class="menu-item-icon fa fa-fw fa-th"></i> <br>
             
-            &#x5206;&#x7C7B;
+            分类
           </a>
         </li>
       
@@ -234,7 +242,7 @@
             
               <i class="menu-item-icon fa fa-fw fa-archive"></i> <br>
             
-            &#x5F52;&#x6863;
+            归档
           </a>
         </li>
       
@@ -247,7 +255,7 @@
             
               <i class="menu-item-icon fa fa-search fa-fw"></i> <br>
             
-            &#x641C;&#x7D22;
+            搜索
           </a>
         </li>
       
@@ -266,7 +274,7 @@
       <i class="fa fa-times-circle"></i>
     </span>
     <div class="local-search-input-wrapper">
-      <input autocomplete="off" placeholder="&#x641C;&#x7D22;..." spellcheck="false" type="text" id="local-search-input">
+      <input autocomplete="off" placeholder="搜索..." spellcheck="false" type="text" id="local-search-input">
     </div>
   </div>
   <div id="local-search-result"></div>
@@ -298,21 +306,21 @@
   
   
 
-  <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
   
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/07/17/&#x89E3;&#x51B3;&#x590D;&#x5236;&#x6587;&#x4EF6;&#x5230; Linux &#x7CFB;&#x7EDF;&#x65F6;&#x7684;&#x6743;&#x9650;&#x95EE;&#x9898;/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/07/17/解决复制文件到 Linux 系统时的权限问题/">
 
-    <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Kings Cooober">
-      <meta itemprop="description" content="">
+      <meta itemprop="description" content>
       <meta itemprop="image" content="/images/avatar.jpg">
     </span>
 
-    <span hidden itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Kings Cooober&apos;s Blog">
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Kings Cooober's Blog">
     </span>
 
     
@@ -320,7 +328,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">&#x89E3;&#x51B3;&#x590D;&#x5236;&#x6587;&#x4EF6;&#x5230; Linux &#x7CFB;&#x7EDF;&#x65F6;&#x7684;&#x6743;&#x9650;&#x95EE;&#x9898;</h1>
+          <h1 class="post-title" itemprop="name headline">解决复制文件到 Linux 系统时的权限问题</h1>
         
 
         <div class="post-meta">
@@ -330,9 +338,9 @@
                 <i class="fa fa-calendar-o"></i>
               </span>
               
-                <span class="post-meta-item-text">&#x53D1;&#x8868;&#x4E8E;</span>
+                <span class="post-meta-item-text">发表于</span>
               
-              <time title="&#x521B;&#x5EFA;&#x4E8E;" itemprop="dateCreated datePublished" datetime="2018-07-17T21:06:16+08:00">
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-07-17T21:06:16+08:00">
                 2018-07-17
               </time>
             
@@ -346,9 +354,9 @@
                 <i class="fa fa-calendar-check-o"></i>
               </span>
               
-                <span class="post-meta-item-text">&#x66F4;&#x65B0;&#x4E8E;:</span>
+                <span class="post-meta-item-text">更新于&#58;</span>
               
-              <time title="&#x66F4;&#x65B0;&#x4E8E;" itemprop="dateModified" datetime="2018-07-17T21:07:41+08:00">
+              <time title="更新于" itemprop="dateModified" datetime="2018-07-17T21:07:41+08:00">
                 2018-07-17
               </time>
             
@@ -362,13 +370,13 @@
 
           
           
-             <span id="/2018/07/17/&#x89E3;&#x51B3;&#x590D;&#x5236;&#x6587;&#x4EF6;&#x5230; Linux &#x7CFB;&#x7EDF;&#x65F6;&#x7684;&#x6743;&#x9650;&#x95EE;&#x9898;/" class="leancloud_visitors" data-flag-title="&#x89E3;&#x51B3;&#x590D;&#x5236;&#x6587;&#x4EF6;&#x5230; Linux &#x7CFB;&#x7EDF;&#x65F6;&#x7684;&#x6743;&#x9650;&#x95EE;&#x9898;">
+             <span id="/2018/07/17/解决复制文件到 Linux 系统时的权限问题/" class="leancloud_visitors" data-flag-title="解决复制文件到 Linux 系统时的权限问题">
                <span class="post-meta-divider">|</span>
                <span class="post-meta-item-icon">
                  <i class="fa fa-eye"></i>
                </span>
                
-                 <span class="post-meta-item-text">&#x9605;&#x8BFB;&#x6B21;&#x6570;:</span>
+                 <span class="post-meta-item-text">阅读次数&#58;</span>
                
                  <span class="leancloud-visitors-count"></span>
              </span>
@@ -393,13 +401,13 @@
       
 
       
-        <h2 id="&#x9012;&#x5F52;&#x66F4;&#x6539;&#x76EE;&#x5F55;&#x6743;&#x9650;&#x4E3A;755&#xFF0C;&#x5E38;&#x89C4;&#x6587;&#x4EF6;&#x6743;&#x9650;&#x4E3A;644"><a href="#&#x9012;&#x5F52;&#x66F4;&#x6539;&#x76EE;&#x5F55;&#x6743;&#x9650;&#x4E3A;755&#xFF0C;&#x5E38;&#x89C4;&#x6587;&#x4EF6;&#x6743;&#x9650;&#x4E3A;644" class="headerlink" title="&#x9012;&#x5F52;&#x66F4;&#x6539;&#x76EE;&#x5F55;&#x6743;&#x9650;&#x4E3A;755&#xFF0C;&#x5E38;&#x89C4;&#x6587;&#x4EF6;&#x6743;&#x9650;&#x4E3A;644"></a>&#x9012;&#x5F52;&#x66F4;&#x6539;&#x76EE;&#x5F55;&#x6743;&#x9650;&#x4E3A;755&#xFF0C;&#x5E38;&#x89C4;&#x6587;&#x4EF6;&#x6743;&#x9650;&#x4E3A;644</h2><p>&#x5C06;&#x6587;&#x4EF6;&#x4ECE;U&#x76D8;&#x6216;&#x79FB;&#x52A8;&#x786C;&#x76D8;&#x590D;&#x5236;&#x5230;linux&#x7CFB;&#x7EDF;&#x65F6;&#xFF0C;&#x4F1A;&#x4F7F;&#x6587;&#x4EF6;&#x7684;&#x6743;&#x9650;&#x653E;&#x5927;&#xFF0C;&#x5168;&#x90E8;&#x53D8;&#x4E3A;777&#x7684;&#x6743;&#x9650;&#x3002;&#x6211;&#x4EEC;&#x7684;&#x76EE;&#x7684;&#x662F;&#x8981;&#x628A;&#x76EE;&#x5F55;&#x6743;&#x9650;&#x5168;&#x90E8;&#x8BBE;&#x5B9A;&#x4E3A;755&#xFF0C;&#x6587;&#x4EF6;&#x6743;&#x9650;&#x5168;&#x90E8;&#x8BBE;&#x5B9A;&#x4E3A;644&#x3002;&#x8FD9;&#x4E24;&#x8005;&#x88AB;&#x8BBE;&#x5B9A;&#x7684;&#x6743;&#x9650;&#x4E0D;&#x4E00;&#x81F4;&#xFF0C;&#x53EF;&#x4EE5;&#x7528;&#x5982;&#x4E0B;&#x65B9;&#x5F0F;&#x89E3;&#x51B3;&#x3002;</p>
-<figure class="highlight shell"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">$</span><span class="bash">chmod 755 -R your_file_name/</span></span><br></pre></td></tr></tbody></table></figure>
-<p>-R &#x7684;&#x53C2;&#x6570;&#x8868;&#x793A;&#x9012;&#x5F52;&#x5904;&#x7406;&#xFF0C;&#x5C06;&#x6240;&#x6709;&#x7684;&#x6587;&#x4EF6;&#x76EE;&#x5F55;&#x548C;&#x6587;&#x4EF6;&#x90FD;&#x8BBE;&#x4E3A;755&#x7684;&#x6743;&#x9650;&#x3002;</p>
+        <h2 id="递归更改目录权限为755，常规文件权限为644"><a href="#递归更改目录权限为755，常规文件权限为644" class="headerlink" title="递归更改目录权限为755，常规文件权限为644"></a>递归更改目录权限为755，常规文件权限为644</h2><p>将文件从U盘或移动硬盘复制到linux系统时，会使文件的权限放大，全部变为777的权限。我们的目的是要把目录权限全部设定为755，文件权限全部设定为644。这两者被设定的权限不一致，可以用如下方式解决。</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">$</span><span class="bash">chmod 755 -R your_file_name/</span></span><br></pre></td></tr></table></figure>
+<p>-R 的参数表示递归处理，将所有的文件目录和文件都设为755的权限。</p>
 <hr>
-<figure class="highlight shell"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">$</span><span class="bash">find your_file_name/ -<span class="built_in">type</span> f -<span class="built_in">exec</span> chmod a-x {} \;</span></span><br></pre></td></tr></tbody></table></figure>
-<p>-type &#x53C2;&#x6570;&#x8868;&#x793A;&#x67E5;&#x627E;&#x6587;&#x4EF6;&#x7C7B;&#x578B;&#xFF0C;f &#x4EE3;&#x8868;&#x4E00;&#x822C;&#x6587;&#x4EF6;&#xFF1B;-exec &#x53C2;&#x6570;&#x8868;&#x793A;&#x5BF9;&#x67E5;&#x627E;&#x7ED3;&#x679C;&#x8FDB;&#x884C;&#x5176;&#x5B83;&#x547D;&#x4EE4;&#x5904;&#x7406;&#xFF0C;&#x5728;&#x6B64;&#x5BF9;&#x67E5;&#x627E;&#x7ED3;&#x679C;&#x8FDB;&#x884C;&#x7684;&#x5904;&#x7406;&#x662F; chmod a-x {}&#xFF0C;&#x5373;&#x5220;&#x9664;x&#x6743;&#x9650;&#xFF0C;\\; &#x662F;&#x5FC5;&#x987B;&#x5E26;&#x7684;&#x3002;</p>
-<script src="/live2dw/lib/L2Dwidget.min.js?0c58a1486de42ac6cc1c59c7d98ae887"></script><script>L2Dwidget.init({});</script>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">$</span><span class="bash">find your_file_name/ -<span class="built_in">type</span> f -<span class="built_in">exec</span> chmod a-x &#123;&#125; \;</span></span><br></pre></td></tr></table></figure>
+<p>-type 参数表示查找文件类型，f 代表一般文件；-exec 参数表示对查找结果进行其它命令处理，在此对查找结果进行的处理是 chmod a-x {}，即删除x权限，\\; 是必须带的。</p>
+
       
     </div>
     
@@ -417,7 +425,7 @@
         <div>
     
         <div style="text-align:center;color: #ccc;font-size:14px;">
-            -------------&#x672C;&#x6587;&#x7ED3;&#x675F;<i class="fa fa-paw"></i>&#x611F;&#x8C22;&#x60A8;&#x7684;&#x9605;&#x8BFB;-------------
+            -------------本文结束<i class="fa fa-paw"></i>感谢您的阅读-------------
         </div>
     
 </div>
@@ -442,8 +450,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2018/04/05/&#x673A;&#x5668;&#x5B66;&#x4E60;&#x7B14;&#x8BB0;/" rel="next" title="&#x673A;&#x5668;&#x5B66;&#x4E60;&#x7B14;&#x8BB0;">
-                <i class="fa fa-chevron-left"></i> &#x673A;&#x5668;&#x5B66;&#x4E60;&#x7B14;&#x8BB0;
+              <a href="/2018/04/05/机器学习笔记/" rel="next" title="机器学习笔记">
+                <i class="fa fa-chevron-left"></i> 机器学习笔记
               </a>
             
           </div>
@@ -451,6 +459,10 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2019/03/28/Hexo 博客迁移/" rel="prev" title="Hexo 博客迁移">
+                Hexo 博客迁移 <i class="fa fa-chevron-right"></i>
+              </a>
             
           </div>
         </div>
@@ -504,22 +516,22 @@
       
         <ul class="sidebar-nav motion-element">
           <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
-            &#x6587;&#x7AE0;&#x76EE;&#x5F55;
+            文章目录
           </li>
           <li class="sidebar-nav-overview" data-target="site-overview-wrap">
-            &#x7AD9;&#x70B9;&#x6982;&#x89C8;
+            站点概览
           </li>
         </ul>
       
 
       <section class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
-          <div class="site-author motion-element" itemprop="author" itemscope="" itemtype="http://schema.org/Person">
+          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
               <img class="site-author-image" itemprop="image" src="/images/avatar.jpg" alt="Kings Cooober">
             
               <p class="site-author-name" itemprop="name">Kings Cooober</p>
-              <p class="site-description motion-element" itemprop="description">&#x4E00;&#x4E2A;&#x4EBA;&#x5E78;&#x8FD0;&#x7684;&#x524D;&#x63D0;&#xFF0C;&#x662F;&#x4ED6;&#x6709;&#x80FD;&#x529B;&#x6539;&#x53D8;&#x81EA;&#x5DF1;&#x3002;</p>
+              <p class="site-description motion-element" itemprop="description">一个人幸运的前提，是他有能力改变自己。</p>
           </div>
 
           <nav class="site-state motion-element">
@@ -529,8 +541,8 @@
               
                 <a href="/archives">
               
-                  <span class="site-state-item-count">73</span>
-                  <span class="site-state-item-name">&#x65E5;&#x5FD7;</span>
+                  <span class="site-state-item-count">75</span>
+                  <span class="site-state-item-name">日志</span>
                 </a>
               </div>
             
@@ -541,7 +553,7 @@
               <div class="site-state-item site-state-categories">
                 <a href="/categories/index.html">
                   <span class="site-state-item-count">7</span>
-                  <span class="site-state-item-name">&#x5206;&#x7C7B;</span>
+                  <span class="site-state-item-name">分类</span>
                 </a>
               </div>
             
@@ -552,7 +564,7 @@
               <div class="site-state-item site-state-tags">
                 <a href="/tags/index.html">
                   <span class="site-state-item-count">16</span>
-                  <span class="site-state-item-name">&#x6807;&#x7B7E;</span>
+                  <span class="site-state-item-name">标签</span>
                 </a>
               </div>
             
@@ -571,7 +583,7 @@
                   </span>
                 
                   <span class="links-of-author-item">
-                    <a href="mailto:kingscooober@gmail.com" target="_blank" title="E-Mail">
+                    <a href="mailto:kingscooober@yeah.net" target="_blank" title="E-Mail">
                       
                         <i class="fa fa-fw fa-envelope"></i>E-Mail</a>
                   </span>
@@ -600,7 +612,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#&#x9012;&#x5F52;&#x66F4;&#x6539;&#x76EE;&#x5F55;&#x6743;&#x9650;&#x4E3A;755&#xFF0C;&#x5E38;&#x89C4;&#x6587;&#x4EF6;&#x6743;&#x9650;&#x4E3A;644"><span class="nav-number">1.</span> <span class="nav-text">&#x9012;&#x5F52;&#x66F4;&#x6539;&#x76EE;&#x5F55;&#x6743;&#x9650;&#x4E3A;755&#xFF0C;&#x5E38;&#x89C4;&#x6587;&#x4EF6;&#x6743;&#x9650;&#x4E3A;644</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#递归更改目录权限为755，常规文件权限为644"><span class="nav-number">1.</span> <span class="nav-text">递归更改目录权限为755，常规文件权限为644</span></a></li></ol></div>
             
 
           </div>
@@ -620,7 +632,7 @@
 
     <footer id="footer" class="footer">
       <div class="footer-inner">
-        <div class="copyright">&#xA9; <span itemprop="copyrightYear">2018</span>
+        <div class="copyright">&copy; <span itemprop="copyrightYear">2019</span>
   <span class="with-love">
     <i class="fa fa-user"></i>
   </span>
@@ -651,17 +663,17 @@
 
   
     <span class="site-uv">
-      &#x603B;&#x8BBF;&#x5BA2;&#x6570; <i class="fa fa-user"></i>
+      总访客数 <i class="fa fa-user"></i>
       <span class="busuanzi-value" id="busuanzi_value_site_uv"></span>
-      &#x4EBA;
+      人
     </span>
   
 
   
     <span class="site-pv">
-      &#x603B;&#x8BBF;&#x95EE;&#x91CF; <i class="fa fa-eye"></i>
+      总访问量 <i class="fa fa-eye"></i>
       <span class="busuanzi-value" id="busuanzi_value_site_pv"></span>
-      &#x6B21;
+      次
     </span>
   
 </div>
@@ -1320,6 +1332,5 @@
 <!-- mathjax! -->
 <script type="text/javascript" src="/js/src/MathJax.js"></script>
 
-
-
-<script src="/live2dw/lib/L2Dwidget.min.js?0c58a1486de42ac6cc1c59c7d98ae887"></script><script>L2Dwidget.init({});</script></body></html>
+<script src="/live2dw/lib/L2Dwidget.min.js?0c58a1486de42ac6cc1c59c7d98ae887"></script><script>L2Dwidget.init({"log":false,"pluginJsPath":"lib/","pluginModelPath":"assets/","pluginRootPath":"live2dw/","tagMode":false});</script></body>
+</html>

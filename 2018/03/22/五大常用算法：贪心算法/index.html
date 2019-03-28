@@ -1,4 +1,12 @@
-<!DOCTYPE html><html class="theme-next gemini use-motion" lang="zh-Hans"><head>
+<!DOCTYPE html>
+
+
+
+  
+
+
+<html class="theme-next gemini use-motion" lang="zh-Hans">
+<head><meta name="generator" content="Hexo 3.8.0">
   <meta charset="UTF-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
@@ -75,7 +83,7 @@
 
 
 
-  <meta name="keywords" content="&#x8D2A;&#x5FC3;&#x7B97;&#x6CD5;,">
+  <meta name="keywords" content="贪心算法,">
 
 
 
@@ -86,18 +94,18 @@
 
 
 
-<meta name="description" content="&amp;#x4E00;&amp;#x3001;&amp;#x57FA;&amp;#x672C;&amp;#x6982;&amp;#x5FF5;&amp;#x6240;&amp;#x8C13;&amp;#x8D2A;&amp;#x5FC3;&amp;#x7B97;&amp;#x6CD5;&amp;#x662F;&amp;#x6307;&amp;#xFF0C;&amp;#x5728;&amp;#x5BF9;&amp;#x95EE;&amp;#x9898;&amp;#x6C42;&amp;#x89E3;&amp;#x65F6;&amp;#xFF0C;&amp;#x603B;&amp;#x662F;">
-<meta name="keywords" content="&#x8D2A;&#x5FC3;&#x7B97;&#x6CD5;">
+<meta name="description" content="一、基本概念所谓贪心算法是指，在对问题求解时，总是做出在当前看来是最好的选择。也就是说，不从整体最优上加以考虑，他所做出的仅是在某种意义上的局部最优解。 贪心算法没有固定的算法框架，算法设计的关键是贪心策略的选择。必须注意的是，贪心算法不是对所有问题都能得到整体最优解，选择贪心策略必须具备无后效性，即某个状态以后的过程中不会影响以前的状态，只与当前状态有关。 所以对所采用的贪心策略一定要仔细分析其">
+<meta name="keywords" content="贪心算法">
 <meta property="og:type" content="article">
-<meta property="og:title" content="&#x4E94;&#x5927;&#x5E38;&#x7528;&#x7B97;&#x6CD5;&#xFF1A;&#x8D2A;&#x5FC3;&#x7B97;&#x6CD5;">
-<meta property="og:url" content="http://yoursite.com/2018/03/22/&#x4E94;&#x5927;&#x5E38;&#x7528;&#x7B97;&#x6CD5;&#xFF1A;&#x8D2A;&#x5FC3;&#x7B97;&#x6CD5;/index.html">
-<meta property="og:site_name" content="Kings Cooober&apos;s Blog">
-<meta property="og:description" content="&amp;#x4E00;&amp;#x3001;&amp;#x57FA;&amp;#x672C;&amp;#x6982;&amp;#x5FF5;&amp;#x6240;&amp;#x8C13;&amp;#x8D2A;&amp;#x5FC3;&amp;#x7B97;&amp;#x6CD5;&amp;#x662F;&amp;#x6307;&amp;#xFF0C;&amp;#x5728;&amp;#x5BF9;&amp;#x95EE;&amp;#x9898;&amp;#x6C42;&amp;#x89E3;&amp;#x65F6;&amp;#xFF0C;&amp;#x603B;&amp;#x662F;">
+<meta property="og:title" content="五大常用算法：贪心算法">
+<meta property="og:url" content="http://yoursite.com/2018/03/22/五大常用算法：贪心算法/index.html">
+<meta property="og:site_name" content="Kings Cooober&#39;s Blog">
+<meta property="og:description" content="一、基本概念所谓贪心算法是指，在对问题求解时，总是做出在当前看来是最好的选择。也就是说，不从整体最优上加以考虑，他所做出的仅是在某种意义上的局部最优解。 贪心算法没有固定的算法框架，算法设计的关键是贪心策略的选择。必须注意的是，贪心算法不是对所有问题都能得到整体最优解，选择贪心策略必须具备无后效性，即某个状态以后的过程中不会影响以前的状态，只与当前状态有关。 所以对所采用的贪心策略一定要仔细分析其">
 <meta property="og:locale" content="zh-Hans">
 <meta property="og:updated_time" content="2018-06-28T10:27:32.041Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="&#x4E94;&#x5927;&#x5E38;&#x7528;&#x7B97;&#x6CD5;&#xFF1A;&#x8D2A;&#x5FC3;&#x7B97;&#x6CD5;">
-<meta name="twitter:description" content="&amp;#x4E00;&amp;#x3001;&amp;#x57FA;&amp;#x672C;&amp;#x6982;&amp;#x5FF5;&amp;#x6240;&amp;#x8C13;&amp;#x8D2A;&amp;#x5FC3;&amp;#x7B97;&amp;#x6CD5;&amp;#x662F;&amp;#x6307;&amp;#xFF0C;&amp;#x5728;&amp;#x5BF9;&amp;#x95EE;&amp;#x9898;&amp;#x6C42;&amp;#x89E3;&amp;#x65F6;&amp;#xFF0C;&amp;#x603B;&amp;#x662F;">
+<meta name="twitter:title" content="五大常用算法：贪心算法">
+<meta name="twitter:description" content="一、基本概念所谓贪心算法是指，在对问题求解时，总是做出在当前看来是最好的选择。也就是说，不从整体最优上加以考虑，他所做出的仅是在某种意义上的局部最优解。 贪心算法没有固定的算法框架，算法设计的关键是贪心策略的选择。必须注意的是，贪心算法不是对所有问题都能得到整体最优解，选择贪心策略必须具备无后效性，即某个状态以后的过程中不会影响以前的状态，只与当前状态有关。 所以对所采用的贪心策略一定要仔细分析其">
 
 
 
@@ -127,13 +135,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/2018/03/22/&#x4E94;&#x5927;&#x5E38;&#x7528;&#x7B97;&#x6CD5;&#xFF1A;&#x8D2A;&#x5FC3;&#x7B97;&#x6CD5;/">
+  <link rel="canonical" href="http://yoursite.com/2018/03/22/五大常用算法：贪心算法/">
 
 
 
 
 
-  <title>&#x4E94;&#x5927;&#x5E38;&#x7528;&#x7B97;&#x6CD5;&#xFF1A;&#x8D2A;&#x5FC3;&#x7B97;&#x6CD5; | Kings Cooober&apos;s Blog</title>
+  <title>五大常用算法：贪心算法 | Kings Cooober's Blog</title>
   
 
 
@@ -145,7 +153,7 @@
 
 </head>
 
-<body itemscope="" itemtype="http://schema.org/WebPage" lang="zh-Hans">
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
 
   
   
@@ -156,7 +164,7 @@
     <div class="headband"></div>
     <a href="https://github.com/kingscooober"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://s3.amazonaws.com/github/ribbons/forkme_right_darkblue_121621.png" alt="Fork me on GitHub"></a>
 
-    <header id="header" class="header" itemscope="" itemtype="http://schema.org/WPHeader">
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
       <div class="header-inner"><div class="site-brand-wrapper">
   <div class="site-meta ">
     
@@ -164,7 +172,7 @@
     <div class="custom-logo-site-title">
       <a href="/" class="brand" rel="start">
         <span class="logo-line-before"><i></i></span>
-        <span class="site-title">Kings Cooober&apos;s Blog</span>
+        <span class="site-title">Kings Cooober's Blog</span>
         <span class="logo-line-after"><i></i></span>
       </a>
     </div>
@@ -194,7 +202,7 @@
             
               <i class="menu-item-icon fa fa-fw fa-home"></i> <br>
             
-            &#x9996;&#x9875;
+            首页
           </a>
         </li>
       
@@ -204,7 +212,7 @@
             
               <i class="menu-item-icon fa fa-fw fa-user"></i> <br>
             
-            &#x5173;&#x4E8E;
+            关于
           </a>
         </li>
       
@@ -214,7 +222,7 @@
             
               <i class="menu-item-icon fa fa-fw fa-tags"></i> <br>
             
-            &#x6807;&#x7B7E;
+            标签
           </a>
         </li>
       
@@ -224,7 +232,7 @@
             
               <i class="menu-item-icon fa fa-fw fa-th"></i> <br>
             
-            &#x5206;&#x7C7B;
+            分类
           </a>
         </li>
       
@@ -234,7 +242,7 @@
             
               <i class="menu-item-icon fa fa-fw fa-archive"></i> <br>
             
-            &#x5F52;&#x6863;
+            归档
           </a>
         </li>
       
@@ -247,7 +255,7 @@
             
               <i class="menu-item-icon fa fa-search fa-fw"></i> <br>
             
-            &#x641C;&#x7D22;
+            搜索
           </a>
         </li>
       
@@ -266,7 +274,7 @@
       <i class="fa fa-times-circle"></i>
     </span>
     <div class="local-search-input-wrapper">
-      <input autocomplete="off" placeholder="&#x641C;&#x7D22;..." spellcheck="false" type="text" id="local-search-input">
+      <input autocomplete="off" placeholder="搜索..." spellcheck="false" type="text" id="local-search-input">
     </div>
   </div>
   <div id="local-search-result"></div>
@@ -298,21 +306,21 @@
   
   
 
-  <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
   
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/03/22/&#x4E94;&#x5927;&#x5E38;&#x7528;&#x7B97;&#x6CD5;&#xFF1A;&#x8D2A;&#x5FC3;&#x7B97;&#x6CD5;/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/03/22/五大常用算法：贪心算法/">
 
-    <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Kings Cooober">
-      <meta itemprop="description" content="">
+      <meta itemprop="description" content>
       <meta itemprop="image" content="/images/avatar.jpg">
     </span>
 
-    <span hidden itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Kings Cooober&apos;s Blog">
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Kings Cooober's Blog">
     </span>
 
     
@@ -320,7 +328,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">&#x4E94;&#x5927;&#x5E38;&#x7528;&#x7B97;&#x6CD5;&#xFF1A;&#x8D2A;&#x5FC3;&#x7B97;&#x6CD5;</h1>
+          <h1 class="post-title" itemprop="name headline">五大常用算法：贪心算法</h1>
         
 
         <div class="post-meta">
@@ -330,9 +338,9 @@
                 <i class="fa fa-calendar-o"></i>
               </span>
               
-                <span class="post-meta-item-text">&#x53D1;&#x8868;&#x4E8E;</span>
+                <span class="post-meta-item-text">发表于</span>
               
-              <time title="&#x521B;&#x5EFA;&#x4E8E;" itemprop="dateCreated datePublished" datetime="2018-03-22T17:36:51+08:00">
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-03-22T17:36:51+08:00">
                 2018-03-22
               </time>
             
@@ -346,9 +354,9 @@
                 <i class="fa fa-calendar-check-o"></i>
               </span>
               
-                <span class="post-meta-item-text">&#x66F4;&#x65B0;&#x4E8E;:</span>
+                <span class="post-meta-item-text">更新于&#58;</span>
               
-              <time title="&#x66F4;&#x65B0;&#x4E8E;" itemprop="dateModified" datetime="2018-06-28T18:27:32+08:00">
+              <time title="更新于" itemprop="dateModified" datetime="2018-06-28T18:27:32+08:00">
                 2018-06-28
               </time>
             
@@ -362,13 +370,13 @@
 
           
           
-             <span id="/2018/03/22/&#x4E94;&#x5927;&#x5E38;&#x7528;&#x7B97;&#x6CD5;&#xFF1A;&#x8D2A;&#x5FC3;&#x7B97;&#x6CD5;/" class="leancloud_visitors" data-flag-title="&#x4E94;&#x5927;&#x5E38;&#x7528;&#x7B97;&#x6CD5;&#xFF1A;&#x8D2A;&#x5FC3;&#x7B97;&#x6CD5;">
+             <span id="/2018/03/22/五大常用算法：贪心算法/" class="leancloud_visitors" data-flag-title="五大常用算法：贪心算法">
                <span class="post-meta-divider">|</span>
                <span class="post-meta-item-icon">
                  <i class="fa fa-eye"></i>
                </span>
                
-                 <span class="post-meta-item-text">&#x9605;&#x8BFB;&#x6B21;&#x6570;:</span>
+                 <span class="post-meta-item-text">阅读次数&#58;</span>
                
                  <span class="leancloud-visitors-count"></span>
              </span>
@@ -393,60 +401,60 @@
       
 
       
-        <h4 id="&#x4E00;&#x3001;&#x57FA;&#x672C;&#x6982;&#x5FF5;"><a href="#&#x4E00;&#x3001;&#x57FA;&#x672C;&#x6982;&#x5FF5;" class="headerlink" title="&#x4E00;&#x3001;&#x57FA;&#x672C;&#x6982;&#x5FF5;"></a>&#x4E00;&#x3001;&#x57FA;&#x672C;&#x6982;&#x5FF5;</h4><p>&#x6240;&#x8C13;&#x8D2A;&#x5FC3;&#x7B97;&#x6CD5;&#x662F;&#x6307;&#xFF0C;&#x5728;&#x5BF9;&#x95EE;&#x9898;&#x6C42;&#x89E3;&#x65F6;&#xFF0C;&#x603B;&#x662F;&#x505A;&#x51FA;&#x5728;&#x5F53;&#x524D;&#x770B;&#x6765;&#x662F;&#x6700;&#x597D;&#x7684;&#x9009;&#x62E9;&#x3002;&#x4E5F;&#x5C31;&#x662F;&#x8BF4;&#xFF0C;&#x4E0D;&#x4ECE;&#x6574;&#x4F53;&#x6700;&#x4F18;&#x4E0A;&#x52A0;&#x4EE5;&#x8003;&#x8651;&#xFF0C;&#x4ED6;&#x6240;&#x505A;&#x51FA;&#x7684;&#x4EC5;&#x662F;&#x5728;&#x67D0;&#x79CD;&#x610F;&#x4E49;&#x4E0A;&#x7684;&#x5C40;&#x90E8;&#x6700;&#x4F18;&#x89E3;&#x3002;</p>
-<p>&#x8D2A;&#x5FC3;&#x7B97;&#x6CD5;&#x6CA1;&#x6709;&#x56FA;&#x5B9A;&#x7684;&#x7B97;&#x6CD5;&#x6846;&#x67B6;&#xFF0C;&#x7B97;&#x6CD5;&#x8BBE;&#x8BA1;&#x7684;&#x5173;&#x952E;&#x662F;&#x8D2A;&#x5FC3;&#x7B56;&#x7565;&#x7684;&#x9009;&#x62E9;&#x3002;&#x5FC5;&#x987B;&#x6CE8;&#x610F;&#x7684;&#x662F;&#xFF0C;&#x8D2A;&#x5FC3;&#x7B97;&#x6CD5;&#x4E0D;&#x662F;&#x5BF9;&#x6240;&#x6709;&#x95EE;&#x9898;&#x90FD;&#x80FD;&#x5F97;&#x5230;&#x6574;&#x4F53;&#x6700;&#x4F18;&#x89E3;&#xFF0C;&#x9009;&#x62E9;&#x8D2A;&#x5FC3;&#x7B56;&#x7565;&#x5FC5;&#x987B;&#x5177;&#x5907;&#x65E0;&#x540E;&#x6548;&#x6027;&#xFF0C;&#x5373;&#x67D0;&#x4E2A;&#x72B6;&#x6001;&#x4EE5;&#x540E;&#x7684;&#x8FC7;&#x7A0B;&#x4E2D;&#x4E0D;&#x4F1A;&#x5F71;&#x54CD;&#x4EE5;&#x524D;&#x7684;&#x72B6;&#x6001;&#xFF0C;&#x53EA;&#x4E0E;&#x5F53;&#x524D;&#x72B6;&#x6001;&#x6709;&#x5173;&#x3002;</p>
-<p>&#x6240;&#x4EE5;&#x5BF9;&#x6240;&#x91C7;&#x7528;&#x7684;&#x8D2A;&#x5FC3;&#x7B56;&#x7565;&#x4E00;&#x5B9A;&#x8981;&#x4ED4;&#x7EC6;&#x5206;&#x6790;&#x5176;&#x662F;&#x5426;&#x6EE1;&#x8DB3;&#x65E0;&#x540E;&#x6548;&#x6027;&#x3002;</p>
-<h4 id="&#x4E8C;&#x3001;&#x8D2A;&#x5FC3;&#x7B97;&#x6CD5;&#x7684;&#x57FA;&#x672C;&#x601D;&#x8DEF;"><a href="#&#x4E8C;&#x3001;&#x8D2A;&#x5FC3;&#x7B97;&#x6CD5;&#x7684;&#x57FA;&#x672C;&#x601D;&#x8DEF;" class="headerlink" title="&#x4E8C;&#x3001;&#x8D2A;&#x5FC3;&#x7B97;&#x6CD5;&#x7684;&#x57FA;&#x672C;&#x601D;&#x8DEF;"></a>&#x4E8C;&#x3001;&#x8D2A;&#x5FC3;&#x7B97;&#x6CD5;&#x7684;&#x57FA;&#x672C;&#x601D;&#x8DEF;</h4><ol>
-<li>&#x5EFA;&#x7ACB;&#x6570;&#x5B66;&#x6A21;&#x578B;&#x6765;&#x63CF;&#x8FF0;&#x95EE;&#x9898;&#x3002;</li>
-<li>&#x628A;&#x6C42;&#x89E3;&#x7684;&#x95EE;&#x9898;&#x5206;&#x6210;&#x82E5;&#x5E72;&#x4E2A;&#x5B50;&#x95EE;&#x9898;&#x3002;</li>
-<li>&#x5BF9;&#x6BCF;&#x4E00;&#x5B50;&#x95EE;&#x9898;&#x6C42;&#x89E3;&#xFF0C;&#x5F97;&#x5230;&#x5B50;&#x95EE;&#x9898;&#x7684;&#x5C40;&#x90E8;&#x6700;&#x4F18;&#x89E3;&#x3002;</li>
-<li>&#x628A;&#x5B50;&#x95EE;&#x9898;&#x7684;&#x89E3;&#x5C40;&#x90E8;&#x6700;&#x4F18;&#x89E3;&#x5408;&#x6210;&#x539F;&#x6765;&#x95EE;&#x9898;&#x7684;&#x4E00;&#x4E2A;&#x89E3;&#x3002;</li>
+        <h4 id="一、基本概念"><a href="#一、基本概念" class="headerlink" title="一、基本概念"></a>一、基本概念</h4><p>所谓贪心算法是指，在对问题求解时，总是做出在当前看来是最好的选择。也就是说，不从整体最优上加以考虑，他所做出的仅是在某种意义上的局部最优解。</p>
+<p>贪心算法没有固定的算法框架，算法设计的关键是贪心策略的选择。必须注意的是，贪心算法不是对所有问题都能得到整体最优解，选择贪心策略必须具备无后效性，即某个状态以后的过程中不会影响以前的状态，只与当前状态有关。</p>
+<p>所以对所采用的贪心策略一定要仔细分析其是否满足无后效性。</p>
+<h4 id="二、贪心算法的基本思路"><a href="#二、贪心算法的基本思路" class="headerlink" title="二、贪心算法的基本思路"></a>二、贪心算法的基本思路</h4><ol>
+<li>建立数学模型来描述问题。</li>
+<li>把求解的问题分成若干个子问题。</li>
+<li>对每一子问题求解，得到子问题的局部最优解。</li>
+<li>把子问题的解局部最优解合成原来问题的一个解。</li>
 </ol>
-<h4 id="&#x4E09;&#x3001;&#x8D2A;&#x5FC3;&#x7B97;&#x6CD5;&#x9002;&#x7528;&#x7684;&#x95EE;&#x9898;"><a href="#&#x4E09;&#x3001;&#x8D2A;&#x5FC3;&#x7B97;&#x6CD5;&#x9002;&#x7528;&#x7684;&#x95EE;&#x9898;" class="headerlink" title="&#x4E09;&#x3001;&#x8D2A;&#x5FC3;&#x7B97;&#x6CD5;&#x9002;&#x7528;&#x7684;&#x95EE;&#x9898;"></a>&#x4E09;&#x3001;&#x8D2A;&#x5FC3;&#x7B97;&#x6CD5;&#x9002;&#x7528;&#x7684;&#x95EE;&#x9898;</h4><p>&#x8D2A;&#x5FC3;&#x7B56;&#x7565;&#x9002;&#x7528;&#x7684;&#x524D;&#x63D0;&#x662F;&#xFF1A;&#x5C40;&#x90E8;&#x6700;&#x4F18;&#x89E3;&#x7B56;&#x7565;&#x80FD;&#x5BFC;&#x81F4;&#x4EA7;&#x751F;&#x5168;&#x5C40;&#x6700;&#x4F18;&#x89E3;&#x3002;</p>
-<p>&#x5B9E;&#x9645;&#x4E0A;&#xFF0C;&#x8D2A;&#x5FC3;&#x7B97;&#x6CD5;&#x9002;&#x7528;&#x7684;&#x60C5;&#x51B5;&#x5F88;&#x5C11;&#x3002;&#x4E00;&#x822C;&#xFF0C;&#x5BF9;&#x4E00;&#x4E2A;&#x95EE;&#x9898;&#x5206;&#x6790;&#x662F;&#x5426;&#x9002;&#x7528;&#x4E8E;&#x8D2A;&#x5FC3;&#x7B97;&#x6CD5;&#xFF0C;&#x53EF;&#x4EE5;&#x5148;&#x9009;&#x62E9;&#x8BE5;&#x95EE;&#x9898;&#x4E0B;&#x7684;&#x51E0;&#x4E2A;&#x5B9E;&#x9645;&#x6570;&#x636E;&#x8FDB;&#x884C;&#x5206;&#x6790;&#xFF0C;&#x5C31;&#x53EF;&#x505A;&#x51FA;&#x5224;&#x65AD;&#x3002;</p>
-<h4 id="&#x56DB;&#x3001;&#x8D2A;&#x5FC3;&#x7B97;&#x6CD5;&#x7684;&#x5B9E;&#x73B0;&#x6846;&#x67B6;"><a href="#&#x56DB;&#x3001;&#x8D2A;&#x5FC3;&#x7B97;&#x6CD5;&#x7684;&#x5B9E;&#x73B0;&#x6846;&#x67B6;" class="headerlink" title="&#x56DB;&#x3001;&#x8D2A;&#x5FC3;&#x7B97;&#x6CD5;&#x7684;&#x5B9E;&#x73B0;&#x6846;&#x67B6;"></a>&#x56DB;&#x3001;&#x8D2A;&#x5FC3;&#x7B97;&#x6CD5;&#x7684;&#x5B9E;&#x73B0;&#x6846;&#x67B6;</h4><p>&#x4ECE;&#x95EE;&#x9898;&#x7684;&#x67D0;&#x4E00;&#x521D;&#x59CB;&#x89E3;&#x51FA;&#x53D1;&#xFF1B;</p>
-<pre><code>while (&#x80FD;&#x671D;&#x7ED9;&#x5B9A;&#x603B;&#x76EE;&#x6807;&#x524D;&#x8FDB;&#x4E00;&#x6B65;)
+<h4 id="三、贪心算法适用的问题"><a href="#三、贪心算法适用的问题" class="headerlink" title="三、贪心算法适用的问题"></a>三、贪心算法适用的问题</h4><p>贪心策略适用的前提是：局部最优解策略能导致产生全局最优解。</p>
+<p>实际上，贪心算法适用的情况很少。一般，对一个问题分析是否适用于贪心算法，可以先选择该问题下的几个实际数据进行分析，就可做出判断。</p>
+<h4 id="四、贪心算法的实现框架"><a href="#四、贪心算法的实现框架" class="headerlink" title="四、贪心算法的实现框架"></a>四、贪心算法的实现框架</h4><p>从问题的某一初始解出发；</p>
+<pre><code>while (能朝给定总目标前进一步)
 {
-    &#x5229;&#x7528;&#x53EF;&#x884C;&#x7684;&#x51B3;&#x7B56;&#xFF0C;&#x6C42;&#x51FA;&#x53EF;&#x884C;&#x89E3;&#x7684;&#x4E00;&#x4E2A;&#x89E3;&#x5143;&#x7D20;&#xFF1B;
+    利用可行的决策，求出可行解的一个解元素；
 }
-</code></pre><p> &#x7531;&#x6240;&#x6709;&#x89E3;&#x5143;&#x7D20;&#x7EC4;&#x5408;&#x6210;&#x95EE;&#x9898;&#x7684;&#x4E00;&#x4E2A;&#x53EF;&#x884C;&#x89E3;&#xFF1B;</p>
-<h4 id="&#x4E94;&#x3001;&#x8D2A;&#x5FC3;&#x7B56;&#x7565;&#x7684;&#x9009;&#x62E9;"><a href="#&#x4E94;&#x3001;&#x8D2A;&#x5FC3;&#x7B56;&#x7565;&#x7684;&#x9009;&#x62E9;" class="headerlink" title="&#x4E94;&#x3001;&#x8D2A;&#x5FC3;&#x7B56;&#x7565;&#x7684;&#x9009;&#x62E9;"></a>&#x4E94;&#x3001;&#x8D2A;&#x5FC3;&#x7B56;&#x7565;&#x7684;&#x9009;&#x62E9;</h4><p>&#x56E0;&#x4E3A;&#x7528;&#x8D2A;&#x5FC3;&#x7B97;&#x6CD5;&#x53EA;&#x80FD;&#x901A;&#x8FC7;&#x89E3;&#x5C40;&#x90E8;&#x6700;&#x4F18;&#x89E3;&#x7684;&#x7B56;&#x7565;&#x6765;&#x8FBE;&#x5230;&#x5168;&#x5C40;&#x6700;&#x4F18;&#x89E3;&#xFF0C;&#x56E0;&#x6B64;&#xFF0C;&#x4E00;&#x5B9A;&#x8981;&#x6CE8;&#x610F;&#x5224;&#x65AD;&#x95EE;&#x9898;&#x662F;&#x5426;&#x9002;&#x5408;&#x91C7;&#x7528;&#x8D2A;&#x5FC3;&#x7B97;&#x6CD5;&#x7B56;&#x7565;&#xFF0C;&#x627E;&#x5230;&#x7684;&#x89E3;&#x662F;&#x5426;&#x4E00;&#x5B9A;&#x662F;&#x95EE;&#x9898;&#x7684;&#x6700;&#x4F18;&#x89E3;&#x3002;</p>
-<h4 id="&#x516D;&#x3001;&#x4F8B;&#x9898;&#x89E3;&#x6790;"><a href="#&#x516D;&#x3001;&#x4F8B;&#x9898;&#x89E3;&#x6790;" class="headerlink" title="&#x516D;&#x3001;&#x4F8B;&#x9898;&#x89E3;&#x6790;"></a>&#x516D;&#x3001;&#x4F8B;&#x9898;&#x89E3;&#x6790;</h4><p> &#x4E0B;&#x9762;&#x662F;&#x4E00;&#x4E2A;&#x53EF;&#x4EE5;&#x8BD5;&#x7528;&#x8D2A;&#x5FC3;&#x7B97;&#x6CD5;&#x89E3;&#x7684;&#x9898;&#x76EE;&#xFF0C;&#x8D2A;&#x5FC3;&#x89E3;&#x7684;&#x786E;&#x4E0D;&#x9519;&#xFF0C;&#x53EF;&#x60DC;&#x4E0D;&#x662F;&#x6700;&#x4F18;&#x89E3;&#x3002;</p>
-<p>[&#x80CC;&#x5305;&#x95EE;&#x9898;] &#x6709;&#x4E00;&#x4E2A;&#x80CC;&#x5305;&#xFF0C;&#x80CC;&#x5305;&#x5BB9;&#x91CF;&#x662F; M = 150&#xFF0C;&#x6709; 7 &#x4E2A;&#x7269;&#x54C1;&#xFF0C;&#x7269;&#x54C1;&#x53EF;&#x4EE5;&#x5206;&#x5272;&#x6210;&#x4EFB;&#x610F;&#x5927;&#x5C0F;&#x3002;</p>
-<p> &#x8981;&#x6C42;&#x5C3D;&#x53EF;&#x80FD;&#x8BA9;&#x88C5;&#x5165;&#x80CC;&#x5305;&#x4E2D;&#x7684;&#x7269;&#x54C1;&#x603B;&#x4EF7;&#x503C;&#x6700;&#x5927;&#xFF0C;&#x4F46;&#x4E0D;&#x80FD;&#x8D85;&#x8FC7;&#x603B;&#x5BB9;&#x91CF;&#x3002;</p>
+</code></pre><p> 由所有解元素组合成问题的一个可行解；</p>
+<h4 id="五、贪心策略的选择"><a href="#五、贪心策略的选择" class="headerlink" title="五、贪心策略的选择"></a>五、贪心策略的选择</h4><p>因为用贪心算法只能通过解局部最优解的策略来达到全局最优解，因此，一定要注意判断问题是否适合采用贪心算法策略，找到的解是否一定是问题的最优解。</p>
+<h4 id="六、例题解析"><a href="#六、例题解析" class="headerlink" title="六、例题解析"></a>六、例题解析</h4><p> 下面是一个可以试用贪心算法解的题目，贪心解的确不错，可惜不是最优解。</p>
+<p>[背包问题] 有一个背包，背包容量是 M = 150，有 7 个物品，物品可以分割成任意大小。</p>
+<p> 要求尽可能让装入背包中的物品总价值最大，但不能超过总容量。</p>
 <blockquote>
-<p>&#x7269;&#x54C1;   A B C D E F G<br>&#x91CD;&#x91CF;  35 30 60 50 40 10 25<br>&#x4EF7;&#x503C;  10 40 30 50 35 40 30</p>
+<p>物品   A B C D E F G<br>重量  35 30 60 50 40 10 25<br>价值  10 40 30 50 35 40 30</p>
 </blockquote>
-<p>&#x5206;&#x6790;&#xFF1A;</p>
-<p> &#x76EE;&#x6807;&#x51FD;&#x6570;&#xFF1A;$\sum pi$ &#x6700;&#x5927; </p>
-<p> &#x7EA6;&#x675F;&#x6761;&#x4EF6;&#x662F;&#x88C5;&#x5165;&#x7684;&#x7269;&#x54C1;&#x603B;&#x91CD;&#x91CF;&#x4E0D;&#x8D85;&#x8FC7;&#x80CC;&#x5305;&#x5BB9;&#x91CF;&#xFF1A; $\sum wi &lt;= M ( M = 150)$</p>
+<p>分析：</p>
+<p> 目标函数：$\sum pi$ 最大 </p>
+<p> 约束条件是装入的物品总重量不超过背包容量： $\sum wi &lt;= M ( M = 150)$</p>
 <ol>
-<li>&#x6839;&#x636E;&#x8D2A;&#x5FC3;&#x7684;&#x7B56;&#x7565;&#xFF0C;&#x6BCF;&#x6B21;&#x6311;&#x9009;&#x4EF7;&#x503C;&#x6700;&#x5927;&#x7684;&#x7269;&#x54C1;&#x88C5;&#x5165;&#x80CC;&#x5305;&#xFF0C;&#x5F97;&#x5230;&#x7684;&#x7ED3;&#x679C;&#x662F;&#x5426;&#x6700;&#x4F18;&#xFF1F;</li>
-<li>&#x6BCF;&#x6B21;&#x6311;&#x9009;&#x6240;&#x5360;&#x91CD;&#x91CF;&#x6700;&#x5C0F;&#x7684;&#x7269;&#x54C1;&#x88C5;&#x5165;&#x662F;&#x5426;&#x80FD;&#x5F97;&#x5230;&#x6700;&#x4F18;&#x89E3;&#xFF1F;</li>
-<li>&#x6BCF;&#x6B21;&#x9009;&#x53D6;&#x5355;&#x4F4D;&#x91CD;&#x91CF;&#x4EF7;&#x503C;&#x6700;&#x5927;&#x7684;&#x7269;&#x54C1;&#xFF0C;&#x6210;&#x4E3A;&#x89E3;&#x672C;&#x9898;&#x7684;&#x7B56;&#x7565;&#x3002;</li>
+<li>根据贪心的策略，每次挑选价值最大的物品装入背包，得到的结果是否最优？</li>
+<li>每次挑选所占重量最小的物品装入是否能得到最优解？</li>
+<li>每次选取单位重量价值最大的物品，成为解本题的策略。</li>
 </ol>
-<p>&#x503C;&#x5F97;&#x6CE8;&#x610F;&#x7684;&#x662F;&#xFF0C;&#x8D2A;&#x5FC3;&#x7B97;&#x6CD5;&#x5E76;&#x4E0D;&#x662F;&#x5B8C;&#x5168;&#x4E0D;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;&#xFF0C;&#x8D2A;&#x5FC3;&#x7B56;&#x7565;&#x4E00;&#x65E6;&#x7ECF;&#x8FC7;&#x8BC1;&#x660E;&#x6210;&#x7ACB;&#x540E;&#xFF0C;&#x5B83;&#x5C31;&#x662F;&#x4E00;&#x79CD;&#x9AD8;&#x6548;&#x7684;&#x7B97;&#x6CD5;&#x3002;</p>
-<p>&#x8D2A;&#x5FC3;&#x7B97;&#x6CD5;&#x8FD8;&#x662F;&#x5F88;&#x5E38;&#x89C1;&#x7684;&#x7B97;&#x6CD5;&#x4E4B;&#x4E00;&#xFF0C;&#x8FD9;&#x662F;&#x7531;&#x4E8E;&#x5B83;&#x7B80;&#x5355;&#x6613;&#x884C;&#xFF0C;&#x6784;&#x9020;&#x8D2A;&#x5FC3;&#x7B56;&#x7565;&#x4E0D;&#x662F;&#x5F88;&#x56F0;&#x96BE;&#x3002;</p>
-<p> &#x53EF;&#x60DC;&#x7684;&#x662F;&#x5B83;&#x9700;&#x8981;&#x8BC1;&#x660E;&#x540E;&#x624D;&#x80FD;&#x771F;&#x6B63;&#x8FD0;&#x7528;&#x5230;&#x9898;&#x76EE;&#x7684;&#x7B97;&#x6CD5;&#x4E2D;&#x3002;</p>
-<p> &#x4E00;&#x822C;&#x6765;&#x8BF4;&#xFF0C;&#x8D2A;&#x5FC3;&#x7B97;&#x6CD5;&#x7684;&#x8BC1;&#x660E;&#x56F4;&#x7ED5;&#x7740;&#xFF1A;&#x6574;&#x4E2A;&#x95EE;&#x9898;&#x7684;&#x6700;&#x4F18;&#x89E3;&#x4E00;&#x5B9A;&#x5728;&#x8D2A;&#x5FC3;&#x7B56;&#x7565;&#x4E2D;&#x5B58;&#x5728;&#x7684;&#x5B50;&#x95EE;&#x9898;&#x7684;&#x6700;&#x4F18;&#x89E3;&#x5F97;&#x6765;&#x7684;&#x3002; </p>
-<p> &#x5BF9;&#x4E8E;&#x4F8B;&#x9898;&#x4E2D;&#x7684; 3 &#x4E2D;&#x8D2A;&#x5FC3;&#x7B56;&#x7565;&#xFF0C;&#x90FD;&#x662F;&#x65E0;&#x6CD5;&#x6210;&#x7ACB;&#x7684;&#xFF08; &#x65E0;&#x6CD5;&#x88AB;&#x8BC1;&#x660E; &#xFF09;&#x7684;&#xFF0C;&#x89E3;&#x91CA;&#x5982;&#x4E0B;&#xFF1A;</p>
+<p>值得注意的是，贪心算法并不是完全不可以使用，贪心策略一旦经过证明成立后，它就是一种高效的算法。</p>
+<p>贪心算法还是很常见的算法之一，这是由于它简单易行，构造贪心策略不是很困难。</p>
+<p> 可惜的是它需要证明后才能真正运用到题目的算法中。</p>
+<p> 一般来说，贪心算法的证明围绕着：整个问题的最优解一定在贪心策略中存在的子问题的最优解得来的。 </p>
+<p> 对于例题中的 3 中贪心策略，都是无法成立的（ 无法被证明 ）的，解释如下：</p>
 <ol>
-<li><p>&#x8D2A;&#x5FC3;&#x7B56;&#x7565;&#xFF1A;&#x9009;&#x53D6;&#x4EF7;&#x503C;&#x6700;&#x5927;&#x8005;&#x3002; &#x53CD;&#x4F8B;&#xFF1A;</p>
+<li><p>贪心策略：选取价值最大者。 反例：</p>
 <blockquote>
-<p>W  = 30<br>&#x7269;&#x54C1;&#xFF1A; A B C<br>&#x91CD;&#x91CF;&#xFF1A; 28 12 12<br>&#x4EF7;&#x503C;&#xFF1A; 30 20 20</p>
+<p>W  = 30<br>物品： A B C<br>重量： 28 12 12<br>价值： 30 20 20</p>
 </blockquote>
-<p>&#x6839;&#x636E;&#x7B56;&#x7565;&#xFF0C;&#x9996;&#x5148;&#x9009;&#x53D6;&#x7269;&#x54C1; A&#xFF0C;&#x63A5;&#x4E0B;&#x6765;&#x5C31;&#x65E0;&#x6CD5;&#x518D;&#x9009;&#x53D6;&#x4E86;&#xFF0C;&#x53EF;&#x662F;&#xFF0C;&#x9009;&#x53D6; B&#x3001;C &#x5219;&#x66F4;&#x597D;&#x3002;</p>
+<p>根据策略，首先选取物品 A，接下来就无法再选取了，可是，选取 B、C 则更好。</p>
 </li>
-<li><p>&#x8D2A;&#x5FC3;&#x7B56;&#x7565;&#xFF1A;&#x9009;&#x53D6;&#x91CD;&#x91CF;&#x6700;&#x5C0F;&#x3002;&#x5B83;&#x7684;&#x53CD;&#x4F8B;&#x4E0E;&#x7B2C;&#x4E00;&#x79CD;&#x7B56;&#x7565;&#x7684;&#x53CD;&#x4F8B;&#x5DEE;&#x4E0D;&#x591A;&#x3002;</p>
+<li><p>贪心策略：选取重量最小。它的反例与第一种策略的反例差不多。</p>
 </li>
-<li><p>&#x8D2A;&#x5FC3;&#x7B56;&#x7565;&#xFF1A;&#x9009;&#x53D6;&#x5355;&#x4F4D;&#x91CD;&#x91CF;&#x4EF7;&#x503C;&#x6700;&#x5927;&#x7684;&#x7269;&#x54C1;&#x3002;&#x53CD;&#x4F8B;&#xFF1A;</p>
+<li><p>贪心策略：选取单位重量价值最大的物品。反例：</p>
 <blockquote>
-<p>W = 30<br>&#x7269;&#x54C1;&#xFF1A;A B C<br>&#x91CD;&#x91CF;&#xFF1A;28 20 10<br>&#x4EF7;&#x503C;&#xFF1A;28 20 10</p>
+<p>W = 30<br>物品：A B C<br>重量：28 20 10<br>价值：28 20 10</p>
 </blockquote>
-<p>&#x6839;&#x636E;&#x7B56;&#x7565;&#xFF0C;&#x4E09;&#x79CD;&#x7269;&#x54C1;&#x5355;&#x4F4D;&#x91CD;&#x91CF;&#x4EF7;&#x503C;&#x4E00;&#x6837;&#xFF0C;&#x7A0B;&#x5E8F;&#x65E0;&#x6CD5;&#x4F9D;&#x636E;&#x73B0;&#x6709;&#x7B56;&#x7565;&#x4F5C;&#x51FA;&#x5224;&#x65AD;&#xFF0C;&#x5982;&#x679C;&#x9009;&#x62E9; A&#xFF0C;&#x5219;&#x7B54;&#x6848;&#x9519;&#x8BEF;&#x3002;</p>
+<p>根据策略，三种物品单位重量价值一样，程序无法依据现有策略作出判断，如果选择 A，则答案错误。</p>
 </li>
 </ol>
-<script src="/live2dw/lib/L2Dwidget.min.js?0c58a1486de42ac6cc1c59c7d98ae887"></script><script>L2Dwidget.init({});</script>
+
       
     </div>
     
@@ -464,7 +472,7 @@
         <div>
     
         <div style="text-align:center;color: #ccc;font-size:14px;">
-            -------------&#x672C;&#x6587;&#x7ED3;&#x675F;<i class="fa fa-paw"></i>&#x611F;&#x8C22;&#x60A8;&#x7684;&#x9605;&#x8BFB;-------------
+            -------------本文结束<i class="fa fa-paw"></i>感谢您的阅读-------------
         </div>
     
 </div>
@@ -476,7 +484,7 @@
       
         <div class="post-tags">
           
-            <a href="/tags/&#x8D2A;&#x5FC3;&#x7B97;&#x6CD5;/" rel="tag"> <i class="fa fa-tag"></i> &#x8D2A;&#x5FC3;&#x7B97;&#x6CD5;</a>
+            <a href="/tags/贪心算法/" rel="tag"> <i class="fa fa-tag"></i> 贪心算法</a>
           
         </div>
       
@@ -489,8 +497,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2018/03/22/&#x4E94;&#x5927;&#x5E38;&#x7528;&#x7B97;&#x6CD5;&#xFF1A;&#x5206;&#x6CBB;&#x6CD5;/" rel="next" title="&#x4E94;&#x5927;&#x5E38;&#x7528;&#x7B97;&#x6CD5;&#xFF1A;&#x5206;&#x6CBB;&#x6CD5;">
-                <i class="fa fa-chevron-left"></i> &#x4E94;&#x5927;&#x5E38;&#x7528;&#x7B97;&#x6CD5;&#xFF1A;&#x5206;&#x6CBB;&#x6CD5;
+              <a href="/2018/03/22/五大常用算法：分治法/" rel="next" title="五大常用算法：分治法">
+                <i class="fa fa-chevron-left"></i> 五大常用算法：分治法
               </a>
             
           </div>
@@ -499,8 +507,8 @@
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/2018/03/22/&#x4E94;&#x5927;&#x5E38;&#x7528;&#x7B97;&#x6CD5;&#xFF1A;&#x52A8;&#x6001;&#x89C4;&#x5212;/" rel="prev" title="&#x4E94;&#x5927;&#x5E38;&#x7528;&#x7B97;&#x6CD5;&#xFF1A;&#x52A8;&#x6001;&#x89C4;&#x5212;">
-                &#x4E94;&#x5927;&#x5E38;&#x7528;&#x7B97;&#x6CD5;&#xFF1A;&#x52A8;&#x6001;&#x89C4;&#x5212; <i class="fa fa-chevron-right"></i>
+              <a href="/2018/03/22/五大常用算法：动态规划/" rel="prev" title="五大常用算法：动态规划">
+                五大常用算法：动态规划 <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>
@@ -555,22 +563,22 @@
       
         <ul class="sidebar-nav motion-element">
           <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
-            &#x6587;&#x7AE0;&#x76EE;&#x5F55;
+            文章目录
           </li>
           <li class="sidebar-nav-overview" data-target="site-overview-wrap">
-            &#x7AD9;&#x70B9;&#x6982;&#x89C8;
+            站点概览
           </li>
         </ul>
       
 
       <section class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
-          <div class="site-author motion-element" itemprop="author" itemscope="" itemtype="http://schema.org/Person">
+          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
               <img class="site-author-image" itemprop="image" src="/images/avatar.jpg" alt="Kings Cooober">
             
               <p class="site-author-name" itemprop="name">Kings Cooober</p>
-              <p class="site-description motion-element" itemprop="description">&#x4E00;&#x4E2A;&#x4EBA;&#x5E78;&#x8FD0;&#x7684;&#x524D;&#x63D0;&#xFF0C;&#x662F;&#x4ED6;&#x6709;&#x80FD;&#x529B;&#x6539;&#x53D8;&#x81EA;&#x5DF1;&#x3002;</p>
+              <p class="site-description motion-element" itemprop="description">一个人幸运的前提，是他有能力改变自己。</p>
           </div>
 
           <nav class="site-state motion-element">
@@ -580,8 +588,8 @@
               
                 <a href="/archives">
               
-                  <span class="site-state-item-count">73</span>
-                  <span class="site-state-item-name">&#x65E5;&#x5FD7;</span>
+                  <span class="site-state-item-count">75</span>
+                  <span class="site-state-item-name">日志</span>
                 </a>
               </div>
             
@@ -592,7 +600,7 @@
               <div class="site-state-item site-state-categories">
                 <a href="/categories/index.html">
                   <span class="site-state-item-count">7</span>
-                  <span class="site-state-item-name">&#x5206;&#x7C7B;</span>
+                  <span class="site-state-item-name">分类</span>
                 </a>
               </div>
             
@@ -603,7 +611,7 @@
               <div class="site-state-item site-state-tags">
                 <a href="/tags/index.html">
                   <span class="site-state-item-count">16</span>
-                  <span class="site-state-item-name">&#x6807;&#x7B7E;</span>
+                  <span class="site-state-item-name">标签</span>
                 </a>
               </div>
             
@@ -622,7 +630,7 @@
                   </span>
                 
                   <span class="links-of-author-item">
-                    <a href="mailto:kingscooober@gmail.com" target="_blank" title="E-Mail">
+                    <a href="mailto:kingscooober@yeah.net" target="_blank" title="E-Mail">
                       
                         <i class="fa fa-fw fa-envelope"></i>E-Mail</a>
                   </span>
@@ -651,7 +659,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-4"><a class="nav-link" href="#&#x4E00;&#x3001;&#x57FA;&#x672C;&#x6982;&#x5FF5;"><span class="nav-number">1.</span> <span class="nav-text">&#x4E00;&#x3001;&#x57FA;&#x672C;&#x6982;&#x5FF5;</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#&#x4E8C;&#x3001;&#x8D2A;&#x5FC3;&#x7B97;&#x6CD5;&#x7684;&#x57FA;&#x672C;&#x601D;&#x8DEF;"><span class="nav-number">2.</span> <span class="nav-text">&#x4E8C;&#x3001;&#x8D2A;&#x5FC3;&#x7B97;&#x6CD5;&#x7684;&#x57FA;&#x672C;&#x601D;&#x8DEF;</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#&#x4E09;&#x3001;&#x8D2A;&#x5FC3;&#x7B97;&#x6CD5;&#x9002;&#x7528;&#x7684;&#x95EE;&#x9898;"><span class="nav-number">3.</span> <span class="nav-text">&#x4E09;&#x3001;&#x8D2A;&#x5FC3;&#x7B97;&#x6CD5;&#x9002;&#x7528;&#x7684;&#x95EE;&#x9898;</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#&#x56DB;&#x3001;&#x8D2A;&#x5FC3;&#x7B97;&#x6CD5;&#x7684;&#x5B9E;&#x73B0;&#x6846;&#x67B6;"><span class="nav-number">4.</span> <span class="nav-text">&#x56DB;&#x3001;&#x8D2A;&#x5FC3;&#x7B97;&#x6CD5;&#x7684;&#x5B9E;&#x73B0;&#x6846;&#x67B6;</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#&#x4E94;&#x3001;&#x8D2A;&#x5FC3;&#x7B56;&#x7565;&#x7684;&#x9009;&#x62E9;"><span class="nav-number">5.</span> <span class="nav-text">&#x4E94;&#x3001;&#x8D2A;&#x5FC3;&#x7B56;&#x7565;&#x7684;&#x9009;&#x62E9;</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#&#x516D;&#x3001;&#x4F8B;&#x9898;&#x89E3;&#x6790;"><span class="nav-number">6.</span> <span class="nav-text">&#x516D;&#x3001;&#x4F8B;&#x9898;&#x89E3;&#x6790;</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-4"><a class="nav-link" href="#一、基本概念"><span class="nav-number">1.</span> <span class="nav-text">一、基本概念</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#二、贪心算法的基本思路"><span class="nav-number">2.</span> <span class="nav-text">二、贪心算法的基本思路</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#三、贪心算法适用的问题"><span class="nav-number">3.</span> <span class="nav-text">三、贪心算法适用的问题</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#四、贪心算法的实现框架"><span class="nav-number">4.</span> <span class="nav-text">四、贪心算法的实现框架</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#五、贪心策略的选择"><span class="nav-number">5.</span> <span class="nav-text">五、贪心策略的选择</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#六、例题解析"><span class="nav-number">6.</span> <span class="nav-text">六、例题解析</span></a></li></ol></div>
             
 
           </div>
@@ -671,7 +679,7 @@
 
     <footer id="footer" class="footer">
       <div class="footer-inner">
-        <div class="copyright">&#xA9; <span itemprop="copyrightYear">2018</span>
+        <div class="copyright">&copy; <span itemprop="copyrightYear">2019</span>
   <span class="with-love">
     <i class="fa fa-user"></i>
   </span>
@@ -702,17 +710,17 @@
 
   
     <span class="site-uv">
-      &#x603B;&#x8BBF;&#x5BA2;&#x6570; <i class="fa fa-user"></i>
+      总访客数 <i class="fa fa-user"></i>
       <span class="busuanzi-value" id="busuanzi_value_site_uv"></span>
-      &#x4EBA;
+      人
     </span>
   
 
   
     <span class="site-pv">
-      &#x603B;&#x8BBF;&#x95EE;&#x91CF; <i class="fa fa-eye"></i>
+      总访问量 <i class="fa fa-eye"></i>
       <span class="busuanzi-value" id="busuanzi_value_site_pv"></span>
-      &#x6B21;
+      次
     </span>
   
 </div>
@@ -1351,6 +1359,5 @@
 <!-- mathjax! -->
 <script type="text/javascript" src="/js/src/MathJax.js"></script>
 
-
-
-<script src="/live2dw/lib/L2Dwidget.min.js?0c58a1486de42ac6cc1c59c7d98ae887"></script><script>L2Dwidget.init({});</script></body></html>
+<script src="/live2dw/lib/L2Dwidget.min.js?0c58a1486de42ac6cc1c59c7d98ae887"></script><script>L2Dwidget.init({"log":false,"pluginJsPath":"lib/","pluginModelPath":"assets/","pluginRootPath":"live2dw/","tagMode":false});</script></body>
+</html>

@@ -1,4 +1,12 @@
-<!DOCTYPE html><html class="theme-next gemini use-motion" lang="zh-Hans"><head>
+<!DOCTYPE html>
+
+
+
+  
+
+
+<html class="theme-next gemini use-motion" lang="zh-Hans">
+<head><meta name="generator" content="Hexo 3.8.0">
   <meta charset="UTF-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
@@ -75,7 +83,7 @@
 
 
 
-  <meta name="keywords" content="&#x52A8;&#x6001;&#x89C4;&#x5212;,">
+  <meta name="keywords" content="动态规划,">
 
 
 
@@ -86,18 +94,18 @@
 
 
 
-<meta name="description" content="&amp;#x4E00;&amp;#x3001;&amp;#x57FA;&amp;#x672C;&amp;#x6982;&amp;#x5FF5; &amp;#x52A8;&amp;#x6001;&amp;#x89C4;&amp;#x5212;&amp;#x8FC7;&amp;#x7A0B;&amp;#x662F;&amp;#xFF1A;&amp;#x6BCF;&amp;#x6B21;&amp;#x51B3;&amp;#x7B56;&amp;#x4F9D;&amp;#x8D56;&amp;#x4E8E;&amp;#x5F53;&amp;#x524D;&amp;#x72B6;&amp;#x6001">
-<meta name="keywords" content="&#x52A8;&#x6001;&#x89C4;&#x5212;">
+<meta name="description" content="一、基本概念 动态规划过程是：每次决策依赖于当前状态，有随即引起状态的转移。一个决策序列就是在变化的状态中产生出来的，所以，这种多阶段最优化决策解决问题的过程就称为动态规划。 二、基本思路及策略 基本思想于分治法类似，也是将待求解的问题分解为若干个子问题（阶段），按顺序求解子阶段，前一子问题的解，为后一子问题的求解提供了有用的信息。在求解任一子问题时，列出各种可能的局部解，通过决策保留那些有可能达">
+<meta name="keywords" content="动态规划">
 <meta property="og:type" content="article">
-<meta property="og:title" content="&#x4E94;&#x5927;&#x5E38;&#x7528;&#x7B97;&#x6CD5;&#xFF1A;&#x52A8;&#x6001;&#x89C4;&#x5212;">
-<meta property="og:url" content="http://yoursite.com/2018/03/22/&#x4E94;&#x5927;&#x5E38;&#x7528;&#x7B97;&#x6CD5;&#xFF1A;&#x52A8;&#x6001;&#x89C4;&#x5212;/index.html">
-<meta property="og:site_name" content="Kings Cooober&apos;s Blog">
-<meta property="og:description" content="&amp;#x4E00;&amp;#x3001;&amp;#x57FA;&amp;#x672C;&amp;#x6982;&amp;#x5FF5; &amp;#x52A8;&amp;#x6001;&amp;#x89C4;&amp;#x5212;&amp;#x8FC7;&amp;#x7A0B;&amp;#x662F;&amp;#xFF1A;&amp;#x6BCF;&amp;#x6B21;&amp;#x51B3;&amp;#x7B56;&amp;#x4F9D;&amp;#x8D56;&amp;#x4E8E;&amp;#x5F53;&amp;#x524D;&amp;#x72B6;&amp;#x6001">
+<meta property="og:title" content="五大常用算法：动态规划">
+<meta property="og:url" content="http://yoursite.com/2018/03/22/五大常用算法：动态规划/index.html">
+<meta property="og:site_name" content="Kings Cooober&#39;s Blog">
+<meta property="og:description" content="一、基本概念 动态规划过程是：每次决策依赖于当前状态，有随即引起状态的转移。一个决策序列就是在变化的状态中产生出来的，所以，这种多阶段最优化决策解决问题的过程就称为动态规划。 二、基本思路及策略 基本思想于分治法类似，也是将待求解的问题分解为若干个子问题（阶段），按顺序求解子阶段，前一子问题的解，为后一子问题的求解提供了有用的信息。在求解任一子问题时，列出各种可能的局部解，通过决策保留那些有可能达">
 <meta property="og:locale" content="zh-Hans">
 <meta property="og:updated_time" content="2018-06-28T10:27:32.004Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="&#x4E94;&#x5927;&#x5E38;&#x7528;&#x7B97;&#x6CD5;&#xFF1A;&#x52A8;&#x6001;&#x89C4;&#x5212;">
-<meta name="twitter:description" content="&amp;#x4E00;&amp;#x3001;&amp;#x57FA;&amp;#x672C;&amp;#x6982;&amp;#x5FF5; &amp;#x52A8;&amp;#x6001;&amp;#x89C4;&amp;#x5212;&amp;#x8FC7;&amp;#x7A0B;&amp;#x662F;&amp;#xFF1A;&amp;#x6BCF;&amp;#x6B21;&amp;#x51B3;&amp;#x7B56;&amp;#x4F9D;&amp;#x8D56;&amp;#x4E8E;&amp;#x5F53;&amp;#x524D;&amp;#x72B6;&amp;#x6001">
+<meta name="twitter:title" content="五大常用算法：动态规划">
+<meta name="twitter:description" content="一、基本概念 动态规划过程是：每次决策依赖于当前状态，有随即引起状态的转移。一个决策序列就是在变化的状态中产生出来的，所以，这种多阶段最优化决策解决问题的过程就称为动态规划。 二、基本思路及策略 基本思想于分治法类似，也是将待求解的问题分解为若干个子问题（阶段），按顺序求解子阶段，前一子问题的解，为后一子问题的求解提供了有用的信息。在求解任一子问题时，列出各种可能的局部解，通过决策保留那些有可能达">
 
 
 
@@ -127,13 +135,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/2018/03/22/&#x4E94;&#x5927;&#x5E38;&#x7528;&#x7B97;&#x6CD5;&#xFF1A;&#x52A8;&#x6001;&#x89C4;&#x5212;/">
+  <link rel="canonical" href="http://yoursite.com/2018/03/22/五大常用算法：动态规划/">
 
 
 
 
 
-  <title>&#x4E94;&#x5927;&#x5E38;&#x7528;&#x7B97;&#x6CD5;&#xFF1A;&#x52A8;&#x6001;&#x89C4;&#x5212; | Kings Cooober&apos;s Blog</title>
+  <title>五大常用算法：动态规划 | Kings Cooober's Blog</title>
   
 
 
@@ -145,7 +153,7 @@
 
 </head>
 
-<body itemscope="" itemtype="http://schema.org/WebPage" lang="zh-Hans">
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
 
   
   
@@ -156,7 +164,7 @@
     <div class="headband"></div>
     <a href="https://github.com/kingscooober"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://s3.amazonaws.com/github/ribbons/forkme_right_darkblue_121621.png" alt="Fork me on GitHub"></a>
 
-    <header id="header" class="header" itemscope="" itemtype="http://schema.org/WPHeader">
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
       <div class="header-inner"><div class="site-brand-wrapper">
   <div class="site-meta ">
     
@@ -164,7 +172,7 @@
     <div class="custom-logo-site-title">
       <a href="/" class="brand" rel="start">
         <span class="logo-line-before"><i></i></span>
-        <span class="site-title">Kings Cooober&apos;s Blog</span>
+        <span class="site-title">Kings Cooober's Blog</span>
         <span class="logo-line-after"><i></i></span>
       </a>
     </div>
@@ -194,7 +202,7 @@
             
               <i class="menu-item-icon fa fa-fw fa-home"></i> <br>
             
-            &#x9996;&#x9875;
+            首页
           </a>
         </li>
       
@@ -204,7 +212,7 @@
             
               <i class="menu-item-icon fa fa-fw fa-user"></i> <br>
             
-            &#x5173;&#x4E8E;
+            关于
           </a>
         </li>
       
@@ -214,7 +222,7 @@
             
               <i class="menu-item-icon fa fa-fw fa-tags"></i> <br>
             
-            &#x6807;&#x7B7E;
+            标签
           </a>
         </li>
       
@@ -224,7 +232,7 @@
             
               <i class="menu-item-icon fa fa-fw fa-th"></i> <br>
             
-            &#x5206;&#x7C7B;
+            分类
           </a>
         </li>
       
@@ -234,7 +242,7 @@
             
               <i class="menu-item-icon fa fa-fw fa-archive"></i> <br>
             
-            &#x5F52;&#x6863;
+            归档
           </a>
         </li>
       
@@ -247,7 +255,7 @@
             
               <i class="menu-item-icon fa fa-search fa-fw"></i> <br>
             
-            &#x641C;&#x7D22;
+            搜索
           </a>
         </li>
       
@@ -266,7 +274,7 @@
       <i class="fa fa-times-circle"></i>
     </span>
     <div class="local-search-input-wrapper">
-      <input autocomplete="off" placeholder="&#x641C;&#x7D22;..." spellcheck="false" type="text" id="local-search-input">
+      <input autocomplete="off" placeholder="搜索..." spellcheck="false" type="text" id="local-search-input">
     </div>
   </div>
   <div id="local-search-result"></div>
@@ -298,21 +306,21 @@
   
   
 
-  <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
   
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/03/22/&#x4E94;&#x5927;&#x5E38;&#x7528;&#x7B97;&#x6CD5;&#xFF1A;&#x52A8;&#x6001;&#x89C4;&#x5212;/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/03/22/五大常用算法：动态规划/">
 
-    <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Kings Cooober">
-      <meta itemprop="description" content="">
+      <meta itemprop="description" content>
       <meta itemprop="image" content="/images/avatar.jpg">
     </span>
 
-    <span hidden itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Kings Cooober&apos;s Blog">
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Kings Cooober's Blog">
     </span>
 
     
@@ -320,7 +328,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">&#x4E94;&#x5927;&#x5E38;&#x7528;&#x7B97;&#x6CD5;&#xFF1A;&#x52A8;&#x6001;&#x89C4;&#x5212;</h1>
+          <h1 class="post-title" itemprop="name headline">五大常用算法：动态规划</h1>
         
 
         <div class="post-meta">
@@ -330,9 +338,9 @@
                 <i class="fa fa-calendar-o"></i>
               </span>
               
-                <span class="post-meta-item-text">&#x53D1;&#x8868;&#x4E8E;</span>
+                <span class="post-meta-item-text">发表于</span>
               
-              <time title="&#x521B;&#x5EFA;&#x4E8E;" itemprop="dateCreated datePublished" datetime="2018-03-22T17:37:04+08:00">
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-03-22T17:37:04+08:00">
                 2018-03-22
               </time>
             
@@ -346,9 +354,9 @@
                 <i class="fa fa-calendar-check-o"></i>
               </span>
               
-                <span class="post-meta-item-text">&#x66F4;&#x65B0;&#x4E8E;:</span>
+                <span class="post-meta-item-text">更新于&#58;</span>
               
-              <time title="&#x66F4;&#x65B0;&#x4E8E;" itemprop="dateModified" datetime="2018-06-28T18:27:32+08:00">
+              <time title="更新于" itemprop="dateModified" datetime="2018-06-28T18:27:32+08:00">
                 2018-06-28
               </time>
             
@@ -362,13 +370,13 @@
 
           
           
-             <span id="/2018/03/22/&#x4E94;&#x5927;&#x5E38;&#x7528;&#x7B97;&#x6CD5;&#xFF1A;&#x52A8;&#x6001;&#x89C4;&#x5212;/" class="leancloud_visitors" data-flag-title="&#x4E94;&#x5927;&#x5E38;&#x7528;&#x7B97;&#x6CD5;&#xFF1A;&#x52A8;&#x6001;&#x89C4;&#x5212;">
+             <span id="/2018/03/22/五大常用算法：动态规划/" class="leancloud_visitors" data-flag-title="五大常用算法：动态规划">
                <span class="post-meta-divider">|</span>
                <span class="post-meta-item-icon">
                  <i class="fa fa-eye"></i>
                </span>
                
-                 <span class="post-meta-item-text">&#x9605;&#x8BFB;&#x6B21;&#x6570;:</span>
+                 <span class="post-meta-item-text">阅读次数&#58;</span>
                
                  <span class="leancloud-visitors-count"></span>
              </span>
@@ -393,42 +401,42 @@
       
 
       
-        <h4 id="&#x4E00;&#x3001;&#x57FA;&#x672C;&#x6982;&#x5FF5;"><a href="#&#x4E00;&#x3001;&#x57FA;&#x672C;&#x6982;&#x5FF5;" class="headerlink" title="&#x4E00;&#x3001;&#x57FA;&#x672C;&#x6982;&#x5FF5;"></a>&#x4E00;&#x3001;&#x57FA;&#x672C;&#x6982;&#x5FF5;</h4><p> &#x52A8;&#x6001;&#x89C4;&#x5212;&#x8FC7;&#x7A0B;&#x662F;&#xFF1A;&#x6BCF;&#x6B21;&#x51B3;&#x7B56;&#x4F9D;&#x8D56;&#x4E8E;&#x5F53;&#x524D;&#x72B6;&#x6001;&#xFF0C;&#x6709;&#x968F;&#x5373;&#x5F15;&#x8D77;&#x72B6;&#x6001;&#x7684;&#x8F6C;&#x79FB;&#x3002;&#x4E00;&#x4E2A;&#x51B3;&#x7B56;&#x5E8F;&#x5217;&#x5C31;&#x662F;&#x5728;&#x53D8;&#x5316;&#x7684;&#x72B6;&#x6001;&#x4E2D;&#x4EA7;&#x751F;&#x51FA;&#x6765;&#x7684;&#xFF0C;&#x6240;&#x4EE5;&#xFF0C;&#x8FD9;&#x79CD;&#x591A;&#x9636;&#x6BB5;&#x6700;&#x4F18;&#x5316;&#x51B3;&#x7B56;&#x89E3;&#x51B3;&#x95EE;&#x9898;&#x7684;&#x8FC7;&#x7A0B;&#x5C31;&#x79F0;&#x4E3A;&#x52A8;&#x6001;&#x89C4;&#x5212;&#x3002;</p>
-<h4 id="&#x4E8C;&#x3001;&#x57FA;&#x672C;&#x601D;&#x8DEF;&#x53CA;&#x7B56;&#x7565;"><a href="#&#x4E8C;&#x3001;&#x57FA;&#x672C;&#x601D;&#x8DEF;&#x53CA;&#x7B56;&#x7565;" class="headerlink" title="&#x4E8C;&#x3001;&#x57FA;&#x672C;&#x601D;&#x8DEF;&#x53CA;&#x7B56;&#x7565;"></a>&#x4E8C;&#x3001;&#x57FA;&#x672C;&#x601D;&#x8DEF;&#x53CA;&#x7B56;&#x7565;</h4><p> &#x57FA;&#x672C;&#x601D;&#x60F3;&#x4E8E;&#x5206;&#x6CBB;&#x6CD5;&#x7C7B;&#x4F3C;&#xFF0C;&#x4E5F;&#x662F;&#x5C06;&#x5F85;&#x6C42;&#x89E3;&#x7684;&#x95EE;&#x9898;&#x5206;&#x89E3;&#x4E3A;&#x82E5;&#x5E72;&#x4E2A;&#x5B50;&#x95EE;&#x9898;&#xFF08;&#x9636;&#x6BB5;&#xFF09;&#xFF0C;&#x6309;&#x987A;&#x5E8F;&#x6C42;&#x89E3;&#x5B50;&#x9636;&#x6BB5;&#xFF0C;&#x524D;&#x4E00;&#x5B50;&#x95EE;&#x9898;&#x7684;&#x89E3;&#xFF0C;&#x4E3A;&#x540E;&#x4E00;&#x5B50;&#x95EE;&#x9898;&#x7684;&#x6C42;&#x89E3;&#x63D0;&#x4F9B;&#x4E86;&#x6709;&#x7528;&#x7684;&#x4FE1;&#x606F;&#x3002;&#x5728;&#x6C42;&#x89E3;&#x4EFB;&#x4E00;&#x5B50;&#x95EE;&#x9898;&#x65F6;&#xFF0C;&#x5217;&#x51FA;&#x5404;&#x79CD;&#x53EF;&#x80FD;&#x7684;&#x5C40;&#x90E8;&#x89E3;&#xFF0C;&#x901A;&#x8FC7;&#x51B3;&#x7B56;&#x4FDD;&#x7559;&#x90A3;&#x4E9B;&#x6709;&#x53EF;&#x80FD;&#x8FBE;&#x5230;&#x6700;&#x4F18;&#x7684;&#x5C40;&#x90E8;&#x89E3;&#xFF0C;&#x4E22;&#x5F03;&#x5176;&#x4ED6;&#x5C40;&#x90E8;&#x89E3;&#x3002;&#x4F9D;&#x6B21;&#x89E3;&#x51B3;&#x5404;&#x5B50;&#x95EE;&#x9898;&#xFF0C;&#x6700;&#x540E;&#x4E00;&#x4E2A;&#x5B50;&#x95EE;&#x9898;&#x5C31;&#x662F;&#x521D;&#x59CB;&#x95EE;&#x9898;&#x7684;&#x89E3;&#x3002;</p>
-<p> &#x7531;&#x4E8E;&#x52A8;&#x6001;&#x89C4;&#x5212;&#x89E3;&#x51B3;&#x7684;&#x95EE;&#x9898;&#x591A;&#x6570;&#x6709;&#x91CD;&#x53E0;&#x5B50;&#x95EE;&#x9898;&#x8FD9;&#x4E00;&#x7279;&#x70B9;&#xFF0C;&#x4E3A;&#x4E86;&#x51CF;&#x5C11;&#x91CD;&#x590D;&#x8BA1;&#x7B97;&#xFF0C;&#x5BF9;&#x6BCF;&#x4E00;&#x4E2A;&#x5B50;&#x95EE;&#x9898;&#x53EA;&#x89E3;&#x4E00;&#x6B21;&#xFF0C;&#x5C06;&#x5176;&#x4E0D;&#x540C;&#x9636;&#x6BB5;&#x7684;&#x4E0D;&#x540C;&#x72B6;&#x6001;&#x4FDD;&#x5B58;&#x5728;&#x4E00;&#x4E2A;&#x6570;&#x7EC4;&#x4E2D;&#x3002;</p>
-<p> &#x4E0E;&#x5206;&#x6CBB;&#x6CD5;&#x6700;&#x5927;&#x7684;&#x5DEE;&#x522B;&#x662F;&#xFF1A;&#x9002;&#x5408;&#x4E8E;&#x7528;&#x52A8;&#x6001;&#x89C4;&#x5212;&#x6CD5;&#x6C42;&#x89E3;&#x7684;&#x95EE;&#x9898;&#xFF0C;&#x7ECF;&#x5206;&#x89E3;&#x540E;&#x5F97;&#x5230;&#x7684;&#x5B50;&#x95EE;&#x9898;&#x5F80;&#x5F80;&#x4E0D;&#x662F;&#x76F8;&#x4E92;&#x72EC;&#x7ACB;&#x7684;&#xFF08;&#x5373;&#x4E0B;&#x4E00;&#x4E2A;&#x5B50;&#x9636;&#x6BB5;&#x7684;&#x6C42;&#x89E3;&#x662F;&#x5EFA;&#x7ACB;&#x5728;&#x4E0A;&#x4E00;&#x4E2A;&#x5B50;&#x9636;&#x6BB5;&#x7684;&#x89E3;&#x7684;&#x57FA;&#x7840;&#x4E0A;&#xFF0C;&#x8FDB;&#x884C;&#x8FDB;&#x4E00;&#x6B65;&#x7684;&#x6C42;&#x89E3;&#xFF09;&#x3002;</p>
-<h4 id="&#x4E09;&#x3001;&#x9002;&#x7528;&#x7684;&#x60C5;&#x51B5;"><a href="#&#x4E09;&#x3001;&#x9002;&#x7528;&#x7684;&#x60C5;&#x51B5;" class="headerlink" title="&#x4E09;&#x3001;&#x9002;&#x7528;&#x7684;&#x60C5;&#x51B5;"></a>&#x4E09;&#x3001;&#x9002;&#x7528;&#x7684;&#x60C5;&#x51B5;</h4><p> &#x80FD;&#x91C7;&#x7528;&#x52A8;&#x6001;&#x89C4;&#x5212;&#x6C42;&#x89E3;&#x7684;&#x95EE;&#x9898;&#x7684;&#x4E00;&#x822C;&#x8981;&#x5177;&#x6709;&#x4E09;&#x4E2A;&#x6027;&#x8D28;&#xFF1A;</p>
+        <h4 id="一、基本概念"><a href="#一、基本概念" class="headerlink" title="一、基本概念"></a>一、基本概念</h4><p> 动态规划过程是：每次决策依赖于当前状态，有随即引起状态的转移。一个决策序列就是在变化的状态中产生出来的，所以，这种多阶段最优化决策解决问题的过程就称为动态规划。</p>
+<h4 id="二、基本思路及策略"><a href="#二、基本思路及策略" class="headerlink" title="二、基本思路及策略"></a>二、基本思路及策略</h4><p> 基本思想于分治法类似，也是将待求解的问题分解为若干个子问题（阶段），按顺序求解子阶段，前一子问题的解，为后一子问题的求解提供了有用的信息。在求解任一子问题时，列出各种可能的局部解，通过决策保留那些有可能达到最优的局部解，丢弃其他局部解。依次解决各子问题，最后一个子问题就是初始问题的解。</p>
+<p> 由于动态规划解决的问题多数有重叠子问题这一特点，为了减少重复计算，对每一个子问题只解一次，将其不同阶段的不同状态保存在一个数组中。</p>
+<p> 与分治法最大的差别是：适合于用动态规划法求解的问题，经分解后得到的子问题往往不是相互独立的（即下一个子阶段的求解是建立在上一个子阶段的解的基础上，进行进一步的求解）。</p>
+<h4 id="三、适用的情况"><a href="#三、适用的情况" class="headerlink" title="三、适用的情况"></a>三、适用的情况</h4><p> 能采用动态规划求解的问题的一般要具有三个性质：</p>
 <ol>
-<li>&#x6700;&#x4F18;&#x5316;&#x539F;&#x7406;&#xFF1A;&#x5982;&#x679C;&#x95EE;&#x9898;&#x7684;&#x6700;&#x4F18;&#x89E3;&#x6240;&#x5305;&#x542B;&#x7684;&#x5B50;&#x95EE;&#x9898;&#x7684;&#x89E3;&#x4E5F;&#x662F;&#x6700;&#x4F18;&#x7684;&#xFF0C;&#x5C31;&#x79F0;&#x8BE5;&#x95EE;&#x9898;&#x5177;&#x6709;&#x6700;&#x4F18;&#x5B50;&#x7ED3;&#x6784;&#xFF0C;&#x5373;&#x6EE1;&#x8DB3;&#x6700;&#x4F18;&#x5316;&#x539F;&#x7406;&#x3002;</li>
-<li>&#x65E0;&#x540E;&#x6548;&#x6027;&#xFF1A;&#x5373;&#x67D0;&#x9636;&#x6BB5;&#x72B6;&#x6001;&#x4E00;&#x65E6;&#x786E;&#x5B9A;&#xFF0C;&#x5C31;&#x4E0D;&#x53D7;&#x8FD9;&#x4E2A;&#x72B6;&#x6001;&#x4EE5;&#x540E;&#x51B3;&#x7B56;&#x7684;&#x5F71;&#x54CD;&#x3002;&#x4E5F;&#x5C31;&#x662F;&#x8BF4;&#xFF0C;&#x67D0;&#x72B6;&#x6001;&#x4EE5;&#x540E;&#x7684;&#x8FC7;&#x7A0B;&#x4E0D;&#x4F1A;&#x5F71;&#x54CD;&#x4EE5;&#x524D;&#x7684;&#x72B6;&#x6001;&#xFF0C;&#x53EA;&#x4E0E;&#x5F53;&#x524D;&#x72B6;&#x6001;&#x6709;&#x5173;&#x3002;</li>
-<li>&#x6709;&#x91CD;&#x53E0;&#x5B50;&#x95EE;&#x9898;&#xFF1A;&#x5373;&#x5B50;&#x95EE;&#x9898;&#x4E4B;&#x95F4;&#x662F;&#x4E0D;&#x72EC;&#x7ACB;&#x7684;&#xFF0C;&#x4E00;&#x4E2A;&#x5B50;&#x95EE;&#x9898;&#x5728;&#x4E0B;&#x4E00;&#x9636;&#x6BB5;&#x51B3;&#x7B56;&#x4E2D;&#x53EF;&#x80FD;&#x88AB;&#x591A;&#x6B21;&#x4F7F;&#x7528;&#x5230;&#x3002;&#xFF08;&#x8BE5;&#x6027;&#x8D28;&#x5E76;&#x4E0D;&#x662F;&#x52A8;&#x6001;&#x89C4;&#x5212;&#x9002;&#x7528;&#x7684;&#x5FC5;&#x8981;&#x6761;&#x4EF6;&#xFF0C;&#x4F46;&#x662F;&#x5982;&#x679C;&#x6CA1;&#x6709;&#x8FD9;&#x6761;&#x6027;&#x8D28;&#xFF0C;&#x52A8;&#x6001;&#x89C4;&#x5212;&#x7B97;&#x6CD5;&#x540C;&#x5176;&#x4ED6;&#x7B97;&#x6CD5;&#x76F8;&#x6BD4;&#x5C31;&#x4E0D;&#x5177;&#x5907;&#x4F18;&#x52BF;&#xFF09;</li>
+<li>最优化原理：如果问题的最优解所包含的子问题的解也是最优的，就称该问题具有最优子结构，即满足最优化原理。</li>
+<li>无后效性：即某阶段状态一旦确定，就不受这个状态以后决策的影响。也就是说，某状态以后的过程不会影响以前的状态，只与当前状态有关。</li>
+<li>有重叠子问题：即子问题之间是不独立的，一个子问题在下一阶段决策中可能被多次使用到。（该性质并不是动态规划适用的必要条件，但是如果没有这条性质，动态规划算法同其他算法相比就不具备优势）</li>
 </ol>
-<h4 id="&#x56DB;&#x3001;&#x6C42;&#x89E3;&#x7684;&#x57FA;&#x672C;&#x6B65;&#x9AA4;"><a href="#&#x56DB;&#x3001;&#x6C42;&#x89E3;&#x7684;&#x57FA;&#x672C;&#x6B65;&#x9AA4;" class="headerlink" title="&#x56DB;&#x3001;&#x6C42;&#x89E3;&#x7684;&#x57FA;&#x672C;&#x6B65;&#x9AA4;"></a>&#x56DB;&#x3001;&#x6C42;&#x89E3;&#x7684;&#x57FA;&#x672C;&#x6B65;&#x9AA4;</h4><p> &#x52A8;&#x6001;&#x89C4;&#x5212;&#x6240;&#x5904;&#x7406;&#x7684;&#x95EE;&#x9898;&#x662F;&#x4E00;&#x4E2A;&#x591A;&#x9636;&#x6BB5;&#x51B3;&#x7B56;&#x95EE;&#x9898;&#xFF0C;&#x4E00;&#x822C;&#x7531;&#x521D;&#x59CB;&#x72B6;&#x6001;&#x5F00;&#x59CB;&#xFF0C;&#x901A;&#x8FC7;&#x5BF9;&#x4E2D;&#x95F4;&#x9636;&#x6BB5;&#x51B3;&#x7B56;&#x7684;&#x9009;&#x62E9;&#xFF0C;&#x8FBE;&#x5230;&#x7ED3;&#x675F;&#x72B6;&#x6001;&#x3002;&#x8FD9;&#x4E9B;&#x51B3;&#x7B56;&#x5F62;&#x6210;&#x4E86;&#x4E00;&#x4E2A;&#x51B3;&#x7B56;&#x5E8F;&#x5217;&#xFF0C;&#x540C;&#x65F6;&#x786E;&#x5B9A;&#x4E86;&#x5B8C;&#x6210;&#x6574;&#x4E2A;&#x8FC7;&#x7A0B;&#x7684;&#x4E00;&#x6761;&#x6D3B;&#x52A8;&#x8DEF;&#x7EBF;&#xFF08;&#x901A;&#x5E38;&#x662F;&#x6C42;&#x89E3;&#x6700;&#x4F18;&#x7684;&#x6D3B;&#x52A8;&#x8DEF;&#x7EBF;&#xFF09;&#x3002;&#x5982;&#x56FE;&#x6240;&#x793A;&#x3002;&#x52A8;&#x6001;&#x89C4;&#x5212;&#x7684;&#x8BBE;&#x8BA1;&#x90FD;&#x6709;&#x7740;&#x4E00;&#x5B9A;&#x7684;&#x6A21;&#x5F0F;&#xFF0C;&#x4E00;&#x822C;&#x8981;&#x7ECF;&#x5386;&#x4EE5;&#x4E0B;&#x51E0;&#x4E2A;&#x6B65;&#x9AA4;&#xFF1A;</p>
-<figure class="highlight plain"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&#x521D;&#x59CB;&#x72B6;&#x6001;-&gt; &#x7ED3;&#x675F;&#x72B6;&#x6001; : -&gt; &#x51B3;&#x7B56;1 -&gt; &#x51B3;&#x7B56;2 -&gt;...-&gt; &#x51B3;&#x7B56;n -&gt;</span><br></pre></td></tr></tbody></table></figure>
+<h4 id="四、求解的基本步骤"><a href="#四、求解的基本步骤" class="headerlink" title="四、求解的基本步骤"></a>四、求解的基本步骤</h4><p> 动态规划所处理的问题是一个多阶段决策问题，一般由初始状态开始，通过对中间阶段决策的选择，达到结束状态。这些决策形成了一个决策序列，同时确定了完成整个过程的一条活动路线（通常是求解最优的活动路线）。如图所示。动态规划的设计都有着一定的模式，一般要经历以下几个步骤：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">初始状态-&gt; 结束状态 : -&gt; 决策1 -&gt; 决策2 -&gt;...-&gt; 决策n -&gt;</span><br></pre></td></tr></table></figure>
 <ol>
-<li>&#x5212;&#x5206;&#x9636;&#x6BB5;&#xFF1A;&#x6309;&#x7167;&#x95EE;&#x9898;&#x7684;&#x65F6;&#x95F4;&#x6216;&#x7A7A;&#x95F4;&#x7279;&#x5F81;&#xFF0C;&#x628A;&#x95EE;&#x9898;&#x5206;&#x4E3A;&#x82E5;&#x5E72;&#x9636;&#x6BB5;&#x3002;&#x5728;&#x5212;&#x5206;&#x9636;&#x6BB5;&#x65F6;&#xFF0C;&#x6CE8;&#x610F;&#x5212;&#x5206;&#x540E;&#x7684;&#x9636;&#x6BB5;&#x4E00;&#x5B9A;&#x8981;&#x662F;&#x8981;&#x6709;&#x5E8F;&#x7684;&#x6216;&#x8005;&#x662F;&#x53EF;&#x6392;&#x5E8F;&#x7684;&#xFF0C;&#x5426;&#x5219;&#x95EE;&#x9898;&#x5C31;&#x65E0;&#x6CD5;&#x6C42;&#x89E3;&#x3002;</li>
-<li>&#x786E;&#x5B9A;&#x72B6;&#x6001;&#x548C;&#x72B6;&#x6001;&#x53D8;&#x91CF;&#xFF1A;&#x5C06;&#x95EE;&#x9898;&#x53D1;&#x5C55;&#x5230;&#x5404;&#x4E2A;&#x9636;&#x6BB5;&#x65F6;&#x6240;&#x5904;&#x4E8E;&#x7684;&#x5404;&#x79CD;&#x5BA2;&#x89C2;&#x60C5;&#x51B5;&#x7528;&#x4E0D;&#x540C;&#x7684;&#x72B6;&#x6001;&#x8868;&#x793A;&#x51FA;&#x6765;&#x3002;&#x5F53;&#x7136;&#xFF0C;&#x72B6;&#x6001;&#x7684;&#x9009;&#x62E9;&#x8981;&#x6EE1;&#x8DB3;&#x65E0;&#x540E;&#x6548;&#x6027;&#x3002;</li>
-<li>&#x786E;&#x5B9A;&#x51B3;&#x7B56;&#x5E76;&#x5199;&#x51FA;&#x72B6;&#x6001;&#x8F6C;&#x79FB;&#x65B9;&#x7A0B;&#xFF1A;&#x56E0;&#x4E3A;&#x51B3;&#x7B56;&#x548C;&#x72B6;&#x6001;&#x8F6C;&#x79FB;&#x6709;&#x7740;&#x5929;&#x7136;&#x7684;&#x8054;&#x7CFB;&#xFF0C;&#x72B6;&#x6001;&#x8F6C;&#x79FB;&#x5C31;&#x662F;&#x6839;&#x636E;&#x4E0A;&#x4E00;&#x9636;&#x6BB5;&#x7684;&#x72B6;&#x6001;&#x548C;&#x51B3;&#x7B56;&#x6765;&#x5BFC;&#x51FA;&#x672C;&#x9636;&#x6BB5;&#x7684;&#x72B6;&#x6001;&#x3002;&#x6240;&#x4EE5;&#x5982;&#x679C;&#x786E;&#x5B9A;&#x4E86;&#x51B3;&#x7B56;&#xFF0C;&#x72B6;&#x6001;&#x8F6C;&#x79FB;&#x65B9;&#x7A0B;&#x4E5F;&#x5C31;&#x53EF;&#x5199;&#x51FA;&#x3002;&#x4F46;&#x4E8B;&#x5B9E;&#x4E0A;&#x5E38;&#x5E38;&#x662F;&#x53CD;&#x8FC7;&#x6765;&#x505A;&#xFF0C;&#x6839;&#x636E;&#x76F8;&#x90BB;&#x4E24;&#x4E2A;&#x9636;&#x6BB5;&#x7684;&#x72B6;&#x6001;&#x4E4B;&#x95F4;&#x7684;&#x5173;&#x7CFB;&#x6765;&#x786E;&#x5B9A;&#x51B3;&#x7B56;&#x65B9;&#x6CD5;&#x548C;&#x72B6;&#x6001;&#x8F6C;&#x79FB;&#x65B9;&#x7A0B;&#x3002;</li>
-<li>&#x5BFB;&#x627E;&#x8FB9;&#x754C;&#x6761;&#x4EF6;&#xFF1A;&#x7ED9;&#x51FA;&#x7684;&#x72B6;&#x6001;&#x8F6C;&#x79FB;&#x65B9;&#x7A0B;&#x662F;&#x4E00;&#x4E2A;&#x9012;&#x63A8;&#x5F0F;&#xFF0C;&#x9700;&#x8981;&#x4E00;&#x4E2A;&#x9012;&#x63A8;&#x7684;&#x7EC8;&#x6B62;&#x6761;&#x4EF6;&#x6216;&#x8FB9;&#x754C;&#x6761;&#x4EF6;&#x3002;</li>
+<li>划分阶段：按照问题的时间或空间特征，把问题分为若干阶段。在划分阶段时，注意划分后的阶段一定要是要有序的或者是可排序的，否则问题就无法求解。</li>
+<li>确定状态和状态变量：将问题发展到各个阶段时所处于的各种客观情况用不同的状态表示出来。当然，状态的选择要满足无后效性。</li>
+<li>确定决策并写出状态转移方程：因为决策和状态转移有着天然的联系，状态转移就是根据上一阶段的状态和决策来导出本阶段的状态。所以如果确定了决策，状态转移方程也就可写出。但事实上常常是反过来做，根据相邻两个阶段的状态之间的关系来确定决策方法和状态转移方程。</li>
+<li>寻找边界条件：给出的状态转移方程是一个递推式，需要一个递推的终止条件或边界条件。</li>
 </ol>
-<p>&#x4E00;&#x822C;&#xFF0C;&#x53EA;&#x8981;&#x89E3;&#x51B3;&#x95EE;&#x9898;&#x7684;&#x9636;&#x6BB5;&#xFF0C;&#x72B6;&#x6001;&#x8F6C;&#x79FB;&#x51B3;&#x7B56;&#x786E;&#x5B9A;&#x4E86;&#xFF0C;&#x5C31;&#x53EF;&#x4EE5;&#x5199;&#x51FA;&#x72B6;&#x6001;&#x8F6C;&#x79FB;&#x65B9;&#x7A0B;&#xFF08;&#x5305;&#x62EC;&#x8FB9;&#x754C;&#x6761;&#x4EF6;&#xFF09;&#x3002;</p>
-<p> &#x5B9E;&#x9645;&#x5E94;&#x7528;&#x4E2D;&#x53EF;&#x4EE5;&#x6309;&#x4EE5;&#x4E0B;&#x51E0;&#x4E2A;&#x7B80;&#x5316;&#x7684;&#x6B65;&#x9AA4;&#x8FDB;&#x884C;&#x8BBE;&#x8BA1;&#xFF1A;</p>
+<p>一般，只要解决问题的阶段，状态转移决策确定了，就可以写出状态转移方程（包括边界条件）。</p>
+<p> 实际应用中可以按以下几个简化的步骤进行设计：</p>
 <ol>
-<li>&#x5206;&#x6790;&#x6700;&#x4F18;&#x89E3;&#x7684;&#x6027;&#x8D28;&#xFF0C;&#x5E76;&#x523B;&#x753B;&#x5176;&#x7ED3;&#x6784;&#x7279;&#x5F81;&#x3002;</li>
-<li>&#x9012;&#x5F52;&#x7684;&#x5B9A;&#x4E49;&#x6700;&#x4F18;&#x89E3;&#x3002;</li>
-<li>&#x5DF2;&#x81EA;&#x5E95;&#x5411;&#x4E0A;&#x6216;&#x81EA;&#x9876;&#x5411;&#x4E0B;&#x7684;&#x8BB0;&#x5FC6;&#x5316;&#x65B9;&#x5F0F;&#xFF08;&#x5907;&#x5FD8;&#x5F55;&#x6CD5;&#xFF09;&#x8BA1;&#x7B97;&#x51FA;&#x6700;&#x4F18;&#x89E3;&#x3002;</li>
-<li>&#x6839;&#x636E;&#x8BA1;&#x7B97;&#x6700;&#x4F18;&#x503C;&#x65F6;&#x5F97;&#x5230;&#x7684;&#x4FE1;&#x606F;&#xFF0C;&#x6784;&#x9020;&#x95EE;&#x9898;&#x7684;&#x6700;&#x4F18;&#x89E3;&#x3002;</li>
+<li>分析最优解的性质，并刻画其结构特征。</li>
+<li>递归的定义最优解。</li>
+<li>已自底向上或自顶向下的记忆化方式（备忘录法）计算出最优解。</li>
+<li>根据计算最优值时得到的信息，构造问题的最优解。</li>
 </ol>
-<h4 id="&#x4E94;&#x3001;&#x7B97;&#x6CD5;&#x5B9E;&#x73B0;&#x7684;&#x8BF4;&#x660E;"><a href="#&#x4E94;&#x3001;&#x7B97;&#x6CD5;&#x5B9E;&#x73B0;&#x7684;&#x8BF4;&#x660E;" class="headerlink" title="&#x4E94;&#x3001;&#x7B97;&#x6CD5;&#x5B9E;&#x73B0;&#x7684;&#x8BF4;&#x660E;"></a>&#x4E94;&#x3001;&#x7B97;&#x6CD5;&#x5B9E;&#x73B0;&#x7684;&#x8BF4;&#x660E;</h4><p> &#x52A8;&#x6001;&#x89C4;&#x5212;&#x7684;&#x4E3B;&#x8981;&#x96BE;&#x70B9;&#x5728;&#x4E8E;&#x7406;&#x8BBA;&#x4E0A;&#x7684;&#x8BBE;&#x8BA1;&#xFF0C;&#x4E5F;&#x5C31;&#x662F;&#x4E0A;&#x9762;&#x56DB;&#x4E2A;&#x6B65;&#x9AA4;&#x7684;&#x786E;&#x5B9A;&#xFF0C;&#x4E00;&#x65E6;&#x8BBE;&#x8BA1;&#x5B8C;&#x6210;&#xFF0C;&#x5B9E;&#x73B0;&#x90E8;&#x5206;&#x5C31;&#x4F1A;&#x975E;&#x5E38;&#x7B80;&#x5355;&#x3002;</p>
-<p> &#x4F7F;&#x7528;&#x52A8;&#x6001;&#x89C4;&#x5212;&#x6C42;&#x89E3;&#x95EE;&#x9898;&#xFF0C;&#x6700;&#x91CD;&#x8981;&#x7684;&#x5C31;&#x662F;&#x786E;&#x5B9A;&#x52A8;&#x6001;&#x89C4;&#x5212;&#x4E09;&#x8981;&#x7D20;&#xFF1A;</p>
+<h4 id="五、算法实现的说明"><a href="#五、算法实现的说明" class="headerlink" title="五、算法实现的说明"></a>五、算法实现的说明</h4><p> 动态规划的主要难点在于理论上的设计，也就是上面四个步骤的确定，一旦设计完成，实现部分就会非常简单。</p>
+<p> 使用动态规划求解问题，最重要的就是确定动态规划三要素：</p>
 <ul>
-<li>&#x95EE;&#x9898;&#x7684;&#x9636;&#x6BB5;</li>
-<li>&#x6BCF;&#x4E2A;&#x9636;&#x6BB5;&#x7684;&#x72B6;&#x6001;</li>
-<li>&#x4ECE;&#x524D;&#x4E00;&#x4E2A;&#x9636;&#x6BB5;&#x8F6C;&#x5316;&#x5230;&#x540E;&#x4E00;&#x4E2A;&#x9636;&#x6BB5;&#x4E4B;&#x95F4;&#x7684;&#x9012;&#x63A8;&#x5173;&#x7CFB;&#x3002;</li>
+<li>问题的阶段</li>
+<li>每个阶段的状态</li>
+<li>从前一个阶段转化到后一个阶段之间的递推关系。</li>
 </ul>
-<p>&#x9012;&#x63A8;&#x5173;&#x7CFB;&#x5FC5;&#x987B;&#x662F;&#x4ECE;&#x6B21;&#x5C0F;&#x7684;&#x95EE;&#x9898;&#x5F00;&#x59CB;&#x5230;&#x8F83;&#x5927;&#x7684;&#x95EE;&#x9898;&#x4E4B;&#x95F4;&#x7684;&#x8F6C;&#x5316;&#xFF0C;&#x4ECE;&#x8FD9;&#x4E2A;&#x89D2;&#x5EA6;&#x6765;&#x8BF4;&#xFF0C;&#x52A8;&#x6001;&#x89C4;&#x5212;&#x5F80;&#x5F80;&#x53EF;&#x4EE5;&#x5229;&#x7528;&#x9012;&#x63A8;&#x7A0B;&#x5E8F;&#x6765;&#x5B9E;&#x73B0;&#xFF0C;&#x4E0D;&#x8FC7;&#x56E0;&#x4E3A;&#x9012;&#x63A8;&#x53EF;&#x4EE5;&#x5145;&#x5206;&#x5229;&#x7528;&#x524D;&#x9762;&#x4FDD;&#x5B58;&#x7684;&#x5B50;&#x95EE;&#x9898;&#x7684;&#x89E3;&#x6765;&#x51CF;&#x5C11;&#x91CD;&#x590D;&#x8BA1;&#x7B97;&#xFF0C;&#x6240;&#x4EE5;&#x5BF9;&#x4E8E;&#x5927;&#x89C4;&#x6A21;&#x95EE;&#x9898;&#x6765;&#x8BF4;&#xFF0C;&#x6709;&#x9012;&#x5F52;&#x4E0D;&#x53EF;&#x6BD4;&#x62DF;&#x7684;&#x4F18;&#x52BF;&#xFF0C;&#x8FD9;&#x4E5F;&#x662F;&#x52A8;&#x6001;&#x89C4;&#x5212;&#x7B97;&#x6CD5;&#x7684;&#x6838;&#x5FC3;&#x4E4B;&#x5904;&#x3002;</p>
-<p> &#x786E;&#x5B9A;&#x4E86;&#x52A8;&#x6001;&#x89C4;&#x5212;&#x7684;&#x8FD9;&#x4E09;&#x4E2A;&#x8981;&#x7D20;&#xFF0C;&#x6574;&#x4E2A;&#x6C42;&#x89E3;&#x8FC7;&#x7A0B;&#x5C31;&#x53EF;&#x4EE5;&#x7528;&#x4E00;&#x4E2A;&#x6700;&#x4F18;&#x51B3;&#x7B56;&#x8868;&#x6765;&#x63CF;&#x8FF0;&#xFF0C;&#x6700;&#x6709;&#x51B3;&#x7B56;&#x8868;&#x662F;&#x4E00;&#x4E2A;&#x4E8C;&#x7EF4;&#x8868;&#xFF0C;&#x5176;&#x4E2D;&#x884C;&#x8868;&#x793A;&#x51B3;&#x7B56;&#x7684;&#x9636;&#x6BB5;&#xFF0C;&#x5217;&#x8868;&#x662F;&#x95EE;&#x9898;&#x72B6;&#x6001;&#xFF0C;&#x8868;&#x683C;&#x9700;&#x8981;&#x586B;&#x5199;&#x7684;&#x6570;&#x636E;&#x4E00;&#x822C;&#x5BF9;&#x5E94;&#x6B64;&#x95EE;&#x9898;&#x7684;&#x5728;&#x67D0;&#x4E2A;&#x72B6;&#x6001;&#x4E0B;&#x7684;&#x6700;&#x4F18;&#x503C;&#xFF08;&#x5982;&#x6700;&#x77ED;&#x8DEF;&#x5F84;&#xFF0C;&#x6700;&#x957F;&#x516C;&#x5171;&#x5B50;&#x5E8F;&#x5217;&#xFF0C;&#x6700;&#x5927;&#x4EF7;&#x503C;&#x7B49;&#xFF09;&#xFF0C;&#x586B;&#x8868;&#x7684;&#x8FC7;&#x7A0B;&#x5C31;&#x662F;&#x6839;&#x636E;&#x9012;&#x63A8;&#x5173;&#x7CFB;&#xFF0C;&#x4ECE; 1 &#x884C; 1 &#x5217;&#x5F00;&#x59CB;&#xFF0C;&#x4EE5;&#x884C;&#x6216;&#x8005;&#x5217;&#x4F18;&#x5148;&#x7684;&#x987A;&#x5E8F;&#xFF0C;&#x4F9D;&#x6B21;&#x586B;&#x5199;&#x8868;&#x683C;&#xFF0C;&#x6700;&#x540E;&#x6839;&#x636E;&#x6574;&#x4E2A;&#x8868;&#x683C;&#x7684;&#x6570;&#x636E;&#x901A;&#x8FC7;&#x7B80;&#x5355;&#x7684;&#x53D6;&#x820D;&#x6216;&#x8005;&#x8FD0;&#x7B97;&#x6C42;&#x5F97;&#x95EE;&#x9898;&#x7684;&#x6700;&#x4F18;&#x89E3;&#x3002;</p>
-<script type="math/tex; mode=display">f(n, m) = max { f(n - 1, m), f(n - 1, m - w[n]) + P(n, m)}</script><script src="/live2dw/lib/L2Dwidget.min.js?0c58a1486de42ac6cc1c59c7d98ae887"></script><script>L2Dwidget.init({});</script>
+<p>递推关系必须是从次小的问题开始到较大的问题之间的转化，从这个角度来说，动态规划往往可以利用递推程序来实现，不过因为递推可以充分利用前面保存的子问题的解来减少重复计算，所以对于大规模问题来说，有递归不可比拟的优势，这也是动态规划算法的核心之处。</p>
+<p> 确定了动态规划的这三个要素，整个求解过程就可以用一个最优决策表来描述，最有决策表是一个二维表，其中行表示决策的阶段，列表是问题状态，表格需要填写的数据一般对应此问题的在某个状态下的最优值（如最短路径，最长公共子序列，最大价值等），填表的过程就是根据递推关系，从 1 行 1 列开始，以行或者列优先的顺序，依次填写表格，最后根据整个表格的数据通过简单的取舍或者运算求得问题的最优解。</p>
+<script type="math/tex; mode=display">f(n, m) = max { f(n - 1, m), f(n - 1, m - w[n]) + P(n, m)}</script>
       
     </div>
     
@@ -446,7 +454,7 @@
         <div>
     
         <div style="text-align:center;color: #ccc;font-size:14px;">
-            -------------&#x672C;&#x6587;&#x7ED3;&#x675F;<i class="fa fa-paw"></i>&#x611F;&#x8C22;&#x60A8;&#x7684;&#x9605;&#x8BFB;-------------
+            -------------本文结束<i class="fa fa-paw"></i>感谢您的阅读-------------
         </div>
     
 </div>
@@ -458,7 +466,7 @@
       
         <div class="post-tags">
           
-            <a href="/tags/&#x52A8;&#x6001;&#x89C4;&#x5212;/" rel="tag"> <i class="fa fa-tag"></i> &#x52A8;&#x6001;&#x89C4;&#x5212;</a>
+            <a href="/tags/动态规划/" rel="tag"> <i class="fa fa-tag"></i> 动态规划</a>
           
         </div>
       
@@ -471,8 +479,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2018/03/22/&#x4E94;&#x5927;&#x5E38;&#x7528;&#x7B97;&#x6CD5;&#xFF1A;&#x8D2A;&#x5FC3;&#x7B97;&#x6CD5;/" rel="next" title="&#x4E94;&#x5927;&#x5E38;&#x7528;&#x7B97;&#x6CD5;&#xFF1A;&#x8D2A;&#x5FC3;&#x7B97;&#x6CD5;">
-                <i class="fa fa-chevron-left"></i> &#x4E94;&#x5927;&#x5E38;&#x7528;&#x7B97;&#x6CD5;&#xFF1A;&#x8D2A;&#x5FC3;&#x7B97;&#x6CD5;
+              <a href="/2018/03/22/五大常用算法：贪心算法/" rel="next" title="五大常用算法：贪心算法">
+                <i class="fa fa-chevron-left"></i> 五大常用算法：贪心算法
               </a>
             
           </div>
@@ -481,8 +489,8 @@
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/2018/03/22/&#x4E94;&#x5927;&#x5E38;&#x7528;&#x7B97;&#x6CD5;&#xFF1A;&#x5206;&#x652F;&#x9650;&#x754C;&#x6CD5;/" rel="prev" title="&#x4E94;&#x5927;&#x5E38;&#x7528;&#x7B97;&#x6CD5;&#xFF1A;&#x5206;&#x652F;&#x9650;&#x754C;&#x6CD5;">
-                &#x4E94;&#x5927;&#x5E38;&#x7528;&#x7B97;&#x6CD5;&#xFF1A;&#x5206;&#x652F;&#x9650;&#x754C;&#x6CD5; <i class="fa fa-chevron-right"></i>
+              <a href="/2018/03/22/五大常用算法：分支限界法/" rel="prev" title="五大常用算法：分支限界法">
+                五大常用算法：分支限界法 <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>
@@ -537,22 +545,22 @@
       
         <ul class="sidebar-nav motion-element">
           <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
-            &#x6587;&#x7AE0;&#x76EE;&#x5F55;
+            文章目录
           </li>
           <li class="sidebar-nav-overview" data-target="site-overview-wrap">
-            &#x7AD9;&#x70B9;&#x6982;&#x89C8;
+            站点概览
           </li>
         </ul>
       
 
       <section class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
-          <div class="site-author motion-element" itemprop="author" itemscope="" itemtype="http://schema.org/Person">
+          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
               <img class="site-author-image" itemprop="image" src="/images/avatar.jpg" alt="Kings Cooober">
             
               <p class="site-author-name" itemprop="name">Kings Cooober</p>
-              <p class="site-description motion-element" itemprop="description">&#x4E00;&#x4E2A;&#x4EBA;&#x5E78;&#x8FD0;&#x7684;&#x524D;&#x63D0;&#xFF0C;&#x662F;&#x4ED6;&#x6709;&#x80FD;&#x529B;&#x6539;&#x53D8;&#x81EA;&#x5DF1;&#x3002;</p>
+              <p class="site-description motion-element" itemprop="description">一个人幸运的前提，是他有能力改变自己。</p>
           </div>
 
           <nav class="site-state motion-element">
@@ -562,8 +570,8 @@
               
                 <a href="/archives">
               
-                  <span class="site-state-item-count">73</span>
-                  <span class="site-state-item-name">&#x65E5;&#x5FD7;</span>
+                  <span class="site-state-item-count">75</span>
+                  <span class="site-state-item-name">日志</span>
                 </a>
               </div>
             
@@ -574,7 +582,7 @@
               <div class="site-state-item site-state-categories">
                 <a href="/categories/index.html">
                   <span class="site-state-item-count">7</span>
-                  <span class="site-state-item-name">&#x5206;&#x7C7B;</span>
+                  <span class="site-state-item-name">分类</span>
                 </a>
               </div>
             
@@ -585,7 +593,7 @@
               <div class="site-state-item site-state-tags">
                 <a href="/tags/index.html">
                   <span class="site-state-item-count">16</span>
-                  <span class="site-state-item-name">&#x6807;&#x7B7E;</span>
+                  <span class="site-state-item-name">标签</span>
                 </a>
               </div>
             
@@ -604,7 +612,7 @@
                   </span>
                 
                   <span class="links-of-author-item">
-                    <a href="mailto:kingscooober@gmail.com" target="_blank" title="E-Mail">
+                    <a href="mailto:kingscooober@yeah.net" target="_blank" title="E-Mail">
                       
                         <i class="fa fa-fw fa-envelope"></i>E-Mail</a>
                   </span>
@@ -633,7 +641,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-4"><a class="nav-link" href="#&#x4E00;&#x3001;&#x57FA;&#x672C;&#x6982;&#x5FF5;"><span class="nav-number">1.</span> <span class="nav-text">&#x4E00;&#x3001;&#x57FA;&#x672C;&#x6982;&#x5FF5;</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#&#x4E8C;&#x3001;&#x57FA;&#x672C;&#x601D;&#x8DEF;&#x53CA;&#x7B56;&#x7565;"><span class="nav-number">2.</span> <span class="nav-text">&#x4E8C;&#x3001;&#x57FA;&#x672C;&#x601D;&#x8DEF;&#x53CA;&#x7B56;&#x7565;</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#&#x4E09;&#x3001;&#x9002;&#x7528;&#x7684;&#x60C5;&#x51B5;"><span class="nav-number">3.</span> <span class="nav-text">&#x4E09;&#x3001;&#x9002;&#x7528;&#x7684;&#x60C5;&#x51B5;</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#&#x56DB;&#x3001;&#x6C42;&#x89E3;&#x7684;&#x57FA;&#x672C;&#x6B65;&#x9AA4;"><span class="nav-number">4.</span> <span class="nav-text">&#x56DB;&#x3001;&#x6C42;&#x89E3;&#x7684;&#x57FA;&#x672C;&#x6B65;&#x9AA4;</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#&#x4E94;&#x3001;&#x7B97;&#x6CD5;&#x5B9E;&#x73B0;&#x7684;&#x8BF4;&#x660E;"><span class="nav-number">5.</span> <span class="nav-text">&#x4E94;&#x3001;&#x7B97;&#x6CD5;&#x5B9E;&#x73B0;&#x7684;&#x8BF4;&#x660E;</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-4"><a class="nav-link" href="#一、基本概念"><span class="nav-number">1.</span> <span class="nav-text">一、基本概念</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#二、基本思路及策略"><span class="nav-number">2.</span> <span class="nav-text">二、基本思路及策略</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#三、适用的情况"><span class="nav-number">3.</span> <span class="nav-text">三、适用的情况</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#四、求解的基本步骤"><span class="nav-number">4.</span> <span class="nav-text">四、求解的基本步骤</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#五、算法实现的说明"><span class="nav-number">5.</span> <span class="nav-text">五、算法实现的说明</span></a></li></ol></div>
             
 
           </div>
@@ -653,7 +661,7 @@
 
     <footer id="footer" class="footer">
       <div class="footer-inner">
-        <div class="copyright">&#xA9; <span itemprop="copyrightYear">2018</span>
+        <div class="copyright">&copy; <span itemprop="copyrightYear">2019</span>
   <span class="with-love">
     <i class="fa fa-user"></i>
   </span>
@@ -684,17 +692,17 @@
 
   
     <span class="site-uv">
-      &#x603B;&#x8BBF;&#x5BA2;&#x6570; <i class="fa fa-user"></i>
+      总访客数 <i class="fa fa-user"></i>
       <span class="busuanzi-value" id="busuanzi_value_site_uv"></span>
-      &#x4EBA;
+      人
     </span>
   
 
   
     <span class="site-pv">
-      &#x603B;&#x8BBF;&#x95EE;&#x91CF; <i class="fa fa-eye"></i>
+      总访问量 <i class="fa fa-eye"></i>
       <span class="busuanzi-value" id="busuanzi_value_site_pv"></span>
-      &#x6B21;
+      次
     </span>
   
 </div>
@@ -1333,6 +1341,5 @@
 <!-- mathjax! -->
 <script type="text/javascript" src="/js/src/MathJax.js"></script>
 
-
-
-<script src="/live2dw/lib/L2Dwidget.min.js?0c58a1486de42ac6cc1c59c7d98ae887"></script><script>L2Dwidget.init({});</script></body></html>
+<script src="/live2dw/lib/L2Dwidget.min.js?0c58a1486de42ac6cc1c59c7d98ae887"></script><script>L2Dwidget.init({"log":false,"pluginJsPath":"lib/","pluginModelPath":"assets/","pluginRootPath":"live2dw/","tagMode":false});</script></body>
+</html>

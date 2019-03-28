@@ -1,4 +1,12 @@
-<!DOCTYPE html><html class="theme-next gemini use-motion" lang="zh-Hans"><head>
+<!DOCTYPE html>
+
+
+
+  
+
+
+<html class="theme-next gemini use-motion" lang="zh-Hans">
+<head><meta name="generator" content="Hexo 3.8.0">
   <meta charset="UTF-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
@@ -86,18 +94,18 @@
 
 
 
-<meta name="description" content="&amp;#x9996;&amp;#x5148;&amp;#x5728; Linux &amp;#x7CFB;&amp;#x7EDF;&amp;#x4E2D;&amp;#x6253;&amp;#x5F00;&amp;#x7EC8;&amp;#x7AEF;&amp;#xFF0C;&amp;#x786E;&amp;#x8BA4; U &amp;#x76D8;&amp;#x8DEF;&amp;#x5F84;&amp;#xFF1A; 1sudo fdisk -l &amp;#x683C;&amp;#x5F0F;&amp;#x5316; U &amp;#x76D8;&amp;#x">
+<meta name="description" content="首先在 Linux 系统中打开终端，确认 U 盘路径： 1sudo fdisk -l 格式化 U 盘，为了格式化首先需要 umount U 盘：/dev/sdb 是我的 U 盘设备。 1sudo umount /dev/sdb* 格式化 U 盘： 1sudo mkfs.vfat /dev/sdb -I 使用 dd 命令，格式如下： 1sudo dd if=xxx.iso of=U盘路径 完整示例：">
 <meta name="keywords" content="linux">
 <meta property="og:type" content="article">
-<meta property="og:title" content="&#x5728;Linux&#x7CFB;&#x7EDF;&#x4E0B;&#x7528;dd&#x547D;&#x4EE4;&#x5236;&#x4F5C;ISO&#x955C;&#x50CF;U&#x76D8;&#x542F;&#x52A8;&#x76D8;">
-<meta property="og:url" content="http://yoursite.com/2018/03/22/&#x5728;Linux&#x7CFB;&#x7EDF;&#x4E0B;&#x7528;dd&#x547D;&#x4EE4;&#x5236;&#x4F5C;ISO&#x955C;&#x50CF;U&#x76D8;&#x542F;&#x52A8;&#x76D8;/index.html">
-<meta property="og:site_name" content="Kings Cooober&apos;s Blog">
-<meta property="og:description" content="&amp;#x9996;&amp;#x5148;&amp;#x5728; Linux &amp;#x7CFB;&amp;#x7EDF;&amp;#x4E2D;&amp;#x6253;&amp;#x5F00;&amp;#x7EC8;&amp;#x7AEF;&amp;#xFF0C;&amp;#x786E;&amp;#x8BA4; U &amp;#x76D8;&amp;#x8DEF;&amp;#x5F84;&amp;#xFF1A; 1sudo fdisk -l &amp;#x683C;&amp;#x5F0F;&amp;#x5316; U &amp;#x76D8;&amp;#x">
+<meta property="og:title" content="在Linux系统下用dd命令制作ISO镜像U盘启动盘">
+<meta property="og:url" content="http://yoursite.com/2018/03/22/在Linux系统下用dd命令制作ISO镜像U盘启动盘/index.html">
+<meta property="og:site_name" content="Kings Cooober&#39;s Blog">
+<meta property="og:description" content="首先在 Linux 系统中打开终端，确认 U 盘路径： 1sudo fdisk -l 格式化 U 盘，为了格式化首先需要 umount U 盘：/dev/sdb 是我的 U 盘设备。 1sudo umount /dev/sdb* 格式化 U 盘： 1sudo mkfs.vfat /dev/sdb -I 使用 dd 命令，格式如下： 1sudo dd if=xxx.iso of=U盘路径 完整示例：">
 <meta property="og:locale" content="zh-Hans">
 <meta property="og:updated_time" content="2018-06-28T10:27:31.989Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="&#x5728;Linux&#x7CFB;&#x7EDF;&#x4E0B;&#x7528;dd&#x547D;&#x4EE4;&#x5236;&#x4F5C;ISO&#x955C;&#x50CF;U&#x76D8;&#x542F;&#x52A8;&#x76D8;">
-<meta name="twitter:description" content="&amp;#x9996;&amp;#x5148;&amp;#x5728; Linux &amp;#x7CFB;&amp;#x7EDF;&amp;#x4E2D;&amp;#x6253;&amp;#x5F00;&amp;#x7EC8;&amp;#x7AEF;&amp;#xFF0C;&amp;#x786E;&amp;#x8BA4; U &amp;#x76D8;&amp;#x8DEF;&amp;#x5F84;&amp;#xFF1A; 1sudo fdisk -l &amp;#x683C;&amp;#x5F0F;&amp;#x5316; U &amp;#x76D8;&amp;#x">
+<meta name="twitter:title" content="在Linux系统下用dd命令制作ISO镜像U盘启动盘">
+<meta name="twitter:description" content="首先在 Linux 系统中打开终端，确认 U 盘路径： 1sudo fdisk -l 格式化 U 盘，为了格式化首先需要 umount U 盘：/dev/sdb 是我的 U 盘设备。 1sudo umount /dev/sdb* 格式化 U 盘： 1sudo mkfs.vfat /dev/sdb -I 使用 dd 命令，格式如下： 1sudo dd if=xxx.iso of=U盘路径 完整示例：">
 
 
 
@@ -127,13 +135,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/2018/03/22/&#x5728;Linux&#x7CFB;&#x7EDF;&#x4E0B;&#x7528;dd&#x547D;&#x4EE4;&#x5236;&#x4F5C;ISO&#x955C;&#x50CF;U&#x76D8;&#x542F;&#x52A8;&#x76D8;/">
+  <link rel="canonical" href="http://yoursite.com/2018/03/22/在Linux系统下用dd命令制作ISO镜像U盘启动盘/">
 
 
 
 
 
-  <title>&#x5728;Linux&#x7CFB;&#x7EDF;&#x4E0B;&#x7528;dd&#x547D;&#x4EE4;&#x5236;&#x4F5C;ISO&#x955C;&#x50CF;U&#x76D8;&#x542F;&#x52A8;&#x76D8; | Kings Cooober&apos;s Blog</title>
+  <title>在Linux系统下用dd命令制作ISO镜像U盘启动盘 | Kings Cooober's Blog</title>
   
 
 
@@ -145,7 +153,7 @@
 
 </head>
 
-<body itemscope="" itemtype="http://schema.org/WebPage" lang="zh-Hans">
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
 
   
   
@@ -156,7 +164,7 @@
     <div class="headband"></div>
     <a href="https://github.com/kingscooober"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://s3.amazonaws.com/github/ribbons/forkme_right_darkblue_121621.png" alt="Fork me on GitHub"></a>
 
-    <header id="header" class="header" itemscope="" itemtype="http://schema.org/WPHeader">
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
       <div class="header-inner"><div class="site-brand-wrapper">
   <div class="site-meta ">
     
@@ -164,7 +172,7 @@
     <div class="custom-logo-site-title">
       <a href="/" class="brand" rel="start">
         <span class="logo-line-before"><i></i></span>
-        <span class="site-title">Kings Cooober&apos;s Blog</span>
+        <span class="site-title">Kings Cooober's Blog</span>
         <span class="logo-line-after"><i></i></span>
       </a>
     </div>
@@ -194,7 +202,7 @@
             
               <i class="menu-item-icon fa fa-fw fa-home"></i> <br>
             
-            &#x9996;&#x9875;
+            首页
           </a>
         </li>
       
@@ -204,7 +212,7 @@
             
               <i class="menu-item-icon fa fa-fw fa-user"></i> <br>
             
-            &#x5173;&#x4E8E;
+            关于
           </a>
         </li>
       
@@ -214,7 +222,7 @@
             
               <i class="menu-item-icon fa fa-fw fa-tags"></i> <br>
             
-            &#x6807;&#x7B7E;
+            标签
           </a>
         </li>
       
@@ -224,7 +232,7 @@
             
               <i class="menu-item-icon fa fa-fw fa-th"></i> <br>
             
-            &#x5206;&#x7C7B;
+            分类
           </a>
         </li>
       
@@ -234,7 +242,7 @@
             
               <i class="menu-item-icon fa fa-fw fa-archive"></i> <br>
             
-            &#x5F52;&#x6863;
+            归档
           </a>
         </li>
       
@@ -247,7 +255,7 @@
             
               <i class="menu-item-icon fa fa-search fa-fw"></i> <br>
             
-            &#x641C;&#x7D22;
+            搜索
           </a>
         </li>
       
@@ -266,7 +274,7 @@
       <i class="fa fa-times-circle"></i>
     </span>
     <div class="local-search-input-wrapper">
-      <input autocomplete="off" placeholder="&#x641C;&#x7D22;..." spellcheck="false" type="text" id="local-search-input">
+      <input autocomplete="off" placeholder="搜索..." spellcheck="false" type="text" id="local-search-input">
     </div>
   </div>
   <div id="local-search-result"></div>
@@ -298,21 +306,21 @@
   
   
 
-  <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
   
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/03/22/&#x5728;Linux&#x7CFB;&#x7EDF;&#x4E0B;&#x7528;dd&#x547D;&#x4EE4;&#x5236;&#x4F5C;ISO&#x955C;&#x50CF;U&#x76D8;&#x542F;&#x52A8;&#x76D8;/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/03/22/在Linux系统下用dd命令制作ISO镜像U盘启动盘/">
 
-    <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Kings Cooober">
-      <meta itemprop="description" content="">
+      <meta itemprop="description" content>
       <meta itemprop="image" content="/images/avatar.jpg">
     </span>
 
-    <span hidden itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Kings Cooober&apos;s Blog">
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Kings Cooober's Blog">
     </span>
 
     
@@ -320,7 +328,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">&#x5728;Linux&#x7CFB;&#x7EDF;&#x4E0B;&#x7528;dd&#x547D;&#x4EE4;&#x5236;&#x4F5C;ISO&#x955C;&#x50CF;U&#x76D8;&#x542F;&#x52A8;&#x76D8;</h1>
+          <h1 class="post-title" itemprop="name headline">在Linux系统下用dd命令制作ISO镜像U盘启动盘</h1>
         
 
         <div class="post-meta">
@@ -330,9 +338,9 @@
                 <i class="fa fa-calendar-o"></i>
               </span>
               
-                <span class="post-meta-item-text">&#x53D1;&#x8868;&#x4E8E;</span>
+                <span class="post-meta-item-text">发表于</span>
               
-              <time title="&#x521B;&#x5EFA;&#x4E8E;" itemprop="dateCreated datePublished" datetime="2018-03-22T12:54:51+08:00">
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-03-22T12:54:51+08:00">
                 2018-03-22
               </time>
             
@@ -346,9 +354,9 @@
                 <i class="fa fa-calendar-check-o"></i>
               </span>
               
-                <span class="post-meta-item-text">&#x66F4;&#x65B0;&#x4E8E;:</span>
+                <span class="post-meta-item-text">更新于&#58;</span>
               
-              <time title="&#x66F4;&#x65B0;&#x4E8E;" itemprop="dateModified" datetime="2018-06-28T18:27:31+08:00">
+              <time title="更新于" itemprop="dateModified" datetime="2018-06-28T18:27:31+08:00">
                 2018-06-28
               </time>
             
@@ -362,13 +370,13 @@
 
           
           
-             <span id="/2018/03/22/&#x5728;Linux&#x7CFB;&#x7EDF;&#x4E0B;&#x7528;dd&#x547D;&#x4EE4;&#x5236;&#x4F5C;ISO&#x955C;&#x50CF;U&#x76D8;&#x542F;&#x52A8;&#x76D8;/" class="leancloud_visitors" data-flag-title="&#x5728;Linux&#x7CFB;&#x7EDF;&#x4E0B;&#x7528;dd&#x547D;&#x4EE4;&#x5236;&#x4F5C;ISO&#x955C;&#x50CF;U&#x76D8;&#x542F;&#x52A8;&#x76D8;">
+             <span id="/2018/03/22/在Linux系统下用dd命令制作ISO镜像U盘启动盘/" class="leancloud_visitors" data-flag-title="在Linux系统下用dd命令制作ISO镜像U盘启动盘">
                <span class="post-meta-divider">|</span>
                <span class="post-meta-item-icon">
                  <i class="fa fa-eye"></i>
                </span>
                
-                 <span class="post-meta-item-text">&#x9605;&#x8BFB;&#x6B21;&#x6570;:</span>
+                 <span class="post-meta-item-text">阅读次数&#58;</span>
                
                  <span class="leancloud-visitors-count"></span>
              </span>
@@ -393,18 +401,18 @@
       
 
       
-        <p>&#x9996;&#x5148;&#x5728; Linux &#x7CFB;&#x7EDF;&#x4E2D;&#x6253;&#x5F00;&#x7EC8;&#x7AEF;&#xFF0C;&#x786E;&#x8BA4; U &#x76D8;&#x8DEF;&#x5F84;&#xFF1A;</p>
-<figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo fdisk -l</span><br></pre></td></tr></tbody></table></figure>
-<p>&#x683C;&#x5F0F;&#x5316; U &#x76D8;&#xFF0C;&#x4E3A;&#x4E86;&#x683C;&#x5F0F;&#x5316;&#x9996;&#x5148;&#x9700;&#x8981; umount U &#x76D8;&#xFF1A;<br>/dev/sdb &#x662F;&#x6211;&#x7684; U &#x76D8;&#x8BBE;&#x5907;&#x3002;</p>
-<figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo umount /dev/sdb*</span><br></pre></td></tr></tbody></table></figure>
-<p>&#x683C;&#x5F0F;&#x5316; U &#x76D8;&#xFF1A;</p>
-<figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo mkfs.vfat /dev/sdb -I</span><br></pre></td></tr></tbody></table></figure>
-<p>&#x4F7F;&#x7528; dd &#x547D;&#x4EE4;&#xFF0C;&#x683C;&#x5F0F;&#x5982;&#x4E0B;&#xFF1A;</p>
-<figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo dd <span class="keyword">if</span>=xxx.iso of=U&#x76D8;&#x8DEF;&#x5F84;</span><br></pre></td></tr></tbody></table></figure>
-<p>&#x5B8C;&#x6574;&#x793A;&#x4F8B;&#xFF1A;</p>
-<figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo dd <span class="keyword">if</span>=~/images/ubuntu.iso of=/dev/sdb</span><br></pre></td></tr></tbody></table></figure>
-<p>&#x5411; sdb &#x78C1;&#x76D8;&#x5199;&#x5165;&#x4F4D;&#x4E8E;&#xFF5E;/images&#x76EE;&#x5F55;&#x4E0B;&#x7684; ubuntu.iso &#x955C;&#x50CF;&#x6587;&#x4EF6; &#x8F93;&#x5B8C;&#x4E0A;&#x8FF0;DD&#x547D;&#x4EE4;&#x540E;&#x56DE;&#x8F66;&#x6267;&#x884C;&#xFF0C;&#x7CFB;&#x7EDF;&#x5C31;&#x5F00;&#x59CB;&#x5236;&#x4F5C;&#x542F;&#x52A8;&#x76D8;&#x4E86;&#xFF0C;&#x671F;&#x95F4;&#x7EC8;&#x7AEF;&#x547D;&#x4EE4;&#x7A97;&#x53E3;&#x4E0D;&#x4F1A;&#x6709;&#x4EFB;&#x4F55;&#x53CD;&#x9988;&#xFF0C;&#x4F46;&#x80FD;&#x901A;&#x8FC7;U&#x76D8;&#x8FD0;&#x884C;&#x6307;&#x793A;&#x706F;&#x770B;&#x5230;U&#x76D8;&#x5728;&#x8FDB;&#x884C;&#x8BFB;&#x5199;&#x64CD;&#x4F5C;&#xFF0C;&#x8FD9;&#x4E2A;&#x8FC7;&#x7A0B;&#x53EF;&#x80FD;&#x6301;&#x7EED;5&#x3001;6&#x5206;&#x949F;&#x624D;&#x5B8C;&#x6210;&#x3002;&#x5F53;&#x770B;&#x5230;&#x7EC8;&#x7AEF;&#x547D;&#x4EE4;&#x7A97;&#x53E3;&#x6709;&#x8FD4;&#x56DE;&#x6D88;&#x606F;&#x5373;&#x5236;&#x4F5C;&#x5B8C;&#x6210;&#x3002;</p>
-<script src="/live2dw/lib/L2Dwidget.min.js?0c58a1486de42ac6cc1c59c7d98ae887"></script><script>L2Dwidget.init({});</script>
+        <p>首先在 Linux 系统中打开终端，确认 U 盘路径：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo fdisk -l</span><br></pre></td></tr></table></figure>
+<p>格式化 U 盘，为了格式化首先需要 umount U 盘：<br>/dev/sdb 是我的 U 盘设备。</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo umount /dev/sdb*</span><br></pre></td></tr></table></figure>
+<p>格式化 U 盘：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo mkfs.vfat /dev/sdb -I</span><br></pre></td></tr></table></figure>
+<p>使用 dd 命令，格式如下：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo dd <span class="keyword">if</span>=xxx.iso of=U盘路径</span><br></pre></td></tr></table></figure>
+<p>完整示例：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo dd <span class="keyword">if</span>=~/images/ubuntu.iso of=/dev/sdb</span><br></pre></td></tr></table></figure>
+<p>向 sdb 磁盘写入位于～/images目录下的 ubuntu.iso 镜像文件 输完上述DD命令后回车执行，系统就开始制作启动盘了，期间终端命令窗口不会有任何反馈，但能通过U盘运行指示灯看到U盘在进行读写操作，这个过程可能持续5、6分钟才完成。当看到终端命令窗口有返回消息即制作完成。</p>
+
       
     </div>
     
@@ -422,7 +430,7 @@
         <div>
     
         <div style="text-align:center;color: #ccc;font-size:14px;">
-            -------------&#x672C;&#x6587;&#x7ED3;&#x675F;<i class="fa fa-paw"></i>&#x611F;&#x8C22;&#x60A8;&#x7684;&#x9605;&#x8BFB;-------------
+            -------------本文结束<i class="fa fa-paw"></i>感谢您的阅读-------------
         </div>
     
 </div>
@@ -447,8 +455,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2018/03/22/Linux_&#x76EE;&#x5F55;&#x7ED3;&#x6784;/" rel="next" title="Linux &#x76EE;&#x5F55;&#x7ED3;&#x6784;">
-                <i class="fa fa-chevron-left"></i> Linux &#x76EE;&#x5F55;&#x7ED3;&#x6784;
+              <a href="/2018/03/22/Linux_目录结构/" rel="next" title="Linux 目录结构">
+                <i class="fa fa-chevron-left"></i> Linux 目录结构
               </a>
             
           </div>
@@ -457,8 +465,8 @@
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/2018/03/22/&#x4E94;&#x5927;&#x5E38;&#x7528;&#x7B97;&#x6CD5;&#xFF1A;&#x56DE;&#x6EAF;&#x6CD5;/" rel="prev" title="&#x4E94;&#x5927;&#x5E38;&#x7528;&#x7B97;&#x6CD5;&#xFF1A;&#x56DE;&#x6EAF;&#x6CD5;">
-                &#x4E94;&#x5927;&#x5E38;&#x7528;&#x7B97;&#x6CD5;&#xFF1A;&#x56DE;&#x6EAF;&#x6CD5; <i class="fa fa-chevron-right"></i>
+              <a href="/2018/03/22/五大常用算法：回溯法/" rel="prev" title="五大常用算法：回溯法">
+                五大常用算法：回溯法 <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>
@@ -514,12 +522,12 @@
 
       <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
         <div class="site-overview">
-          <div class="site-author motion-element" itemprop="author" itemscope="" itemtype="http://schema.org/Person">
+          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
               <img class="site-author-image" itemprop="image" src="/images/avatar.jpg" alt="Kings Cooober">
             
               <p class="site-author-name" itemprop="name">Kings Cooober</p>
-              <p class="site-description motion-element" itemprop="description">&#x4E00;&#x4E2A;&#x4EBA;&#x5E78;&#x8FD0;&#x7684;&#x524D;&#x63D0;&#xFF0C;&#x662F;&#x4ED6;&#x6709;&#x80FD;&#x529B;&#x6539;&#x53D8;&#x81EA;&#x5DF1;&#x3002;</p>
+              <p class="site-description motion-element" itemprop="description">一个人幸运的前提，是他有能力改变自己。</p>
           </div>
 
           <nav class="site-state motion-element">
@@ -529,8 +537,8 @@
               
                 <a href="/archives">
               
-                  <span class="site-state-item-count">73</span>
-                  <span class="site-state-item-name">&#x65E5;&#x5FD7;</span>
+                  <span class="site-state-item-count">75</span>
+                  <span class="site-state-item-name">日志</span>
                 </a>
               </div>
             
@@ -541,7 +549,7 @@
               <div class="site-state-item site-state-categories">
                 <a href="/categories/index.html">
                   <span class="site-state-item-count">7</span>
-                  <span class="site-state-item-name">&#x5206;&#x7C7B;</span>
+                  <span class="site-state-item-name">分类</span>
                 </a>
               </div>
             
@@ -552,7 +560,7 @@
               <div class="site-state-item site-state-tags">
                 <a href="/tags/index.html">
                   <span class="site-state-item-count">16</span>
-                  <span class="site-state-item-name">&#x6807;&#x7B7E;</span>
+                  <span class="site-state-item-name">标签</span>
                 </a>
               </div>
             
@@ -571,7 +579,7 @@
                   </span>
                 
                   <span class="links-of-author-item">
-                    <a href="mailto:kingscooober@gmail.com" target="_blank" title="E-Mail">
+                    <a href="mailto:kingscooober@yeah.net" target="_blank" title="E-Mail">
                       
                         <i class="fa fa-fw fa-envelope"></i>E-Mail</a>
                   </span>
@@ -604,7 +612,7 @@
 
     <footer id="footer" class="footer">
       <div class="footer-inner">
-        <div class="copyright">&#xA9; <span itemprop="copyrightYear">2018</span>
+        <div class="copyright">&copy; <span itemprop="copyrightYear">2019</span>
   <span class="with-love">
     <i class="fa fa-user"></i>
   </span>
@@ -635,17 +643,17 @@
 
   
     <span class="site-uv">
-      &#x603B;&#x8BBF;&#x5BA2;&#x6570; <i class="fa fa-user"></i>
+      总访客数 <i class="fa fa-user"></i>
       <span class="busuanzi-value" id="busuanzi_value_site_uv"></span>
-      &#x4EBA;
+      人
     </span>
   
 
   
     <span class="site-pv">
-      &#x603B;&#x8BBF;&#x95EE;&#x91CF; <i class="fa fa-eye"></i>
+      总访问量 <i class="fa fa-eye"></i>
       <span class="busuanzi-value" id="busuanzi_value_site_pv"></span>
-      &#x6B21;
+      次
     </span>
   
 </div>
@@ -1284,6 +1292,5 @@
 <!-- mathjax! -->
 <script type="text/javascript" src="/js/src/MathJax.js"></script>
 
-
-
-<script src="/live2dw/lib/L2Dwidget.min.js?0c58a1486de42ac6cc1c59c7d98ae887"></script><script>L2Dwidget.init({});</script></body></html>
+<script src="/live2dw/lib/L2Dwidget.min.js?0c58a1486de42ac6cc1c59c7d98ae887"></script><script>L2Dwidget.init({"log":false,"pluginJsPath":"lib/","pluginModelPath":"assets/","pluginRootPath":"live2dw/","tagMode":false});</script></body>
+</html>
